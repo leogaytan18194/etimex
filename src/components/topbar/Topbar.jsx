@@ -1,6 +1,6 @@
 import "./topbar.scss"
-import PersonIcon from '@mui/icons-material/Person';
-import EmailIcon from '@mui/icons-material/Email';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import React from 'react';
 
 
@@ -13,12 +13,11 @@ export default function Topbar({menuOpen, setMenuOpen}) {
                     <img src="assets/bestalogo.png" alt="" />
                 </a>
                 <div className="itemContainer">
-                    <PersonIcon className="icon" />
-                    <span>+81 2512 0146</span>
+                <a href="https://wa.link/rl4eij"><WhatsAppIcon className="icon1" /></a>
                 </div>
                 <div className="itemContainer"> 
-                    <EmailIcon className="icon" />
-                    <span>info@besta.mx</span>
+                <a href="tel:8125120146"><LocalPhoneIcon className="icon2" /></a>
+                    
                 </div>
             </div>
             

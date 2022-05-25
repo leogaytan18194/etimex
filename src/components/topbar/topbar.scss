@@ -39,13 +39,23 @@
                 margin-left: 30px;
 
                 @include mobile{
-                    display: none;
+                    
                 }
             }
 
-            .icon{
-                font-size: 18px;
+            .icon1{
+                font-size: 40px;
                 margin-right: 5px;
+                color: #25D366;
+            }
+
+            .icon2{
+                font-size: 40px;
+                margin-right: 5px;
+            }
+
+            a{
+                text-decoration: none;
             }
 
             span{
