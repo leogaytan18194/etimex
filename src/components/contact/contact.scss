@@ -1,0 +1,140 @@
+@import "../../global.scss";
+
+.contact{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .faqs {
+        width: 100%;
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 15px;
+    }
+    
+    .faqs .faq {
+        margin: 15px;
+        padding: 15px;
+        background-color: $mainColor;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .faqs .faq .faq-question {
+        position: relative;
+        color: white;
+        font-size: 20px;
+        padding-right: 80px;
+    
+        transition: all 0.4s ease;
+    }
+    
+    .faqs .faq .faq-question::after {
+        content: '';
+        
+        font-style: normal;
+        position: absolute;
+        top: 60%;
+        right: 0px;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+    
+        background-image: url('./arrow-down-mint.svg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    
+        transition: all 0.4s ease-out;
+    }
+    
+    .faqs .faq .faq-answer {
+        color: white;
+        opacity: 0;
+        max-height: 0;
+        overflow-y: hidden;
+        transition: all 0.4s ease-out;
+    }
+    
+    .faqs .faq.open .faq-question {
+        margin-bottom: 15px;
+    }
+    
+    .faqs .faq.open .faq-question::after {
+        transform: translateY(-50%) rotate(180deg);
+    }
+    
+    .faqs .faq.open .faq-answer {
+        max-height: 1000px;
+        opacity: 1;
+    }
+
+    
+
+    h1{
+        margin-top: 60px;
+        font-size: 50px;
+
+        @include mobile{
+            font-size: 20px;
+        }
+
+    }
+
+    
+
+    .container{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @include mobile{
+            width: 100%;
+        }
+
+        .item{
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+        border: 1px solid rgb(240, 239, 239);
+        margin: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        position: relative;
+        transition: all .5s ease;
+
+        @include mobile{
+            width: 130px;
+            height: 100px;
+        }
+
+
+        h3{
+            position: absolute;
+            font-size: 15px;
+            align-items: center;
+            justify-content: center;
+        }
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: 1;
+            }
+            &:hover{
+                background-color: $mainColor;
+                img{
+                    opacity: 0.2;
+                    z-index: 0;
+                }
+            }
+        }
+    }
+}
