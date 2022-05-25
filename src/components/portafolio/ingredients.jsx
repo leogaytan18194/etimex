@@ -5,7 +5,7 @@ export interface Ingredient {
   }
   
   export const allIngredients = [
-    { icon: "🚗", label: "V-Drive" },
+    { icon: "🚗", label: "V-Drive", body: "gracias gracias gracias gracias" },
     { icon: "🚗", label: "March", body:"De nada de nada de nada" },
     { icon: "🚗", label: "Aveo", body:"por favor por favor por favor" },
   ];
