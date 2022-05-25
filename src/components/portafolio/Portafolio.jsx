@@ -1,18 +1,49 @@
 
 import "./portafolio.scss";
+import { motion, AnimatePresence } from "framer-motion";
+import { initialTabs as tabs } from "./ingredients";
+import { useState } from "react";
 
 
 function Portafolio() {
+    const [selectedTab, setSelectedTab] = useState(tabs[0]);
+
     return (
         <div className="portafolio" id="portafolio">
             <h1>Beneficios</h1>
             <h3>Un producto integral</h3>
             <div className="container">
-                <div className="vid">
-                <video loop controls>
-                    <source src="https://video.xx.fbcdn.net/v/t66.36240-2/10000000_314416734201139_3129767750125027824_n.mp4?_nc_cat=109&ccb=1-7&_nc_sid=985c63&efg=eyJybHIiOjE3NTgsInJsYSI6MjQ4NiwidmVuY29kZV90YWciOiJvZXBfaGQifQ%3D%3D&_nc_ohc=cKpMTttzxdcAX9mjnqz&rl=1758&vabr=1172&_nc_ht=video-iad3-1.xx&oh=00_AT_wLaZDXaqL7YCV0_OF3gIfryFSSQEEPZ9oeveYsDAS-Q&oe=62928828" type="video/mp4" />
-                    </video>
-                </div>
+                <div className="window">
+                    <nav>
+                        <ul>
+                        {tabs.map((item) => (
+                            <li
+                            key={item.label}
+                            className={item === selectedTab ? "selected" : ""}
+                            onClick={() => setSelectedTab(item)}
+                            >
+                            {`${item.icon} ${item.label}`}
+                            {item === selectedTab ? (
+                                <motion.div className="underline" layoutId="underline" />
+                            ) : null}
+                            </li>
+                        ))}
+                        </ul>
+                    </nav>
+                    <main>
+                        <AnimatePresence exitBeforeEnter>
+                        <motion.div
+                            key={selectedTab ? selectedTab.label : "empty"}
+                            animate={{ opacity: 1, y: 0 }}
+                            initial={{ opacity: 0, y: 20 }}
+                            exit={{ opacity: 0, y: -20 }}
+                            transition={{ duration: 0.15 }}
+                        >
+                            {selectedTab ? selectedTab.body : "😋"}
+                        </motion.div>
+                        </AnimatePresence>
+                    </main>
+                    </div>
             </div>
         </div>
     )
