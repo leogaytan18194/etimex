@@ -29,6 +29,13 @@
             width: 100%;
         }
 
+        .vid {
+            height: 80vh;
+        }  
+        .vid video {
+          height: 80%;
+        }
+
         .item{
         width: 150px;
         height: 150px;
@@ -46,6 +53,8 @@
             width: 130px;
             height: 100px;
         }
+
+        
 
 
         h3{
