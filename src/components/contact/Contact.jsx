@@ -1,4 +1,3 @@
-
 import "./contact.scss";
 import React from 'react';
 import FAQ from './FAQ';
@@ -24,12 +23,12 @@ function Contact() {
         },
         {
           question: '¿Puedo ahorrar en gasolina con BESTA?',
-          answer: 'Gracias a nuestro producto integral nuestros vehiculos cuentan con una tanque de GNV que te ayuda a ahorrar en gastos de gasolina y poder tener un mejor rendimiento en las carretaras.',
+          answer: 'Gracias a nuestro producto integral nuestros vehículos cuentan con una tanque de GNV que te ayuda a ahorrar en gastos de gasolina y poder tener un mejor rendimiento en las carreteras.',
           open: false
         },
         {
-          question: '¿Se necesita mucha papeleria para obtener un auto?',
-          answer: 'Con nosotros es muy facil obtener un vehiculo ya que nuestra validacioón no requiere de consultas al buro de credito.',
+          question: '¿Se necesita mucha papelería para obtener un auto?',
+          answer: 'Con nosotros es muy fácil obtener un vehículo ya que nuestra validación no requiere de consultas al buro de crédito.',
           open: false
         },
         {

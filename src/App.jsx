@@ -5,9 +5,11 @@ import Intro from "./components/intro/Intro";
 import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
+import Requisitos from "./components/requisitos/Requisitos";
 import React from 'react';
 import "./app.scss";
 import { useState } from "react";
+
 
 function App() {
   const [menuOpen, setMenuOpen] = useState (false)
@@ -20,6 +22,7 @@ function App() {
         <Intro/>
         <Portafolio/>
         <Works/>
+        <Requisitos/>
         <Testimonials/>
         <Contact/>
       </div>
