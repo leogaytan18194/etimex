@@ -73,15 +73,26 @@
     
 
     h1{
+        color: #483e6b;
         margin-top: 60px;
         font-size: 50px;
 
         @include mobile{
-            font-size: 20px;
+        margin-top: 30px;
+        font-size: 18px;
         }
 
     }
 
+    h2{
+        font-size: 50px;
+
+        @include mobile{
+            font-size: 16px;
+            text-align: center;
+        }
+        
+    }
     
 
     .container{
@@ -115,17 +126,7 @@
         }
 
 
-        h3{
-            position: absolute;
-            font-size: 15px;
-            align-items: center;
-            justify-content: center;
-
-            @include mobile{
-                margin: 10px;
-            }
-            
-        }
+        
 
             img{
                 width: 100%;

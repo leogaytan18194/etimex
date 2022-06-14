@@ -55,7 +55,7 @@ function Contact() {
     return (
         <div className="contact" id="faq">
             <h1>Preguntas Frecuentes</h1>
-            <h3>Te ayudamos a solucionar cualquier duda que tengas sobre nosotros.</h3>
+            <h2>Te ayudamos a solucionar cualquier duda que tengas sobre nosotros.</h2>
             <div className="container">
             <div className="faqs">
                 {faqs.map((faq, i) => (

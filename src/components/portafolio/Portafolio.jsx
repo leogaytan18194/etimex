@@ -18,7 +18,9 @@ const Container = styled.div`
 
 const Left = styled.div`
   width: 50%;
+  background-color: #6FC7DA;
   position: relative;
+  overflow: hidden;
   @media only screen and (max-width: 480px) {
     display: none;
   }
@@ -26,9 +28,8 @@ const Left = styled.div`
 
 const Image = styled.img`
   display: ${(props) => props.open && "none"};
-  border-radius: 40%;
   margin-top: 10%;
-  height: 70%;
+  height: 90%;
   margin-left: 100px;
 `;
 
@@ -42,7 +43,7 @@ const Right = styled.div`
 
 
 const Wrapper = styled.div`
-  padding: 30px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   @media only screen and (max-width: 480px) {
@@ -50,7 +51,13 @@ const Wrapper = styled.div`
   }
 `;
 
-const Title = styled.h1``;
+const Title = styled.h1`
+    color: #483e6b;
+    margin-top: 20px;
+    font-size: 50px;
+    @media only screen and (max-width: 480px) {
+      font-size: 18px;
+    }`;
 
 const Desc = styled.p`
   font-size: 20px;
@@ -61,7 +68,7 @@ const Desc = styled.p`
 const CardContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 30px;
 `;
 
 
@@ -72,7 +79,7 @@ const Portafolio = () => {
     <div className="portafolio" id="portafolio">
     <Container>
       <Left>
-        <Image src="assets/vdrive.png" />
+        <Image src="assets/vdrive2.png" />
 
       </Left>
       <Right>
