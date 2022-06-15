@@ -2,8 +2,8 @@ import Topbar from "./components/topbar/Topbar";
 import Portafolio from "./components/portafolio/Portafolio";
 import Works from "./components/works/Works";
 import Intro from "./components/intro/Intro";
+import Autos from "./components/autos/Autos";
 import Testimonials from "./components/testimonials/Testimonials";
-import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
 import Requisitos from "./components/requisitos/Requisitos";
 import React from 'react';
@@ -21,10 +21,10 @@ function App() {
       <div className="sections">
         <Intro/>
         <Portafolio/>
+        <Autos/>
         <Works/>
         <Requisitos/>
         <Testimonials/>
-        <Contact/>
       </div>
     </div>
   );

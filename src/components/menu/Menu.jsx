@@ -1,6 +1,7 @@
 import "./menu.scss"
 import React from 'react';
 
+
 export default function Menu({ menuOpen, setMenuOpen }) {
   return (
     <div className={"menu "+(menuOpen && "active")}>
@@ -12,6 +13,9 @@ export default function Menu({ menuOpen, setMenuOpen }) {
                 <a href="#portafolio">Beneficios</a>
             </li>
             <li onClick={() =>setMenuOpen(false)}>
+                <a href="#autos">Autos</a>
+            </li>
+            <li onClick={() =>setMenuOpen(false)}>
                 <a href="#works">Elige tu auto</a>
             </li>
             <li onClick={() =>setMenuOpen(false)}>
@@ -19,9 +23,6 @@ export default function Menu({ menuOpen, setMenuOpen }) {
             </li>
             <li onClick={() =>setMenuOpen(false)}>
                 <a href="#testimonials">Testimonios</a>
-            </li>
-            <li onClick={() =>setMenuOpen(false)}>
-                <a href="#faq">Preguntas frecuentes</a>
             </li>
         </ul>
     </div>
