@@ -4,7 +4,21 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import "./autos.scss";
+
+const theme = createTheme({
+    breakpoints: {
+      values: {
+        xxs: 0, // small phone
+        xs: 300, // phone
+        sm: 600, // tablets
+        md: 900, // small laptop
+        lg: 1200, // desktop
+        xl: 1536 // large screens
+      }
+    }
+  });
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -18,15 +32,19 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box sx={{ p: 2,
-                    ml: 1,
+    <ThemeProvider theme={theme}>
+        <Box sx={{  p: 1,
+                    ml: {
+                        xs: 1,
+                        md: 15
+                    },
                     justifyContent: "center", 
                     alignItems:"center",
-                    borderRadius: '16px',
                     border: 0
                      }}>
           <Typography>{children}</Typography>
         </Box>
+    </ThemeProvider>
       )}
     </div>
   );
@@ -55,15 +73,14 @@ export default function VerticalTabs() {
   return (
       <div className="autos" id="autos">
           <h1>Autos</h1>
-          <div className="container">
               
         <Box
         sx={{
             flexGrow: 1,
             display: "flex",
-            height: 620,
+            height: 200,
             justifyContent: "center",
-            alignItems: "center",
+            alignItems: "base-line",
             borderRadius: '16px',
         }}
         >
@@ -75,6 +92,7 @@ export default function VerticalTabs() {
             sx={{   p: 1,
                     borderRight: 1, 
                     border: 0, 
+                    height: 140,
                     boxShadow: 2, 
                     borderRadius: 3 }}
         >
@@ -186,7 +204,6 @@ export default function VerticalTabs() {
             </div>
         </TabPanel>
         </Box>
-        </div>
     </div>
   );
 }
