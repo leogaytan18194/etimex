@@ -61,7 +61,7 @@ export default function VerticalTabs() {
         sx={{
             flexGrow: 1,
             display: "flex",
-            height: 700,
+            height: 620,
             justifyContent: "center",
             alignItems: "center",
             borderRadius: '16px',
@@ -69,7 +69,6 @@ export default function VerticalTabs() {
         >
         <Tabs
             orientation="vertical"
-            variant="scrollable"
             value={value}
             onChange={handleChange}
             aria-label="Vertical tabs example"
@@ -110,9 +109,7 @@ export default function VerticalTabs() {
                     </div>
                 </div>
             </div>
-            <div className="auto">
-                <img src="assets/v-drive4.png" className="autoImagen" alt="vdrive besta" />     
-            </div>            
+                <img src="assets/v-drive4.png" className="autoImagen" alt="vdrive besta" />           
             <div className="deposito">
                 <h3>Deposito en garantia</h3>
                 <h3>$17,000</h3>
@@ -146,9 +143,7 @@ export default function VerticalTabs() {
                     </div>
                 </div>
             </div>
-            <div className="auto">
-                <img src="assets/march2.png" className="autoImagen" alt="" />     
-            </div>            
+            <img src="assets/march2.png" className="autoImagen" alt="March" />               
             <div className="deposito">
                 <h3>Deposito en garantia</h3>
                 <h3>$17,000</h3>
@@ -182,9 +177,7 @@ export default function VerticalTabs() {
                     </div>
                 </div>
             </div>
-            <div className="auto">
-                <img src="assets/aveo2.png" className="autoImagen" alt="" />     
-            </div>            
+                <img src="assets/aveo2.png" className="autoImagen" alt="Aveo" />             
             <div className="deposito">
                 <h3>Deposito en garantia</h3>
                 <h3>$17,000</h3>
