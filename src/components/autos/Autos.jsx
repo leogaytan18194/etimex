@@ -34,10 +34,7 @@ function TabPanel(props) {
       {value === index && (
     <ThemeProvider theme={theme}>
         <Box sx={{  p: 1,
-                    ml: {
-                        xs: 1,
-                        md: 15
-                    },
+                    ml: 1,
                     justifyContent: "center", 
                     alignItems:"center",
                     border: 0
@@ -72,29 +69,25 @@ export default function VerticalTabs() {
 
   return (
       <div className="autos" id="autos">
-          <h1>Autos</h1>
+          <h1>Elige el auto de tus sueños</h1>
               
         <Box
         sx={{
-            flexGrow: 1,
-            display: "flex",
-            height: 200,
-            justifyContent: "center",
-            alignItems: "base-line",
-            borderRadius: '16px',
+            
         }}
         >
         <Tabs
-            orientation="vertical"
+            orientation="scrollable"
             value={value}
             onChange={handleChange}
+            variant="scrollable"
             aria-label="Vertical tabs example"
             sx={{   p: 1,
                     borderRight: 1, 
                     border: 0, 
-                    height: 140,
-                    boxShadow: 2, 
-                    borderRadius: 3 }}
+                    justifyContent: "center",
+                    alignItems: "center", 
+                }}
         >
             <Tab label="V-Drive" {...a11yProps(0)} />
             <Tab label="March" {...a11yProps(1)} />
