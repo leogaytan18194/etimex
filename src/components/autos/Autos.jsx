@@ -92,6 +92,7 @@ export default function VerticalTabs() {
             <Tab label="V-Drive" {...a11yProps(0)} />
             <Tab label="March" {...a11yProps(1)} />
             <Tab label="Aveo" {...a11yProps(2)} />
+            <Tab label="Attitude" {...a11yProps(3)} />
 
         </Tabs>
         <TabPanel value={value} index={0}>
@@ -189,6 +190,40 @@ export default function VerticalTabs() {
                 </div>
             </div>
                 <img src="assets/aveo2.png" className="autoImagen" alt="Aveo" />             
+            <div className="deposito">
+                <h3>Deposito en garantia</h3>
+                <h3>$17,000</h3>
+                <h6>*Consulta términos y condiciones</h6>
+                <a href="https://google.com" className="botonInfo">Más Información</a>
+            </div>
+            </TabPanel>
+            <TabPanel value={value} index={3}>
+        <div className="unidad">
+                <h5>Dodge</h5>
+                <h2>Attitude</h2>    
+                <img src="assets/yearCalendar.png" className="imgAuto" alt="calendario"/>
+                <p className="descAuto"> 2022</p>
+                <img src="assets/estandaricono.png" className="imgAuto" alt="transmición"/>
+                <p className="descAuto"> Estándar</p>
+                <img src="assets/nuevoicono.png" className="imgAuto" alt="uso"/>
+                <p className="descAuto"> Nuevo</p>
+            </div>
+            <div className="plazo">
+                <h3>Plazo</h3>
+                <p>36 Meses</p>
+                <div className="vehicle-card">
+                <h4>Pago fijo semanal</h4>
+                    <div className="v-drive-offer">
+                        <div className="top">
+                            <p className="precio">$3,300</p>
+                        </div>
+                        <div className="bottomAutos">
+                            <p className="iva">Incluye IVA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <img src="assets/attitude2.png" className="autoImagen" alt="Aveo" />             
             <div className="deposito">
                 <h3>Deposito en garantia</h3>
                 <h3>$17,000</h3>
