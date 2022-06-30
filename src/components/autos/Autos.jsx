@@ -109,6 +109,7 @@ export default function VerticalTabs() {
             <div className="plazo">
                 <h3>Plazo</h3>
                 <p>36 Meses</p>
+                <img src="assets/v-drive4.png" className="imgAutoGrande"alt="vdrive besta" /> 
                 <div className="vehicle-card">
                 <h4>Pago fijo semanal</h4>
                     <div className="v-drive-offer">
@@ -121,7 +122,7 @@ export default function VerticalTabs() {
                     </div>
                 </div>
             </div>
-                <img src="assets/v-drive4.png" className="autoImagen" alt="vdrive besta" />           
+                          
             <div className="deposito">
                 <h3>Deposito en garantia</h3>
                 <h3>$17,000</h3>
@@ -143,6 +144,7 @@ export default function VerticalTabs() {
             <div className="plazo">
                 <h3>Plazo</h3>
                 <p>36 Meses</p>
+                <img src="assets/march2.png" className="imgAutoGrande" alt="March" />  
                 <div className="vehicle-card">
                 <h4>Pago fijo semanal</h4>
                     <div className="v-drive-offer">
@@ -155,7 +157,7 @@ export default function VerticalTabs() {
                     </div>
                 </div>
             </div>
-            <img src="assets/march2.png" className="autoImagen" alt="March" />               
+                         
             <div className="deposito">
                 <h3>Deposito en garantia</h3>
                 <h3>$17,000</h3>
@@ -177,6 +179,7 @@ export default function VerticalTabs() {
             <div className="plazo">
                 <h3>Plazo</h3>
                 <p>36 Meses</p>
+                <img src="assets/aveo2.png" className="imgAutoGrande" alt="Aveo" /> 
                 <div className="vehicle-card">
                 <h4>Pago fijo semanal</h4>
                     <div className="v-drive-offer">
@@ -189,7 +192,7 @@ export default function VerticalTabs() {
                     </div>
                 </div>
             </div>
-                <img src="assets/aveo2.png" className="autoImagen" alt="Aveo" />             
+                        
             <div className="deposito">
                 <h3>Deposito en garantia</h3>
                 <h3>$17,000</h3>
@@ -211,7 +214,9 @@ export default function VerticalTabs() {
             <div className="plazo">
                 <h3>Plazo</h3>
                 <p>36 Meses</p>
+                <img src="assets/attitude2.png" className="imgAutoGrande" alt="Aveo" /> 
                 <div className="vehicle-card">
+                
                 <h4>Pago fijo semanal</h4>
                     <div className="v-drive-offer">
                         <div className="top">
@@ -223,7 +228,7 @@ export default function VerticalTabs() {
                     </div>
                 </div>
             </div>
-                <img src="assets/attitude2.png" className="autoImagen" alt="Aveo" />             
+                            
             <div className="deposito">
                 <h3>Deposito en garantia</h3>
                 <h3>$17,000</h3>
