@@ -33,7 +33,7 @@ function TabPanel(props) {
       {value === index && (
     <ThemeProvider theme={theme}>
         <Box sx={{  p: 1,
-                    m: 1,
+                    m: 2,
                     justifyContent: "center", 
                     alignItems:"center",
                     border: 0,
