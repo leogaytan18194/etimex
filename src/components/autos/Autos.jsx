@@ -1,17 +1,16 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Box from '@mui/material/Box';
 import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import "./autos.scss";
 
 const theme = createTheme({
     breakpoints: {
       values: {
-        xxs: 0, // small phone
-        xs: 300, // phone
+        xs: 0, // phone
         sm: 600, // tablets
         md: 900, // small laptop
         lg: 1200, // desktop
@@ -34,10 +33,13 @@ function TabPanel(props) {
       {value === index && (
     <ThemeProvider theme={theme}>
         <Box sx={{  p: 1,
-                    ml: 1,
+                    m: 1,
                     justifyContent: "center", 
                     alignItems:"center",
-                    border: 0
+                    border: 0,
+                    borderRadius: '5%',
+                    boxShadow: 3,
+                    width: 350
                      }}>
           <Typography>{children}</Typography>
         </Box>
@@ -60,182 +62,111 @@ function a11yProps(index) {
   };
 }
 
-export default function VerticalTabs() {
+export default function ScrollableTabsButtonForce() {
   const [value, setValue] = React.useState(0);
 
-  const handleChange = (event, newValue) => {
+  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
+  
 
   return (
-      <div className="autos" id="autos">
-          <h1>Elige el auto de tus sueños</h1>
+        <div className="autos" id="autos">
+          <h1>Modelos disponibles</h1>
+          <Box sx={{ maxWidth: { xs: 500, sm: 480 }, bgcolor: 'background.paper' }}>
+          <Tabs 
+              value={value}
+              onChange={handleChange}
+              variant="scrollable"
+              scrollButtons='on' >
+          >
               
-        <Box
-        sx={{
-            
-        }}
-        >
-        <Tabs
-            orientation="scrollable"
-            value={value}
-            onChange={handleChange}
-            variant="scrollable"
-            aria-label="Vertical tabs example"
-            sx={{   p: 1,
-                    borderRight: 1, 
-                    border: 0, 
-                    justifyContent: "center",
-                    alignItems: "center", 
-                }}
-        >
-            <Tab label="V-Drive" {...a11yProps(0)} />
-            <Tab label="March" {...a11yProps(1)} />
-            <Tab label="Aveo" {...a11yProps(2)} />
-            <Tab label="Attitude" {...a11yProps(3)} />
-
-        </Tabs>
+              <Tab  style={{ minWidth: 30 }} label="V-Drive" {...a11yProps(0)} />
+              <Tab  style={{ minWidth: 30 }} label="Aveo" {...a11yProps(1)} />
+              <Tab  style={{ minWidth: 30 }} label="March" {...a11yProps(2)} />
+              <Tab  style={{ minWidth: 30 }} label="Attitude" {...a11yProps(3)} />
+              <Tab  style={{ minWidth: 30 }} label="Kwid" {...a11yProps(4)} />
+              
+          </Tabs>
+          </Box>
+        <Box>
         <TabPanel value={value} index={0}>
             <div className="unidad">
-                <h5>Nissan</h5>
-                <h2>V-DRIVE</h2>    
-                <img src="assets/yearCalendar.png" className="imgAuto" alt="calendario"/>
-                <p className="descAuto"> 2022</p>
-                <img src="assets/estandaricono.png" className="imgAuto" alt="transmición"/>
-                <p className="descAuto"> Estándar</p>
-                <img src="assets/nuevoicono.png" className="imgAuto" alt="uso"/>
-                <p className="descAuto"> Nuevo</p>
+                <h2>Nissan</h2>
+                <h2>V-DRIVE</h2>
             </div>
             <div className="plazo">
-                <h3>Plazo</h3>
-                <p>36 Meses</p>
                 <img src="assets/v-drive4.png" className="imgAutoGrande"alt="vdrive besta" /> 
-                <div className="vehicle-card">
-                <h4>Pago fijo semanal</h4>
-                    <div className="v-drive-offer">
-                        <div className="top">
-                            <p className="precio"><b>$3,300</b></p>
-                        </div>
-                        <div className="bottomAutos">
-                            <p className="iva">Incluye IVA</p>
-                        </div>
-                    </div>
-                </div>
             </div>
                           
             <div className="deposito">
-                <h3>Deposito en garantia</h3>
-                <h3>$17,000</h3>
-                <h6>*Consulta términos y condiciones</h6>
+                <h3>$3,200 / Semanal</h3>
+                <h4><img src="assets/calendarioicon2.png" alt="calendario" className="iconCalendario"/> 36 Meses con opción a compra</h4>
                 <a href="https://google.com" className="botonInfo">Más Información</a>
             </div>
         </TabPanel>
         <TabPanel value={value} index={1}>
         <div className="unidad">
-                <h5>Nissan</h5>
-                <h2>March Sense TM</h2>    
-                <img src="assets/yearCalendar.png" className="imgAuto" alt="calendario"/>
-                <p className="descAuto"> 2022</p>
-                <img src="assets/estandaricono.png" className="imgAuto" alt="transmición"/>
-                <p className="descAuto"> Estándar</p>
-                <img src="assets/nuevoicono.png" className="imgAuto" alt="uso"/>
-                <p className="descAuto"> Nuevo</p>
+                <h2>CHEVROLET</h2>
+                <h2>AVEO LS 2022</h2>
             </div>
             <div className="plazo">
-                <h3>Plazo</h3>
-                <p>36 Meses</p>
-                <img src="assets/march2.png" className="imgAutoGrande" alt="March" />  
-                <div className="vehicle-card">
-                <h4>Pago fijo semanal</h4>
-                    <div className="v-drive-offer">
-                        <div className="top">
-                            <p className="precio">$3,300</p>
-                        </div>
-                        <div className="bottomAutos">
-                            <p className="iva">Incluye IVA</p>
-                        </div>
-                    </div>
-                </div>
+                <img src="assets/aveo2.png" className="imgAutoGrande" alt="March" />  
             </div>
                          
             <div className="deposito">
-                <h3>Deposito en garantia</h3>
-                <h3>$17,000</h3>
-                <h6>*Consulta términos y condiciones</h6>
+                <h3>$3,200 / Semanal</h3>
+                <h4><img src="assets/calendarioicon2.png" alt="calendario" className="iconCalendario"/> 36 Meses con opción a compra</h4>
                 <a href="https://google.com" className="botonInfo">Más Información</a>
             </div>
         </TabPanel>
         <TabPanel value={value} index={2}>
         <div className="unidad">
-                <h5>Chevrolet</h5>
+                <h2>Chevrolet</h2>
                 <h2>Aveo</h2>    
-                <img src="assets/yearCalendar.png" className="imgAuto" alt="calendario"/>
-                <p className="descAuto"> 2022</p>
-                <img src="assets/estandaricono.png" className="imgAuto" alt="transmición"/>
-                <p className="descAuto"> Estándar</p>
-                <img src="assets/nuevoicono.png" className="imgAuto" alt="uso"/>
-                <p className="descAuto"> Nuevo</p>
             </div>
             <div className="plazo">
-                <h3>Plazo</h3>
-                <p>36 Meses</p>
-                <img src="assets/aveo2.png" className="imgAutoGrande" alt="Aveo" /> 
-                <div className="vehicle-card">
-                <h4>Pago fijo semanal</h4>
-                    <div className="v-drive-offer">
-                        <div className="top">
-                            <p className="precio">$3,300</p>
-                        </div>
-                        <div className="bottomAutos">
-                            <p className="iva">Incluye IVA</p>
-                        </div>
-                    </div>
-                </div>
+                <img src="assets/march2.png" className="imgAutoGrande" alt="Aveo" /> 
             </div>
                         
             <div className="deposito">
-                <h3>Deposito en garantia</h3>
-                <h3>$17,000</h3>
-                <h6>*Consulta términos y condiciones</h6>
+                <h3>$3,200 / Semanal</h3>
+                
+                <h4><img src="assets/calendarioicon2.png" alt="calendario" className="iconCalendario"/> 36 Meses con opción a compra</h4>
                 <a href="https://google.com" className="botonInfo">Más Información</a>
             </div>
             </TabPanel>
             <TabPanel value={value} index={3}>
-        <div className="unidad">
-                <h5>Dodge</h5>
+            <div className="unidad">
+                <h2>DODGE</h2>
                 <h2>Attitude</h2>    
-                <img src="assets/yearCalendar.png" className="imgAuto" alt="calendario"/>
-                <p className="descAuto"> 2022</p>
-                <img src="assets/estandaricono.png" className="imgAuto" alt="transmición"/>
-                <p className="descAuto"> Estándar</p>
-                <img src="assets/nuevoicono.png" className="imgAuto" alt="uso"/>
-                <p className="descAuto"> Nuevo</p>
             </div>
             <div className="plazo">
-                <h3>Plazo</h3>
-                <p>36 Meses</p>
                 <img src="assets/attitude2.png" className="imgAutoGrande" alt="Aveo" /> 
-                <div className="vehicle-card">
-                
-                <h4>Pago fijo semanal</h4>
-                    <div className="v-drive-offer">
-                        <div className="top">
-                            <p className="precio">$3,300</p>
-                        </div>
-                        <div className="bottomAutos">
-                            <p className="iva">Incluye IVA</p>
-                        </div>
-                    </div>
-                </div>
             </div>
                             
             <div className="deposito">
-                <h3>Deposito en garantia</h3>
-                <h3>$17,000</h3>
-                <h6>*Consulta términos y condiciones</h6>
+                <h3>$3,200 / Semanal</h3>
+                <h4><img src="assets/calendarioicon2.png" alt="calendario" className="iconCalendario"/> 36 Meses con opción a compra</h4>
                 <a href="https://google.com" className="botonInfo">Más Información</a>
             </div>
         </TabPanel>
+        <TabPanel value={value} index={4}>
+        <div className="unidad">
+                <h2>Renault</h2>
+                <h2>Kwid</h2>    
+            </div>
+            <div className="plazo">
+                <img src="assets/kwid.png" className="imgAutoGrande" alt="Aveo" /> 
+            </div>
+                        
+            <div className="deposito">
+                <h3>$3,250 / Semanal aprox</h3>
+                
+                <h4><img src="assets/calendarioicon2.png" alt="calendario" className="iconCalendario"/> 36 Meses con opción a compra</h4>
+                <a href="https://google.com" className="botonInfo">Más Información</a>
+            </div>
+            </TabPanel>
         </Box>
     </div>
   );

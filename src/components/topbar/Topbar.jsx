@@ -1,7 +1,6 @@
 import "./topbar.scss"
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import React from 'react';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 
 export default function Topbar({menuOpen, setMenuOpen}) {
@@ -13,15 +12,24 @@ export default function Topbar({menuOpen, setMenuOpen}) {
                     <img src="assets/bestalogo.png" alt="" />
                 </a>
                 <div className="itemContainer">
-                <a href="https://wa.link/rl4eij"><WhatsAppIcon className="icon1" /></a>
+                    <a href="#portafolio">Modelos</a>
                 </div>
-                <div className="itemContainer"> 
-                <a href="tel:8125120146"><LocalPhoneIcon className="icon2" /></a>
-                    
+                <div className="itemContainer">
+                    ¿Cómo funciona?
+                </div>
+                <div className="itemContainer">
+                    Beneficios
+                </div>
+                <div className="itemContainer">
+                    Contacto
+                </div>
+                <div className="itemContainer">
+                    Blog
                 </div>
             </div>
             
             <div className="right">
+                <AccountCircleIcon className="iconUser"></AccountCircleIcon>
                 <div className="hamburguer" onClick={()=>setMenuOpen(!menuOpen)}>
                     <span className="line1"></span>
                     <span className="line2"></span>

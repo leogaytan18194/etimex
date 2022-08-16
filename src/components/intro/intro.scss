@@ -17,7 +17,6 @@
             width: 650px;
             height: 650px;
             background-color: white;
-            border-radius: 50%;
             display: flex;
             align-items: flex-end;
             justify-content: center;
@@ -32,6 +31,7 @@
 
                 @include mobile {
                     height: 50%;
+                    margin-top: 40px;
                 }
             }
         }
@@ -40,6 +40,11 @@
     .right{
         flex: 0.5;
         position: relative;
+
+        @include mobile{
+            flex: 0.3;
+            position: relative;
+        }
 
         .wrapper{
             width: 100%;
@@ -74,29 +79,38 @@
 
 
             h1{
-                font-size: 60px;
-                margin: 10px 0;
+                font-size: 90px;
+                font-weight: 800;
+                color: #483E6B;
+                line-height: 1;
+                overflow: hidden;
 
                 @include mobile {
-                    font-size: 40px;
+                    font-size: 25px;
+                    font-weight: 800;
                 }
             }
             h2{
                 font-size: 35px;
                 @include mobile {
                     margin: 10px;
-                    font-size: 25px;
+                    font-size: 20px;
                 }
             }
             h3{
-                font-size: 30px;
+                font-size: 20px;
+                color: #808080;
                 span{
                     font-size: inherit;
-                    color: #6FC7DA;
+                    color: #808080;
                 }
 
                 @include mobile {
-                    font-size: 20px;
+                    font-size: 15px;
+                }
+
+                .palomita{
+                    height: 20px;
                 }
             }
         }
