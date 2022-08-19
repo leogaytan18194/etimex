@@ -39,7 +39,7 @@ function TabPanel(props) {
                     border: 0,
                     borderRadius: '5%',
                     boxShadow: 3,
-                    width: 350
+                    width: 360
                      }}>
           <Typography>{children}</Typography>
         </Box>
