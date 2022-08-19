@@ -1,25 +1,17 @@
-import * as React from "react";
-import PropTypes from "prop-types";
+import * as React from 'react';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
+import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Typography from "@mui/material/Typography";
-import { createTheme, ThemeProvider } from '@mui/material/styles';
 import "./autos.scss";
 
-const theme = createTheme({
-    breakpoints: {
-      values: {
-        xs: 0, // phone
-        sm: 600, // tablets
-        md: 900, // small laptop
-        lg: 1200, // desktop
-        xl: 1536 // large screens
-      }
-    }
-  });
+interface TabPanelProps {
+  children?: React.ReactNode;
+  index: number;
+  value: number;
+}
 
-function TabPanel(props) {
+function TabPanel(props: TabPanelProps) {
   const { children, value, index, ...other } = props;
 
   return (
@@ -31,74 +23,57 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-    <ThemeProvider theme={theme}>
-        <Box sx={{  p: 1,
-                    m: 2,
-                    justifyContent: "center", 
-                    alignItems:"center",
-                    border: 0,
-                    borderRadius: '5%',
-                    boxShadow: 3,
-                    width: 360
-                     }}>
+        <Box sx={{ p: 3 }}>
           <Typography>{children}</Typography>
         </Box>
-    </ThemeProvider>
       )}
     </div>
   );
 }
 
-TabPanel.propTypes = {
-  children: PropTypes.node,
-  index: PropTypes.number.isRequired,
-  value: PropTypes.number.isRequired
-};
-
-function a11yProps(index) {
+function a11yProps(index: number) {
   return {
     id: `vertical-tab-${index}`,
-    "aria-controls": `vertical-tabpanel-${index}`
+    'aria-controls': `vertical-tabpanel-${index}`,
   };
 }
 
-export default function ScrollableTabsButtonForce() {
+export default function VerticalTabs() {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
-  
 
   return (
-        <div className="autos" id="autos">
-          <h1>Modelos disponibles</h1>
-          <Box sx={{ maxWidth: { xs: 500, sm: 480 }, bgcolor: 'background.paper' }}>
-          <Tabs 
-              value={value}
-              onChange={handleChange}
-              variant="scrollable"
-              scrollButtons='on' >
-          >
-              
-              <Tab  style={{ minWidth: 30 }} label="V-Drive" {...a11yProps(0)} />
-              <Tab  style={{ minWidth: 30 }} label="Aveo" {...a11yProps(1)} />
-              <Tab  style={{ minWidth: 30 }} label="March" {...a11yProps(2)} />
-              <Tab  style={{ minWidth: 30 }} label="Attitude" {...a11yProps(3)} />
-              <Tab  style={{ minWidth: 30 }} label="Kwid" {...a11yProps(4)} />
-              
-          </Tabs>
-          </Box>
-        <Box>
+    <div className="autos">
+      <h1>Modelos disponibles</h1>
+      <Box
+        sx={{ bgcolor: 'background.paper', display: 'flex' }}
+      >
+        <Tabs
+          orientation="vertical"
+          variant="scrollable"
+          value={value}
+          onChange={handleChange}
+          aria-label="Vertical tabs example"
+          sx={{ borderRight: 1, borderColor: 'divider' }}
+        >
+          <Tab label="VDRIVE" {...a11yProps(0)} />
+          <Tab label="AVEO" {...a11yProps(1)} />
+          <Tab label="MARCH" {...a11yProps(2)} />
+          <Tab label="ATTITUD" {...a11yProps(3)} />
+          <Tab label="KWID" {...a11yProps(4)} />
+        </Tabs>
         <TabPanel value={value} index={0}>
             <div className="unidad">
-                <h2>Nissan</h2>
+                <h2>NISSAN</h2>
                 <h2>V-DRIVE</h2>
             </div>
             <div className="plazo">
-                <img src="assets/v-drive4.png" className="imgAutoGrande"alt="vdrive besta" /> 
+                <img src="assets/vdrive.png" className="imgAutoGrande" alt="March" />  
             </div>
-                          
+                         
             <div className="deposito">
                 <h3>$3,200 / Semanal</h3>
                 <h4><img src="assets/calendarioicon2.png" alt="calendario" className="iconCalendario"/> 36 Meses con opción a compra</h4>
@@ -106,9 +81,9 @@ export default function ScrollableTabsButtonForce() {
             </div>
         </TabPanel>
         <TabPanel value={value} index={1}>
-        <div className="unidad">
+            <div className="unidad">
                 <h2>CHEVROLET</h2>
-                <h2>AVEO LS 2022</h2>
+                <h2>AVEO</h2>
             </div>
             <div className="plazo">
                 <img src="assets/aveo2.png" className="imgAutoGrande" alt="March" />  
@@ -121,53 +96,51 @@ export default function ScrollableTabsButtonForce() {
             </div>
         </TabPanel>
         <TabPanel value={value} index={2}>
-        <div className="unidad">
-                <h2>Chevrolet</h2>
-                <h2>Aveo</h2>    
-            </div>
-            <div className="plazo">
-                <img src="assets/march2.png" className="imgAutoGrande" alt="Aveo" /> 
-            </div>
-                        
-            <div className="deposito">
-                <h3>$3,200 / Semanal</h3>
-                
-                <h4><img src="assets/calendarioicon2.png" alt="calendario" className="iconCalendario"/> 36 Meses con opción a compra</h4>
-                <a href="https://google.com" className="botonInfo">Más Información</a>
-            </div>
-            </TabPanel>
-            <TabPanel value={value} index={3}>
             <div className="unidad">
-                <h2>DODGE</h2>
-                <h2>Attitude</h2>    
+                <h2>NISSAN</h2>
+                <h2>MARCH</h2>
             </div>
             <div className="plazo">
-                <img src="assets/attitude2.png" className="imgAutoGrande" alt="Aveo" /> 
+                <img src="assets/march2.png" className="imgAutoGrande" alt="March" />  
             </div>
-                            
+                         
             <div className="deposito">
                 <h3>$3,200 / Semanal</h3>
                 <h4><img src="assets/calendarioicon2.png" alt="calendario" className="iconCalendario"/> 36 Meses con opción a compra</h4>
                 <a href="https://google.com" className="botonInfo">Más Información</a>
             </div>
         </TabPanel>
-        <TabPanel value={value} index={4}>
-        <div className="unidad">
-                <h2>Renault</h2>
-                <h2>Kwid</h2>    
+        <TabPanel value={value} index={3}>
+            <div className="unidad">
+                <h2>DODGE</h2>
+                <h2>ATTITUD</h2>
             </div>
             <div className="plazo">
-                <img src="assets/kwid.png" className="imgAutoGrande" alt="Aveo" /> 
+                <img src="assets/attitude.png" className="imgAutoGrande" alt="March" />  
             </div>
-                        
+                         
             <div className="deposito">
                 <h3>$3,250 / Semanal aprox</h3>
-                
                 <h4><img src="assets/calendarioicon2.png" alt="calendario" className="iconCalendario"/> 36 Meses con opción a compra</h4>
                 <a href="https://google.com" className="botonInfo">Más Información</a>
             </div>
-            </TabPanel>
-        </Box>
+        </TabPanel>
+        <TabPanel value={value} index={4}>
+            <div className="unidad">
+                <h2>RENAULT</h2>
+                <h2>KWID</h2>
+            </div>
+            <div className="plazo">
+                <img src="assets/kwid.png" className="imgAutoGrande" alt="March" />  
+            </div>
+                         
+            <div className="deposito">
+                <h3>$3,250 / Semanal aprox</h3>
+                <h4><img src="assets/calendarioicon2.png" alt="calendario" className="iconCalendario"/> 36 Meses con opción a compra</h4>
+                <a href="https://google.com" className="botonInfo">Más Información</a>
+            </div>
+        </TabPanel>
+      </Box>
     </div>
   );
 }
