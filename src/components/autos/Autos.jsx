@@ -23,7 +23,13 @@ function TabPanel(props: TabPanelProps) {
       {...other}
     >
       {value === index && (
-        <Box sx={{ p: 3 }}>
+        <Box sx={{ p: 1,
+          m: 1,
+          justifyContent: "center", 
+          alignItems:"center",
+          border: 0,
+          borderRadius: '5%',
+          boxShadow: 3 }}>
           <Typography>{children}</Typography>
         </Box>
       )}
