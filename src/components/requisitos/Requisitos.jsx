@@ -5,7 +5,7 @@ function Requisitos() {
 
   return (
         <div className="requisitos" id="requisitos">
-        <h1>¿Que necesitas para obtener un auto con BESTA?</h1>
+        <h1>Únete a nuestra comunidad BESTA</h1>
         <div className="container">
             <div className="card featured">
                 <div className="top">
