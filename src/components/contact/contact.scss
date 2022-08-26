@@ -107,6 +107,7 @@
     border-bottom: 1px solid black;
     margin: 10px 0px;
     font-size: 14px;
+    border-radius: 10px;
 
     @include mobile{
       padding-left: 0px;
@@ -122,6 +123,7 @@
     margin: 10px 0px;
     font-size: 14px;
     padding-left: 10px;
+    border-radius: 10px;
   }
   
   button {
