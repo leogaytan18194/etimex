@@ -18,7 +18,7 @@ function Requisitos() {
                 </div>
                 <div className="bottom">
                 
-                <p>Reúne los requisitos: INE Comprobante de domicilio, RFC (Constancia de situación fiscal) CURP. Licencia tipo el Captura de pantalla de App 400 viajes, INE de un aval (puede ser amigo, familiar o conocido).</p>
+                <p>INE, Comprobante de domicilio, RFC (Constancia de situación fiscal), CURP, Licencia tipo C, Captura de pantalla de App 400 viajes, INE de un aval (puede ser amigo, familiar o conocido).</p>
                 </div>
             </div>
             <div className="card featured">
