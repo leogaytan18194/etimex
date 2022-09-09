@@ -1,14 +1,12 @@
+import Home from "./components/home/Home";
 import Topbar from "./components/topbar/Topbar";
-import Beneficios from "./components/beneficios/Beneficios";
-import Intro from "./components/intro/Intro";
-import Autos from "./components/autos/Autos";
-import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
-import Requisitos from "./components/requisitos/Requisitos";
+import Contacto from "./components/contact/Contact";
+import Privacidad from "./components/privacidad/Privacidad";
 import React from 'react';
-import "./app.scss";
+import { BrowserRouter, Route , Routes } from "react-router-dom";
 import { useState } from "react";
-
+import "./app.scss";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState (false)
@@ -18,11 +16,13 @@ function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
         <img class="button_float" src="assets/bestapart.png" alt="" />
       <div className="sections">
-        <Intro/>
-        <Autos/>
-        <Requisitos/>
-        <Beneficios/>
-        <Contact/>
+        <BrowserRouter>
+          <Routes>
+           <Route path="/" element={ <Home />} />
+           <Route path="/contacto" element={ <Contacto />} />
+           <Route path="/privacidad" element={ <Privacidad />} />
+          </Routes>
+        </BrowserRouter>
       </div>
     </div>
   );
