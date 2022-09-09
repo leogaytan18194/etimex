@@ -1,0 +1,27 @@
+@import "../../global.scss";
+
+.notfoundpage {
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+
+  h1 {
+    color: #483e6b;
+    margin-top: 40px;
+    font-size: 40px;
+    text-align: center;
+    overflow: hidden;
+    padding: 10px;
+
+    @include mobile{
+      font-size: 18px;
+    }
+    
+  }
+
+  .container{
+    align-items: center;
+    justify-content: center;
+    padding: 50px 50px;
+  }
+}

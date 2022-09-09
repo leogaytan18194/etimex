@@ -12,7 +12,7 @@ export default function Topbar({menuOpen, setMenuOpen}) {
                     <img src="assets/bestalogo.png" alt="" />
                 </a>
                 <div className="itemContainer">
-                    <a href="#autos">Modelos</a>
+                    <a href="#portafolio">Modelos</a>
                 </div>
                 <div className="itemContainer">
                     ¿Cómo funciona?
