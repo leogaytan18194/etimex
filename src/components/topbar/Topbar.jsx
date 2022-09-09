@@ -12,16 +12,16 @@ export default function Topbar({menuOpen, setMenuOpen}) {
                     <img src="assets/bestalogo.png" alt="" />
                 </a>
                 <div className="itemContainer">
-                    <a href="#portafolio">Modelos</a>
+                    <a href="/#autos">Modelos</a>
                 </div>
                 <div className="itemContainer">
-                    ¿Cómo funciona?
+                    <a href="/#comunidad">¿Cómo funciona?</a>
                 </div>
                 <div className="itemContainer">
-                    Beneficios
+                    <a href="/#beneficios">Beneficios</a>
                 </div>
                 <div className="itemContainer">
-                    Contacto
+                    <a href="/#contacto">Contacto</a>
                 </div>
                 <div className="itemContainer">
                     Blog

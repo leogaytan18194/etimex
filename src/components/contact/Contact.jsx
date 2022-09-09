@@ -29,7 +29,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="c">
+    <div className="c" id="contacto">
       <h1 className="c-title">¡SÁLTATE LAS COMPLICACIONES!</h1>
       <div className="c-bg"></div>
       <div className="c-wrapper">

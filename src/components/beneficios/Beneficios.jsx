@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Beneficios = () => {
 
   return ( 
-    <div className="c">
+    <div className="c" id="beneficios">
       <h1 className="c-title">BESTA ADAPTADO A TU VIDA </h1>
       <div className="c-bg"></div>
       <div className="c-wrapper">

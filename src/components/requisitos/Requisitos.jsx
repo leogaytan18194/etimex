@@ -4,7 +4,7 @@ import './requisitos.scss';
 function Requisitos() {
 
   return (
-        <div className="requisitos" id="requisitos">
+        <div className="requisitos" id="comunidad">
         <h1>Únete a nuestra comunidad BESTA</h1>
         <div className="container">
             <div className="card featured">
