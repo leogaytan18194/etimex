@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 
 const Beneficios = () => {
 
-  return (
+  return ( 
     <div className="c">
-      <h1 className="c-title">BESTA ADAPTADO A TU VIDA</h1>
+      <h1 className="c-title">BESTA ADAPTADO A TU VIDA </h1>
       <div className="c-bg"></div>
       <div className="c-wrapper">
         <div className="c-izquierdo">
