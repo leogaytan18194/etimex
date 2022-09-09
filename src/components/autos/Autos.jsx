@@ -3,6 +3,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import { Link } from 'react-router-dom';
 import "./autos.scss";
 
 interface TabPanelProps {
@@ -52,7 +53,7 @@ export default function VerticalTabs() {
   };
 
   return (
-    <div className="autos">
+    <div className="autos" id="autos">
       <h1>Modelos disponibles</h1>
       <Box
         sx={{ bgcolor: 'background.paper', display: 'flex' }}
@@ -83,7 +84,7 @@ export default function VerticalTabs() {
             <div className="deposito">
                 <h3>$3,200 / Semanal</h3>
                 <h4><img src="assets/calendarioicon2.png" alt="calendario" className="iconCalendario"/> 36 Meses con opción a compra</h4>
-                <a href="https://google.com" className="botonInfo">Más Información</a>
+                <Link className='enlace' to={'/formulario/V-Drive'}>Más Información</Link>
             </div>
         </TabPanel>
         <TabPanel value={value} index={1}>
@@ -98,7 +99,7 @@ export default function VerticalTabs() {
             <div className="deposito">
                 <h3>$3,200 / Semanal</h3>
                 <h4><img src="assets/calendarioicon2.png" alt="calendario" className="iconCalendario"/> 36 Meses con opción a compra</h4>
-                <a href="https://google.com" className="botonInfo">Más Información</a>
+                <Link className='enlace' to={'/formulario/Aveo'}>Más Información</Link>
             </div>
         </TabPanel>
         <TabPanel value={value} index={2}>
@@ -113,7 +114,7 @@ export default function VerticalTabs() {
             <div className="deposito">
                 <h3>$3,200 / Semanal</h3>
                 <h4><img src="assets/calendarioicon2.png" alt="calendario" className="iconCalendario"/> 36 Meses con opción a compra</h4>
-                <a href="https://google.com" className="botonInfo">Más Información</a>
+                <Link className='enlace' to={'/formulario/March'}>Más Información</Link>
             </div>
         </TabPanel>
         <TabPanel value={value} index={3}>
@@ -128,7 +129,7 @@ export default function VerticalTabs() {
             <div className="deposito">
                 <h3>$3,250 / Semanal aprox</h3>
                 <h4><img src="assets/calendarioicon2.png" alt="calendario" className="iconCalendario"/> 36 Meses con opción a compra</h4>
-                <a href="https://google.com" className="botonInfo">Más Información</a>
+                <Link className='enlace' to={'/formulario/Attitud'}>Más Información</Link>
             </div>
         </TabPanel>
         <TabPanel value={value} index={4}>
@@ -143,7 +144,7 @@ export default function VerticalTabs() {
             <div className="deposito">
                 <h3>$3,250 / Semanal aprox</h3>
                 <h4><img src="assets/calendarioicon2.png" alt="calendario" className="iconCalendario"/> 36 Meses con opción a compra</h4>
-                <a href="https://google.com" className="botonInfo">Más Información</a>
+                <Link className='enlace' to={'/formulario/Kwid'}>Más Información</Link>
             </div>
         </TabPanel>
       </Box>
