@@ -1,5 +1,6 @@
 import "./beneficios.scss";
 import * as React from 'react';
+import { Link } from "react-router-dom";
 
 
 
@@ -14,7 +15,7 @@ const Beneficios = () => {
           <div className="c-info-item">
           <p>Logramos ser tu aliado más importante gracias a nuestros beneficios y la rápida respuesta para maximizar tus ganancias.</p>
           </div>
-          <button>Preguntas frecuentes</button>
+          <Link to="/preguntas-frecuentes" className="enlace">Preguntas frecuentes</Link >
         </div>
         <div className="c-derecho">
           <p className="c-desc">
