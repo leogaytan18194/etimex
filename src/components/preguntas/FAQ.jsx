@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
-function FAQ({faq, index, toggleFAQ}) {
-    return (
-        <div
+function FAQ ({faq, index, toggleFAQ}) {
+	return (
+		<div
 			className={"faq " + (faq.open ? 'open' : '')}
 			key={index}
 			onClick={() => toggleFAQ(index)}
@@ -14,8 +14,7 @@ function FAQ({faq, index, toggleFAQ}) {
 				{faq.answer}
 			</div>
 		</div>
-
-    )
+	)
 }
 
 export default FAQ
