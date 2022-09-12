@@ -1,6 +1,7 @@
 import "./topbar.scss"
 import React from 'react';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import logo from './bestalogo.png';
 
 
 export default function Topbar({menuOpen, setMenuOpen}) {
@@ -9,7 +10,7 @@ export default function Topbar({menuOpen, setMenuOpen}) {
         <div className="wrapper">
             <div className="left">
                 <a href="#intro" className="logo">
-                    <img src="assets/bestalogo.png" alt="" />
+                    <img src={logo} alt="" />
                 </a>
                 <div className="itemContainer">
                     <a href="/#autos">Modelos</a>
