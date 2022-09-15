@@ -1,20 +1,26 @@
 import "./formulario.scss";
 import * as React from 'react';
-import {  useRef , useState } from "react";
+import {  useRef , useState, useEffect } from "react";
 import emailjs from '@emailjs/browser';
 import { useParams } from 'react-router-dom'
+import axios from "axios";
 
 
-const Formulario = () => {
+const Formulario = (props) => {
 
-    const params = useParams()
+
+
+    const { id } = useParams()
+    const [ carro, setCarro ] = useState({})
+
+  useEffect(() => {
+    axios.get(`https://my-json-server.typicode.com/besta-mx/autosBesta/autos/${id}`).then((response) => {
+      setCarro(response.data);
+    });
+  }, [id]);
 
   const form = useRef();
   const [done, setDone] = useState(false);
-
- 
-
-
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -36,9 +42,10 @@ const Formulario = () => {
       <div className="c-bg"></div>
       <div className="c-wrapper">
         <div className="c-left">
-        <h1 className="c-title"><strong>{params.auto}</strong></h1>
+        <h1 className="o-title"><strong>{carro.modelo}</strong></h1>
+        <h2 className="o-title2">{carro.marca}</h2>
           <div className="c-info-item">
-            <img src="assets/solicitud-enviada.png" alt="" className="c-imagen"/>
+            <img src={carro.imagen} alt="" className="c-imagen"/>
           </div>
         </div>
         <div className="c-right">

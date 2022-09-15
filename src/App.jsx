@@ -24,7 +24,7 @@ function App() {
           <Routes>
            <Route path="/" element={ <Home />} />
            <Route path="/contacto" element={ <Contacto />} />
-           <Route path="/formulario/:auto" element={ <Formulario />} />
+           <Route path="/formulario/:id" element={ <Formulario />} />
            <Route path="/privacidad" element={ <Privacidad />} />
            <Route path="/preguntas-frecuentes" element={ <Preguntas />} />
            <Route path="*" element={ <NotFoundPage />} />

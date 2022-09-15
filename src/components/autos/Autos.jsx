@@ -84,7 +84,7 @@ export default function VerticalTabs() {
             <div className="deposito">
                 <h3>$3,200 / Semanal</h3>
                 <h4><img src="assets/calendarioicon2.png" alt="calendario" className="iconCalendario"/> 36 Meses con opción a compra</h4>
-                <Link className='enlace' to={'/formulario/V-Drive'}>Más Información</Link>
+                <Link className='enlace' to={'/formulario/1'}>Más Información</Link>
             </div>
         </TabPanel>
         <TabPanel value={value} index={1}>
@@ -99,7 +99,7 @@ export default function VerticalTabs() {
             <div className="deposito">
                 <h3>$3,200 / Semanal</h3>
                 <h4><img src="assets/calendarioicon2.png" alt="calendario" className="iconCalendario"/> 36 Meses con opción a compra</h4>
-                <Link className='enlace' to={'/formulario/Aveo'}>Más Información</Link>
+                <Link className='enlace' to={'/formulario/2'}>Más Información</Link>
             </div>
         </TabPanel>
         <TabPanel value={value} index={2}>
@@ -114,7 +114,7 @@ export default function VerticalTabs() {
             <div className="deposito">
                 <h3>$3,200 / Semanal</h3>
                 <h4><img src="assets/calendarioicon2.png" alt="calendario" className="iconCalendario"/> 36 Meses con opción a compra</h4>
-                <Link className='enlace' to={'/formulario/March'}>Más Información</Link>
+                <Link className='enlace' to={'/formulario/3'}>Más Información</Link>
             </div>
         </TabPanel>
         <TabPanel value={value} index={3}>
@@ -129,7 +129,7 @@ export default function VerticalTabs() {
             <div className="deposito">
                 <h3>$3,250 / Semanal aprox</h3>
                 <h4><img src="assets/calendarioicon2.png" alt="calendario" className="iconCalendario"/> 36 Meses con opción a compra</h4>
-                <Link className='enlace' to={'/formulario/Attitud'}>Más Información</Link>
+                <Link className='enlace' to={'/formulario/4'}>Más Información</Link>
             </div>
         </TabPanel>
         <TabPanel value={value} index={4}>
@@ -144,7 +144,7 @@ export default function VerticalTabs() {
             <div className="deposito">
                 <h3>$3,250 / Semanal aprox</h3>
                 <h4><img src="assets/calendarioicon2.png" alt="calendario" className="iconCalendario"/> 36 Meses con opción a compra</h4>
-                <Link className='enlace' to={'/formulario/Kwid'}>Más Información</Link>
+                <Link className='enlace' to={'/formulario/5'}>Más Información</Link>
             </div>
         </TabPanel>
       </Box>

@@ -66,20 +66,14 @@
       padding: 20px;
     }
     
-    h3{
-      font-size: 30px;
-      align-items: center;
-      justify-content: center;
-    }
 
   }
   
-  .c-title {
+  .o-title {
     font-size: 40px;
+    font-weight: 900;
     overflow: hidden;
-    padding: 10px;
     color: $mainColor;
-    align-items: center;
 
 
     @include mobile {
@@ -87,7 +81,10 @@
     }
   }
   
-  
+  .o-title2{
+    color: $mainColor;
+    font-weight: 100;
+  }
   
   
   
