@@ -1,0 +1,76 @@
+@import "../../global.scss";
+  .autos2 {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  .slick-slide > div {
+    margin: 0 10px;
+  }
+  .slick-list {
+    margin: 0 -10px;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .card-top h2 {
+    font-size: 2rem;
+    color: $mainColor;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .card-top h3 {
+    font-size: 0.9rem;
+    color: $mainColor;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  
+  .card-top > img {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .link{
+    text-decoration: none;
+  }
+  .card-bottom {
+    margin: 10px 20px;
+
+    p{
+        color: #6FC7DA;
+        text-align: right;
+    }
+    
+    .texto{
+      color: green;
+      text-align: left;
+      font-size: 11px;
+    }
+
+    .calendario{
+      width: 24%;
+    }
+  }

@@ -29,7 +29,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="c" id="contacto">
+    <div className="c-contact" id="contacto">
       <h1 className="c-title">¡SÁLTATE LAS COMPLICACIONES!</h1>
       <div className="c-bg"></div>
       <div className="c-wrapper">
@@ -39,7 +39,7 @@ const Contact = () => {
             <img src="assets/solicitud-enviada.png" alt="" className="c-imagen"/>
           </div>
         </div>
-        <div className="c-right">
+        <div className="c-right-contact">
           <p className="c-desc">
             <h3>¡Déjanos tus datos!</h3> 
             <p>Nosotros te contactamos</p>

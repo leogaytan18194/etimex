@@ -1,6 +1,6 @@
 @import "../../global.scss";
 
-.c {
+.c-contact {
     position: relative;
     overflow: hidden;
 
@@ -50,7 +50,7 @@
     
   }
   
-  .c-right {
+  .c-right-contact {
     flex: 1;
     display: flex;
     border-radius: 10px;
@@ -108,6 +108,7 @@
     margin: 10px 0px;
     font-size: 14px;
     border-radius: 10px;
+    padding-left: 10px;
 
     @include mobile{
       padding-left: 0px;
@@ -115,7 +116,7 @@
   }
 
   label{
-    margin-top: 0px;
+    margin-top:  0px;
   }
   
   textarea {

@@ -9,24 +9,38 @@ function Works() {
   const data = [
     {
       id: "1",
-      icon: "./assets/mobile.png",
-      title: "Tu mejor aliado",
-      desc: "Gas GNV incluido",
-      img: "./assets/aliado.png"
+      modelo: "V-DRIVE",
+      marca: "Nissan",
+      img: "./assets/vdrive2.png",
+      texto: "Semanal $3,200 / aprox"
     },
     {
       id: "2",
-      icon: "./assets/globe.png",
-      title: "Esto es BESTA",
-      desc: "Ofrecemos el mejor financiamiento",
-      img: "./assets/esbesta.png"
+      modelo: "MARCH",
+      marca: "Nissan",
+      img: "./assets/march.png",
+      texto: "Semanal $3,200 / aprox"
     },
     {
       id: "3",
-      icon: "./assets/writing.png",
-      title: "Adaptado a tu vida",
-      desc: "Sin revisar buro de crédito",
-      img: "./assets/adoptado.png"
+      modelo: "ATTITUD",
+      marca: "DODGE",
+      img: "./assets/attitude2.png",
+      texto: "Semanal $3,200 / aprox"
+    },
+    {
+      id: "4",
+      modelo: "KWID",
+      marca: "RENAULT",
+      img: "./assets/kwid.png",
+      texto: "Semanal $3,200 / aprox"
+    },
+    {
+      id: "5",
+      modelo: "AVEO",
+      marca: "CHEVROLET",
+      img: "./assets/aveo.png",
+      texto: "Semanal $3,200 / aprox"
     },
   ];
 
@@ -38,18 +52,19 @@ function Works() {
   
   return (
     <div className="works" id="works">
-      <div className="slider" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
+      <div className="slider" style={{ transform: `translateX(-${currentSlide * 40}vw)` }}>
         { data.map(d=> (
         <div className="container">
           <div className="item">
             <div className="left">
               <div className="leftContainer">
-                <h2>{d.title}</h2>
-                <p>{d.desc}</p>
+                <h2>{d.modelo}</h2>
+                <h3>{d.marca}</h3>
+                <p>{d.texto}</p>
               </div>
             </div>
             <div className="right">
-              <img src={d.img} alt="" />
+              <img src={d.img} alt="" className="image-carro"/>
             </div>
           </div>
           
