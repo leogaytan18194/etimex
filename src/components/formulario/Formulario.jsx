@@ -45,12 +45,13 @@ const Formulario = (props) => {
         <h1 className="o-title"><strong>{carro.modelo}</strong></h1>
         <h2 className="o-title2">{carro.marca}</h2>
         <div className="detalles-form">
-            <img src={carro.carrito} alt="" className="imgMini"/> <p className="texto-form">Estándar</p>
-            <img src={carro.calendario} alt="" className="imgMini"/> <p className="texto-form">2022</p>
-            <img src={carro.galardon} alt="" className="imgMini"/> <p className="texto-form">Nuevo</p>
+            <img src={carro.carrito} alt="" className="imgMiniAuto"/> <p className="texto-form">&nbsp; Estándar &nbsp;</p> 
+            <img src={carro.calendario} alt="" className="imgMini"/> <p className="texto-form"> &nbsp; 2022 &nbsp;</p>
+            <img src={carro.galardon} alt="" className="imgMini"/> <p className="texto-form"> &nbsp;Nuevo </p>
         </div>
           <div className="c-info-item">
             <img src={carro.imagen} alt="" className="c-imagen"/>
+            <p>36 Meses</p>
           </div>
         </div>
         <div className="c-right">
