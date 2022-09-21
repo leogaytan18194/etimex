@@ -63,8 +63,8 @@
     flex: .6;
 
     @include mobile{
-      padding-left: 10px;
-      padding: 20px;
+      width: 100%;
+      margin-top: 10px;
     }
 
     .formulario{
@@ -123,9 +123,14 @@
       font-size: 35px;
       font-weight: 800;
       color: $mainColor;
+
+      @include mobile{
+        font-size: 20px;
+      }
     }
     
     h3{
+      margin-top: 10px;
       font-weight: 100;
       color: $mainColor;
     }
@@ -134,6 +139,17 @@
   form {
     margin-top: 20px;
     padding-left: 40px;
+    padding-bottom: 10px;
+    
+
+    @include mobile{
+      padding-top: 20px;
+      padding: 10px;
+    }
+  }
+
+  select{
+    height: 20px;
   }
   
   input {
@@ -146,12 +162,16 @@
     border-radius: 10px;
 
     @include mobile{
-      padding-left: 0px;
+      height: 25px;
     }
   }
 
   label{
     margin-top: 0px;
+
+    @include mobile{
+      font-size: 15px;
+    }
   }
   
   textarea {
@@ -208,6 +228,7 @@
 
     button {
       margin-top: 10px;
+      
     }
     
     
