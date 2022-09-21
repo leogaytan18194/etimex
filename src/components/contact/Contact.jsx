@@ -24,8 +24,8 @@ const Contact = () => {
       },
       (error) => {
         console.log(error.text);
-      }
-    );
+      });
+      form.current.reset()
   };
 
   return (
