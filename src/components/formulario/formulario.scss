@@ -30,17 +30,25 @@
     }
 
 
-    .c-info-item {
-      display: flex;
-      align-items: center;
+    .c-info-item-form {
       justify-content: center;
-      margin: 50px 0px;
       font-weight: 300;
-      width: 70%;
+      width: 100%;
+
       
+      .texto-meses{
+        font-size: 25px;
+      }
+
+      .montos{
+        font-size: 28px;
+        color: #6FC7DA;
+      }
     
       .c-imagen {
         height: 400px;
+        float: left;
+        margin-right: 15px;
     
         @include mobile{
             display: none;
@@ -108,10 +116,6 @@
   margin-top: 10px;
   display: flex;
 }
-
-  .texto-form{
-    font-size: 25px;
-  }
 
   
   .c-desc {

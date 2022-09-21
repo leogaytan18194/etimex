@@ -1,8 +1,3 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -72,7 +67,7 @@ header h1 {
 	width: 25px;
 	height: 25px;
 
-	background-image: url('./arrow-down-mint.svg');
+	background-image: url('./flecha.svg');
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;

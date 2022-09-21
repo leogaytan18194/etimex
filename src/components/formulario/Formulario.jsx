@@ -49,9 +49,18 @@ const Formulario = (props) => {
             <img src={carro.calendario} alt="" className="imgMini"/> <p className="texto-form"> &nbsp; 2022 &nbsp;</p>
             <img src={carro.galardon} alt="" className="imgMini"/> <p className="texto-form"> &nbsp;Nuevo </p>
         </div>
-          <div className="c-info-item">
-            <img src={carro.imagen} alt="" className="c-imagen"/>
-            <p>36 Meses</p>
+          <div className="c-info-item-form">
+            <img src={carro.imagen} alt="" className="c-imagen" align="left"/>
+            <img src={carro.calendario} alt="" className="imgMini"/><p className="texto-meses"> &nbsp; <strong> 36 Meses </strong></p>
+            <br/>
+            <p>*Con opción de compra</p>
+            <br />
+            <p className="montos"><strong>  {carro.montoSemanal} /</strong> </p>
+            <br />
+            <p className="montos">Semanal</p>
+            <br />
+            <p className="montos"><strong> $17,000 / </strong></p>
+            <p className="montos">Depósito en Garantía</p>
           </div>
         </div>
         <div className="c-right">
