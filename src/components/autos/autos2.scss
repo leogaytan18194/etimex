@@ -5,6 +5,10 @@
     justify-content: center;
     align-items: center;
 
+    @include mobile{
+      display: none;
+    }
+
   .h1-autos{
     color: #483e6b;
     margin-top: 40px;
