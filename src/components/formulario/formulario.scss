@@ -68,7 +68,7 @@
     }
 
     .formulario{
-      height: 90%;
+      height: 100%;
       display: flex;
       border-radius: 30px;
       flex-direction: column;
@@ -97,9 +97,8 @@
     font-weight: 100;
   }
   
-  .imgMiniAuto{
-    margin-top: 4px;
-    height: 22px;
+  .imgMini2{
+    height: 36px;
   }
 
   .imgMini{
@@ -118,10 +117,18 @@
 }
 
   
-  .c-desc {
-    font-weight: 200;
-    color: $mainColor;
+  .c-desc-form {
     
+    h2{
+      font-size: 35px;
+      font-weight: 800;
+      color: $mainColor;
+    }
+    
+    h3{
+      font-weight: 100;
+      color: $mainColor;
+    }
   }
   
   form {
