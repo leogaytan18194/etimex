@@ -2,17 +2,24 @@
   .autos2 {
     width: 90%;
     margin: 0 auto;
-    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+
+  .h1-autos{
+    color: #483e6b;
+    margin-top: 40px;
+    font-size: 40px;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+  }
+
+}
+  .autos-besta{
+    padding-top: 10%;
   }
   
-  .slick-slide > div {
-    margin: 0 10px;
-  }
-  .slick-list {
-    margin: 0 -10px;
-  }
-  
-  .card {
+  .card-autos {
     background: white;
     border-radius: 8px;
     overflow: hidden;
@@ -28,7 +35,7 @@
   }
   
   .card-top h2 {
-    font-size: 2rem;
+    font-size: 25px;
     color: $mainColor;
     flex-direction: column;
     align-items: center;
@@ -59,7 +66,7 @@
   .card-bottom {
     margin: 10px 20px;
 
-    p{
+    .texto-autos{
         color: #6FC7DA;
         text-align: right;
     }

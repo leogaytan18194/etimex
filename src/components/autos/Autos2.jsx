@@ -9,8 +9,8 @@ import 'swiper/css';
 export default function VerticalTabs() {
 
   return (
-    <div className="autos2" id="autos">
-      <h1>Modelos disponibles</h1>
+    <div className="autos2" id="autos2">
+      <h1 className="h1-autos">Modelos disponibles</h1>
       <div className="autos-besta">
         <Swiper
             spaceBetween={50}
@@ -23,7 +23,7 @@ export default function VerticalTabs() {
           {dataAutos.map((item) => (
             <SwiperSlide>
           <Link to={`formulario/${item.id}`} className="link">
-          <div className="card">
+          <div className="card-autos">
             <div className="card-top">
               <h2>{item.marca}</h2>
               <h3>{item.modelo}</h3>
@@ -31,7 +31,7 @@ export default function VerticalTabs() {
                 src={item.imagen} alt="imagen"/>
             </div>
             <div className="card-bottom">
-              <p><strong>{item.montoSemanal}</strong></p>
+              <p className="texto-autos"><strong>{item.montoSemanal}</strong></p>
               <img src="assets/calendaricon.png" alt="" className="calendario" align="left"/><br></br><p className="texto">{item.texto}</p>
             </div>
           </div>
