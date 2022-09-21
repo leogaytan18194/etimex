@@ -36,8 +36,8 @@ const Formulario = (props) => {
       },
       (error) => {
         console.log(error.text);
-      }
-    );
+      });
+      form.current.reset()
   };
 
   return (
