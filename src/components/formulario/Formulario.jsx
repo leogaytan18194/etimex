@@ -55,6 +55,7 @@ const Formulario = (props) => {
           </div>
         </div>
         <div className="c-right">
+          <div className="formulario">
           <p className="c-desc">
             <h3>¡Déjanos tus datos!</h3> 
             <p>Nosotros te contactamos</p>
@@ -73,6 +74,7 @@ const Formulario = (props) => {
             <button>Enviar</button>
             {done && "Gracias solicitud enviada..."}
           </form>
+          </div>
         </div>
       </div>
     </div>
