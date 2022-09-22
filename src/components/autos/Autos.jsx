@@ -78,7 +78,7 @@ export default function VerticalTabs() {
                 <h2>V-DRIVE</h2>
             </div>
             <div className="plazo">
-                <img src="assets/vdrive.png" className="imgAutoGrande" alt="March" />  
+                <img src="assets/vdrive.png" className="imgAutoGrande" alt="V-Drive" />  
             </div>
                          
             <div className="deposito">
@@ -93,7 +93,7 @@ export default function VerticalTabs() {
                 <h2>AVEO</h2>
             </div>
             <div className="plazo">
-                <img src="assets/aveo2.png" className="imgAutoGrande" alt="March" />  
+                <img src="assets/aveo2.png" className="imgAutoGrande" alt="Aveo" />  
             </div>
                          
             <div className="deposito">
@@ -123,7 +123,7 @@ export default function VerticalTabs() {
                 <h2>ATTITUD</h2>
             </div>
             <div className="plazo">
-                <img src="assets/attitude.png" className="imgAutoGrande" alt="March" />  
+                <img src="assets/attitude.png" className="imgAutoGrande" alt="Attitud" />  
             </div>
                          
             <div className="deposito">
@@ -138,7 +138,7 @@ export default function VerticalTabs() {
                 <h2>KWID</h2>
             </div>
             <div className="plazo">
-                <img src="assets/kwid.png" className="imgAutoGrande" alt="March" />  
+                <img src="assets/kwid.png" className="imgAutoGrande" alt="Kwid" />  
             </div>
                          
             <div className="deposito">

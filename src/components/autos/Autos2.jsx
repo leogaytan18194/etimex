@@ -28,7 +28,7 @@ export default function VerticalTabs() {
               <h2>{item.marca}</h2>
               <h3>{item.modelo}</h3>
               <img
-                src={item.imagen} alt="imagen"/>
+                src={item.imagen} alt="Autos besta"/>
             </div>
             <div className="card-bottom">
               <p className="texto-autos"><strong>{item.montoSemanal}</strong></p>

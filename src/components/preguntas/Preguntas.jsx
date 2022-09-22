@@ -3,6 +3,7 @@ import FAQ from './FAQ';
 import './faq.scss';
 
 function Preguntas () {
+
   const [faqs, setfaqs] = useState([
     {
       question: '¿Qué necesitas para obtener tu auto BESTA?',

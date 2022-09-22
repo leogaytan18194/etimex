@@ -36,7 +36,7 @@ const Contact = () => {
         
         <div className="c-left">
           <div className="c-info-item">
-            <img src="assets/solicitud-enviada.png" alt="" className="c-imagen"/>
+            <img src="assets/solicitud-enviada.png" alt="Contacto besta" className="c-imagen"/>
           </div>
         </div>
         <div className="c-right-contact">
