@@ -1,5 +1,6 @@
 {
   "name": "portafolio",
+  "homepage": "https://besta.mx",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -46,7 +46,7 @@ const Contact = () => {
           </p>
           <form ref={form} onSubmit={handleSubmit}>
             <input  type="text" placeholder="Nombre Completo" name="nombre" required/>
-            <input  type="text" placeholder="Telefono" name="telefono" required/>
+            <input  type="text" placeholder="Teléfono" name="telefono" required/>
             <label htmlFor="">Selecciona una opción: </label> 
             <select name="apps" required>
             <option value="uber">Uber</option>
