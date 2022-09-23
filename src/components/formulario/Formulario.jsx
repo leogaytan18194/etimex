@@ -59,7 +59,6 @@ const Formulario = (props) => {
             <p>*Con opción de compra</p>
             <br />
             <p className="montos"><strong>  {carro.montoSemanal} /</strong> </p>
-            <br />
             <p className="montos">Semanal</p>
             <br />
             <p className="montos"><strong> $17,000 / </strong></p>
