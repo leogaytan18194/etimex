@@ -33,7 +33,7 @@ function Requisitos() {
                 </div>
                 <div className="bottom">
                 
-                <p>Selecciona el auto de tus sueños y completa el formulario o envíalo mediante WhastApp.</p>
+                <p>Selecciona el auto de tus sueños y completa el formulario.</p>
                 </div>
             </div>
             <div className="card featured">
