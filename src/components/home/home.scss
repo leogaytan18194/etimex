@@ -21,3 +21,30 @@
         }
     }
 }
+
+.button_float2 {
+    position: fixed;
+    width: 350px;
+    height: 90;
+    bottom: 5px;
+    right: 5px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+}
+
+
+/* for mobile */
+@media screen and (max-width: 767px) {
+    .whatsapp-icon2 {
+        margin-top: 50px;
+    }
+
+    .button_float2 {
+        width: 200px;
+        height: 90px;
+        bottom: 0px;
+        right: 0px;
+        font-size: 22px;
+    }
+}

@@ -9,7 +9,7 @@ import 'swiper/css';
 export default function VerticalTabs() {
 
   return (
-    <div className="autos2" id="autos2">
+    <div className="modelos-besta" id="modelos-besta">
       <h1 className="h1-autos">Modelos disponibles</h1>
       <div className="autos-besta">
         <Swiper
