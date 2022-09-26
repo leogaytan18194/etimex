@@ -13,16 +13,16 @@ export default function Topbar({menuOpen, setMenuOpen}) {
                     <img src={logo} alt="" />
                 </a>
                 <div className="itemContainer">
-                    <a href="/#/#modelos-besta">Modelos</a>
+                    <a href="/#autos">Modelos</a>
                 </div>
                 <div className="itemContainer">
-                    <a href="/#/#comunidad">¿Cómo funciona?</a>
+                    <a href="/#comunidad">¿Cómo funciona?</a>
                 </div>
                 <div className="itemContainer">
-                    <a href="/#/#beneficios">Beneficios</a>
+                    <a href="/#beneficios">Beneficios</a>
                 </div>
                 <div className="itemContainer">
-                    <a href="/#/#contacto">Contacto</a>
+                    <a href="/#contacto">Contacto</a>
                 </div>
                 <div className="itemContainer">
                     Blog
