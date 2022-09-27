@@ -47,13 +47,25 @@ const Contact = () => {
           <form ref={form} onSubmit={handleSubmit}>
             <input  type="text" placeholder="Nombre Completo" name="nombre" required/>
             <input  type="text" placeholder="Teléfono" name="telefono" required/>
+            <input  type="hidden" placeholder="pagina" name="pagina" value="inicio" required/>
             <label htmlFor="">Selecciona una opción: </label> 
             <select name="apps" required>
             <option value="uber">Uber</option>
             <option value="didi">Didi</option>
             <option value="uber y didi">Uber y Didi</option>
             <option value="otros">Otros</option>
-          </select>
+          </select><br /><br />
+          <label htmlFor="">¿Cuántos viajes llevas realizados?: </label> 
+            <select name="viajes" required>
+            <option value="Más de 400">Más de 400</option>
+            <option value="Menos de 400"> Menos de 400</option>
+            </select><br /><br />
+            <label htmlFor="">¿En que parte de México vives?: </label> 
+            <select name="estado" required>
+            <option value="Nuevo León">Nuevo León</option>
+            <option value="Guadalajara"> Guadalajara</option>
+            <option value="Otro">Otro</option>
+            </select><br /><br />
             <textarea  rows="5" placeholder="Mensaje" name="mensaje" />
             <button>Enviar</button>
             {done && "Gracias solicitud enviada..."}
