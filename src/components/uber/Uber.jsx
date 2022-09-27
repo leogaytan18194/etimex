@@ -16,6 +16,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 
+
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,
@@ -124,23 +125,23 @@ const Uber = (props) => {
             <input  type="text" placeholder="Celular con whatsapp" name="telefono" required/>
             <input  type="hidden" placeholder="pagina" name="pagina" value="uber" required/>
             <label htmlFor="">Selecciona una opción: </label> 
-            <select name="apps" required>
+            <select name="apps" className="select-css" required>
             <option value="uber">Uber</option>
             <option value="didi">Didi</option>
             <option value="uber y didi">Uber y Didi</option>
             <option value="otros">Otros</option>
-            </select><br /><br />
+            </select>
             <label htmlFor="">¿Cuántos viajes llevas realizados?: </label> 
-            <select name="viajes" required>
+            <select name="viajes" className="select-css" required>
             <option value="Más de 400">Más de 400</option>
             <option value="Menos de 400"> Menos de 400</option>
-            </select><br /><br />
+            </select>
             <label htmlFor="">¿En que parte de México vives?: </label> 
-            <select name="estado" required>
+            <select name="estado" className="select-css" required>
             <option value="Nuevo León">Nuevo León</option>
             <option value="Guadalajara"> Guadalajara</option>
             <option value="Otro">Otro</option>
-            </select><br /><br />
+            </select>
             <textarea  rows="5" placeholder="Mensaje" name="mensaje" />
             <button>Enviar</button>
             {done && "Gracias solicitud enviada..."}
