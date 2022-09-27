@@ -12,6 +12,7 @@ import React from 'react';
 import { BrowserRouter, Route , Routes } from "react-router-dom";
 import { useState } from "react";
 import logoUber from './bestapart.png';
+import whatsapp from './whatsapp.png'
 import "./app.scss";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <img class="button_float" src={logoUber} alt="" />
+      <a href="https://bit.ly/3pGO0pN"><img class="whatsapp-icon" src={whatsapp} alt="" /></a>
       <div className="sections">
         <BrowserRouter>
           <Routes>
