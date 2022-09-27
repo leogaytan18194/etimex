@@ -6,6 +6,7 @@ import Formulario from "./components/formulario/Formulario";
 import Preguntas from "./components/preguntas/Preguntas";
 import Privacidad from "./components/privacidad/Privacidad";
 import NotFoundPage from "./components/notfoundpage/NotFoundPage";
+import Visitanos from "./components/visitanos/Visitanos";
 import React from 'react';
 import { BrowserRouter, Route , Routes } from "react-router-dom";
 import { useState } from "react";
@@ -26,6 +27,7 @@ function App() {
            <Route path="/contacto" element={ <Contacto />} />
            <Route path="/formulario/:id" element={ <Formulario />} />
            <Route path="/privacidad" element={ <Privacidad />} />
+           <Route path="/visitanos" element={ <Visitanos />} />
            <Route path="/preguntas-frecuentes" element={ <Preguntas />} />
            <Route path="*" element={ <NotFoundPage />} />
           </Routes>

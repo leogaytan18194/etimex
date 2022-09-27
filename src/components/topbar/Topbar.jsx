@@ -9,11 +9,11 @@ export default function Topbar({menuOpen, setMenuOpen}) {
     <div className={"topbar " + (menuOpen && "active")}>
         <div className="wrapper">
             <div className="left">
-                <a href="#intro" className="logo">
+                <a href="/" className="logo">
                     <img src={logo} alt="" />
                 </a>
                 <div className="itemContainer">
-                    <a href="/#autos">Modelos</a>
+                    <a href="/#modelos">Modelos</a>
                 </div>
                 <div className="itemContainer">
                     <a href="/#comunidad">¿Cómo funciona?</a>

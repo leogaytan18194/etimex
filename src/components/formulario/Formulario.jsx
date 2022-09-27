@@ -61,8 +61,9 @@ const Formulario = (props) => {
             <p className="montos"><strong>  {carro.montoSemanal} /</strong> </p>
             <p className="montos">Semanal</p>
             <br />
-            <p className="montos"><strong> $17,000 / </strong></p>
+            <p className="montos"><strong> $15,000 / </strong></p>
             <p className="montos">Depósito en Garantía</p>
+            <p className="notariales">+ $2,000 de gastos notariales</p>
             <br />
             <br />
             <br />

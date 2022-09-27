@@ -1,10 +1,7 @@
 @import "../../global.scss";
 
-.c {
-    position: relative;
-    overflow: hidden;
-    background-color: #e1e1e1;
-
+.c-visit {
+    flex-direction: column;
 
   }
   
@@ -22,15 +19,12 @@
     
   }
   
-  .c-left {
-    flex: 1;
-
-    @include mobile{
-      display: none;
-    }
 
 
-    .c-info-item-form {
+    
+
+
+    .c-info-item-visit {
       justify-content: center;
       font-weight: 300;
       width: 100%;
@@ -44,47 +38,54 @@
         font-size: 28px;
         color: #6FC7DA;
       }
-
-      .notariales{
-        font-size: 10px;
-      }
     
-      .c-imagen {
-        height: 400px;
+      .c-imagenMini {
+        height: 180px;
         float: left;
         margin-right: 15px;
     
-        @include mobile{
-            display: none;
-        }
+        
     
       }
     }
     
-  }
+
   
-  .c-right {
-    flex: .6;
+  .c-right-visit {
+
 
     @include mobile{
       width: 100%;
       margin-top: 10px;
-    }
+      border-radius: 20px;
+      padding: 7px;
 
-    .formulario{
+    
+    }
+    
+
+
+    .formulario-visit{
       height: 100%;
-      display: flex;
-      border-radius: 30px;
+
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background-color: #ffffff;
     }
     
 
   }
+
+
+  .imgCenter{
+    height: 270px;
+
+    @include mobile{
+        display: none;
+    }
+  }
   
-  .o-title {
+  .o-title-visit {
     font-size: 40px;
     font-weight: 900;
     overflow: hidden;
@@ -93,12 +94,18 @@
 
     @include mobile {
         width: 95%;
+        font-size: 25px;
     }
   }
   
-  .o-title2{
+  .o-title2-visit{
     color: $mainColor;
     font-weight: 100;
+
+    @include mobile {
+        width: 95%;
+        font-size: 15px;
+    }
   }
   
   .imgMini2{
@@ -107,21 +114,36 @@
 
   .imgMini{
     padding-top: 0px;
-    height: 26px;
-    float:left
+    height: 35px;
+    float:left;
+
+    @include mobile{
+        height: 50px;
+    }
   }
+
+  .texto-visit{
+    font-size: 20px;
+
+  }
+
+.detalles-form-visit{
+  margin-top: 10px;
 
   .texto-form{
-    font-size: 20px;
-  }
 
-.detalles-form{
-  margin-top: 10px;
-  display: flex;
+    @include mobile{
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    
+  }
 }
 
   
-  .c-desc-form {
+  .c-desc-visit {
+
+    
     
     h2{
       font-size: 35px;
@@ -129,7 +151,7 @@
       color: $mainColor;
 
       @include mobile{
-        font-size: 20px;
+        font-size: 16px;
       }
     }
     
@@ -137,6 +159,10 @@
       margin-top: 10px;
       font-weight: 100;
       color: $mainColor;
+
+      @include mobile{
+        font-size: 12px;
+      }
     }
   }
   
@@ -208,7 +234,7 @@
       
     }
   
-    .c-title {
+    .c-title-visit {
       font-size: 30px;
     }
   
@@ -236,5 +262,67 @@
 
     }
     
+    
+  }
+
+
+  .imgServicios{
+    height: 80px;
+}
+
+.imgServicios2{
+    height: 40px;
+    margin-top: 20px;
+}
+
+  .servicios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+
+    
+
+    
+    
+  }
+
+  .cuadro-texto{
+    display:block;
+
+    .texto-servicios{
+
+        margin-top: 5px;
+        color: #6FC7DA;
+    }
+}
+
+  .titulo-visitanos{
+    justify-content: center;
+    display: flex;
+
+  }
+
+  .servicios2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+
+
+
+    .imgServicios{
+        height: 80px;
+    }
+
+    .cuadro-texto{
+        display:block;
+
+        .texto-servicios{
+            margin-top: 10px;
+        }
+    }
     
   }
