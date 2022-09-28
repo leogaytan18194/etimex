@@ -16,9 +16,14 @@
     
   }
   
-  .c-wrapper {
+  .c-wrapper-beneficios {
     padding: 50px;
     display: flex;
+
+    @include mobile{
+      padding: 20px;
+      display: block;
+    }
     
   }
   
@@ -68,7 +73,7 @@
 
   }
   
-  .c-title {
+  .c-title-beneficios {
     font-size: 40px;
     overflow: hidden;
     padding: 10px;
@@ -77,6 +82,7 @@
 
     @include mobile {
         width: 100%;
+        font-size: 20px;
     }
   }
   

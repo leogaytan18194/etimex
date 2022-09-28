@@ -60,7 +60,7 @@ const Uber = (props) => {
 
     
     <div className="c-uber" id="uber">
-        <div className="c-wrapper">
+        <div className="c-wrapper-uber">
         <Box sx={{ flexGrow: 1}}>
         
       <Grid container spacing={2} columns={{ xs: 4, sm: 8, md: 12 }}>
@@ -120,7 +120,7 @@ const Uber = (props) => {
             <h2>¡Déjanos tus datos!</h2> 
             <h3>Nosotros te contactamos</h3>
           </div>
-          <form ref={form} onSubmit={handleSubmit}>
+          <form ref={form} onSubmit={handleSubmit} className="form-uber">
             <input  type="text" placeholder="Nombre Completo" name="nombre" required/>
             <input  type="text" placeholder="Celular con whatsapp" name="telefono" required/>
             <input  type="hidden" placeholder="pagina" name="pagina" value="uber" required/>
@@ -130,12 +130,12 @@ const Uber = (props) => {
             <option value="didi">Didi</option>
             <option value="uber y didi">Uber y Didi</option>
             <option value="otros">Otros</option>
-            </select>
+            </select><br />
             <label htmlFor="">¿Cuántos viajes llevas realizados?: </label> 
             <select name="viajes" className="select-css" required>
             <option value="Más de 400">Más de 400</option>
             <option value="Menos de 400"> Menos de 400</option>
-            </select>
+            </select><br />
             <label htmlFor="">¿En que parte de México vives?: </label> 
             <select name="estado" className="select-css" required>
             <option value="Nuevo León">Nuevo León</option>

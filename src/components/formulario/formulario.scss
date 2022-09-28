@@ -8,21 +8,14 @@
 
   }
   
-  .c-bg {
-    width: 20px;
-    background-color: $mainColor;
-    position: absolute;
-    
-    
-  }
-  
-  .c-wrapper {
-    padding: 50px;
+  .c-wrapper-formulario {
+    padding-top: 10px;
+    margin: 20px;
     display: flex;
     
   }
   
-  .c-left {
+  .c-left-formulario {
     flex: 1;
 
     @include mobile{
@@ -124,7 +117,7 @@
   .c-desc-form {
     
     h2{
-      font-size: 35px;
+      font-size: 30px;
       font-weight: 800;
       color: $mainColor;
 
@@ -135,12 +128,13 @@
     
     h3{
       margin-top: 10px;
+      font-size: 20px;
       font-weight: 100;
       color: $mainColor;
     }
   }
   
-  form {
+  .form-formulario {
     margin-top: 20px;
     padding-left: 40px;
     padding-bottom: 10px;
@@ -156,13 +150,13 @@
     height: 20px;
   }
   
-  input {
+  .input-formulario {
     width: 90%;
-    height: 50px;
+    height: 40px;
     border: none;
     border-bottom: 1px solid black;
     margin: 10px 0px;
-    font-size: 14px;
+    font-size: 13px;
     border-radius: 10px;
 
     @include mobile{
@@ -172,6 +166,7 @@
 
   label{
     margin-top: 0px;
+    font-size: 13px;
 
     @include mobile{
       font-size: 15px;
@@ -202,7 +197,7 @@
   }
   
   @media screen and (max-width: 480px) {
-    .c-wrapper {
+    .c-wrapper-formulario {
       flex-direction: column;
       padding: 0px 50px;
       

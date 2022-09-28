@@ -8,9 +8,9 @@ const Beneficios = () => {
 
   return ( 
     <div className="c-beneficios" id="beneficios">
-      <h1 className="c-title">BESTA ADAPTADO A TU VIDA </h1>
+      <h1 className="c-title-beneficios">BESTA ADAPTADO A TU VIDA </h1>
       <div className="c-bg"></div>
-      <div className="c-wrapper">
+      <div className="c-wrapper-beneficios">
         <div className="c-izquierdo">
           <div className="c-info-item">
           <p>Logramos ser tu aliado más importante gracias a nuestros beneficios y la rápida respuesta para maximizar tus ganancias.</p>

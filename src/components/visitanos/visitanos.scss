@@ -5,16 +5,10 @@
 
   }
   
-  .c-bg {
-    width: 20px;
-    background-color: $mainColor;
-    position: absolute;
-    
-    
-  }
   
-  .c-wrapper {
-    padding: 50px;
+  .c-wrapper-visitanos {
+    padding-top: 10px;
+    margin: 30px 30px 0;
     display: flex;
     
   }
@@ -78,7 +72,7 @@
 
 
   .imgCenter{
-    height: 270px;
+    height: 300px;
 
     @include mobile{
         display: none;
@@ -86,8 +80,8 @@
   }
   
   .o-title-visit {
-    font-size: 40px;
-    font-weight: 900;
+    font-size: 50px;
+    font-weight: 800;
     overflow: hidden;
     color: $mainColor;
 
@@ -101,6 +95,7 @@
   .o-title2-visit{
     color: $mainColor;
     font-weight: 100;
+    font-size: 20px;
 
     @include mobile {
         width: 95%;
@@ -140,13 +135,15 @@
   }
 }
 
+
+
   
   .c-desc-visit {
 
     
     
     h2{
-      font-size: 35px;
+      font-size: 30px;
       font-weight: 800;
       color: $mainColor;
 
@@ -159,6 +156,7 @@
       margin-top: 10px;
       font-weight: 100;
       color: $mainColor;
+      font-size: 20px;
 
       @include mobile{
         font-size: 12px;
@@ -166,7 +164,7 @@
     }
   }
   
-  form {
+  .form-visit {
     margin-top: 20px;
     padding-left: 40px;
     padding-bottom: 10px;
@@ -184,11 +182,11 @@
   
   input {
     width: 90%;
-    height: 50px;
+    height: 30px;
     border: none;
     border-bottom: 1px solid black;
     margin: 10px 0px;
-    font-size: 14px;
+    font-size: 12px;
     border-radius: 10px;
 
     @include mobile{
@@ -198,6 +196,7 @@
 
   label{
     margin-top: 0px;
+    font-size: 12px;
 
     @include mobile{
       font-size: 15px;
@@ -228,9 +227,8 @@
   }
   
   @media screen and (max-width: 480px) {
-    .c-wrapper {
+    .c-wrapper-visitanos {
       flex-direction: column;
-      padding: 0px 50px;
       
     }
   

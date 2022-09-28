@@ -22,7 +22,7 @@ export default function Topbar({menuOpen, setMenuOpen}) {
                     <a href="/#beneficios">Beneficios</a>
                 </div>
                 <div className="itemContainer">
-                    <a href="/#contacto">Contacto</a>
+                    <a href="/visitanos">Contacto</a>
                 </div>
                 <div className="itemContainer">
                     Blog

@@ -42,7 +42,7 @@ const Visitanos = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_fst7gdm', 'template_3il5sqt', form.current, 'QQvoOXLmHkR29h36W')
+    emailjs.sendForm('service_fst7gdm', 'template_oblxilh', form.current, 'QQvoOXLmHkR29h36W')
     .then(
       (result) => {
         console.log(result.text);
@@ -58,7 +58,7 @@ const Visitanos = (props) => {
 
     
     <div className="c-visit" id="contacto">
-        <div className="c-wrapper">
+        <div className="c-wrapper-visitanos">
         <Box sx={{ flexGrow: 1,}}>
       <Grid container spacing={2} columns={{ xs: 4, sm: 8, md: 12 }}>
         <Grid item xs={5}>
@@ -88,9 +88,28 @@ const Visitanos = (props) => {
             <h2>¡Déjanos tus datos!</h2> 
             <h3>Nosotros te contactamos</h3>
           </div>
-          <form ref={form} onSubmit={handleSubmit}>
+          <form ref={form} onSubmit={handleSubmit} className="form-visit">
             <input  type="text" placeholder="Nombre Completo" name="nombre" required/>
             <input  type="text" placeholder="Celular con whatsapp" name="telefono" required/>
+            <input  className="input-contact" type="hidden" placeholder="pagina" name="pagina" value="contacto" required/>
+            <label htmlFor="">Selecciona una opción: </label> 
+            <select name="apps" required>
+            <option value="uber">Uber</option>
+            <option value="didi">Didi</option>
+            <option value="uber y didi">Uber y Didi</option>
+            <option value="otros">Otros</option>
+            </select><br />
+            <label htmlFor="">¿Cuántos viajes llevas realizados?: </label> 
+            <select name="viajes" required>
+            <option value="Más de 400">Más de 400</option>
+            <option value="Menos de 400"> Menos de 400</option>
+            </select><br />
+            <label htmlFor="">¿En que parte de México vives?: </label> 
+            <select name="estado" required>
+            <option value="Nuevo León">Nuevo León</option>
+            <option value="Guadalajara"> Guadalajara</option>
+            <option value="Otro">Otro</option>
+            </select><br />
             <textarea  rows="5" placeholder="Mensaje" name="mensaje" />
             <button>Enviar</button>
             {done && "Gracias solicitud enviada..."}
@@ -134,35 +153,35 @@ const Visitanos = (props) => {
                 <p>Sabados  9:00 am.m a 01:00 p.m.</p>
                 <p>81 3471 5233</p></div></Item>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={2}>
+          <Item2 style={{boxShadow: "none"}}></Item2>
+        </Grid>
+        <Grid item xs={2.5} >
           <Item2 style={{boxShadow: "none"}}>
             <h3>Enlaces</h3>
             <div className="cuadro-texto">
                 <p><Link to="/#beneficios">Beneficios</Link></p>
                 <p><Link to="/#requisitos">Requisitos</Link></p>
+                <p><Link to="/visitanos">Contacto</Link></p>
                 </div></Item2>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={2.5}>
           <Item2 style={{boxShadow: "none"}}>
             <h3>Social</h3>
             <div className="cuadro-texto">
-                <p><Link to="/alianza-uberbesta">Acuerdos comerciales</Link></p>
+                <p><Link to="/alianza-uberbesta">Alianzas comerciales</Link></p>
                 <p><a href="https://www.facebook.com/bestamx">Facebook</a></p>
                 <p><a href="https://www.instagram.com/bestamx/">Instagram</a></p></div></Item2>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={2.5}>
           <Item2 style={{boxShadow: "none"}}>
             <h3>Legal</h3>
             <div className="cuadro-texto">
                 <p><Link to="/preguntas-frecuentes">Preguntas frecuentes</Link></p>
                 <p><Link to="/privacidad">Aviso de privacidad</Link></p></div></Item2>
         </Grid>
-        <Grid item xs={3}>
-          <Item2 style={{boxShadow: "none"}}>
-            <h3>Contacto</h3>
-            <div className="cuadro-texto">
-                <p>Atención al Cliente</p>
-                </div></Item2>
+        <Grid item xs={2}>
+          <Item2 style={{boxShadow: "none"}}></Item2>
         </Grid>
       </Grid>
       <Grid item xs={12}>

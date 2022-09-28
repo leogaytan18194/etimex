@@ -43,8 +43,8 @@ const Formulario = (props) => {
   return (
     <div className="c" id="contacto">
       <div className="c-bg"></div>
-      <div className="c-wrapper">
-        <div className="c-left">
+      <div className="c-wrapper-formulario">
+        <div className="c-left-formulario">
         <h1 className="o-title"><strong>{carro.modelo}</strong></h1>
         <h2 className="o-title2">{carro.marca}</h2>
         <div className="detalles-form">
@@ -70,7 +70,7 @@ const Formulario = (props) => {
             <br />
             <br />
             <br />
-            <p>Consulta términos y condiciones</p>
+            <p>* Consulta términos y condiciones * Precios sujetos a cambios sin previo aviso</p>
           </div>
         </div>
         <div className="c-right">
@@ -79,9 +79,9 @@ const Formulario = (props) => {
             <h3>Se parte de BESTA,</h3> 
             <h2>¡Bienvenido!</h2>
           </div>
-          <form ref={form} onSubmit={handleSubmit}>
-            <input  type="text" placeholder="Nombre Completo" name="nombre" required/>
-            <input  type="text" placeholder="Celular con whatsapp" name="telefono" required/>
+          <form ref={form} onSubmit={handleSubmit} className="form-formulario">
+            <input  className="input-formulario" type="text" placeholder="Nombre Completo" name="nombre" required/>
+            <input  className="input-formulario" type="text" placeholder="Celular con whatsapp" name="telefono" required/>
             <input  type="hidden" placeholder="interes" name="auto" value={carro.modelo} required/>
             <label htmlFor="">Selecciona una opción: </label> 
             <select name="apps" required>
@@ -89,19 +89,19 @@ const Formulario = (props) => {
             <option value="didi">Didi</option>
             <option value="uber y didi">Uber y Didi</option>
             <option value="otros">Otros</option>
-            </select><br /><br />
+            </select><br />
             <label htmlFor="">¿Cuántos viajes llevas realizados?: </label> 
             <select name="viajes" required>
             <option value="De 100 a 500">De 100 a 500</option>
             <option value="De 501 a 1,000"> De 501 a 1,000</option>
             <option value="Más de 1,000">Más de 1,000</option>
-            </select><br /><br />
+            </select><br />
             <label htmlFor="">¿En que parte de México vives?: </label> 
             <select name="estado" required>
             <option value="Nuevo León">Nuevo León</option>
             <option value="Guadalajara"> Guadalajara</option>
             <option value="Otro">Otro</option>
-            </select><br /><br />
+            </select><br />
             <textarea  rows="5" placeholder="Mensaje" name="mensaje" />
             <button>Enviar</button>
             {done && "Gracias solicitud enviada..."}

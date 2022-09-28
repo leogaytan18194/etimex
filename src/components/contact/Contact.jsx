@@ -30,7 +30,7 @@ const Contact = () => {
 
   return (
     <div className="c-contact" id="contacto">
-      <h1 className="c-title">¡SÁLTATE LAS COMPLICACIONES!</h1>
+      <h1 className="c-title-contact">¡SÁLTATE LAS COMPLICACIONES!</h1>
       <div className="c-bg"></div>
       <div className="c-wrapper">
         
@@ -40,34 +40,34 @@ const Contact = () => {
           </div>
         </div>
         <div className="c-right-contact">
-          <p className="c-desc">
+          <p className="c-desc-contact">
             <h3>¡Déjanos tus datos!</h3> 
             <p>Nosotros te contactamos</p>
           </p>
           <form ref={form} onSubmit={handleSubmit}>
-            <input  type="text" placeholder="Nombre Completo" name="nombre" required/>
-            <input  type="text" placeholder="Teléfono" name="telefono" required/>
-            <input  type="hidden" placeholder="pagina" name="pagina" value="inicio" required/>
+            <input  className="input-contact" type="text" placeholder="Nombre Completo" name="nombre" required/>
+            <input  className="input-contact"type="text" placeholder="Teléfono" name="telefono" required/>
+            <input  className="input-contact" type="hidden" placeholder="pagina" name="pagina" value="inicio" required/>
             <label htmlFor="">Selecciona una opción: </label> 
-            <select name="apps" required>
+            <select name="apps" className="select-css" required>
             <option value="uber">Uber</option>
             <option value="didi">Didi</option>
             <option value="uber y didi">Uber y Didi</option>
             <option value="otros">Otros</option>
-          </select><br />
+          </select>
           <label htmlFor="">¿Cuántos viajes llevas realizados?: </label> 
-            <select name="viajes" required>
+            <select name="viajes" className="select-css" required>
             <option value="Más de 400">Más de 400</option>
             <option value="Menos de 400"> Menos de 400</option>
             </select><br />
             <label htmlFor="">¿En que parte de México vives?: </label> 
-            <select name="estado" required>
+            <select name="estado" className="select-css" required>
             <option value="Nuevo León">Nuevo León</option>
             <option value="Guadalajara"> Guadalajara</option>
             <option value="Otro">Otro</option>
-            </select><br />
-            <textarea  rows="5" placeholder="Mensaje" name="mensaje" />
-            <button>Enviar</button>
+            </select>
+            <textarea  rows="5" placeholder="Mensaje" name="mensaje" className="textarea-contact"/>
+            <button className="button-contact">Enviar</button>
             {done && "Gracias solicitud enviada..."}
           </form>
         </div>

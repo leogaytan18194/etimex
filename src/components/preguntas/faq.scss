@@ -1,3 +1,4 @@
+@import "../../global.scss";
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -55,6 +56,10 @@ header h1 {
 	padding-right: 80px;
 
 	transition: all 0.4s ease;
+
+	@include mobile{
+		font-size: 15px;
+	}
 }
 
 .faqs .faq .faq-question::after {
@@ -80,6 +85,10 @@ header h1 {
 	max-height: 0;
 	overflow-y: hidden;
 	transition: all 0.4s ease-out;
+
+	@include mobile{
+		font-size: 13px;
+	}
 }
 
 .faqs .faq.open .faq-question {
