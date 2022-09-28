@@ -54,7 +54,7 @@ const Contact = () => {
             <option value="didi">Didi</option>
             <option value="uber y didi">Uber y Didi</option>
             <option value="otros">Otros</option>
-          </select>
+          </select><br />
           <label htmlFor="">¿Cuántos viajes llevas realizados?: </label> 
             <select name="viajes" className="select-css" required>
             <option value="Más de 400">Más de 400</option>
