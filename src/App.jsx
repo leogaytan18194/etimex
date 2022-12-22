@@ -1,6 +1,7 @@
 import Home from "./components/home/Home";
 import Topbar from "./components/topbar/Topbar";
 import Menu from "./components/menu/Menu";
+import Palenca from "./components/palenca/Palenca";
 import Contacto from "./components/contact/Contact";
 import Formulario from "./components/formulario/Formulario";
 import Preguntas from "./components/preguntas/Preguntas";
@@ -32,6 +33,7 @@ function App() {
            <Route path="/privacidad" element={ <Privacidad />} />
            <Route path="/visitanos" element={ <Visitanos />} />
            <Route path="/alianza-uberbesta" element={ <Uber />} />
+           <Route path="/palenca" element={ <Palenca />} />
            <Route path="/preguntas-frecuentes" element={ <Preguntas />} />
            <Route path="*" element={ <NotFoundPage />} />
           </Routes>
