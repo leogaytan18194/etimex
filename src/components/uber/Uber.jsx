@@ -12,8 +12,6 @@ import cliente from './img/cliente.png';
 import Slider from "react-slick";
 import slide1 from "./img/BESTA-ALIADO1.png";
 import slide2 from "./img/BESTA-ALIADO2.png";
-import img2 from "./img/besta_animado_firma.gif";
-import img3 from "./img/besta_logo_firma.png";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -99,8 +97,6 @@ const Uber = (props) => {
         </Grid>
         <Grid item xs={4}>
           <Item style={{boxShadow: "none"}}>
-          <img src={img3} alt="" className="imgServiciosUber"/>
-          <img src={img2} alt="" className="imgServiciosUber"/>
               <img src={money} alt="" className="imgServiciosUber"/><div className="cuadro-texto"><p className="texto-servicios"><strong> ¿Cómo funciona Alianza con UBER-BESTA?</strong></p>
                 <p>Todos los ingresos extras que generes Uber te los otorgará directamente cuenta. Para poder ser parte del incentivo contáctate con tu vendedor o por correo electrónico.</p></div></Item>
         </Grid>
