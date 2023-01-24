@@ -87,7 +87,7 @@ const Uber = (props) => {
         </Item>
         </Grid>
         <Grid item xs={4}>
-          <Item style={{boxShadow: "none"}}><img src={cliente} alt="" className="imgServiciosUber"/><div className="cuadro-texto"><p className="texto-servicios"><strong> Ventas</strong></p>
+          <Item style={{boxShadow: "none"}}><img src={cliente} alt="" className="imgServiciosUber"/><div className="cuadro-texto"><p className="texto-servicios"><strong> Flotilla BESTA</strong></p>
                 <p>¿Eres de la comunidad BESTA y conduces en la app de Uber?</p>
                 <p>Al ser parte de nuestra comunidad BESTA con una antigüedad de 3 meses y completar 90 viajes durante la semana (lunes a domingo) es decir entre 13 a 15 viajes por día utilizando la aplicación Uber, podrán generar ganancias adicionales de $300 MXN cada semana.</p></div></Item>
         </Grid>
