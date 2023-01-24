@@ -12,6 +12,8 @@ import cliente from './img/cliente.png';
 import Slider from "react-slick";
 import slide1 from "./img/BESTA-ALIADO1.png";
 import slide2 from "./img/BESTA-ALIADO2.png";
+import img2 from "./img/besta_animado_firma.gif";
+import img3 from "./img/besta_logo_firma.png";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
