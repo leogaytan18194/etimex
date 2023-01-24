@@ -10,8 +10,8 @@ import gnv from './img/gnvtaller.png';
 import money from './img/money.png';
 import cliente from './img/cliente.png';
 import Slider from "react-slick";
-import slide1 from "./img/slide1.png";
-import slide2 from "./img/slide2.png";
+import slide1 from "./img/BESTA-ALIADO1.png";
+import slide2 from "./img/BESTA-ALIADO2.png";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -88,19 +88,17 @@ const Uber = (props) => {
         </Grid>
         <Grid item xs={4}>
           <Item style={{boxShadow: "none"}}><img src={cliente} alt="" className="imgServiciosUber"/><div className="cuadro-texto"><p className="texto-servicios"><strong> Ventas</strong></p>
-                <p>Eres de la comunidad BESTA y utilizas Uber</p>
-                <p>Al ser parte de nuestra comunidad BESTA con una antigüedad de 3 meses y completar 85 viajes durante la semana (lunes a domingo) es decir entre 12 a 13 viajes por día utilizando la aplicación Uber, podrán generar ganancias adicionales de $200 MXN cada semana.</p></div></Item>
+                <p>¿Eres de la comunidad BESTA y conduces en la app de Uber?</p>
+                <p>Al ser parte de nuestra comunidad BESTA con una antigüedad de 3 meses y completar 90 viajes durante la semana (lunes a domingo) es decir entre 13 a 15 viajes por día utilizando la aplicación Uber, podrán generar ganancias adicionales de $300 MXN cada semana.</p></div></Item>
         </Grid>
         <Grid item xs={4}>
-          <Item style={{boxShadow: "none"}}><img src={gnv} alt="" className="imgServiciosUber"/><div className="cuadro-texto"><p className="texto-servicios"><strong> Taller Besta</strong></p>
-                <p>Aquieres unidad nueva en BESTA y completa viajes en la app de Uber</p>
-                <p>Al tener una unidad nueva BESTA y utilizar UBER, podrás obtener un descuento de $10,000 mxn en tu depósito de garantía, si completa 85 viajes cada semana por lo menos 12 semanas consecutivas. En total serían 1,020 viajes en 3 meses.</p></div></Item>
+          <Item style={{boxShadow: "none"}}><img src={gnv} alt="" className="imgServiciosUber"/><div className="cuadro-texto"><p className="texto-servicios"><strong> Nuevo Cliente BESTA</strong></p>
+                <p>Al adquirir unidad nueva en BESTA y completar 85 viajes en la app de Uber durante la semana (lunes a domingo), podrás obtener $834 MXN cada semana por  12 semanas consecutivas posteriores al primer viaje del vehículo</p></div></Item>
         </Grid>
         <Grid item xs={4}>
           <Item style={{boxShadow: "none"}}>
-              <img src={money} alt="" className="imgServiciosUber"/><div className="cuadro-texto"><p className="texto-servicios"><strong> Taller GNV</strong></p>
-                <p>¿Cómo recibiré el incentivo?</p>
-                <p>Todos los ingresos extras que generes se te otorgarán mediante monedero electrónico (Tarjeta Si Vale) y el descuento en depósito de “unidad nueva” se realizará una vez aprobada tu solicitud. Para mayor información sobre el monedero electrónico contáctanos o pregunta a tu asesor.</p></div></Item>
+              <img src={money} alt="" className="imgServiciosUber"/><div className="cuadro-texto"><p className="texto-servicios"><strong> ¿Cómo funciona Alianza con UBER-BESTA?</strong></p>
+                <p>Todos los ingresos extras que generes Uber te los otorgará directamente cuenta. Para poder ser parte del incentivo contáctate con tu vendedor o por correo electrónico.</p></div></Item>
         </Grid>
         <Grid item xs={12}>
           <Item style={{boxShadow: "none"}}>
@@ -123,7 +121,7 @@ const Uber = (props) => {
           <form ref={form} onSubmit={handleSubmit} className="form-uber">
             <input  type="text" placeholder="Nombre Completo" name="nombre" required/>
             <input  type="text" placeholder="Celular con whatsapp" name="telefono" required/>
-            <input  type="hidden" placeholder="pagina" name="pagina" value="uber" required/>
+            <input  type="hidden" placeholder="pagina" name="pagina" value="uber" required/><p/>
             <label htmlFor="">Selecciona una opción: </label> 
             <select name="apps" className="select-css" required>
             <option value="uber">Uber</option>
