@@ -107,7 +107,7 @@ const Uber = (props) => {
         </Grid>
         <Grid item xs={6}>
           <Item style={{boxShadow: "none"}}>
-            <img src="assets/CARRO-BENEFICIOS2.png" alt="Beneficios besta" className="c-imagen-uber"/>
+            <img src="assets/BENEFICIOSCARRO-2023.png" alt="Beneficios besta" className="c-imagen-uber"/>
         </Item>
         </Grid>
         <Grid item xs={6}>

@@ -19,7 +19,7 @@ const Beneficios = () => {
         </div>
         <div className="c-derecho">
           <p className="c-desc">
-            <img src="assets/CARRO-BENEFICIOS2.png" alt="Beneficios besta" className="c-imagen"/>
+            <img src="assets/BENEFICIOSCARRO-2023.png" alt="Beneficios besta" className="c-imagen"/>
           </p>
           
         </div>

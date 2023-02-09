@@ -117,6 +117,9 @@
         height: 320px;
         overflow: hidden;
         
+        .textoRequisitos{
+          font-size: 10px;
+        }
 
         @include mobile{
           width: 100%;
