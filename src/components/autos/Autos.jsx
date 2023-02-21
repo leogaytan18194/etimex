@@ -70,7 +70,6 @@ export default function VerticalTabs() {
           <Tab label="AVEO" {...a11yProps(1)} />
           <Tab label="MARCH" {...a11yProps(2)} />
           <Tab label="ATTITUD" {...a11yProps(3)} />
-          <Tab label="KWID" {...a11yProps(4)} />
         </Tabs>
         <TabPanel value={value} index={0}>
             <div className="unidad">
@@ -82,8 +81,9 @@ export default function VerticalTabs() {
             </div>
                          
             <div className="deposito">
-                <h3>$3,200 / Semanal</h3>
+                <h3>$3,400 / Semanal</h3>
                 <h4><img src="assets/calendarioicon2.png" alt="calendario" className="iconCalendario"/> 36 Meses con opción a compra</h4>
+                <p className="textoAviso">*Precio sujeto a cambios sin previo aviso</p>
                 <Link className='enlace' to={'/formulario/1'}>Más Información</Link>
             </div>
         </TabPanel>
@@ -97,8 +97,9 @@ export default function VerticalTabs() {
             </div>
                          
             <div className="deposito">
-                <h3>$3,200 / Semanal</h3>
+                <h3>$3,400 / Semanal</h3>
                 <h4><img src="assets/calendarioicon2.png" alt="calendario" className="iconCalendario"/> 36 Meses con opción a compra</h4>
+                <p className="textoAviso">*Precio sujeto a cambios sin previo aviso</p>
                 <Link className='enlace' to={'/formulario/2'}>Más Información</Link>
             </div>
         </TabPanel>
@@ -112,8 +113,9 @@ export default function VerticalTabs() {
             </div>
                          
             <div className="deposito">
-                <h3>$3,200 / Semanal</h3>
+                <h3>$3,250 / Semanal</h3>
                 <h4><img src="assets/calendarioicon2.png" alt="calendario" className="iconCalendario"/> 36 Meses con opción a compra</h4>
+                <p className="textoAviso">*Precio sujeto a cambios sin previo aviso</p>
                 <Link className='enlace' to={'/formulario/3'}>Más Información</Link>
             </div>
         </TabPanel>
@@ -127,24 +129,10 @@ export default function VerticalTabs() {
             </div>
                          
             <div className="deposito">
-                <h3>$3,250 / Semanal aprox</h3>
+                <h3>$3,800 / Semanal aprox</h3>
                 <h4><img src="assets/calendarioicon2.png" alt="calendario" className="iconCalendario"/> 36 Meses con opción a compra</h4>
+                <p className="textoAviso">*Precio sujeto a cambios sin previo aviso</p>
                 <Link className='enlace' to={'/formulario/4'}>Más Información</Link>
-            </div>
-        </TabPanel>
-        <TabPanel value={value} index={4}>
-            <div className="unidad">
-                <h2>RENAULT</h2>
-                <h2>KWID</h2>
-            </div>
-            <div className="plazo">
-                <img src="assets/kwid.png" className="imgAutoGrande" alt="Kwid" />  
-            </div>
-                         
-            <div className="deposito">
-                <h3>$3,250 / Semanal aprox</h3>
-                <h4><img src="assets/calendarioicon2.png" alt="calendario" className="iconCalendario"/> 36 Meses con opción a compra</h4>
-                <Link className='enlace' to={'/formulario/5'}>Más Información</Link>
             </div>
         </TabPanel>
       </Box>

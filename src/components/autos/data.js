@@ -30,13 +30,5 @@ export const dataAutos = [
             imagen: 'https://bestaweb.netlify.app/assets/ATTITUD-OFI2.png',
             montoSemanal: '$3,250 / Semanal',
             texto: '36 meses con opción a compra'
-        },
-        {
-            id: 5,
-            modelo: 'KWID',
-            marca: 'RENAULT',
-            imagen: 'https://bestaweb.netlify.app/assets/KWID-OFI2.png',
-            montoSemanal: '$3,250 / Semanal',
-            texto: '36 meses con opción a compra'
         }
     ];

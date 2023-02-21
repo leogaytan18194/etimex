@@ -92,9 +92,10 @@ const Formulario = (props) => {
             </select><br />
             <label htmlFor="">¿Cuántos viajes llevas realizados?: </label> 
             <select name="viajes" required>
-            <option value="De 100 a 500">De 100 a 500</option>
-            <option value="De 501 a 1,000"> De 501 a 1,000</option>
-            <option value="Más de 1,000">Más de 1,000</option>
+            <option value="Menos de 700">Menos de 700</option>
+            <option value="Mas de 800">Mas de 800</option>
+            <option value="Mas de 1,000">Más de 1,000</option>
+            <option value="Mas de 3,000">Más de 3,000</option>
             </select><br />
             <label htmlFor="">¿En que parte de México vives?: </label> 
             <select name="estado" required>

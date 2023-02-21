@@ -57,8 +57,10 @@ const Contact = () => {
           </select><br />
           <label htmlFor="">¿Cuántos viajes llevas realizados?: </label> 
             <select name="viajes" className="select-css" required>
-            <option value="Más de 400">Más de 400</option>
-            <option value="Menos de 400"> Menos de 400</option>
+            <option value="Menos de 700">Menos de 700</option>
+            <option value="Mas de 800">Mas de 800</option>
+            <option value="Mas de 1,000">Más de 1,000</option>
+            <option value="Mas de 3,000">Más de 3,000</option>
             </select><br />
             <label htmlFor="">¿En que parte de México vives?: </label> 
             <select name="estado" className="select-css" required>
