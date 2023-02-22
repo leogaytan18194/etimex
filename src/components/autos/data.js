@@ -4,7 +4,7 @@ export const dataAutos = [
             modelo: 'AVEO',
             marca: 'CHEVROLET',
             imagen: 'https://bestaweb.netlify.app/assets/AVEO-OFI2.png',
-            montoSemanal: '$3,200 / Semanal',
+            montoSemanal: '$3,400 / Semanal',
             texto: '36 meses con opción a compra'
         },
         {
@@ -12,7 +12,7 @@ export const dataAutos = [
             modelo: 'VDRIVE',
             marca: 'NISSAN',
             imagen: 'https://bestaweb.netlify.app/assets/VDRIVE-OFI3.png',
-            montoSemanal: '$3,200 / Semanal',
+            montoSemanal: '$3,400 / Semanal',
             texto: '36 meses con opción a compra'
         },
         {
@@ -20,7 +20,7 @@ export const dataAutos = [
             modelo: 'MARCH',
             marca: 'NISSAN',
             imagen: 'https://bestaweb.netlify.app/assets/MARCH-OFI2.png',
-            montoSemanal: '$3,200 / Semanal',
+            montoSemanal: '$3,250 / Semanal',
             texto: '36 meses con opción a compra'
         },
         {
@@ -28,7 +28,7 @@ export const dataAutos = [
             modelo: 'ATTITUD',
             marca: 'DODGE',
             imagen: 'https://bestaweb.netlify.app/assets/ATTITUD-OFI2.png',
-            montoSemanal: '$3,250 / Semanal',
+            montoSemanal: '$3,800 / Semanal',
             texto: '36 meses con opción a compra'
         }
     ];
