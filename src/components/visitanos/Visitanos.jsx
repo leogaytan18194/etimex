@@ -70,7 +70,7 @@ const Visitanos = (props) => {
             <img src={ubicacion} alt="" className="imgMini"/> <p className="texto-form">&nbsp; Sucursal en Nuevo León &nbsp;</p> <br />
             <p>Av. Churubusco #3900, Industrial Benito Juarez, C.P. 64517, Monterrey, Nuevo León, México</p><br />
             <img src={ubicacion} alt="" className="imgMini"/> <p className="texto-form">&nbsp; Sucursal en Jalisco &nbsp;</p> <br />
-            <p>Av. Américas 326, Ladrón de Guevara, 44600, Zapopan, Jalisco </p>
+            <p>Calle 14, 2797, Col. Colón Industrial, C.P. 44940, Guadalajara, Jalisco </p>
         </div>
         </div>
         </Item>
