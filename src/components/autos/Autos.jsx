@@ -81,7 +81,7 @@ export default function VerticalTabs() {
             </div>
                          
             <div className="deposito">
-                <h3>$3,400 / Semanal</h3>
+                <h3>$3,550 / Semanal</h3>
                 <h4><img src="assets/calendarioicon2.png" alt="calendario" className="iconCalendario"/> 36 Meses con opción a compra</h4>
                 <p className="textoAviso">*Precio sujeto a cambios sin previo aviso</p>
                 <Link className='enlace' to={'/formulario/1'}>Más Información</Link>
@@ -97,7 +97,7 @@ export default function VerticalTabs() {
             </div>
                          
             <div className="deposito">
-                <h3>$3,400 / Semanal</h3>
+                <h3>$3,500 / Semanal</h3>
                 <h4><img src="assets/calendarioicon2.png" alt="calendario" className="iconCalendario"/> 36 Meses con opción a compra</h4>
                 <p className="textoAviso">*Precio sujeto a cambios sin previo aviso</p>
                 <Link className='enlace' to={'/formulario/2'}>Más Información</Link>
@@ -129,7 +129,7 @@ export default function VerticalTabs() {
             </div>
                          
             <div className="deposito">
-                <h3>$3,800 / Semanal aprox</h3>
+                <h3>$3,550 / Semanal aprox</h3>
                 <h4><img src="assets/calendarioicon2.png" alt="calendario" className="iconCalendario"/> 36 Meses con opción a compra</h4>
                 <p className="textoAviso">*Precio sujeto a cambios sin previo aviso</p>
                 <Link className='enlace' to={'/formulario/4'}>Más Información</Link>

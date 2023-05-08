@@ -4,7 +4,7 @@ export const dataAutos = [
             modelo: 'AVEO',
             marca: 'CHEVROLET',
             imagen: './assets/aveo2.png',
-            montoSemanal: '$3,200 / Semanal',
+            montoSemanal: '$3,500 / Semanal',
             texto: '36 meses con opción a compra'
         },
         {
@@ -12,7 +12,7 @@ export const dataAutos = [
             modelo: 'VDRIVE',
             marca: 'NISSAN',
             imagen: './assets/vdrive.png',
-            montoSemanal: '$3,200 / Semanal',
+            montoSemanal: '$3,550 / Semanal',
             texto: '36 meses con opción a compra'
         },
         {
@@ -28,7 +28,7 @@ export const dataAutos = [
             modelo: 'ATTITUD',
             marca: 'DODGE',
             imagen: './assets/attitude.png',
-            montoSemanal: '$3,250 / Semanal',
+            montoSemanal: '$3,550 / Semanal',
             texto: '36 meses con opción a compra'
         },
         {
