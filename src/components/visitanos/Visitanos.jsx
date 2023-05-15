@@ -124,12 +124,12 @@ const Visitanos = (props) => {
         </Grid>
         <Grid item xs={4}>
           <Item style={{boxShadow: "none"}}><img src={ventas} alt="" className="imgServicios" align="left"/><div className="cuadro-texto"><p className="texto-servicios"><strong> Ventas</strong></p>
-                <p>L-V de 9:00 a.m a 6:00 p.m.</p>
+                <p>L-V de 8:00 a.m a 5:00 p.m.</p>
                 <p>81 2104 3804</p></div></Item>
         </Grid>
         <Grid item xs={4}>
           <Item style={{boxShadow: "none"}}><img src={taller} alt="" className="imgServicios" align="left"/><div className="cuadro-texto"><p className="texto-servicios"><strong> Taller Besta</strong></p>
-                <p>L-V de 9:00 a.m a 6:00 p.m.</p>
+                <p>L-V de 8:00 a.m a 5:00 p.m.</p>
                 <p>Sabados  9:00 am.m a 01:00 p.m.</p></div></Item>
         </Grid>
         <Grid item xs={4}>
@@ -149,7 +149,7 @@ const Visitanos = (props) => {
         </Grid>
         <Grid item xs={4}>
           <Item style={{boxShadow: "none"}}><img src={atencion} alt="" className="imgServicios" align="left"/><div className="cuadro-texto"><p className="texto-servicios"><strong> Atención al Cliente</strong></p>
-                <p>Lunes a Viernes de 9:00 a.m a 6:00 p.m.</p>
+                <p>Lunes a Viernes de 8:00 a.m a 5:00 p.m.</p>
                 <p>Sabados  9:00 am.m a 01:00 p.m.</p>
                 <p>81 3471 5233</p></div></Item>
         </Grid>
