@@ -2,7 +2,6 @@ import "./intro.scss";
 import React from 'react';
 
 export default function Intro() {
-
   return (
     <div className='intro' id="intro">
         <div className="left">
@@ -12,11 +11,10 @@ export default function Intro() {
         </div>
         <div className="right">
           <div className="wrapper">
-            <h2>¿TRABAJAS EN APLICACIÓN?</h2>
-            <h1>BESTA TU MEJOR</h1>
-            <h1>ALIADO</h1>
-            <h3>DESPREOCÚPATE DE SEGUIR RENTANDO <img src="assets/palomita.png" alt="palomita" className="palomita"/></h3>
-
+            <h2>¿Trabajas como conductor en Di Di o Uber? </h2>
+            <h1>BESTA tiene el</h1>
+            <h1>automóvil <br/> de tus sueños</h1>
+            <h3>Despreocúpate de seguir rentando <img src="assets/palomita.png" alt="palomita" className="palomita"/></h3>
           </div>
           <a href="#portafolio">
             <img src="assets/down.png" alt="" />
