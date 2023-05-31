@@ -2,6 +2,7 @@ import "./topbar.scss"
 import React from 'react';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import logo from './bestalogo.png';
+import { Link } from "react-router-dom";
 
 
 export default function Topbar({menuOpen, setMenuOpen}) {
@@ -9,9 +10,9 @@ export default function Topbar({menuOpen, setMenuOpen}) {
     <div className={"topbar " + (menuOpen && "active")}>
         <div className="wrapper">
             <div className="left">
-                <a href="/" className="logo">
+                <Link to="/" className="logo">
                     <img src={logo} alt="" />
-                </a>
+                </Link>
                 <div className="itemContainer">
                     <a href="/#modelos">Modelos</a>
                 </div>
@@ -22,7 +23,7 @@ export default function Topbar({menuOpen, setMenuOpen}) {
                     <a href="/#beneficios">Beneficios</a>
                 </div>
                 <div className="itemContainer">
-                    <a href="/visitanos">Contacto</a>
+                    <Link to="/visitanos">Contacto</Link>
                 </div>
                 <div className="itemContainer">
                     Blog
