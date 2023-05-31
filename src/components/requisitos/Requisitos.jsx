@@ -3,55 +3,87 @@ import './requisitos.scss';
 
 function Requisitos() {
 
-  return (
+    return (
         <div className="requisitos" id="comunidad">
-        <h1>Únete a nuestra comunidad BESTA</h1>
-        <div className="container">
-            <div className="card featured">
-                <div className="top">
-                <img
-                    className="requisitosImagen"
-                    src="assets/requisitos.png"
-                    alt=""
-                />
-                <h3>ALGUNOS REQUISITOS</h3>
+            <h1>Ser parte de la comunidad BESTA es fácil, sencillo y rápido.</h1>
+            <h3>En nuestro arrendamiento con opción a compra, te ofrecemos un auto a tu medida para trabajarlo en Uber o DiDi</h3>
+            <div className="container">
+                <div className="card featured">
+                    <div className="top">
+                        <div className='top-img-container'>
+                            <img
+                                className="requisitosImagen"
+                                src="/assets/pasos/paso1.png"
+                                alt=""
+                            />
+                        </div>
+                        <div className='top-txt-container'>
+                            <h3>1. Selecciona tu auto</h3>
+                        </div>
+                    </div>
+                    <div className="bottom">
+                        <p className="textoRequisitos">Y comienza tu proceso de renta con opción a compra.</p>
+                    </div>
                 </div>
-                <div className="bottom">
-                <p className="textoRequisitos">INE, Comprobante de domicilio, Constancia de situación fiscal actualizada, CURP, Licencia tipo C, Captura de Pantalla de App 1020 viajes en 3 meses,Capturas de las ganancias de los últimos dos meses en Uber y/o DiDi, INE de un aval, puede ser amigo, familiar o conocido, siempre y cuando no viva en el mismo domicilio, Depósito de garantía y gastos notariales (el monto lo dictarán en la entrevista y si esta al corriente sin deudas, éste se puede usar al final del contrato para poder liquidar el vehículo).</p>
+                <div className="card featured">
+                    <div className="top">
+                        <div className='top-img-container'>
+                            <img
+                                className="requisitosImagen"
+                                src="/assets/pasos/paso2.png"
+                                alt=""
+
+                            />
+                        </div>
+                        <div className='top-txt-container'>
+                            <h3>2. Envía tu formulario</h3>
+                        </div>
+
+                    </div>
+                    <div className="bottom">
+
+                        <p>O manda mensaje de WhatsApp y envía los documentos solicitados.</p>
+                    </div>
                 </div>
-            </div>
-            <div className="card featured">
-                <div className="top">
-                <img
-                    className="requisitosImagen"
-                    src="assets/escoger-unidadbesta.png"
-                    alt=""
-                />
-                <h3>SELECCIONA TU AUTO</h3>
-                
+                <div className="card featured">
+                    <div className="top">
+                        <div className='top-img-container'>
+                            <img
+                                className="requisitosImagen"
+                                src="/assets/pasos/paso3.png"
+                                alt=""
+                            />
+                        </div>
+                        <div className='top-txt-container'>
+                            <h3>3. Agenda cita</h3>
+                        </div>
+                    </div>
+                    <div className="bottom">
+
+                        <p>Estás por terminar y a punto de ser tu propio jefe.</p>
+                    </div>
                 </div>
-                <div className="bottom">
-                
-                <p>Selecciona el auto de tus sueños y completa el formulario.</p>
-                </div>
-            </div>
-            <div className="card featured">
-                <div className="top">
-                <img
-                    className="requisitosImagen"
-                    src="assets/cita-solicitud-info.png"
-                    alt=""
-                />
-                <h3>RECIBE TU SOLICITUD</h3>  
-                </div>
-                <div className="bottom">
-                
-                <p>En el transcurso del día, un asesor se contactará contigo para agendar una entrevista y/o dar respuesta a tu solicitud.</p>
-                </div>
+                {/* <div className="card featured">
+                    <div className="top">
+                        <div className='top-img-container'>
+                            <img
+                                className="requisitosImagen"
+                                src="/assets/pasos/paso4.1.png"
+                                alt=""
+                            />
+                        </div>
+                        <div className='top-txt-container'>
+                            <h3>¡Listo! Empieza a maximizar tus ganancias</h3>
+                        </div>
+                    </div>
+                    <div className="bottom">
+
+                        <p>Ya puedes cumplir tus metas.</p>
+                    </div>
+                </div> */}
             </div>
         </div>
-        </div>
-  )
+    )
 }
 
 export default Requisitos
