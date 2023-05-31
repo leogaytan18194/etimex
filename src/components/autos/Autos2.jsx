@@ -10,16 +10,14 @@ export default function VerticalTabs() {
 
   return (
     <div className="autos2" id="modelos">
-      <h1 className="h1-autos">Modelos disponibles</h1>
+      <h1 className="h1-autos">Vehículos disponibles</h1>
       <div className="autos-besta">
         <Swiper
             spaceBetween={50}
             slidesPerView={4}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
-          >
-     
-          
+          >               
           {dataAutos.map((item) => (
             <SwiperSlide>
           <Link to={`formulario/${item.id}`} className="link">
