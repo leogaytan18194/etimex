@@ -1,12 +1,31 @@
 @import "../../global.scss";
 
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(300px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.slideUpFadeIn{
+    animation-name: slideUp;
+    animation-duration: 3s;
+    animation-name: slideUp;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
 .requisitos {
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+
   * {
     overflow: hidden;
+    transition: all 0.3s;
   }
 
   @include mobile {
@@ -22,12 +41,20 @@
     margin-top: 40px;
     font-size: 40px;
     padding: 10px;
-
+    @include laptop {
+      font-size: 35px;
+    }
+    @include smallLaptop {
+      font-size: 25px;
+    }
     @include mobile {
       font-size: 18px;
     }
+    @include mediumMobile {      
+      text-align: center;
+    }    
   }
-
+  
   .container {
     width: 100%;
     height: 54%;
@@ -38,12 +65,15 @@
     * {
       overflow: unset;
     }
+    @include laptop {
+      gap: 0;
+    }
     @include mobile {
       width: 100%;
       height: 100%;
       flex-direction: column;
       justify-content: initial;
-      margin-top: 10px;
+      margin-top: 20px;
     }
 
     .card {
@@ -56,7 +86,8 @@
       text-align: center;
       border-radius: 10px;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-      background: #fbfbfb;
+      background: #fbfbfb;     
+
       @include mobile {
         width: 100%;
         height: 100%;
@@ -68,8 +99,7 @@
         padding: 15px 0;
         box-sizing: border-box;
         @include mobile {
-          width: 90%;
-          height: 130px;
+          width: 70%;          
           margin: 8px 0;
         }
       }
@@ -80,20 +110,16 @@
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        gap: 15px;
-        //   height: 600px;
-
-        @include mobile {
-          flex-direction: row;
-          justify-content: initial;
-          height: 120px;
-        }
-
+        gap: 15px;        
         h3 {
           color: #483e6b;
           padding-bottom: 10px;
           margin: 0;
           font-size: 23px;
+          
+          @include smallLaptop {
+            font-size: 20px;
+          }
           @include mobile {
             font-size: 12px;
             color: #483e6b;
@@ -106,8 +132,9 @@
           object-fit: cover;
           margin: 0 30px;
 
-          @include mobile {
-            height: 80px;
+          @include smallMobile {
+            width: 80px;
+            height: 80px !important;
           }
         }
       }
@@ -120,23 +147,31 @@
         max-height: 100px;
         padding: 0 29px;
         box-sizing: border-box;
-        .textoRequisitos {
-          //  font-size: 10px;
+        
+        .textoRequisitos {          
         }
 
+        @include smallLaptop {
+          padding: 0 12px;
+        }
         @include mobile {
           width: 100%;
           height: 100%;
-        }
-
+          align-items: start;
+        }        
         p {
           margin-top: 5px;
           font-size: 14px;
           text-align: center;
           height: 100%;
-
+          @include smallLaptop{
+            font-size: 12px;
+          }
           @include mobile {
             font-size: 12px;
+          }
+          @include mediumMobile {
+            font-size: 13px;
           }
         }
       }
@@ -149,7 +184,6 @@
     align-items: center;
     justify-content: center;
     max-height: 300px;
-
     img {
       width: 130px;
       height: 130px !important;
@@ -157,16 +191,47 @@
   }
   h3 {
     overflow: unset !important;
+    @include laptop {
+      font-size: 20px;
+    }
+    @include smallLaptop {
+      font-size: 17px;
+      max-width: 900px;
+      text-align: center;
+      margin: 0 10px;
+    }
+    @include mediumMobile {
+      font-size: 14px;
+      max-width: 900px;
+      text-align: center;
+      margin: 0 10px;
+    }
   }
   .top-txt-container {
-    width: 100%;
-    //min-height: 65px;
+    width: 100%;    
     align-items: center;
     display: flex;
     justify-content: center;
     h3 {
       padding: 0;
       margin: 0 !important;
+    }
+  }
+  .arrow {
+    width: 100px;
+    @include smallTablet{
+      width: 60px;
+    }
+  }
+  .arrow-container {
+    width: 100%;
+    color: #483e6b;
+    img {
+      width: 100%;
+    }
+    transition: all 0.3s;
+    @include mobile{
+      transform: rotate(90deg);
     }
   }
 }
