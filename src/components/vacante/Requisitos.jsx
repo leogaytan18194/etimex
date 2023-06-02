@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const LiContainer = ({children}) =>{
+export const LiContainer = ({children, type}) =>{
 
     return(
-        <li><div className='arrow-req'></div><span>{children}</span></li>
+        <li className={`${type}`}><div className={`arrow-req`}></div><span>{children}</span></li>
     )
 }
 const Requisitos = () => {
@@ -14,7 +14,7 @@ const Requisitos = () => {
                     <LiContainer>
                         Liderazgo
                     </LiContainer>
-                    <LiContainer>
+                    <LiContainer type="ana">
                         Analitico
                     </LiContainer>
                     <LiContainer>

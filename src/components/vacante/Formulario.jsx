@@ -58,7 +58,8 @@ function Formulario() {
             }
         });
         if (camposVacios) {
-            setFileSizeMsg('Todos los campos están vacíos.');
+            setFileSizeMsg('Campos vacíos.');
+            setIsValidForm(true);
             return false;
         }
         if (file) {
@@ -108,7 +109,7 @@ function Formulario() {
 
     //     };
     // }, [file]);
-    const formTitle = "Unete al equipo";
+    const formTitle = "Únete al equipo";
     return (
 
         <>
@@ -123,6 +124,7 @@ function Formulario() {
                             label="nombre"
                             type="input"
                             setIsValidForm={setIsValidForm}
+                            isValidForm={isValidForm}
                         />
                         <input
                             type="hidden"
@@ -137,6 +139,7 @@ function Formulario() {
                             label="apellido"
                             type="input"
                             setIsValidForm={setIsValidForm}
+                            isValidForm={isValidForm}
                         />
                     </div>
                     <div className="form-item">
@@ -145,6 +148,7 @@ function Formulario() {
                             label="correo"
                             type="email"
                             setIsValidForm={setIsValidForm}
+                            isValidForm={isValidForm}
                         />
                     </div>
                     <div className="form-item txt">
@@ -153,11 +157,12 @@ function Formulario() {
                             label="mensaje"
                             type="textarea"
                             setIsValidForm={setIsValidForm}
+                            isValidForm={isValidForm}
                         />
                     </div>
                     <div className="form-item fl">
                         <label htmlFor="adjunto" className="file">
-                            Archivo adjunto:
+                            Adjunta tu CV:
                             <Attach size="33" />
                             <input
                                 type="file" name="file" id="adjunto" className="input-style" onChange={(e) => setFile(e.target.files[0])} required />

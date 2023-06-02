@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const CustomInput = ({ name, label, type, setIsValidForm }) => {
+const CustomInput = ({ name, label, type, setIsValidForm, isValidForm }) => {
     const [isFocused, setIsFocused] = useState(false);
     const [isValid, setIsValid] = useState(true);
     const handleFocus = (e) => {
@@ -60,7 +60,7 @@ const CustomInput = ({ name, label, type, setIsValidForm }) => {
                         onChange={handleChange}
                     />
                     {
-                        isValid === false && <span>Campo requerido</span>
+                        (isValid === false || isValidForm === true) && <span>Campo requerido</span>
                     }
                 </>
 
@@ -78,7 +78,7 @@ const CustomInput = ({ name, label, type, setIsValidForm }) => {
                         onChange={handleChange}
                     />
                     {
-                        isValid === false && <span>ingresa un correo valido</span>
+                        (isValid === false || isValidForm === true) && <span>ingresa un correo valido</span>
                     }
                 </>
             }
