@@ -2091,42 +2091,18 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@styled-icons/boxicons-solid@^10.47.0":
-  version "10.47.0"
-  resolved "https://registry.npmjs.org/@styled-icons/boxicons-solid/-/boxicons-solid-10.47.0.tgz"
-  integrity sha512-M795TXYtSJCpfr+ukHZfH9mA0j5MPlB5vwRCnU3O+dojAYla/zoaSashjhUbmlgzKNwALWNfzOqicSCAzU2fhg==
+"@styled-icons/entypo@^10.46.0":
+  version "10.46.0"
+  resolved "https://registry.npmjs.org/@styled-icons/entypo/-/entypo-10.46.0.tgz"
+  integrity sha512-0ChIqx3EMlMeout4Aa5AwEYtKsgTqrY/NnVQGvhlGfMYq9mC7jq7JuaKvt5SJ9/0cEnVhgW5zwAe4LeyrsJl5g==
   dependencies:
-    "@babel/runtime" "^7.20.7"
-    "@styled-icons/styled-icon" "^10.7.0"
-
-"@styled-icons/fluentui-system-filled@^10.47.0":
-  version "10.47.0"
-  resolved "https://registry.npmjs.org/@styled-icons/fluentui-system-filled/-/fluentui-system-filled-10.47.0.tgz"
-  integrity sha512-jAO8bs9SY/5Xu2vxg5sJmnD5YA966G2m2qU4ezlDbLDIXSaX/1qUBUivBFSWCDn4q5rslegzD1rhc9FncgPbSw==
-  dependencies:
-    "@babel/runtime" "^7.20.7"
+    "@babel/runtime" "^7.19.0"
     "@styled-icons/styled-icon" "^10.7.0"
 
 "@styled-icons/fluentui-system-regular@^10.47.0":
   version "10.47.0"
   resolved "https://registry.npmjs.org/@styled-icons/fluentui-system-regular/-/fluentui-system-regular-10.47.0.tgz"
   integrity sha512-x1TmxKS6mpX+QJw8ismT3rNa6TPvKYftmQRy57LbdNE9L5FkyWldrumPboZGKWi/oNiBn6SBelPeqv8LPFXNHQ==
-  dependencies:
-    "@babel/runtime" "^7.20.7"
-    "@styled-icons/styled-icon" "^10.7.0"
-
-"@styled-icons/foundation@^10.46.0":
-  version "10.46.0"
-  resolved "https://registry.npmjs.org/@styled-icons/foundation/-/foundation-10.46.0.tgz"
-  integrity sha512-RZqNVxStjvboGg6+X1By9pE0j7FuzUkfgbu9SgOkSzMrHTvnTOu0JiQ7nNw+CY46rXhT8JTwRCgk2OLTk+anGA==
-  dependencies:
-    "@babel/runtime" "^7.19.0"
-    "@styled-icons/styled-icon" "^10.7.0"
-
-"@styled-icons/material-outlined@^10.47.0":
-  version "10.47.0"
-  resolved "https://registry.npmjs.org/@styled-icons/material-outlined/-/material-outlined-10.47.0.tgz"
-  integrity sha512-/QeDSGXlfRoIsgx4g4Hb//xhsucD4mJJsNPk/e1XzckxkNG+YHCIjbAHzDwxwNfSCJYcTDcOp2SZcoS7iyNGlw==
   dependencies:
     "@babel/runtime" "^7.20.7"
     "@styled-icons/styled-icon" "^10.7.0"

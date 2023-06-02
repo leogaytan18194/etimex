@@ -15,6 +15,7 @@ import { useState } from "react";
 import logoUber from './bestapart.png';
 import whatsapp from './whatsapp.png'
 import "./app.scss";
+import Vacante from "./components/vacante/Vacante";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -34,6 +35,7 @@ function App() {
             <Route path="/visitanos" element={<Visitanos />} />
             <Route path="/alianza-uberbesta" element={<Uber />} />
             <Route path="/palenca" element={<Palenca />} />
+            <Route path="/vacante" element={<Vacante />} />
             <Route path="/preguntas-frecuentes" element={<Preguntas />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
