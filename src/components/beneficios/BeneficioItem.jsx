@@ -12,7 +12,9 @@ const BeneficioItem = ({ title, desc }) => {
                 </h4>
             </div>
             <div className='beneficio-item-container-desc'>
-                {desc}
+                <p> 
+                    {desc}
+                </p>
             </div>
         </div>
     )
