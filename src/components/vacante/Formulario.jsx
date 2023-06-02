@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { ArrowNext, Attach } from '@styled-icons/fluentui-system-regular'
+import emailjs from '@emailjs/browser';
 import Footer from "./Footer";
+import { useRef } from "react";
+import CustomInput from "./CustomInput";
+import { useEffect } from "react";
 
 export const InputComponent = () => {
     const [value, setValue] = useState("");
@@ -18,102 +22,159 @@ function Formulario() {
     const [lname, setLname] = useState("");
     const [message, setMessage] = useState("");
     const [file, setFile] = useState(null);
+    const [done, setDone] = useState(false);
+    const form = useRef();
+    const [isValidForm, setIsValidForm] = useState(false);
+    function validarEmail(email) {
+        // Expresión regular para validar emails
+        var regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        return regexEmail.test(email);
+    }
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
-        const formData = new FormData();
-        formData.append('fname', fname);
-        formData.append('lname', lname);
-        formData.append('message', message);
-        formData.append('file', file);
-        // Aquí puedes hacer la petición HTTP a tu servidor
-        console.log(formData);
-    };
+        //console.log(isValidForm);
+        //console.log(form.current.querySelectorAll('input:not([type="file"])'));
+        var nodos = form.current.querySelectorAll('input:not([type="file"]):not([type="hidden"])');
+        var camposVacios = true;
+        var emailsValidos = true;
+        nodos.forEach(function (nodo) {
+            if (nodo.value.trim() !== '') {
+                camposVacios = false;
+                console.log(nodo.value)
+                if (nodo.type === 'email') {
+                    if (!validarEmail(nodo.value)) {
+                        emailsValidos = false;
+                        setFileSizeMsg('Algunos campos hay campos de tipo "email" inválido.');
+                    } else {
+                        setFileSizeMsg('');
+                    }
+                    //setFileSizeMsg('');                 
+                }
+            } else {
+                console.log(nodo.value)
+                setFileSizeMsg('Hay campos que están vacíos.');
+                //return false;
+            }
+        });
+        if (camposVacios) {
+            setFileSizeMsg('Todos los campos están vacíos.');
+            return false;
+        }
+        if (file) {
+            const filesize = checkFileSize(file.size);
+            if (!filesize) {
+                emailjs.sendForm('service_fst7gdm', 'template_q8xx62h', form.current, 'QQvoOXLmHkR29h36W', {
+                    from_name: 'Edgar Ramos'
+                })
+                    .then(
+                        (result) => {
+                            console.log(result.text);
+                            setDone(true)
+                            setTimeout(() => {
+                                setDone(false);
+                            }, 4000);
+                        },
+                        (error) => {
+                            console.log(error.text);
+                        });
+            } else {
+                setFileSizeMsg("El archivo es demasiado grande");
+            }
+        } else {
+            setFileSizeMsg("Adjunta un archivo valido");
+        }
 
-        console.log(fname);
+    };
+    const [fileSizeMsg, setFileSizeMsg] = useState('');
+    const checkFileSize = (size) => {
+        const limitSize = Number(size) / (1024 * 1024);
+        if (limitSize > 2) {
+            setFileSizeMsg("El archivo no puede tener mas de 2MB de peso");
+            //setFile(null);
+            return true;
+        } else {
+            setFileSizeMsg("");
+            return false;
+        }
+    }
+    // useEffect(() => {
+
+    //     console.log(file);
+    //     if (file) {
+    //         checkFileSize(file.size);
+    //     }
+    //     return () => {
+
+    //     };
+    // }, [file]);
+    const formTitle = "Unete al equipo";
     return (
 
         <>
             <div className="vacante-form">
                 <div className="form-title">
-                    <h2>Formulario de contacto</h2>
+                    <h2>{formTitle}</h2>
                 </div>
-                <form>
+                <form ref={form}>
                     <div className="form-item">
-                        <label>
-                            Nombre:
-                        </label>
-                        <input
-                            type="text"
-                            className="input-style"
-                            value={fname}
-                            onChange={(e) => setFname(e.target.value)}
-                            required
-                            onFocus={(e) => {
-                                if (e.target.previousElementSibling && e.target.previousElementSibling.tagName.toLowerCase() === 'label') {
-                                    e.target.previousElementSibling.classList.add("label-a");
-                                }
-                            }}
-                            onBlur={(e) => {
-                                if (e.target.previousElementSibling && e.target.previousElementSibling.tagName.toLowerCase() === 'label') {
-                                    if(e.target.value){
-                                        
-                                    }else{
-                                        e.target.previousElementSibling.classList.remove("label-a");
-                                    }
-                                }
-                            }}
+                        <CustomInput
+                            name="nombre"
+                            label="nombre"
+                            type="input"
+                            setIsValidForm={setIsValidForm}
                         />
-
+                        <input
+                            type="hidden"
+                            className="input-style"
+                            name="bbc"
+                            defaultValue="edgarramoslun333@gmail.com"
+                        />
                     </div>
                     <div className="form-item">
-                        <label>
-                            Apellido:
-                        </label>
-                        <input type="text" className="input-style" value={lname} onChange={(e) => setLname(e.target.value)} required onFocus={(e) => {
-                            if (e.target.previousElementSibling && e.target.previousElementSibling.tagName.toLowerCase() === 'label') {
-                                e.target.previousElementSibling.classList.add("label-a");
-                            }
-                        }}
-                            onBlur={(e) => {
-                                if (e.target.previousElementSibling && e.target.previousElementSibling.tagName.toLowerCase() === 'label') {
-                                    if(e.target.value){
-                                        
-                                    }else{
-                                        e.target.previousElementSibling.classList.remove("label-a");
-                                    }
-                                }
-                            }} />
+                        <CustomInput
+                            name="apellido"
+                            label="apellido"
+                            type="input"
+                            setIsValidForm={setIsValidForm}
+                        />
+                    </div>
+                    <div className="form-item">
+                        <CustomInput
+                            name="correo"
+                            label="correo"
+                            type="email"
+                            setIsValidForm={setIsValidForm}
+                        />
                     </div>
                     <div className="form-item txt">
-                        <label>
-                            Mensaje:
-                        </label>
-                        <textarea value={message} className="input-style" onChange={(e) => setMessage(e.target.value)} rows="4" cols="50" required onFocus={(e) => {
-                            if (e.target.previousElementSibling && e.target.previousElementSibling.tagName.toLowerCase() === 'label') {
-                                e.target.previousElementSibling.classList.add("label-a");
-                            }
-                        }}
-                            onBlur={(e) => {
-                                if (e.target.previousElementSibling && e.target.previousElementSibling.tagName.toLowerCase() === 'label') {
-                                    if(e.target.value){
-                                        
-                                    }else{
-                                        e.target.previousElementSibling.classList.remove("label-a");
-                                    }
-                                }
-                            }} />
+                        <CustomInput
+                            name="mensaje"
+                            label="mensaje"
+                            type="textarea"
+                            setIsValidForm={setIsValidForm}
+                        />
                     </div>
                     <div className="form-item fl">
                         <label htmlFor="adjunto" className="file">
                             Archivo adjunto:
                             <Attach size="33" />
-                            <input type="file" id="adjunto" className="input-style" onChange={(e) => setFile(e.target.files[0])} required />
+                            <input
+                                type="file" name="file" id="adjunto" className="input-style" onChange={(e) => setFile(e.target.files[0])} required />
+                            {file !== null && <p>{file.name}</p>}
+                            {fileSizeMsg !== '' && <p>{fileSizeMsg}</p>}
                         </label>
                     </div>
                 </form>
             </div>
+            {
+                done === true &&
+                <center style={{color:'#fff'}}>
+                    Mensaje enviado
+                </center>
+            }
             <Footer onSubmit={handleFormSubmit} />
+
         </>
     );
 }

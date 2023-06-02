@@ -9,7 +9,7 @@ $smallTablet: 900;
 $mobile: 768;
 $mediumMobile: 600;
 $smallMobile: 480;
-$ultraSmallMobile: 320;
+$ultraSmallMobile: 380;
 @mixin desktop {
   @media (max-width: #{$desktop}px) {
     @content;

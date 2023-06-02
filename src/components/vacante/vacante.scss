@@ -1,3 +1,4 @@
+@import "../../global.scss";
 .vacante-top {
   width: 100%;
   background: #4e396f;
@@ -7,6 +8,15 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: contain;
+  @include smallTablet {
+    height: 500px;
+  }
+  @include mobile {
+    height: 450px;
+  }
+  @include smallMobile {
+    height: 380px;
+  }
 }
 
 #vacante {
@@ -34,6 +44,10 @@
     display: grid;
     align-items: center;
     grid-template-columns: repeat(2, 50%);
+    @include smallTablet {
+      grid-template-columns: repeat(1, 100%);
+      gap: 20px;
+    }
     span {
       color: #fff;
     }
@@ -50,6 +64,11 @@
       display: flex;
       align-items: center;
       gap: 10px;
+      @include mobile{
+        span {
+            font-size: 0.8em;
+        }
+      }
     }
   }
 }
@@ -57,6 +76,15 @@
 .requisitos-exp {
   top: -38px;
   position: absolute !important;
+  @include mobile{
+    top: -50px;
+  }
+  @include mediumMobile{
+    top: -70px;
+  }
+  @include ultraSmallMobile{
+    top: -100px;
+  }
   h3 {
     max-width: 300px;
     margin-right: auto;
@@ -68,6 +96,21 @@
       color: #4e396f;
       font-weight: bold;
     }
+  }
+  @include smallTablet {
+    display: flex;
+    width: 100%;
+    left: 0;
+    box-sizing: border-box;
+    padding: 0 25px;
+    h3 {
+      max-width: 100%;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+  @include mobile {
+    font-size: 20px;
   }
 }
 
@@ -103,10 +146,20 @@
     label {
       top: 33px;
       color: #4e396f;
-    }
+    }    
   }
   .form-item {
     position: relative;
+    span{
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 100%;
+        color: red;
+        text-transform: lowercase;
+        font-weight: lighter;
+        font-size: 12px;
+    }
   }
   input {
     height: 45px;
@@ -135,6 +188,9 @@
   transform: translateX(22px) translateY(-50%);
   transition: all 0.3s;
   align-items: center;
+  &:first-letter {
+    text-transform: uppercase;
+  }
 }
 .label-a {
   top: -5px !important;
@@ -204,6 +260,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  * {
+    color: #fff;
+  }
 }
 .footer-container {
   width: 100%;
@@ -211,6 +271,9 @@
   display: grid;
   grid-template-columns: repeat(3, 47.5% 5% 47.5%);
   align-items: center;
+  @include mobile{
+    grid-template-columns: repeat(1, 100%);
+  }
 }
 
 .footer-btn {
@@ -218,12 +281,23 @@
   justify-content: end;
   align-items: center;
   min-height: 60px;
+  @include mobile{
+    justify-content: center;
+  }
 }
 .footer-arrow {
   height: 50px;
   width: 100%;
   text-align: center;
   min-height: 60px;
+  display: flex;
+  align-items: center;
+  @include mobile{
+    justify-content: center;
+    img{
+        width: 30px;
+    }
+  }
 }
 .footer-info {
   display: flex;
@@ -233,6 +307,9 @@
   box-sizing: border-box;
   gap: 15px;
   min-height: 60px;
+  @include mobile{
+    justify-content: center;
+  }
 }
 .footer-info-img {
   width: 35px;
@@ -240,6 +317,7 @@
   border: 3px solid #fff;
   padding: 8px;
   border-radius: 100%;
+  display: flex;
 }
 .footer-info-txt {
   display: flex;
@@ -262,6 +340,12 @@
 .requisitos-right {
   box-sizing: border-box;
   padding: 0 25px;
+  @include smallTablet{
+   
+    li:nth-child(1){
+        display: none;
+    }
+  }
 }
 
 .requisitos-left {
@@ -273,4 +357,26 @@
     background-size: contain;
     border-right: 2px dashed #fff;
   }
+  @include smallTablet {
+    order: 2;
+    ul {
+      border: 0;
+    }
+  }
+  .requisitos-left {
+      @include smallTablet {        
+        ul {
+          border: 0;
+          margin-top: 15px;     
+        }
+      }
+
+  }
+}
+.invalid{
+    transition: all 0.3s;
+    border-color: red !important;
+    p{
+        color: red !important;
+    }
 }

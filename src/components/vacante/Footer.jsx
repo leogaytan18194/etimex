@@ -28,6 +28,11 @@ export const Footer = ({onSubmit}) => {
                     </div>
                 </div>
             </div>
+            <div className='footer-bottom'>
+                <p className='website'>
+                    www.besta.mx
+                </p>
+            </div>
         </div>
     )
 };
