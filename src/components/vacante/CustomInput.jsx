@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { useEffect } from 'react';
 
-const CustomInput = ({ name, label, type, setIsValidForm, isValidForm }) => {
+const CustomInput = ({ name, label, type, setIsValidForm, isValidForm, clearInputs }) => {
     const [isFocused, setIsFocused] = useState(false);
     const [isValid, setIsValid] = useState(true);
     const handleFocus = (e) => {
@@ -34,6 +35,7 @@ const CustomInput = ({ name, label, type, setIsValidForm, isValidForm }) => {
             if (type === 'email') {
                 const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
                 setIsValid(regex.test(e.target.value));
+                setIsValidForm(regex.test(e.target.value))
             }
             if (type === 'input') {
                 setIsValid(e.target.value.trim() !== '');
@@ -42,7 +44,23 @@ const CustomInput = ({ name, label, type, setIsValidForm, isValidForm }) => {
             setIsValid(false);
         }
     };
-
+    useEffect(() => {
+        // if(isValidForm){
+        //     setIsValid(false)
+        // }
+        if(clearInputs){
+            const daa = document.querySelector('form-item');
+            var nodos = daa.current.querySelectorAll('input:not([type="file"]):not([type="hidden"])');
+            var camposVacios = true;
+            var emailsValidos = true;
+            nodos.forEach(function (nodo) {
+                nodo.value = '';
+            });
+        }
+        return () => {
+            
+        };
+    }, [clearInputs]);
     return (
         <div className="form-item">
             <label className={isFocused ? 'label-a' : ''} htmlFor={label}>
@@ -60,7 +78,7 @@ const CustomInput = ({ name, label, type, setIsValidForm, isValidForm }) => {
                         onChange={handleChange}
                     />
                     {
-                        (isValid === false || isValidForm === true) && <span>Campo requerido</span>
+                        isValid === false && <span>Campo requerido</span>
                     }
                 </>
 
@@ -78,7 +96,7 @@ const CustomInput = ({ name, label, type, setIsValidForm, isValidForm }) => {
                         onChange={handleChange}
                     />
                     {
-                        (isValid === false || isValidForm === true) && <span>ingresa un correo valido</span>
+                        isValid === false && <span>ingresa un correo valido</span>
                     }
                 </>
             }

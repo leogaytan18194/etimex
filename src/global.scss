@@ -9,7 +9,8 @@ $smallTablet: 900;
 $mobile: 768;
 $mediumMobile: 600;
 $smallMobile: 480;
-$ultraSmallMobile: 380;
+$ultraSmallMobile: 420;
+$ultraSmallMobile2: 400;
 @mixin desktop {
   @media (max-width: #{$desktop}px) {
     @content;
@@ -57,6 +58,11 @@ $ultraSmallMobile: 380;
 }
 @mixin ultraSmallMobile {
   @media (max-width: #{$ultraSmallMobile}px) {
+    @content;
+  }
+}
+@mixin ultraSmallMobile2 {
+  @media (max-width: #{$ultraSmallMobile2}px) {
     @content;
   }
 }

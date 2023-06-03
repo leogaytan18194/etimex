@@ -8,7 +8,7 @@ import BeneficioItem from "./BeneficioItem";
 const datos = [
   {
     title: "Taller de mecánica",
-    desc: "Servicio únicamente para comunidad BESTA, además de mantenimientos preventivos de autos y de GNV incluidos."
+    desc: "Servicio de mantenimiento únicamente para comunidad BESTA"
   },
   {
     title: "Sin buró de crédito",
@@ -17,10 +17,6 @@ const datos = [
   {
     title: "Seguro",
     desc: "Seguro de conductor privado con deducible más bajo en el mercado (3%)."
-  },
-  {
-    title: "Siniestros",
-    desc: "Gestoría y asesoría en siniestro."
   },
   {
     title: "Equipo GNV",

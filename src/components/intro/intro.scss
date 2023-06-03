@@ -3,9 +3,10 @@
 .intro{
     background-color: white;
     display: flex;
-
+    
     @include mobile{
-        flex-direction: column;
+        
+        flex-direction: column-reverse;
         align-items: center;
     }
 
@@ -22,9 +23,12 @@
             justify-content: center;
             float: right;
 
-            @include mobile {
+            @include mobile {                
                 align-items: flex-start;
+                height: 100%;
+                width: 300px;
             }
+            
 
             img{
                 height: 100%;
@@ -44,6 +48,9 @@
         @include mobile{
             flex: 0.3;
             position: relative;
+            a{
+                display: none;
+            }
         }
 
         .wrapper{
@@ -56,8 +63,11 @@
 
             @include mobile{
                 height: 60%;
-                padding-left: 0;
-                align-items: center;
+                padding-left: 15px;
+                align-items: start;
+                h1{
+                  padding-left: 15px;
+                }
             }
 
             button{

@@ -6,7 +6,7 @@
     align-items: center;
 
     @include mobile{
-      display: none;
+      //display: none;
     }
 
   .h1-autos{
@@ -26,6 +26,9 @@
 }
   .autos-besta{
     padding-top: 10%;
+    @include mobile{
+      display: none;
+    }
   }
   
   .card-autos2 {
@@ -50,8 +53,19 @@
     align-items: center;
     text-align: center;
     overflow: hidden;
+    box-sizing: border-box;
+    padding: 15px;
+    line-height: 1.33;
+    font-size: 20px;
+    font-weight: 700;
+    @include mobile{
+      text-align: left;
+      //box-sizing: border-box;
+      //padding: 15px;
+      padding-bottom: 0;
+    }
   }
-
+  
   .card-top2 h3 {
     font-size: 0.9rem;
     color: $mainColor;
@@ -59,6 +73,14 @@
     align-items: center;
     text-align: center;
     overflow: hidden;
+    
+    @include mobile{
+      text-align: left;     
+      padding: 15px;
+      margin: 0;
+      padding-top: 0;
+    }
+
   }
   
   
@@ -66,6 +88,10 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    @include mobile{
+      width: 230px;
+      height: 160px;
+    }
     
   }
   
@@ -92,3 +118,19 @@
       margin-right: 10px;
     }
   }
+
+
+  // .swiper-wrapper{
+  //   justify-content: space-evenly;
+  // }
+  // @include mobile{
+  //   .swiper-wrapper{
+  //     box-sizing: content-box;
+  //     flex-wrap: wrap;
+  //   }
+  //   .swiper-slide {
+  //       width: 60% !important;
+  //       margin: 0 auto !important;
+  //       padding: 0 !important;
+  //   }
+  // }

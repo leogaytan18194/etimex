@@ -10,22 +10,31 @@ import NotFoundPage from "./components/notfoundpage/NotFoundPage";
 import Visitanos from "./components/visitanos/Visitanos";
 import Uber from "./components/uber/Uber";
 import React from 'react';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import { useState } from "react";
 import logoUber from './bestapart.png';
 import whatsapp from './whatsapp.png'
 import "./app.scss";
 import Vacante from "./components/vacante/Vacante";
+import Iconos from "./components/visitanos/Iconos";
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false);
+  //const route = useLocation();
+  
+  // console.log(route)
+  // useEffect(() => {
+    
+  //   return () => {
+      
+  //   };
+  // }, [route]);
   return (
     <div className="app">
       <BrowserRouter>
         <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        <img class="button_float" src={logoUber} alt="" />
-        <a href="https://bit.ly/3pGO0pN"><img class="whatsapp-icon" src={whatsapp} alt="" /></a>
+        <Iconos />
         <div className="sections">
           <Routes>
             <Route path="/" element={<Home />} />

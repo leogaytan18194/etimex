@@ -25,6 +25,7 @@ function Formulario() {
     const [done, setDone] = useState(false);
     const form = useRef();
     const [isValidForm, setIsValidForm] = useState(false);
+    const [clearInputs, setClearInputs] = useState(false);
     function validarEmail(email) {
         // Expresión regular para validar emails
         var regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -46,6 +47,8 @@ function Formulario() {
                     if (!validarEmail(nodo.value)) {
                         emailsValidos = false;
                         setFileSizeMsg('Algunos campos hay campos de tipo "email" inválido.');
+                        setIsValidForm(false)
+                        return false;
                     } else {
                         setFileSizeMsg('');
                     }
@@ -54,7 +57,7 @@ function Formulario() {
             } else {
                 console.log(nodo.value)
                 setFileSizeMsg('Hay campos que están vacíos.');
-                //return false;
+                return false;
             }
         });
         if (camposVacios) {
@@ -63,6 +66,7 @@ function Formulario() {
             return false;
         }
         if (file) {
+            console.log('entre');
             const filesize = checkFileSize(file.size);
             if (!filesize) {
                 emailjs.sendForm('service_fst7gdm', 'template_q8xx62h', form.current, 'QQvoOXLmHkR29h36W', {
@@ -72,6 +76,7 @@ function Formulario() {
                         (result) => {
                             console.log(result.text);
                             setDone(true)
+                            window.location.reload();
                             setTimeout(() => {
                                 setDone(false);
                             }, 4000);
@@ -135,7 +140,7 @@ function Formulario() {
                     </div>
                     <div className="form-item">
                         <CustomInput
-                            name="apellido"
+                            name="apellidos"
                             label="apellido"
                             type="input"
                             setIsValidForm={setIsValidForm}
@@ -178,7 +183,7 @@ function Formulario() {
                     Mensaje enviado
                 </center>
             }
-            <Footer onSubmit={handleFormSubmit} />
+            <Footer onSubmit={handleFormSubmit} clear={clearInputs} />
 
         </>
     );

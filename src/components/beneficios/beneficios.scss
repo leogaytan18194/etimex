@@ -111,6 +111,7 @@
   @include mobile {
     width: 100%;
     font-size: 20px;
+    text-align: left;
   }
 }
 
@@ -165,7 +166,8 @@
   align-items: start;
   text-align: left;
   @include mobile{
-    text-align: center;
+    //text-align: center;
+    text-align: left;
   }
  
   p {
@@ -186,6 +188,9 @@
   @include mediumMobile{
     grid-template-columns: 100%;
   }
+  @include mobile{
+    margin: 0 25px;
+  }
 }
 .beneficio-item-container {
   width: 100%;
@@ -198,6 +203,10 @@
   gap: 10px;
   @include mediumMobile{
     min-height: 80px;
+  }
+  @include mobile{
+    gap: 0;
+    min-height: auto;
   }
 }
 
