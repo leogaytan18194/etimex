@@ -7,6 +7,7 @@ import Works from "./components/works/Works"
 import Clientes from "./components/clientes/Clientes"
 import Contact from "./components/contact/Contact"
 import Servicios from "./components/servicios/Servicios"
+import Print from "./components/informacion/Print"
 import "./app.scss"
 import { useState } from "react";
 import Menu from "./components/menu/Menu";
@@ -20,6 +21,7 @@ function App() {
      <div className="sections">
         <Works/>
        <Intro/>
+       <Print/>
        <Informacion/>
        <Segmentos/>
        <Servicios/>
