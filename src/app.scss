@@ -1,12 +1,10 @@
-@import "./global.scss";
 .app{
     height: 100vh;
-    
 
     .sections{
         width: 100%;
-        
-        background-color: white;
+        height: calc(100vh - 70px);
+        background-color: lightsalmon;
         position: relative;
         top: 70px;
         scroll-behavior: smooth;
@@ -15,53 +13,11 @@
         &::-webkit-scrollbar{
             display: none;
         }
- 
+
         > *{
+            width: 100vw;
             height: calc(100vh - 70px);
             scroll-snap-align: start;
-            @include mobile{
-                height: auto;
-            }
         }
-    }
-}
-
-.button_float {
-    position: fixed;
-    width: 350px;
-    height: 90;
-    bottom: 5px;
-    right: 5px;
-    text-align: center;
-    font-size: 30px;
-    z-index: 100;
-}
-.whatsapp-icon {
-    position: fixed;
-    width: 50px;
-    height: 90;
-    bottom: 20px;
-    right: 50px;
-    text-align: center;
-    font-size: 30px;
-    z-index: 100;
-}
-
-
-/* for mobile */
-@media screen and (max-width: 767px) {
-    .whatsapp-icon {
-        height: 40px;
-        width: 40px;
-        margin-top: 50px;
-        margin-bottom: 40px;
-    }
-
-    .button_float {
-        width: 200px;
-        height: 90px;
-        bottom: 0px;
-        right: 0px;
-        font-size: 22px;
     }
 }

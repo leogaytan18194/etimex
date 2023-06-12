@@ -1,25 +1,21 @@
 import "./intro.scss";
-import React from 'react';
 
 export default function Intro() {
+
+
   return (
-    <div className='intro' id="intro">
-        <div className="left">
-          <div className="imgContainer">
-            <img src="/assets/INICIO-CARRO.png" alt="" />
-          </div>
+    <div className="intro" id="intro" style={{ 
+      height: '460px',
+      backgroundSize: 'cover',
+      backgroundImage: `url("https://www.etimex.com/wp-content/uploads/2023/06/banneretimex.png")` }}>
+      <div className="left">
+      </div>
+      <div className="right">
+        <div className="wrapper">
+          <h2>Las etiquetas de nuestras marcas representan sus valores...</h2>
+          <h1>su personalidad.</h1>
         </div>
-        <div className="right">
-          <div className="wrapper">
-            <h2>¿Trabajas como conductor en DiDi o Uber? </h2>
-            <h1>BESTA tiene el</h1>
-            <h1>automóvil <br/> de tus sueños</h1>
-            <h3>Despreocúpate de seguir rentando <img src="assets/palomita.png" alt="palomita" className="palomita"/></h3>
-          </div>
-          <a href="#portafolio">
-            <img src="assets/down.png" alt="" />
-          </a>
-        </div>
+      </div>
     </div>
-  )
+  );
 }

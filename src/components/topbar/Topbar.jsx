@@ -1,41 +1,32 @@
-import "./topbar.scss"
-import React from 'react';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import logo from './bestalogo.png';
-import { Link } from "react-router-dom";
+import "./topbar.scss";
+import { Person, Mail } from "@material-ui/icons";
+import logo from './etimex-logo.png';
 
-
-export default function Topbar({menuOpen, setMenuOpen}) {
+export default function Topbar({ menuOpen, setMenuOpen }) {
   return (
     <div className={"topbar " + (menuOpen && "active")}>
-        <div className="wrapper">
-            <div className="left">
-                <Link to="/" className="logo">
-                    <img src={logo} alt="" />
-                </Link>
-                <div className="itemContainer">
-                    <a href="/#modelos">Modelos</a>
-                </div>
-                <div className="itemContainer">
-                    <a href="/#comunidad">¿Cómo funciona?</a>
-                </div>
-                <div className="itemContainer">
-                    <a href="/#beneficios">Beneficios</a>
-                </div>
-                <div className="itemContainer">
-                    <Link to="/visitanos">Contacto</Link>
-                </div>             
-            </div>
-            
-            <div className="right">
-                <AccountCircleIcon className="iconUser"></AccountCircleIcon>
-                <div className="hamburguer" onClick={()=>setMenuOpen(!menuOpen)}>
-                    <span className="line1"></span>
-                    <span className="line2"></span>
-                    <span className="line3"></span>
-                </div>
-            </div>
+      <div className="wrapper">
+        <div className="left">
+          <a href="#intro" className="logo">
+            <img className="logo" src={logo} alt="" />
+          </a>
+          <div className="itemContainer">
+            <Person className="icon" />
+            <span>+333445224</span>
+          </div>
+          <div className="itemContainer">
+            <Mail className="icon" />
+            <span>info@etimex.com</span>
+          </div>
         </div>
+        <div className="right">
+          <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
+            <span className="line1"></span>
+            <span className="line2"></span>
+            <span className="line3"></span>
+          </div>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
