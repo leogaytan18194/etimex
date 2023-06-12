@@ -1,5 +1,4 @@
 import "./topbar.scss";
-import { Person, Mail } from "@material-ui/icons";
 import logo from './etimex-logo.png';
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
@@ -11,12 +10,22 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             <img className="logo" src={logo} alt="" />
           </a>
           <div className="itemContainer">
-            <Person className="icon" />
-            <span>+333445224</span>
+            <span>inicio</span>
           </div>
           <div className="itemContainer">
-            <Mail className="icon" />
-            <span>info@etimex.com</span>
+            <span>segmentos</span>
+          </div>
+          <div className="itemContainer">
+            <span>servicios</span>
+          </div>
+          <div className="itemContainer">
+            <span>clientes</span>
+          </div>
+          <div className="itemContainer">
+            <span>contacto</span>
+          </div>
+          <div className="itemContainer">
+            <span>blog</span>
           </div>
         </div>
         <div className="right">

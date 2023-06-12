@@ -14,7 +14,7 @@
     padding: 10px 30px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 
     .left {
       display: flex;
@@ -38,11 +38,6 @@
           display: none;
         }
 
-        .icon {
-          font-size: 18px;
-          margin-right: 5px;
-        }
-
         span {
           font-size: 15px;
           font-weight: 500;
@@ -51,6 +46,7 @@
     }
 
     .right {
+      display: none;
       .hamburger {
         width: 32px;
         height: 25px;
@@ -75,6 +71,7 @@
     color: white;
 
     .hamburger {
+      
       span {
         &:first-child {
           background-color: white;
