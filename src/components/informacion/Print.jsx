@@ -10,7 +10,7 @@ export default function Print() {
         <div className="wrapper">
           <h1 className="ITBold">Print</h1>
           <h2>to connect</h2>
-        <h3 className="helvetica"><b>Nuestra tecnología no tiene límite</b>, desde tiradas cortas, grandes y la flexibilidad para el desarrollo de diferentes empaques.</h3>
+        <h3 className="helvetica"><b>Diferenciarnos en el punto de venta es lo mas importante para capta la atención, nuestra gama de materiales, acabaos en formato digital es el futuro.</h3>
         </div>
       </div>
   );
