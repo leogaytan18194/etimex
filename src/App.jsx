@@ -8,6 +8,7 @@ import Clientes from "./components/clientes/Clientes"
 import Contact from "./components/contact/Contact"
 import Servicios from "./components/servicios/Servicios"
 import Print from "./components/informacion/Print"
+import Video from "./components/video/Video"
 import "./app.scss"
 import { useState } from "react";
 import Menu from "./components/menu/Menu";
@@ -19,6 +20,7 @@ function App() {
      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
      <div className="sections">
+        <Video/>
         <Works/>
        <Intro/>
        <Print/>
