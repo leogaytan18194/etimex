@@ -10,22 +10,22 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             <img className="logo" src={logo} alt="" />
           </a>
           <div className="itemContainer">
-            <span>inicio</span>
+            <span className="ITBk">inicio</span>
           </div>
           <div className="itemContainer">
-            <span>segmentos</span>
+            <span className="ITBk">segmentos</span>
           </div>
           <div className="itemContainer">
-            <span>servicios</span>
+            <span className="ITBk">servicios</span>
           </div>
           <div className="itemContainer">
-            <span>clientes</span>
+            <span className="ITBk">clientes</span>
           </div>
           <div className="itemContainer">
-            <span>contacto</span>
+            <span className="ITBk">contacto</span>
           </div>
           <div className="itemContainer">
-            <span>blog</span>
+            <span className="ITBk">blog</span>
           </div>
         </div>
         <div className="right">

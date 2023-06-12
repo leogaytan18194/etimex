@@ -4,7 +4,7 @@
     .sections{
         width: 100%;
         height: calc(100vh - 70px);
-        background-color: lightsalmon;
+        background-color: white;
         position: relative;
         top: 70px;
         scroll-behavior: smooth;
@@ -38,4 +38,14 @@
 
 .ITBold{
     font-family: ITCAvantGardeStd-Bold;
+}
+
+@font-face{
+    font-family: ITCAvantGardeStd-Bk;
+    src: url(../public/assets/ITCAvantGardeStd-Bk.ttf);
+}
+
+.ITBk{
+    font-family: ITCAvantGardeStd-Bk;
+    color: #202029;
 }
