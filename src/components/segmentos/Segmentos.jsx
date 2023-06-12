@@ -9,7 +9,12 @@ export default function Segmentos() {
 
 
   return (
-    <div className="segmentos" id="segmentos">
+    <div className="segmentos" id="segmentos" style={{
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      height: "100%"
+    }}>
       <h1>Segmentos</h1>
       <div className="container">
           <Card sx={{ maxWidth: 220, boxShadow: 0 }}>

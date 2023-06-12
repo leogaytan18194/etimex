@@ -5,7 +5,12 @@ export default function Servicios() {
 
 
   return (
-    <div className="servicios" id="servicios">
+    <div className="servicios" id="servicios" style={{
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      height: "100%"
+    }}>
       <h1 className="ITBold">Servicios</h1>
       <div className="container">
           <div className="item">
