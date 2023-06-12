@@ -26,8 +26,8 @@ export default function Servicios() {
       <div className="container">
           <div className="item">
             <img
-              src=""
-              alt=""
+              src="assets/servicios2.png"
+              alt="Tintas"
             />
             <h3>Tintas</h3>
           </div>
