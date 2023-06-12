@@ -6,7 +6,7 @@ export default function Servicios() {
 
   return (
     <div className="servicios" id="servicios">
-      <h1>Servicios</h1>
+      <h1 className="ITBold">Servicios</h1>
       <div className="container">
           <div className="item">
             <img

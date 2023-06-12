@@ -19,24 +19,24 @@ export default function Segmentos() {
               title="green iguana"
             />
             <CardContent>
-              <Typography gutterBottom variant="h6" component="div">
+              <h3 className="ITBold"> 
                 Vinos y Licores
-              </Typography>
+              </h3>
               <Typography variant="body2" color="text.secondary">
               Vestimos vinos y licores que llevan  una historia detrás y forman parte de momentos únicos.
               </Typography>
             </CardContent>
           </Card>
-          <Card sx={{ maxWidth: 220,boxShadow: 0 }}>
+          <Card sx={{ maxWidth: 230,boxShadow: 0 }}>
             <CardMedia
               sx={{ height: 220 }}
               image="assets/segmento2.png"
               title="green iguana"
             />
             <CardContent>
-              <Typography gutterBottom variant="h6" component="div">
+              <h3 className="ITBold">
                 Alimentos y Bebidas
-              </Typography>
+                </h3>
               <Typography variant="body2" color="text.secondary">
               Entendemos los retos de la industria de etiquetas para alimentos y te asesoramos con las soluciones más atractivas.
               </Typography>
@@ -49,9 +49,9 @@ export default function Segmentos() {
               title="green iguana"
             />
             <CardContent>
-              <Typography gutterBottom variant="h6" component="div">
+              <h3 className="ITBold">
                 Salud y Belleza
-              </Typography>
+                </h3>
               <Typography variant="body2" color="text.secondary">
               La industria cosmética y farmacéutica es  altamente competitiva  el mantenerse a la vanguardia es la clave del éxito para estos productos.
               </Typography>
@@ -64,9 +64,9 @@ export default function Segmentos() {
               title="green iguana"
             />
             <CardContent>
-              <Typography gutterBottom variant="h6" component="div">
+              <h3 className="ITBold">
                 Industrial
-              </Typography>
+                </h3>
               <Typography variant="body2" color="text.secondary">
               Conocemos las diversas condiciones a las que se enfrentan los productos de uso industrial.
               </Typography>

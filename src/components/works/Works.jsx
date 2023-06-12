@@ -53,8 +53,8 @@ export default function Works() {
               </div>
               <div className="right">
                 <div className="rightContainer">
-                    <h2>{d.title}</h2>
-                    <p>{d.desc}</p>
+                    <h2 className="ITBold">{d.title}</h2>
+                    <p className="helvetica">{d.desc}</p>
                   </div>
               </div>
             </div>

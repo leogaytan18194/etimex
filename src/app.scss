@@ -21,3 +21,21 @@
         }
     }
 }
+
+@font-face{
+    font-family: Helvetica;
+    src: url(../public/assets/Helvetica.ttc);
+}
+
+.helvetica{
+    font-family: Helvetica;
+}
+
+@font-face{
+    font-family: ITCAvantGardeStd-Bold;
+    src: url(../public/assets/ITCAvantGardeStd-Bold.ttf);
+}
+
+.ITBold{
+    font-family: ITCAvantGardeStd-Bold;
+}

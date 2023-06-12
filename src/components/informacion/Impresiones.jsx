@@ -11,7 +11,7 @@ export default function Impresiones() {
       </div>
       <div className="right">
         <div className="wrapper">
-          <h2>Nuestra tecnología no tiene límite, desde tiradas cortas, grandes y la flexibilidad para el desarrollo de diferentes empaques.</h2>
+          <h2 className="helvetica"><b>Nuestra tecnología no tiene límite</b>, desde tiradas cortas, grandes y la flexibilidad para el desarrollo de diferentes empaques.</h2>
         </div>
       </div>
     </div>

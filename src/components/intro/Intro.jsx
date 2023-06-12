@@ -12,8 +12,8 @@ export default function Intro() {
       </div>
       <div className="right">
         <div className="wrapper">
-          <h2>Las etiquetas de nuestras marcas representan sus valores...</h2>
-          <h1>su personalidad.</h1>
+          <h2 className="helvetica">Las etiquetas de nuestras marcas representan sus valores...</h2>
+          <h2 className="helvetica">su personalidad.</h2>
         </div>
       </div>
     </div>
