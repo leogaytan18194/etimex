@@ -3,7 +3,8 @@
 .print {
 
   display: flex;
-
+  justify-content: left;
+  align-items: center;
 
   position: relative;
   background-attachment: fixed;
@@ -20,6 +21,9 @@
     background-size: cover;
     background-image: url("../../img/print-responsive.png");
     min-height: 100vh;
+    justify-content: left;
+    align-items: center;
+
   }
 
 
@@ -34,8 +38,8 @@
       @include mobile{
         width: 100%;
         padding-left: 0;
-        align-items: center;
-        margin-left: 0%;
+        align-items: left;
+        margin-left: 5%;
       }
 
       h1{
@@ -55,7 +59,7 @@
 
         @include mobile{
           font-size: 50px;
-          margin-left: 3%;
+          margin-left: 10%;
         }
       }
 
@@ -65,7 +69,7 @@
         @include mobile{
           font-size: 15px;
           width: 80%;
-          text-align: center;
+          text-align: left;
         }
       }
     

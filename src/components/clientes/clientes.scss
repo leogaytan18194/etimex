@@ -1,6 +1,7 @@
 @import "../../global.scss";
 
 .clientes {
+  height: calc(100vh - 70px);
   background-color: white;
   display: flex;
   flex-direction: column;
