@@ -4,9 +4,7 @@ export default function Print() {
 
 
   return (
-    <div className="print" id="print" style={{ 
-      backgroundSize: 'cover',
-      backgroundImage: `url("https://www.etimex.com/wp-content/uploads/2023/06/Recurso-5.png")` }}>
+    <div className="print" id="print">
         <div className="wrapper">
           <h1 className="ITBold">Print</h1>
           <h2>to connect</h2>
