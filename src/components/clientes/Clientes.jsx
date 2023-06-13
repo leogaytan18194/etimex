@@ -15,10 +15,7 @@ export default function Clientes() {
       <h2 className="helvetica">En <b>Etimex</b> avanzamos, con el futuro de la impresión a la vanguardia de tu marca.</h2>
       <div className="container">
           <div className="item">
-            <img
-              src="assets/clientes.png"
-              alt="Clientes Etimex"
-            />
+            <img src="assets/clientes.png" alt="Clientes Etimex" className="imgClientes"/>
           </div>
       </div>
       
