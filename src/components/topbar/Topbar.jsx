@@ -1,5 +1,6 @@
 import "./topbar.scss";
 import logo from './etimex-logo.png';
+import TranslateIcon from '@mui/icons-material/Translate';
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
   return (
@@ -29,6 +30,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           </div>
         </div>
         <div className="right">
+          <TranslateIcon/>
           <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
             <span className="line1"></span>
             <span className="line2"></span>

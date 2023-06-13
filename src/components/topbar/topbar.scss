@@ -48,13 +48,18 @@
     .right {
       display: none;
       .hamburger {
+      @include mobile{
+
+        display: none;
+        @include mobile{
         width: 32px;
         height: 25px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         cursor: pointer;
-
+        }
+      }
         span {
           width: 100%;
           height: 3px;

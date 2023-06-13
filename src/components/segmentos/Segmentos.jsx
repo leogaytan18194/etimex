@@ -15,7 +15,7 @@ export default function Segmentos() {
       justifyContent: "center",
       height: "100%"
     }}>
-      <h1>Segmentos</h1>
+      <h1 className="ITBold">Segmentos</h1>
       <div className="container">
           <Card sx={{ maxWidth: 220, boxShadow: 0 }}>
             <CardMedia
