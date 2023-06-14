@@ -2,43 +2,33 @@
 
 .impresiones {
   display: flex;
-  
-
-  
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("./equipo-impresora.jpg");
-  
+  height: 100vh;
 
   @include mobile{
-    background-size: cover;
-    background-image: url("./equipo-impresora.jpg");
-    z-index: 1;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
   }
 
 
-
     .wrapper {
-      width: 80%;
-      height: 100%;
+      width: 100%;
+      padding-left: 10%;
       display: flex;
-      padding-left: 50px;
       flex-direction: column;
-      align-items: left;
+      justify-content: center;
+
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-image: url("./equipo-impresora.jpg");
 
       @include mobile{
+        height: 100vh;
         padding-left: 0;
-        display: flex;
         align-items: center;
-        flex-direction: column;
-        justify-content: center;
+        position: relative;
+        background-image: url("./equipo-impresora.jpg");
       }
 
       h1 {

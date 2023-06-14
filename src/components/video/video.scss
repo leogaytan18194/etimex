@@ -3,6 +3,7 @@
 .video {
   background-color: white;
   display: flex;
+  height: 100vh;
 
   @include mobile{
     flex-direction: column;
