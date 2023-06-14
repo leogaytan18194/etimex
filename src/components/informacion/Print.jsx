@@ -1,10 +1,11 @@
 import "./print.scss";
+import Background from "./print-connect.png";
 
 export default function Print() {
 
 
   return (
-    <div className="print" id="print">
+    <div className="print" id="print" style={{ backgroundImage:`url(${Background})`, backgroundRepeat: 'no-repeat',}}>
         <div className="wrapper">
           <h1 className="ITBold">Print</h1>
           <h2>to connect</h2>

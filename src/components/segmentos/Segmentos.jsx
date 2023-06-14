@@ -1,8 +1,21 @@
 import React from 'react'
 import './segmentos.scss';
+import {useState} from 'react';
+import { useSpring, animated } from "react-spring";
+
 
 
 function Segmentos() {
+
+    const [flip, setFlip] = useState(false);
+    const props = useSpring({
+        to: { opacity: 1},
+        from: { opacity: 0 },
+        reset: true,
+        reverse: flip,
+        delay: 200,
+        onReset: () => setFlip(!flip),
+    });
     return (
         <div className="segmentos" id="">
             <div id="comunidad" className='hashlink-id'></div>
@@ -11,11 +24,13 @@ function Segmentos() {
                 <div className="card featured">
                     <div className="top">
                         <div className='top-img-container'>
+                            <animated.div style={props}>
                             <img
                                 className="requisitosImagen"
-                                src="/assets/pasos/paso1.png"
+                                src="/assets/segmento1.png"
                                 alt=""
                             />
+                            </animated.div>
                         </div>
                         <div className='top-txt-container'>
                             <h3>Vinos y Licores</h3>
@@ -28,11 +43,13 @@ function Segmentos() {
                 <div className="card featured">
                     <div className="top">
                         <div className='top-img-container'>
-                            <img
-                                className="requisitosImagen"
-                                src="/assets/pasos/paso2.png"
-                                alt=""
-                            />
+                            <animated.div style={props}>
+                                <img
+                                    className="requisitosImagen"
+                                    src="/assets/segmento2.png"
+                                    alt=""
+                                />
+                            </animated.div>
                         </div>
                         <div className='top-txt-container'>
                             <h3>Alimentos y Bebidas</h3>
@@ -48,7 +65,7 @@ function Segmentos() {
                         <div className='top-img-container'>
                             <img
                                 className="requisitosImagen"
-                                src="/assets/pasos/paso3.png"
+                                src="/assets/segmento3.png"
                                 alt=""
                             />
                         </div>
@@ -65,7 +82,7 @@ function Segmentos() {
                         <div className='top-img-container'>
                             <img
                                 className="requisitosImagen"
-                                src="/assets/pasos/paso3.png"
+                                src="/assets/segmento4.png"
                                 alt=""
                             />
                         </div>
