@@ -6,10 +6,14 @@
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  margin-bottom: 5%;
+
+  @include mobile{
+    margin-bottom: 1%;
+  }
 
   h1 {
     font-size: 50px;
+    margin-bottom: 5%;
     @include mobile{
       font-size: 20px;
     }
@@ -34,10 +38,9 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 10px;
 
     @include mobile{
-      width: 100%;
+      width: 95%;
     }
 
     .item {
