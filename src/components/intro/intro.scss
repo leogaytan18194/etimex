@@ -2,7 +2,7 @@
 
 .intro {
   display: flex;
-  height: 50vh;
+  height: 250px;
 
   @include mobile{
     flex-direction: column;
@@ -24,13 +24,12 @@
       background-image: url("./banneretimex.png");
 
       @include mobile{
-        height: 50vh;
+        height: 250px;
         padding-left: 0;
         align-items: center;
         position: relative;
         background-size: cover;
         background-position: left;
-        background-size: auto 60%;
 
         background-image: url("./banneretimex.png");
       }
@@ -48,6 +47,10 @@
         font-size: 25px;
         color: white;
         width: 60%;
+
+        @include mobile{
+          font-size: 18px;
+        }
       }
       h3 {
         font-size: 25px;
