@@ -5,12 +5,14 @@
   display: flex;
   justify-content: left;
   align-items: center;
+  background-size: cover;
+  background-image: url("./print-connect.png");
   height: 100vh;
 
   @include mobile{
 
-    
-    
+    background-size: cover;
+    background-image: url("./print-responsive.png");
     justify-content: left;
     align-items: center;
 
