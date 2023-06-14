@@ -5,12 +5,17 @@
   display: flex;
   justify-content: left;
   align-items: center;
+  
+  height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: cover;
   background-image: url("./print-connect.png");
-  height: 100vh;
 
   @include mobile{
 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
     background-image: url("./print-responsive.png");
     justify-content: left;
