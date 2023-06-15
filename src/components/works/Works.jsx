@@ -1,7 +1,15 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./works.scss";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 export default function Works() {
+
+  useEffect(() =>{
+    AOS.init({duration: 3000});
+  }, [])
+
   const [currentSlide, setCurrentSlide] = useState(0);
   const data = [
     {
@@ -52,8 +60,8 @@ export default function Works() {
                 />
               </div>
               <div className="right">
-                <div className="rightContainer">
-                    <h2 className="ITBold">{d.title}</h2>
+                <div className="rightContainer" >
+                    <h2 className="ITBold" data-aos="fade-up">{d.title}</h2>
                     <p className="helvetica">{d.desc}</p>
                   </div>
               </div>
