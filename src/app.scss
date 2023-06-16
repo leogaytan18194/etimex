@@ -1,6 +1,8 @@
 .app {
   height: 100vh;
-
+  * {
+    overflow-x: hidden;
+  }
   .sections {
     width: 100%;
     background-color: white;
@@ -17,6 +19,7 @@
     > * {
       width: 100vw;
       scroll-snap-align: start;
+      
     }
   }
 }
