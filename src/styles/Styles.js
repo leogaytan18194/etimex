@@ -40,7 +40,6 @@ export const HeaderStyles = styled.header`
       grid-template-columns: repeat(7, auto);
       max-width: 1100px;
       margin: 0 auto;
-      margin-right: 250px;
       width: 100%;
       list-style: none;
     }
