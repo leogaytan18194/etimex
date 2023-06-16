@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { useSpring, animated } from 'react-spring';
+
 import "./works.scss";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
+import { useRef } from "react";
 
 
 export default function Works() {
 
-  useEffect(() =>{
-    AOS.init({duration: 3000});
-  }, [])
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const data = [
@@ -43,9 +42,54 @@ export default function Works() {
       ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
       : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
   };
-  
+
+  const ref = useRef();
+  const [isVisible, setIsVisible] = useState(false);
+
+  const fadeInProps = useSpring({
+    opacity: isVisible ? 1 : 0,
+    from: { opacity: 0 },
+    delay: 200,
+    config: { duration: 1000 }
+  });
+
+  const slideProps = useSpring({
+    transform: isVisible ? 'translateY(0px)' : 'translateY(20px)',
+    from: { transform: 'translateY(20px)' },
+    delay: 400,
+    config: { duration: 1000 }
+  });
+
+  const scaleProps = useSpring({
+    transform: isVisible ? 'scale(1)' : 'scale(0.9)',
+    from: { transform: 'scale(0.9)' },
+    delay: 600,
+    config: { duration: 1000 }
+  });
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      {
+        threshold: 0.5,
+      }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, []);
+
   return (
-    <div className="works" id="works">
+    <div className="works" id="works" ref={ref}>
       <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
@@ -54,16 +98,21 @@ export default function Works() {
           <div className="container">
             <div className="item">
               <div className="left">
-                <img
+                <animated.img
+                  style={scaleProps}
                   src="assets/bote2.png"
                   alt=""
                 />
               </div>
               <div className="right">
-                <div className="rightContainer" >
-                    <h2 className="ITBold" data-aos="fade-up">{d.title}</h2>
-                    <p className="helvetica">{d.desc}</p>
-                  </div>
+                <div className="rightContainer">
+                  <animated.h2 style={fadeInProps} className={`ITBold tset`}>
+                    {d.title}
+                  </animated.h2>
+                  <animated.p style={slideProps} className={`helvetica delay1`}>
+                    {d.desc}
+                  </animated.p>
+                </div>
               </div>
             </div>
           </div>

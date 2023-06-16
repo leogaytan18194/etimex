@@ -1,67 +1,112 @@
-.app{
-    height: 100vh;
+.app {
+  height: 100vh;
 
-    .sections{
-        width: 100%;
-        background-color: white;
-        position: relative;
-        top: 70px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        scrollbar-width: none; //for firefox
-        &::-webkit-scrollbar{
-            display: none;
-        }
-
-        > *{
-            width: 100vw;
-            scroll-snap-align: start;
-        }
+  .sections {
+    width: 100%;
+    background-color: white;
+    position: relative;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scrollbar-width: none; //for firefox
+    &::-webkit-scrollbar {
+      display: none;
     }
+
+    > * {
+      width: 100vw;
+      scroll-snap-align: start;
+    }
+  }
 }
 
-@font-face{
-    font-family: Helvetica;
-    src: url(../public/assets/Helvetica.ttc);
+@font-face {
+  font-family: Helvetica;
+  src: url(../public/assets/Helvetica.ttc);
 }
 
-.helvetica{
-    font-family: Helvetica;
+.helvetica {
+  font-family: Helvetica;
 }
 
-@font-face{
-    font-family: ITCAvantGardeStd-Bold;
-    src: url(../public/assets/ITCAvantGardeStd-Bold.ttf);
+@font-face {
+  font-family: ITCAvantGardeStd-Bold;
+  src: url(../public/assets/ITCAvantGardeStd-Bold.ttf);
 }
 
-.ITBold{
-    font-family: ITCAvantGardeStd-Bold;
+.ITBold {
+  font-family: ITCAvantGardeStd-Bold;
 }
 
-@font-face{
-    font-family: ITCAvantGardeStd-Bk;
-    src: url(../public/assets/ITCAvantGardeStd-Bk.ttf);
+@font-face {
+  font-family: ITCAvantGardeStd-Bk;
+  src: url(../public/assets/ITCAvantGardeStd-Bk.ttf);
 }
 
-.ITBk{
-    font-family: ITCAvantGardeStd-Bk;
-    color: #202029;
+.ITBk {
+  font-family: ITCAvantGardeStd-Bk;
+  color: #202029;
 }
 
-.hidden{
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+
+  @media (prefers-reduced-motion) {
+    .hidden {
+      transition: none;
+    }
+  }
+}
+
+.show {
+  opacity: 1 !important;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(30px);
     opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 1s;
-
-    @media (prefers-reduced-motion){
-        .hidden{
-            transition: none;
-        }
-    }
+    transition: all 1s ease;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.show{
+@keyframes fadeOut {
+  0% {
     opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(30px);
+    transition: all 1s ease;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  transition: all 1s linear;
+  animation-duration: 1s; /* Duración de la animación. Ajusta según necesites. */
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+.fade-out {
+  transition: all 0.6s ease-out;
+}
+.delay1 {
+  animation-delay: 0.5s;
+}
+.delay2 {
+  animation-delay: 2s;
+}
+.tset {
 }
