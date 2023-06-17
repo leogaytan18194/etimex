@@ -125,14 +125,15 @@ export const HeaderStyles = styled.header`
      
     }
     .menu-mobile-container {
-    width: 50%;
-    top: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 19px;
-    background: ${(props) => props.theme === "dark" ? `rgba(0, 0, 0, 0.8)` : "rgba(255, 255, 255, 0.8)"} !important;
-}
+        width: 50%;
+        top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 19px;
+        background: ${(props) => props.theme === "dark" ? `rgba(0, 0, 0, 0.8)` : "rgba(255, 255, 255, 0.8)"} !important;
+        padding: 17px 0;
+    }
     .logo {
       display: flex;
       justify-content: end !important;
