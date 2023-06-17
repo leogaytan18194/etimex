@@ -12,6 +12,12 @@ export const PageStyles = styled.div`
     list-style: none;
     overflow: hidden;
   }
+  .hero-text {
+    padding: 20px;
+    //border-radius: 10px;
+    color:${(props) => props.theme === 'dark' ? `#fff` : "#000"} !important;
+    font-size: 3rem;
+  }
 `;
 
 
@@ -258,6 +264,12 @@ export const ContainerStyles = styled.div`
 `;
 
 export const HeroBackground = styled.div`
+ .hero-text {
+    padding: 20px;
+    //border-radius: 10px;
+    color: white;
+    font-size: 3rem;
+  }
   @keyframes fadeIn2 {
     from {
       opacity: 0; /* La opacidad al inicio de la animación es 0 */
@@ -293,12 +305,7 @@ export const HeroBackground = styled.div`
     //background-position: 0 -220px;
   }
 
-  .hero-text {
-    padding: 20px;
-    //border-radius: 10px;
-    color: white;
-    font-size: 3rem;
-  }
+ 
 `;
 
 export const Container2Styles = styled.div`
