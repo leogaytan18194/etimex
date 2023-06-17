@@ -58,26 +58,7 @@ const HeroContainer = ({ backgroundImage, text }) => {
 
     // Estas dos animaciones son infinitas, por lo que no es útil agregar la condición `isVisible`
     // Ya que, sin importar si el elemento es visible o no, la animación se ejecutará continuamente   
-    const popIn = useSpring({
-        from: { scale: isVisible ? 0 : 1 },
-        to: { scale: 1 },
-        config: { tension: 200, friction: 20 },
-        delay: isVisible ? 300 : 0,
-    });
 
-    const swing = useSpring({
-        from: { transform: isVisible ? "rotate(0deg)" : "rotate(30deg)" },
-        to: { transform: "rotate(30deg)" },
-        config: { tension: 180, friction: 12 },
-        delay: isVisible ? 300 : 0,
-    });
-
-    const bounce = useSpring({
-        from: { transform: isVisible ? 'scale(1.05)' : 'scale(1)' },
-        to: { transform: 'scale(1)' },
-        config: { tension: 180, friction: 12 },
-        delay: isVisible ? 300 : 0,
-    });
     const slideInFromLeft = useSpring({
         transform: isVisible ? 'translateX(0)' : 'translateX(-100%)',
         delay: isVisible ? 500 : 0,
