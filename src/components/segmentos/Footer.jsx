@@ -4,15 +4,18 @@ import { FooterStyles, TabItem } from '../../styles/Styles';
 const socialIcons = [
   {
     ico: "/assets/svg/in.svg",
-    alt: "LinkedIn"
+    alt: "LinkedIn",
+    link:"http://www.linkedin.com"
   },
   {
     ico: "/assets/svg/ins.svg",
-    alt: "Instagram"
+    alt: "Instagram",
+    link:"http://www.instagram.com"
   },
   {
     ico: "/assets/svg/fb.svg",
-    alt: "Facebook"
+    alt: "Facebook",
+    link:"http://www.facebook.com"
   }
 ];
 const tabItems = [
@@ -35,14 +38,14 @@ const tabItems = [
     top: "-2px",
   },
 ]
-const Footer = () => {
+const Footer = ({theme}) => {
   return (
-    <FooterStyles>
+    <FooterStyles theme={theme}>
       <div className='footer-tab'>
         <div className='footer-tab-items'>
           {
             tabItems.map((tabItem) => (
-              <TabItem icon={tabItem.ico} top={tabItem.top}>
+              <TabItem icon={tabItem.ico} top={tabItem.top} theme={theme}>
                 {tabItem.text}
               </TabItem>
             ))
@@ -59,9 +62,10 @@ const Footer = () => {
             <li>Dir. San Ángel 201, Churubusco, 64590 Monterrey, N.L. México</li>
           </ul>
           <div className="social-icons">
-
             {socialIcons.map((social, index) => (
-              <img src={social.ico} alt={social.alt} />
+              <a href={social.link} target='_blank' rel="noreferrer">
+                <img src={social.ico} alt={social.alt} />
+              </a>
             ))}
           </div>
 

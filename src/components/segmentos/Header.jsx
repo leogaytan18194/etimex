@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useSpring, animated, useTransition } from 'react-spring';
-import { CustomLi, HeaderStyles } from '../../styles/Styles'
+import { CustomLi, HeaderStyles, MenuMobile } from '../../styles/Styles'
 import { HashLink } from 'react-router-hash-link';
 
 const Header = ({ logo, theme }) => {
     const location = useLocation();
     const { pathname } = location;
-
+    console.log(pathname)
     // Crear una animación de desplazamiento desde la derecha
     const slideInFromRight = useSpring({
         from: { transform: 'translateX(100%)' },
@@ -112,61 +112,135 @@ const Header = ({ logo, theme }) => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, [lastScrollPos]);
 
+    const isMobile = window.innerWidth <= 980;
+
+    const [showMenu1, setShowMenu1] = useState(false);
+
+    const [showMenuMo, setShowMenuMo] = useState(false);
+    const load = () => {
+        setShowMenuMo(false);
+    }
     return (
         <HeaderStyles theme={theme}>
             {transitions((styles, item) =>
                 item
-                    ? <animated.div style={styles} className="menu-container">
-                        <ul>
-                            <li className="logo" >
-                                <HashLink to="/#home">
-                                    <animated.img src={`${logo}`} alt="Logo" style={circleAnimation} />
-                                </HashLink>
-                            </li>
-                            <CustomLi theme={theme} icon={`${pathname === '/vinos-y-licores' ? "vinos" : ""}`} className='activeMenu'>
-                                <Link to="/vinos-y-licores">
-                                    <animated.span style={textAnimation}>
-                                        Vinos y Licores
-                                    </animated.span>
-                                </Link>
-                            </CustomLi>
-                            <CustomLi theme={theme} icon={""} >
-                                <Link to="/alimentos-y-bebidas">
-                                    <animated.span style={textAnimation}>
-                                        Alimentos y bebidas
-                                    </animated.span>
-                                </Link>
-                            </CustomLi>
-                            <CustomLi theme={theme} >
-                                <Link to="/salud-y-belleza">
-                                    <animated.span style={textAnimation2}>
-                                        Salud y belleza
-                                    </animated.span>
-                                </Link>
-                            </CustomLi>
-                            <CustomLi theme={theme} >
-                                <Link to="/industrial">
-                                    <animated.span style={textAnimation3}>
-                                        Industrial
-                                    </animated.span>
-                                </Link>
-                            </CustomLi>
-                            <CustomLi theme={theme} >
-                                <Link to="/retail">
-                                    <animated.span style={textAnimation4}>
-                                        Retail
-                                    </animated.span>
-                                </Link>
-                            </CustomLi>
-                            <CustomLi theme={theme} >
-                                <Link to="/boletaje">
-                                    <animated.span style={textAnimation5}>
-                                        Boletaje
-                                    </animated.span>
-                                </Link>
-                            </CustomLi>
-                        </ul>
-                    </animated.div>
+                    ? <>
+
+                        {isMobile ? <animated.div style={styles} className="menu-container m-mobile">
+                            <ul>
+                                <li className="logo" >
+                                    <HashLink to="/#home">
+                                        <animated.img src={`${logo}`} alt="Logo" style={circleAnimation} />
+                                    </HashLink>
+                                </li>
+
+
+                                <MenuMobile onClick={() => setShowMenuMo(prev => !prev)} theme={theme}>
+                                    <div class={`menu-button ${showMenuMo ? "a-menu-button" : ""} `}>
+                                        <div class="menu-line"></div>
+                                    </div>
+
+                                </MenuMobile>
+                                <div style={{ position:'absolute', left: `${showMenuMo ? '50%' : '100%'}`, opacity: `${showMenuMo === true ? 1 : 0}`, transition: 'all 0.3s' }} className='menu-mobile-container'>
+                                    <CustomLi theme={theme} icon={`${pathname === '/vinos-y-licores' ? "vinos-y-licores" : ""}`} className={`${pathname === '/vinos-y-licores' ? "activeMenu" : ""}`}>
+                                        <Link to="/vinos-y-licores">
+                                            <animated.span style={textAnimation}>
+                                                Vinos y Licores
+                                            </animated.span>
+                                        </Link>
+                                    </CustomLi>
+                                    <CustomLi theme={theme} icon={`${pathname === '/alimentos-y-bebidas' ? "alimentos-y-bebidas" : ""}`} className={`${pathname === '/alimentos-y-bebidas' ? "activeMenu" : ""}`} >
+                                        <Link to="/alimentos-y-bebidas">
+                                            <animated.span style={textAnimation}>
+                                                Alimentos y bebidas
+                                            </animated.span>
+                                        </Link>
+                                    </CustomLi>
+                                    <CustomLi theme={theme} icon={`${pathname === '/salud-y-belleza' ? "salud-y-belleza" : ""}`} className={`${pathname === '/salud-y-belleza' ? "activeMenu" : ""}`}>
+                                        <Link to="/salud-y-belleza">
+                                            <animated.span style={textAnimation2}>
+                                                Salud y belleza
+                                            </animated.span>
+                                        </Link>
+                                    </CustomLi>
+                                    <CustomLi theme={theme} icon={`${pathname === '/industrial' ? "industrial" : ""}`} className={`${pathname === '/industrial' ? "activeMenu" : ""}`}>
+                                        <Link to="/industrial">
+                                            <animated.span style={textAnimation3}>
+                                                Industrial
+                                            </animated.span>
+                                        </Link>
+                                    </CustomLi>
+                                    <CustomLi theme={theme} icon={`${pathname === '/retail' ? "retail" : ""}`} className={`${pathname === '/retail' ? "activeMenu" : ""}`}>
+                                        <Link to="/retail">
+                                            <animated.span style={textAnimation4}>
+                                                Retail
+                                            </animated.span>
+                                        </Link>
+                                    </CustomLi>
+                                    <CustomLi theme={theme} icon={`${pathname === '/boletaje' ? "boletaje" : ""}`} className={`${pathname === '/boletaje' ? "activeMenu" : ""}`}>
+                                        <Link to="/boletaje">
+                                            <animated.span style={textAnimation5}>
+                                                Boletaje
+                                            </animated.span>
+                                        </Link>
+                                    </CustomLi>
+                                </div>
+
+                            </ul>
+
+                        </animated.div> :
+                            <animated.div style={styles} className="menu-container m-web">
+                                <ul>
+                                    <li className="logo" >
+                                        <HashLink to="/#home">
+                                            <animated.img src={`${logo}`} alt="Logo" style={circleAnimation} />
+                                        </HashLink>
+                                    </li>
+                                    <CustomLi theme={theme} icon={`${pathname === '/vinos-y-licores' ? "vinos-y-licores" : ""}`} className={`${pathname === '/vinos-y-licores' ? "activeMenu" : ""}`}>
+                                        <Link to="/vinos-y-licores">
+                                            <animated.span style={textAnimation}>
+                                                Vinos y Licores
+                                            </animated.span>
+                                        </Link>
+                                    </CustomLi>
+                                    <CustomLi theme={theme} icon={`${pathname === '/alimentos-y-bebidas' ? "alimentos-y-bebidas" : ""}`} className={`${pathname === '/alimentos-y-bebidas' ? "activeMenu" : ""}`} >
+                                        <Link to="/alimentos-y-bebidas">
+                                            <animated.span style={textAnimation}>
+                                                Alimentos y bebidas
+                                            </animated.span>
+                                        </Link>
+                                    </CustomLi>
+                                    <CustomLi theme={theme} icon={`${pathname === '/salud-y-belleza' ? "salud-y-belleza" : ""}`} className={`${pathname === '/salud-y-belleza' ? "activeMenu" : ""}`}>
+                                        <Link to="/salud-y-belleza">
+                                            <animated.span style={textAnimation2}>
+                                                Salud y belleza
+                                            </animated.span>
+                                        </Link>
+                                    </CustomLi>
+                                    <CustomLi theme={theme} icon={`${pathname === '/industrial' ? "industrial" : ""}`} className={`${pathname === '/industrial' ? "activeMenu" : ""}`}>
+                                        <Link to="/industrial">
+                                            <animated.span style={textAnimation3}>
+                                                Industrial
+                                            </animated.span>
+                                        </Link>
+                                    </CustomLi>
+                                    <CustomLi theme={theme} icon={`${pathname === '/retail' ? "retail" : ""}`} className={`${pathname === '/retail' ? "activeMenu" : ""}`}>
+                                        <Link to="/retail">
+                                            <animated.span style={textAnimation4}>
+                                                Retail
+                                            </animated.span>
+                                        </Link>
+                                    </CustomLi>
+                                    <CustomLi theme={theme} icon={`${pathname === '/boletaje' ? "boletaje" : ""}`} className={`${pathname === '/boletaje' ? "activeMenu" : ""}`}>
+                                        <Link to="/boletaje">
+                                            <animated.span style={textAnimation5}>
+                                                Boletaje
+                                            </animated.span>
+                                        </Link>
+                                    </CustomLi>
+                                </ul>
+                            </animated.div>}
+                    </>
                     : "")}
         </HeaderStyles>
     )

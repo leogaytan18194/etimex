@@ -170,11 +170,13 @@ const Vinos = () => {
             />
             <HeroContainer
                 backgroundImage={"/assets/vinos-y-licores/hVinos2.png"}
-                text={"Se único, se audaz"}
+                text1={"Se único,"}
+                text2={"se audaz"}
+                theme={theme}
             />
             {container}
             {container2}
-            <Footer />
+            <Footer theme={theme} />
 
         </PageStyles>
     )

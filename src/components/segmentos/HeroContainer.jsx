@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useSpring, animated } from 'react-spring';
 import { HeroBackground } from '../../styles/Styles';
 
-const HeroContainer = ({ backgroundImage, text }) => {
+const HeroContainer = ({ backgroundImage, text1, text2, theme }) => {
     const [isVisible, setIsVisible] = useState(false);
     const heroRef = useRef();
 
@@ -69,11 +69,35 @@ const HeroContainer = ({ backgroundImage, text }) => {
         transform: isVisible ? 'translateY(0)' : 'translateY(100%)',
         delay: isVisible ? 500 : 0,
     });
+//     const [backgroundPositionY, setBackgroundPositionY] = useState(0);
+//   const [backgroundSize, setBackgroundSize] = useState('100vh');
+
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       const scrollPosition = window.pageYOffset;
+//       const scaleFactor = 1 - scrollPosition * 0.001; // Ajusta la velocidad del efecto
+
+//       setBackgroundPositionY(scrollPosition);
+//       setBackgroundSize(`${scaleFactor * 100}vh`);
+//     };
+
+//     window.addEventListener('scroll', handleScroll);
+
+//     return () => {
+//       window.removeEventListener('scroll', handleScroll);
+//     };
+//   }, []);
+
+  
+
     return (
-        <HeroBackground>
-            <div className='hero' style={{ backgroundImage: `url(${backgroundImage})` }} ref={heroRef}>
+        <HeroBackground theme={theme}>
+            <div className='hero bloque'
+                style={{ backgroundImage: `url(${backgroundImage})`,                
+                //backgroundPositionY: `${backgroundPositionY}px`, backgroundSize: backgroundSize
+                }} ref={heroRef}>
                 <p className='hero-text'>
-                    <animated.span style={slideInFromBottom}>Se único</animated.span> <animated.span style={slideInFromLeft}>, se audaz</animated.span>
+                    <animated.span style={slideInFromBottom}>{text1}</animated.span> <animated.span style={slideInFromLeft}>{text2}</animated.span>
                 </p>
             </div>
         </HeroBackground>
