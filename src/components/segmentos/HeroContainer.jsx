@@ -113,10 +113,9 @@ const HeroContainer = ({ backgroundImage, text }) => {
     return (
         <HeroBackground>
             <div className='hero' style={{ backgroundImage: `url(${backgroundImage})` }} ref={heroRef}>
-                <animated.p className='hero-text' style={moveRight}>
-                    <animated.span style={slideInFromBottom}>Se único,</animated.span> <animated.span style={slideInFromLeft}> se audaz</animated.span>
-
-                </animated.p>
+                <p className='hero-text'>
+                    <animated.span style={slideInFromBottom}>Se único</animated.span> <animated.span style={slideInFromLeft}>, se audaz</animated.span>
+                </p>
             </div>
         </HeroBackground>
     );
