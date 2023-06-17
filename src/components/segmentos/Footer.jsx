@@ -1,22 +1,73 @@
 import React from 'react';
+import { FooterStyles, TabItem } from '../../styles/Styles';
 
+const socialIcons = [
+  {
+    ico: "/assets/svg/in.svg",
+    alt: "LinkedIn"
+  },
+  {
+    ico: "/assets/svg/ins.svg",
+    alt: "Instagram"
+  },
+  {
+    ico: "/assets/svg/fb.svg",
+    alt: "Facebook"
+  }
+];
+const tabItems = [
+  {
+    ico: "/assets/svg/materiales",
+    text: "Materiales",
+    route: "/material",
+    top: "-5px",
+  },
+  {
+    ico: "/assets/svg/tintas",
+    text: "Tintas",
+    route: "/tintas",
+    top: "2px",
+  },
+  {
+    ico: "/assets/svg/acabados",
+    text: "Acabados",
+    route: "/acaabados",
+    top: "-2px",
+  },
+]
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-container">
-        <ul className="footer-list">
-          <li>Elemento 1</li>
-          <li>Elemento 2</li>
-          <li>Elemento 3</li>
-          <li>Elemento 4</li>
-        </ul>
-        <div className="social-icons">
-          <img src="ruta-icono-1.png" alt="Icono 1" />
-          <img src="ruta-icono-2.png" alt="Icono 2" />
-          <img src="ruta-icono-3.png" alt="Icono 3" />
+    <FooterStyles>
+      <div className='footer-tab'>
+        <div className='footer-tab-items'>
+          {
+            tabItems.map((tabItem) => (
+              <TabItem icon={tabItem.ico} top={tabItem.top}>
+                {tabItem.text}
+              </TabItem>
+            ))
+          }
         </div>
       </div>
-    </footer>
+      <div className="footer-container">
+        <div className='footer-items'>
+          <ul className="footer-list">
+            <li>Copyright © 2023 Etimex</li>
+            <li>Contacto: info@etimex.com</li>
+            <li>81 8479 0800</li>
+            <li>+52 (81) 3116 6651</li>
+            <li>Dir. San Ángel 201, Churubusco, 64590 Monterrey, N.L. México</li>
+          </ul>
+          <div className="social-icons">
+
+            {socialIcons.map((social, index) => (
+              <img src={social.ico} alt={social.alt} />
+            ))}
+          </div>
+
+        </div>
+      </div>
+    </FooterStyles>
   );
 };
 

@@ -1,3 +1,19 @@
+/* Para Chrome y Opera */
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: auto;
+}
+
+/* Para Firefox */
+
+*{
+   scrollbar-width: none;
+ 
+}
 .app {
   height: 100vh;
   * {
