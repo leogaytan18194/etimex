@@ -133,6 +133,10 @@ export const HeaderStyles = styled.header`
         gap: 19px;
         background: ${(props) => props.theme === "dark" ? `rgba(0, 0, 0, 0.8)` : "rgba(255, 255, 255, 0.8)"} !important;
         padding: 17px 0;
+        @media (max-width: 468px) {
+          width:100%;
+          left: 0 !important;
+        } 
     }
     .logo {
       display: flex;
