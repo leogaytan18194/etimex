@@ -10,7 +10,7 @@ export const PageStyles = styled.div`
     color:${(props) => props.theme === 'dark' ? `#fff` : "#000"} !important;
     border-color: ${(props) => props.theme === 'dark' ? `#fff` : "#000"} !important;
     list-style: none;
-    overflow: hidden;
+    overflow: unset;
   }
   .hero-text {
     padding: 20px;
