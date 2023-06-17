@@ -296,7 +296,7 @@ export const HeroBackground = styled.div`
     align-items: center;
     background-attachment: fixed;
     animation: fadeIn 1s ease-in forwards; /* Aplicamos la animación llamada "fadeIn" durante 1 segundo */
-    @include mobile{
+    @media (max-width:763px){
       height: 100vh;
       background-image: url("/assets/vinos-y-licores/hVinos2.png");
       background-size: cover;
