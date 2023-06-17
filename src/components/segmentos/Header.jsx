@@ -22,152 +22,155 @@ const Header = ({ logo, theme }) => {
     });
     const bounce = useSpring({
         to: [{ transform: 'translateY(0)' }, { transform: 'translateY(-20px)' }],
-        from: [{ transform: 'translateY(-20px)'}, {transform: 'translateY(0px)'} ],
+        from: [{ transform: 'translateY(-20px)' }, { transform: 'translateY(0px)' }],
         config: { tension: 200, friction: 10 },
     });
 
     const textTyping = useSpring({
         to: { width: '100%' },
         from: { width: '0%' },
-      });
-      
-      const pulse = useSpring({
+    });
+
+    const pulse = useSpring({
         to: [{ transform: 'scale(1.1)' }, { transform: 'scale(0.9)' }, { transform: 'scale(1)' }],
         from: { transform: 'scale(1)' },
-      });
-      
-      const rotateIn = useSpring({
+    });
+
+    const rotateIn = useSpring({
         to: [{ opacity: 1, transform: 'rotate(0deg)' }],
         from: { opacity: 0, transform: 'rotate(-180deg)' },
-      });
+    });
 
-      const containerAnimation = useSpring({
+    const containerAnimation = useSpring({
         from: { opacity: 0, transform: 'translateY(-50px)' },
         to: { opacity: 1, transform: 'translateY(0)' },
         config: { tension: 200, friction: 20 },
-      });
-    
-    
-      const textAnimation = useSpring({
+    });
+
+
+    const textAnimation = useSpring({
         from: { opacity: 0, transform: 'translateY(-50px)' },
         to: { opacity: 1, transform: 'translateY(0)' },
         config: { tension: 200, friction: 20 },
         delay: 500,
-      });
-      const textAnimation2 = useSpring({
+    });
+    const textAnimation2 = useSpring({
         from: { opacity: 0, transform: 'translateY(-50px)' },
         to: { opacity: 1, transform: 'translateY(0)' },
         config: { tension: 200, friction: 20 },
         delay: 600,
-      });
-      const textAnimation3 = useSpring({
+    });
+    const textAnimation3 = useSpring({
         from: { opacity: 0, transform: 'translateY(-50px)' },
         to: { opacity: 1, transform: 'translateY(0)' },
         config: { tension: 200, friction: 20 },
         delay: 700,
-      });
-      const textAnimation4 = useSpring({
+    });
+    const textAnimation4 = useSpring({
         from: { opacity: 0, transform: 'translateY(-50px)' },
         to: { opacity: 1, transform: 'translateY(0)' },
         config: { tension: 200, friction: 20 },
         delay: 800,
-      });
-      const textAnimation5 = useSpring({
+    });
+    const textAnimation5 = useSpring({
         from: { opacity: 0, transform: 'translateY(-50px)' },
         to: { opacity: 1, transform: 'translateY(0)' },
         config: { tension: 200, friction: 20 },
         delay: 900,
-      });
-    
-      const circleAnimation = useSpring({
+    });
+
+    const circleAnimation = useSpring({
         from: { opacity: 0, transform: 'scale(0) rotate(180deg)', },
         to: { opacity: 1, transform: 'scale(1) rotate(-180deg)', },
         config: { tension: 200, friction: 20 },
         delay: 1000,
-      });
-    
-      const [lastScrollPos, setLastScrollPos] = useState(0);
-  const [shouldShowHeader, setShouldShowHeader] = useState(true);
+    });
 
-  const transitions = useTransition(shouldShowHeader, {
-    from: { opacity: 0, transform: 'translateY(-100%)' },
-    enter: { opacity: 1, transform: 'translateY(0%)' },
-    leave: { opacity: 0, transform: 'translateY(-100%)' },
-    config: {
-      tension: 220,
-      friction: 120,
-    },
-  });
+    const [lastScrollPos, setLastScrollPos] = useState(0);
+    const [shouldShowHeader, setShouldShowHeader] = useState(true);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
-      const shouldShow = lastScrollPos > currentScrollPos || currentScrollPos < 50;
-      
-      setShouldShowHeader(shouldShow);
-      setLastScrollPos(currentScrollPos);
-    };
-    
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [lastScrollPos]);
-    
+    const transitions = useTransition(shouldShowHeader, {
+        from: { opacity: 0, transform: 'translateY(-100%)' },
+        enter: { opacity: 1, transform: 'translateY(0%)' },
+        leave: { opacity: 0, transform: 'translateY(-100%)' },
+        config: {
+            tension: 280,
+            friction: 80,
+        },
+    });
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollPos = window.pageYOffset;
+            const shouldShow = lastScrollPos > currentScrollPos || currentScrollPos < 50;
+
+            setShouldShowHeader(shouldShow);
+            if (shouldShow) {
+                setLastScrollPos(currentScrollPos);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [lastScrollPos]);
+    ;
+
     return (
         <HeaderStyles theme={theme}>
-             {transitions((styles, item) => 
-        item 
-          ? <animated.header style={styles} className="menu-container">
-                <ul>
-                    <li className="logo" >
-                        <HashLink to="/#home">
-                            <animated.img src={`${logo}`} alt="Logo" style={circleAnimation} />
-                        </HashLink>
-                    </li>
-                    <CustomLi theme={theme} icon={`${pathname === '/vinos-y-licores' ? "vinos" : ""}`} className='activeMenu'>
-                        <Link to="/vinos-y-licores">
-                            <animated.span style={textAnimation}>
-                                Vinos y Licores
-                            </animated.span>
-                        </Link>
-                    </CustomLi>
-                    <CustomLi theme={theme} icon={""} >
-                        <Link to="/alimentos-y-bebidas">
-                            <animated.span style={textAnimation}>
-                                Alimentos y bebidas
-                            </animated.span>
-                        </Link>
-                    </CustomLi>
-                    <CustomLi theme={theme} >
-                        <Link to="/salud-y-belleza">
-                            <animated.span style={textAnimation2}>
-                                Salud y belleza
-                            </animated.span>
-                        </Link>
-                    </CustomLi>
-                    <CustomLi theme={theme} >
-                        <Link to="/industrial">
-                            <animated.span style={textAnimation3}>
-                                Industrial
-                            </animated.span>
-                        </Link>
-                    </CustomLi>
-                    <CustomLi theme={theme} >
-                        <Link to="/retail">
-                            <animated.span style={textAnimation4}>
-                                Retail
-                            </animated.span>
-                        </Link>
-                    </CustomLi>
-                    <CustomLi theme={theme} >
-                        <Link to="/boletaje">
-                            <animated.span style={textAnimation5}>
-                                Boletaje
-                            </animated.span>
-                        </Link>
-                    </CustomLi>
-                </ul>
-            </animated.header>
-            : "")}
+            {transitions((styles, item) =>
+                item
+                    ? <animated.header style={styles} className="menu-container">
+                        <ul>
+                            <li className="logo" >
+                                <HashLink to="/#home">
+                                    <animated.img src={`${logo}`} alt="Logo" style={circleAnimation} />
+                                </HashLink>
+                            </li>
+                            <CustomLi theme={theme} icon={`${pathname === '/vinos-y-licores' ? "vinos" : ""}`} className='activeMenu'>
+                                <Link to="/vinos-y-licores">
+                                    <animated.span style={textAnimation}>
+                                        Vinos y Licores
+                                    </animated.span>
+                                </Link>
+                            </CustomLi>
+                            <CustomLi theme={theme} icon={""} >
+                                <Link to="/alimentos-y-bebidas">
+                                    <animated.span style={textAnimation}>
+                                        Alimentos y bebidas
+                                    </animated.span>
+                                </Link>
+                            </CustomLi>
+                            <CustomLi theme={theme} >
+                                <Link to="/salud-y-belleza">
+                                    <animated.span style={textAnimation2}>
+                                        Salud y belleza
+                                    </animated.span>
+                                </Link>
+                            </CustomLi>
+                            <CustomLi theme={theme} >
+                                <Link to="/industrial">
+                                    <animated.span style={textAnimation3}>
+                                        Industrial
+                                    </animated.span>
+                                </Link>
+                            </CustomLi>
+                            <CustomLi theme={theme} >
+                                <Link to="/retail">
+                                    <animated.span style={textAnimation4}>
+                                        Retail
+                                    </animated.span>
+                                </Link>
+                            </CustomLi>
+                            <CustomLi theme={theme} >
+                                <Link to="/boletaje">
+                                    <animated.span style={textAnimation5}>
+                                        Boletaje
+                                    </animated.span>
+                                </Link>
+                            </CustomLi>
+                        </ul>
+                    </animated.header>
+                    : "")}
         </HeaderStyles>
     )
 }
