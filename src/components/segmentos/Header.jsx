@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { useSpring, animated } from 'react-spring';
+import { useSpring, animated, useTransition } from 'react-spring';
 import { CustomLi, HeaderStyles } from '../../styles/Styles'
 import { HashLink } from 'react-router-hash-link';
 
@@ -86,10 +86,37 @@ const Header = ({ logo, theme }) => {
         delay: 1000,
       });
     
+      const [lastScrollPos, setLastScrollPos] = useState(0);
+  const [shouldShowHeader, setShouldShowHeader] = useState(true);
+
+  const transitions = useTransition(shouldShowHeader, {
+    from: { opacity: 0, transform: 'translateY(-100%)' },
+    enter: { opacity: 1, transform: 'translateY(0%)' },
+    leave: { opacity: 0, transform: 'translateY(-100%)' },
+    config: {
+      tension: 220,
+      friction: 120,
+    },
+  });
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      const shouldShow = lastScrollPos > currentScrollPos || currentScrollPos < 50;
       
+      setShouldShowHeader(shouldShow);
+      setLastScrollPos(currentScrollPos);
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollPos]);
+    
     return (
         <HeaderStyles theme={theme}>
-            <animated.div style={containerAnimation} className="menu-container">
+             {transitions((styles, item) => 
+        item 
+          ? <animated.header style={styles} className="menu-container">
                 <ul>
                     <li className="logo" >
                         <HashLink to="/#home">
@@ -139,7 +166,8 @@ const Header = ({ logo, theme }) => {
                         </Link>
                     </CustomLi>
                 </ul>
-            </animated.div>
+            </animated.header>
+            : "")}
         </HeaderStyles>
     )
 }
