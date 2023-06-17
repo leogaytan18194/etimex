@@ -57,29 +57,7 @@ const HeroContainer = ({ backgroundImage, text }) => {
     });
 
     // Estas dos animaciones son infinitas, por lo que no es útil agregar la condición `isVisible`
-    // Ya que, sin importar si el elemento es visible o no, la animación se ejecutará continuamente
-    const jitter = useSpring({
-        from: { transform: "translate3d(0, 0, 0)" },
-        to: async (next) => {
-            while (1) {
-                await next({ transform: "translate3d(2px, 0, 0)" });
-                await next({ transform: "translate3d(-2px, 0, 0)" });
-            }
-        },
-        delay: 300,
-    });
-
-    const tada = useSpring({
-        from: { transform: "scale(1)" },
-        to: async (next) => {
-            while (1) {
-                await next({ transform: "scale(1.1) rotate(3deg)" });
-                await next({ transform: "scale(1) rotate(0)" });
-            }
-        },
-        delay: 300,
-    });
-
+    // Ya que, sin importar si el elemento es visible o no, la animación se ejecutará continuamente   
     const popIn = useSpring({
         from: { scale: isVisible ? 0 : 1 },
         to: { scale: 1 },
