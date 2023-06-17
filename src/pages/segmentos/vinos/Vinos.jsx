@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { VinosStyles } from '../../../styles/Styles'
+import { PageStyles } from '../../../styles/Styles'
 import Header from '../../../components/segmentos/Header'
 import Container from '../../../components/segmentos/Container'
 import HeroContainer from '../../../components/segmentos/HeroContainer'
@@ -159,10 +159,14 @@ const Vinos = () => {
     });
     const container = containerData.map((elemento, index) => containerMap(elemento, index));
     const container2 = container2Data.map((elemento, index) => Container2Map(elemento, index));
+    const [theme, setTheme] = useState("dark");
+
+    
     return (
-        <VinosStyles>
+        <PageStyles theme={theme}>
             <Header
                 logo={"/assets/svg/logo.svg"}
+                theme={theme}
             />
             <HeroContainer
                 backgroundImage={"/assets/vinos-y-licores/hVinos2.png"}
@@ -172,7 +176,7 @@ const Vinos = () => {
             {container2}
             <Footer />
 
-        </VinosStyles>
+        </PageStyles>
     )
 }
 

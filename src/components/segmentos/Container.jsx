@@ -37,7 +37,7 @@ const Container = ({ inverseOrder, title, subtitle, icon1, icon1Text, icon2, ico
                 }
             },
             {
-                threshold: 0.5,
+                threshold: 0.1,
             }
         );
 
@@ -74,6 +74,7 @@ const Container = ({ inverseOrder, title, subtitle, icon1, icon1Text, icon2, ico
     const slideInFromBottom = useSpring({
         transform: isVisible ? 'translateY(0)' : 'translateY(100%)',
         delay: isVisible ? 500 : 0,
+        opacity: isVisible ? 1 : 0,
     });
     const spinZoom = useSpring({
         from: { transform: isVisible ? "scale(0) rotate(0deg)" : "scale(1) rotate(360deg)" },
@@ -87,6 +88,10 @@ const Container = ({ inverseOrder, title, subtitle, icon1, icon1Text, icon2, ico
         background: `url(${backgroundImage}) no-repeat center center`,
         backgroundSize: 'cover',
     });
+    const shake = useSpring({
+        to: [{ transform: 'translateX(-10px)' }, { transform: 'translateX(10px)' }, { transform: 'translateX(0)' }],
+        from: { transform: 'translateX(0)' },
+      });
     return (
         <animated.div ref={ref} style={{ height: '100%' }}>
             <ContainerStyles>

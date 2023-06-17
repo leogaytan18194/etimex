@@ -1,31 +1,38 @@
 import styled from "styled-components";
 
-/**
- * Vinos componente
- */
-export const VinosStyles = styled.div`
+
+export const PageStyles = styled.div`
   width: 100%;
-  background-color: #1d1d1b;
+  background-color: ${(props) => props.theme === 'dark' ? `#1d1d1b` : "#fff"} !important;
   * {
     margin: 0;
     padding: 0;
-    color: #fff !important;
-    border-color: #fff !important;
+    color:${(props) => props.theme === 'dark' ? `#fff` : "#000"} !important;
+    border-color: ${(props) => props.theme === 'dark' ? `#fff` : "#000"} !important;
     list-style: none;
+    overflow: hidden;
   }
 `;
 
-/**
- * Vinos componente
- */
 
 export const HeaderStyles = styled.header`
+ @keyframes fadeIn {
+    from {
+      opacity: 0; /* La opacidad al inicio de la animación es 0 */
+    }
+
+    to {
+      opacity: 1; /* La opacidad al final de la animación es 1 */
+      width: 100%;
+    }
+  }
+
   .menu-container {
     width: 100%;
     max-height: 80.8539px;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
+    background: ${(props) => props.theme === 'dark' ? `rgba(0, 0, 0, 0.8)` : "rgba(229, 238, 239, 0.8)"};    
+    color:${(props) => props.theme === 'dark' ? `#fff` : "#000"};
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -33,8 +40,14 @@ export const HeaderStyles = styled.header`
     top: 0;
     height: 100%;
     z-index: 99;
+    span{
+      transform: translateY(0);
+    }
     * {
       overflow: unset;
+    }
+    a{
+      color:${(props) => props.theme === 'dark' ? `#fff` : "#000"} !important;
     }
     ul {
       display: grid;
@@ -50,7 +63,7 @@ export const HeaderStyles = styled.header`
       align-items: center !important;
       a {
         padding-right: 15px;
-        box-sizing: border-box;
+        box-sizing: border-box;     
       }
       img {
         width: 35px;
@@ -58,21 +71,32 @@ export const HeaderStyles = styled.header`
       }
     }
   }
+  .fade-in {
+    opacity: 0; /* Configuramos la opacidad inicial en 0 */
+    animation: fadeIn 1s ease-in forwards; /* Aplicamos la animación llamada "fadeIn" durante 1 segundo */
+  }
   .activeMenu {
     a {
       position: relative;
+      
       &:before {
         position: absolute;
-        width: 100%;
+        width: 0%;
         height: 1px;
-        background-color: #fff;
+        background-color: ${(props) => props.theme === 'dark' ? `#fff` : "#000"} !important;
         bottom: 0;
-        opacity: 1;
+        opacity: 1; /* Configuramos la opacidad inicial en 0 */
+        animation: fadeIn 1s ease-in forwards; /* Aplicamos la animación llamada "fadeIn" durante 1 segundo */
+        animation-iteration-count:1;
       }
     }
   }
 `;
 export const CustomLi = styled.li`
+
+ 
+
+ 
   width: 100%;
   display: flex;
   justify-content: center;
@@ -101,13 +125,15 @@ export const CustomLi = styled.li`
       background-repeat: no-repeat;
       left: -30px;
       top: 5px;
+      opacity: 0; /* Configuramos la opacidad inicial en 0 */
+      animation: fadeIn 1s ease-in forwards; /* Aplicamos la animación llamada "fadeIn" durante 1 segundo */
     }
     &:before {
       content: "";
       position: absolute;
       width: 0%;
       height: 1px;
-      background-color: #fff;
+      background-color: ${(props) => props.theme === 'dark' ? `#fff` : "#000"} !important;
       bottom: 0;
       opacity: 0;
       //visibility:hidden;
@@ -232,6 +258,15 @@ export const ContainerStyles = styled.div`
 `;
 
 export const HeroBackground = styled.div`
+  @keyframes fadeIn2 {
+    from {
+      opacity: 0; /* La opacidad al inicio de la animación es 0 */
+    }
+
+    to {
+      opacity: 1; /* La opacidad al final de la animación es 1 */
+    }
+  }
   .hero {
     /* width: 100%;
     height: 100vh;
@@ -241,13 +276,20 @@ export const HeroBackground = styled.div`
     justify-content: center;
     align-items: center; */
     width: 100%;
-    height: 758px;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     background-attachment: fixed;
+    animation: fadeIn 1s ease-in forwards; /* Aplicamos la animación llamada "fadeIn" durante 1 segundo */
+    @include mobile{
+      height: 100vh;
+      background-image: url("/assets/vinos-y-licores/hVinos2.png");
+      background-size: cover;
+      background-position: center;
+    }
     //background-position: 0 -220px;
   }
 
@@ -324,6 +366,7 @@ export const FooterStyles = styled.footer`
   width: 100%;
   background: #1d1d1b;
   padding-bottom: 8rem;
+  
   .footer-container {
     width: 100%;
     background-color: rgb(210, 173, 87);
@@ -376,6 +419,7 @@ export const TabItem = styled.div`
   transition: all 0.6s;
   height: 50px;
   text-transform: uppercase;
+  overflow: unset;  
   &:hover {
     opacity: 0.6;
   }
