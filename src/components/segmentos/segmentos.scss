@@ -12,6 +12,11 @@
     
     overflow: hidden;
     transition: all 0.3s;
+    text-decoration: none;
+
+  }
+  a{
+    color:inherit;
   }
 
   @include mobile {

@@ -7,7 +7,10 @@ import { HashLink } from 'react-router-hash-link';
 const Header = ({ logo, theme }) => {
     const location = useLocation();
     const { pathname } = location;
-    console.log(pathname)
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     // Crear una animación de desplazamiento desde la derecha
     const slideInFromRight = useSpring({
         from: { transform: 'translateX(100%)' },
@@ -46,8 +49,6 @@ const Header = ({ logo, theme }) => {
         to: { opacity: 1, transform: 'translateY(0)' },
         config: { tension: 200, friction: 20 },
     });
-
-
     const textAnimation = useSpring({
         from: { opacity: 0, transform: 'translateY(-50px)' },
         to: { opacity: 1, transform: 'translateY(0)' },
@@ -141,7 +142,7 @@ const Header = ({ logo, theme }) => {
                                     </div>
 
                                 </MenuMobile>
-                                <div style={{ position:'absolute', left: `${showMenuMo ? '50%' : '100%'}`, opacity: `${showMenuMo === true ? 1 : 0}`, transition: 'all 0.3s' }} className='menu-mobile-container'>
+                                <div style={{ position: 'absolute', left: `${showMenuMo ? '50%' : '100%'}`, opacity: `${showMenuMo === true ? 1 : 0}`, transition: 'all 0.3s' }} className='menu-mobile-container'>
                                     <CustomLi theme={theme} icon={`${pathname === '/vinos-y-licores' ? "vinos-y-licores" : ""}`} className={`${pathname === '/vinos-y-licores' ? "activeMenu" : ""}`}>
                                         <Link to="/vinos-y-licores">
                                             <animated.span style={textAnimation}>

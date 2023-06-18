@@ -70,7 +70,9 @@ export default function Works() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setIsVisible(entry.isIntersecting);
+        if (entry.isIntersecting && !isVisible) {
+          setIsVisible(true);
+        }
       },
       {
         threshold: 0.5,

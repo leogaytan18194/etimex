@@ -99,16 +99,16 @@ const Container = ({ inverseOrder, title, subtitle, icon1, icon1Text, icon2, ico
                 <animated.div className={containerStyle}>
                     <animated.div className='block block-left'>
                         <animated.div className='block-text-container'>
-                            <animated.div style={slideInFromLeft} className='txt-container'>
+                            <animated.div style={slideInFromBottom} className='txt-container'>
                                 <animated.h1>{title}</animated.h1>
-                                <animated.p style={spinZoom}>{subtitle}:</animated.p>
+                                <animated.p style={slideInFromBottom}>{subtitle}:</animated.p>
                             </animated.div>
                             <animated.div className='icon-container'>
                                 <Icon src={icon1} alt='icon1' text={icon1Text} isVisible={isVisible} />
                                 <Icon src={icon2} alt='icon2' text={icon2Text} isVisible={isVisible} />
                             </animated.div>
                             <animated.div className='list-container'>
-                                <animated.p style={scale}>{listTitle}:</animated.p>
+                                <animated.p style={slideInFromLeft}>{listTitle}:</animated.p>
                                 <animated.ul style={slideInFromBottom}>
                                     {listItems.map((item, index) => <li key={index}>{item.name}</li>)}
                                 </animated.ul>

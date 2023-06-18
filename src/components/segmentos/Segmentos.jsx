@@ -1,6 +1,7 @@
 import React from 'react'
 import './segmentos.scss';
 import Card from './Card';
+import { Link } from 'react-router-dom';
 
 function Segmentos() {
 
@@ -10,7 +11,7 @@ function Segmentos() {
             <h1 className="ITBold">Segmentos</h1>
             <div className="container">
                 <Card delay={200}>
-                    <div className="card featured">
+                    <Link to="/vinos-y-licores" className="card featured">
                         <div className="top">
                             <div className='top-img-container'>
                                 <img
@@ -26,10 +27,10 @@ function Segmentos() {
                         <div className="bottom">
                             <p>Vestimos vinos y licores que llevan  una historia detrás y forman parte de momentos únicos.</p>
                         </div>
-                    </div>
+                    </Link>
                 </Card>
                 <Card delay={400}>
-                    <div className="card featured">
+                    <Link to="/alimentos-y-bebidas" className="card featured">
                         <div className="top">
                             <div className='top-img-container'>
                                 <img
@@ -46,7 +47,7 @@ function Segmentos() {
                         <div className="bottom">
                             <p>Entendemos los retos de la industria de etiquetas para alimentos y te asesoramos con las soluciones más atractivas.</p>
                         </div>
-                    </div>
+                    </Link>
                 </Card>
                 <Card delay={600}>
                     <div className="card featured">
