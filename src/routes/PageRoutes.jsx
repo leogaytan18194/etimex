@@ -1,8 +1,8 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from '../pages/home/Home'
-import Vinos from '../pages/segmentos/vinos/Vinos'
-import AlimentosBebidas from '../pages/segmentos/vinos/AlimentosBebidas'
+import Vinos from '../pages/segmentos/Vinos'
+import AlimentosBebidas from '../pages/segmentos/AlimentosBebidas'
 
 const PageRoutes = () => {
     return (

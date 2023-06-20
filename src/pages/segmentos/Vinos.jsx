@@ -13,21 +13,21 @@ const containerData = [
         title: "Vinos",
         subtitle: "Disponoble en papel",
         icon1: "/assets/svg/bond.svg",
-        icon1Text: "Bond",
+        icon1Text: "Bondes",
         icon2: "/assets/svg/shrek.svg",
-        icon2Text: "Twvek",
-        listTitle: "En película",
+        icon2Text: "Twvek3",
+        listTitle: "En películas",
         listItems: [
-            { id: 1, name: 'Elemento 1', description: 'Descripción del elemento 1' },
-            { id: 2, name: 'Elemento 2', description: 'Descripción del elemento 2' },
-            { id: 3, name: 'Elemento 3', description: 'Descripción del elemento 3' },
-            { id: 4, name: 'Elemento 4', description: 'Descripción del elemento 4' },
+            { id: 1, name: 'Elemento 1',  },
+            { id: 2, name: 'Elemento 2',  },
+            { id: 3, name: 'Elemento 3',  },
+            { id: 4, name: 'Elemento 4',  },
         ],
         backgroundImage: "/assets/vinos-y-licores/cards/card1.png",
     },
     {
         inverseOrder: true,
-        title: "Vinos",
+        title: "Vinos Y licores",
         subtitle: "Disponoble en papel",
         icon1: "/assets/svg/bond.svg",
         icon1Text: "Bond",
@@ -64,7 +64,7 @@ const containerData = [
 const container2Data = [
     {
         inverseOrder: false,
-        title: `COLD FOIL`,
+        title: `COLD FOILs`,
         description: `Aporta un look premium y genera
                 contraste visual con un aspecto metalizado 
                 hecho a tu medida.`,
