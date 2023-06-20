@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { PageStyles } from '../../../styles/Styles'
-import Header from '../../../components/segmentos/Header'
-import Container from '../../../components/segmentos/Container'
-import HeroContainer from '../../../components/segmentos/HeroContainer'
-import Footer from '../../../components/segmentos/Footer'
-import Container2 from '../../../components/segmentos/Container2'
+import { PageStyles } from '../../styles/Styles'
+import Header from '../../components/segmentos/Header'
+import Container from '../../components/segmentos/Container'
+import HeroContainer from '../../components/segmentos/HeroContainer'
+import Footer from '../../components/segmentos/Footer'
+import Container2 from '../../components/segmentos/Container2'
 import { useSpring, animated } from 'react-spring';
 
 const containerData = [

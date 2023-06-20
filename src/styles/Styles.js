@@ -518,7 +518,6 @@ export const Container2Styles = styled.div`
 export const FooterStyles = styled.footer`
   width: 100%;
   background-color: ${(props) =>   props.theme === "dark" ? `#1d1d1b` : "#fff"} !important;
-  padding-bottom: 8rem;
 
   .footer-container {
     width: 100%;
