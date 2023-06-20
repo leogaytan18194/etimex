@@ -11,12 +11,12 @@ const containerData = [
     {
         inverseOrder: false,
         title: "Vinos",
-        subtitle: "Disponible en papel:",
+        subtitle: "Disponible en papel",
         icon1: "/assets/svg/bond.svg",
         icon1Text: "Bondes",
         icon2: "/assets/svg/shrek.svg",
         icon2Text: "Tyvek",
-        listTitle: "En película:",
+        listTitle: "En película",
         listItems: [
             { id: 1, name: 'BOPP transparente',  },
             { id: 2, name: 'BOPP blanco',  },
@@ -27,12 +27,12 @@ const containerData = [
     {
         inverseOrder: true,
         title: "Licores",
-        subtitle: "Disponible en papel:",
+        subtitle: "Disponible en papel",
         icon1: "/assets/svg/bond.svg",
         icon1Text: "Bond",
         icon2: "/assets/svg/shrek.svg",
         icon2Text: "Tyvek",
-        listTitle: "En película:",
+        listTitle: "En película",
         listItems: [
             { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
             { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
@@ -43,7 +43,7 @@ const containerData = [
     {
         inverseOrder: false,
         title: "Cerveza artesanal",
-        subtitle: "Disponible en papel:",
+        subtitle: "Disponible en papel",
         icon1: "/assets/svg/bond.svg",
         icon1Text: "Bond",
         icon2: "/assets/svg/shrek.svg",
