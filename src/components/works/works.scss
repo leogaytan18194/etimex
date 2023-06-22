@@ -16,16 +16,25 @@
     cursor: pointer;
 
     @include mobile {
-      display: none;
+      //   display: none;
+      //right: 0;
     }
 
     &.right {
       right: 100px;
+      @include mobile {
+        //   display: none;
+        right: 0;
+      }
     }
 
     &.left {
       left: 100px;
       transform: rotateY(180deg);
+      @include mobile {
+        //   display: none;
+        left: 0;
+      }
     }
   }
 
@@ -38,16 +47,16 @@
 
     @include mobile {
       height: auto !important;
-      flex-direction: column;
+      //flex-direction: column;
       justify-content: center;
       // display: none;
-      & > .container {
-        display: none !important;
-      }
-      & > .container:nth-child(1) {
-        display: flex !important;
-        
-      }
+      // & > .container {
+      //   display: none !important;
+      // }
+      // & > .container:nth-child(1) {
+      //   display: flex !important;
+
+      // }
     }
 
     .container {
