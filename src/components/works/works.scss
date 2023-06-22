@@ -7,7 +7,9 @@
   justify-content: center;
   position: relative;
   height: 100vh;
-
+  @include mobile {
+    height: 30vh !important;
+  }
   .arrow {
     height: 50px;
     position: absolute;
@@ -35,9 +37,17 @@
     transition: all 1s ease-out;
 
     @include mobile {
-      height: 100vh;
+      height: auto !important;
       flex-direction: column;
       justify-content: center;
+      // display: none;
+      & > .container {
+        display: none !important;
+      }
+      & > .container:nth-child(1) {
+        display: flex !important;
+        
+      }
     }
 
     .container {
@@ -75,18 +85,17 @@
             flex-direction: column;
             justify-content: space-between;
 
-
             h2 {
               font-size: 40px;
 
-              @include mobile{
+              @include mobile {
                 font-size: 13px;
               }
             }
             p {
               font-size: 25px;
               padding-right: 160px;
-              @include mobile{
+              @include mobile {
                 display: none;
               }
             }
@@ -109,6 +118,10 @@
           img {
             width: 300px;
             transform: rotate(-10deg);
+            @include mobile {
+              width: auto;
+              height: 100%;
+            }
           }
         }
       }

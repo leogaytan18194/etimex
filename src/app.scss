@@ -25,7 +25,7 @@ img{
   }
   .sections {
     width: 100%;
-    background-color: white;
+    background-color: #EFEFEF;
     position: relative;
     top: 70px;
     display: flex;
@@ -39,6 +39,8 @@ img{
     > * {
       width: 100vw;
       scroll-snap-align: start;
+      height: 80vh;
+      overflow: hidden;
       
     }
   }

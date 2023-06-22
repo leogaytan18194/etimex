@@ -2,13 +2,15 @@ import styled from "styled-components";
 
 export const PageStyles = styled.div`
   width: 100%;
-  background-color: ${(props) =>   props.theme === "dark" ? `#1d1d1b` : "#fff"} !important;
+  background-color: ${(props) =>
+    props.theme === "dark" ? `#1d1d1b` : "#fff"} !important;
   overflow: hidden;
   * {
     margin: 0;
     padding: 0;
-    color: ${(props) =>(props.theme === "dark" ? `#fff` : "#000")} !important;
-    border-color: ${(props) =>     props.theme === "dark" ? `#fff` : "#000"} !important;
+    color: ${(props) => (props.theme === "dark" ? `#fff` : "#000")} !important;
+    border-color: ${(props) =>
+      props.theme === "dark" ? `#fff` : "#000"} !important;
     list-style: none;
     overflow: unset;
   }
@@ -16,11 +18,11 @@ export const PageStyles = styled.div`
     padding: 20px;
     //border-radius: 10px;
     * {
-      color: ${(props) => props.theme === "dark" ? `#fff` : "#fff"} !important;
+      color: ${(props) =>
+        props.theme === "dark" ? `#fff` : "#fff"} !important;
     }
     font-size: 3rem;
   }
- 
 `;
 
 export const HeaderStyles = styled.header`
@@ -63,31 +65,32 @@ export const HeaderStyles = styled.header`
     align-items: center;
     gap: 9px;
     left: -10px;
-}
-.mobile-menu{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-  .m-web{
-    @media (max-width: 980px) {  
+  }
+  .mobile-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .m-web {
+    @media (max-width: 980px) {
       display: none;
     }
   }
-  .m-mobile{
+  .m-mobile {
     display: none;
-    @media (max-width: 980px) {  
+    @media (max-width: 980px) {
       display: block;
-    }          
+    }
   }
   .menu-container {
     width: 100%;
     max-height: 80.8539px;
     height: 100%;
-    background: ${(props) =>     props.theme === "dark"
+    background: ${(props) =>
+      props.theme === "dark"
         ? `rgba(0, 0, 0, 0.8)`
         : "rgba(229, 238, 239, 0.8)"};
-    color: ${(props) =>(props.theme === "dark" ? `#fff` : "#000")};
+    color: ${(props) => (props.theme === "dark" ? `#fff` : "#000")};
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -102,11 +105,12 @@ export const HeaderStyles = styled.header`
       overflow: unset;
     }
     a {
-      color: ${(props) => props.theme === "dark" ? `#fff` : "#000"} !important;
+      color: ${(props) =>
+        props.theme === "dark" ? `#fff` : "#000"} !important;
       @media (max-width: 980px) {
-        color: ${(props) => props.theme === "dark" ? `#000` : "#fff"} !important;
+        color: ${(props) =>
+          props.theme === "dark" ? `#000` : "#fff"} !important;
       }
-
     }
     ul {
       display: grid;
@@ -115,36 +119,38 @@ export const HeaderStyles = styled.header`
       margin: 0 auto;
       width: 100%;
       list-style: none;
-      
-      @media (max-width: 980px) {   
+
+      @media (max-width: 980px) {
         grid-template-columns: repeat(2, auto);
-        justify-content:space-between;
+        justify-content: space-between;
         padding: 0 30px;
         box-sizing: border-box;
       }
-     
     }
     .menu-mobile-container {
-        width: 50%;
-        top: 80px;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        gap: 19px;
-        background: ${(props) => props.theme === "dark" ? `rgba(0, 0, 0, 0.8)` : "rgba(255, 255, 255, 0.8)"} !important;
-        padding: 17px 0;
-        @media (max-width: 468px) {
-          width:100%;
-          left: 0 !important;
-        } 
+      width: 50%;
+      top: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 19px;
+      background: ${(props) =>
+        props.theme === "dark"
+          ? `rgba(0, 0, 0, 0.8)`
+          : "rgba(255, 255, 255, 0.8)"} !important;
+      padding: 17px 0;
+      @media (max-width: 468px) {
+        width: 100%;
+        left: 0 !important;
+      }
     }
     .logo {
       display: flex;
       justify-content: end !important;
       align-items: center !important;
 
-      @media (max-width: 1024px) {        
-          justify-content: center !important;        
+      @media (max-width: 1024px) {
+        justify-content: center !important;
       }
       a {
         padding-right: 15px;
@@ -168,7 +174,8 @@ export const HeaderStyles = styled.header`
         position: absolute;
         width: 0%;
         height: 1px;
-        background-color: ${(props) =>   props.theme === "dark" ? `#fff` : "#000"} !important;
+        background-color: ${(props) =>
+          props.theme === "dark" ? `#fff` : "#000"} !important;
         bottom: 0;
         opacity: 1; /* Configuramos la opacidad inicial en 0 */
         animation: fadeIn 1s ease-in forwards; /* Aplicamos la animación llamada "fadeIn" durante 1 segundo */
@@ -201,7 +208,8 @@ export const CustomLi = styled.li`
     margin: 0;
     &:after {
       content: "";
-      background-image: url(/assets/segmentos/${(props) => props.icon ? `${props.icon}.svg` : ""});
+      background-image: url(/assets/segmentos/${(props) =>
+        props.icon ? `${props.icon}.svg` : ""});
       position: absolute;
       width: 25px;
       height: 25px;
@@ -216,7 +224,8 @@ export const CustomLi = styled.li`
       position: absolute;
       width: 0%;
       height: 1px;
-      background-color: ${(props) => props.theme === "dark" ? `#fff` : "#000"} !important;
+      background-color: ${(props) =>
+        props.theme === "dark" ? `#fff` : "#000"} !important;
       bottom: 0;
       opacity: 0;
       //visibility:hidden;
@@ -252,7 +261,7 @@ export const ContainerStyles = styled.div`
       font-size: 4rem;
     }
   }
-  .txt-container{
+  .txt-container {
     @media (max-width: 768px) {
       display: flex;
       justify-content: center;
@@ -299,7 +308,7 @@ export const ContainerStyles = styled.div`
   .container {
     display: flex;
     flex-direction: row;
-    @media(max-width: 767px) {
+    @media (max-width: 767px) {
       flex-wrap: wrap;
     }
   }
@@ -313,7 +322,7 @@ export const ContainerStyles = styled.div`
     flex-direction: column;
   }
 
-  .image-container{
+  .image-container {
     @media (max-width: 780px) {
       width: 100%;
     }
@@ -321,14 +330,12 @@ export const ContainerStyles = styled.div`
   .block-left {
     width: 40%;
     @media (max-width: 968px) {
-
-        width: 60%;
+      width: 60%;
     }
     @media (max-width: 780px) {
-
-        width: 100%;
-        box-sizing: border-box;
-        padding: 30px 0;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 30px 0;
     }
   }
   /* .block-text-container {
@@ -428,13 +435,12 @@ export const Container2Styles = styled.div`
     align-items: center;
     justify-content: center;
   }
-  .container {    
+  .container {
     display: flex;
     flex-direction: row;
-    @media(max-width: 767px) {
+    @media (max-width: 767px) {
       flex-wrap: wrap;
     }
-    
   }
 
   .container.inverse {
@@ -449,8 +455,8 @@ export const Container2Styles = styled.div`
     width: 648px;
     height: 320px;
     margin: 15px 0;
-    overflow: hidden;    
-    @media (max-width: 780px){
+    overflow: hidden;
+    @media (max-width: 780px) {
       flex-basis: 100%;
     }
     img {
@@ -460,7 +466,7 @@ export const Container2Styles = styled.div`
     }
   }
   .text-container {
-    flex-basis: 40%;    
+    flex-basis: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -471,7 +477,7 @@ export const Container2Styles = styled.div`
       font-size: 40px;
       text-transform: uppercase;
       max-width: 150px;
-      @media (max-width: 780px){
+      @media (max-width: 780px) {
         max-width: 100%;
         width: 100%;
         text-align: center;
@@ -480,23 +486,23 @@ export const Container2Styles = styled.div`
     p {
       white-space: pre-line;
       max-width: 333px;
-      @media (max-width: 780px){
+      @media (max-width: 780px) {
         max-width: 100%;
         width: 100%;
         text-align: center;
       }
     }
-    @media (max-width: 980px){
+    @media (max-width: 980px) {
       flex-basis: 40%;
     }
-    @media (max-width: 780px){
+    @media (max-width: 780px) {
       flex-basis: 100%;
       max-width: 60%;
       margin: 0 auto;
       padding-left: 0px;
       height: 30vh;
     }
-    @media (max-width: 580px){
+    @media (max-width: 580px) {
       flex-basis: 100%;
       max-width: 80%;
       margin: 0 auto;
@@ -517,40 +523,50 @@ export const Container2Styles = styled.div`
 
 export const FooterStyles = styled.footer`
   width: 100%;
-  background-color: ${(props) =>   props.theme === "dark" ? `#1d1d1b` : "#fff"} !important;
-
+  background-color: ${(props) =>
+    props.theme === "dark" ? `#1d1d1b` : "#fff"} !important;
+  height: auto !important;
   .footer-container {
     width: 100%;
     background-color: rgb(210, 173, 87);
-    background-color: ${(props) =>     props.theme === "dark" ? `rgb(210, 173, 87)` : "#efefef"} !important;
+    background-color: ${(props) =>
+      props.theme === "dark" ? `rgb(210, 173, 87)` : "#efefef"} !important;
     height: 93px;
     @media (max-width: 780px) {
-      height:auto;
+      height: auto;
     }
   }
   .footer-items {
     width: 100%;
     margin: 0 auto;
-    max-width: 1300px;
+    max-width: 1250px;
     display: grid;
     grid-template-columns: auto 1fr;
     justify-items: center;
     box-sizing: border-box;
     padding-top: 15px;
-    @media (max-width:780px){
+    @media (max-width: 1200px) {
+      grid-template-columns: 90% 1fr;
+    }
+    @media (max-width: 780px) {
       grid-template-columns: repeat(1, 100%);
-      gap:10px;
+      gap: 10px;
       max-width: 100%;
     }
   }
   ul.footer-list {
     display: flex;
-    gap: 10px;
-    @media (max-width:780px){      
+    gap: 20px;
+    padding: 0px;
+    @media (max-width: 1200px) {
+      flex-wrap:wrap;
+      justify-content: space-between;
+      width:95%;
+    }
+    @media (max-width: 780px) {
       flex-wrap: wrap;
       justify-content: center;
       text-align: center;
-
     }
   }
 
@@ -559,7 +575,8 @@ export const FooterStyles = styled.footer`
     gap: 4px;
     img {
       height: 22.1503px;
-      filter: ${(props) => props.theme === "dark" ? `invert(1)` : "unset"} !important;
+      filter: ${(props) =>
+        props.theme === "dark" ? `invert(1)` : "unset"} !important;
     }
     img {
       &:hover {
@@ -583,10 +600,10 @@ export const FooterStyles = styled.footer`
     grid-template-columns: repeat(3, auto);
     justify-content: center;
     gap: 60px;
-    @media (max-width:480px) {
-      grid-template-columns: repeat(1, 100%);      
+    @media (max-width: 480px) {
+      grid-template-columns: repeat(1, 100%);
       justify-items: center;
-      gap:5px;
+      gap: 5px;
     }
   }
 `;
@@ -607,7 +624,8 @@ export const TabItem = styled.div`
   }
   &:before {
     content: "";
-    background-image: url(${(props) =>     props.theme === "dark" ? `${props.icon}-d.svg` : `${props.icon}-l.svg`});
+    background-image: url(${(props) =>
+      props.theme === "dark" ? `${props.icon}-d.svg` : `${props.icon}-l.svg`});
     position: absolute;
     width: 25px;
     height: 25px;
@@ -622,79 +640,75 @@ export const TabItem = styled.div`
 `;
 
 export const MenuMobile = styled.div`
-display:flex;
-cursor: pointer;
-width: 100%;
-align-items: center;
-justify-content: center;
-.menu-button {
-  width: 40px;
-  height: 30px;
-  position: relative;
-  display: none;
-  scale: 0.8;
-  @media(max-width:980px){
-    display: block;
+  display: flex;
+  cursor: pointer;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  .menu-button {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    display: none;
+    scale: 0.8;
+    @media (max-width: 980px) {
+      display: block;
+    }
+    /* additional styles */
   }
-  /* additional styles */
-}
 
+  .menu-line {
+    width: 100%;
+    height: 3px;
+    background-color: ${(props) =>
+      props.theme === "dark" ? `#fff` : "#000"} !important;
+    margin: 5px 0;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    top: 33.33%;
+  }
 
-.menu-line {
-  width: 100%;
-  height: 3px;
-  background-color:  ${(props) =>   props.theme === "dark" ? `#fff` : "#000"} !important;;
-  margin: 5px 0;
-  position: relative;
-  transition: all 0.2s ease-in-out;
-  top: 33.33%;
-}
+  .menu-button:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: ${(props) =>
+      props.theme === "dark" ? `#fff` : "#000"} !important;
+    top: 0%;
+    left: 0%;
 
-.menu-button:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  background-color:  ${(props) =>   props.theme === "dark" ? `#fff` : "#000"} !important;;
-  top: 0%;
-  left: 0%;
+    transition: all 0.2s ease-in-out;
+  }
 
-  transition: all 0.2s ease-in-out;
+  .menu-button:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: ${(props) =>
+      props.theme === "dark" ? `#fff` : "#000"} !important;
+    top: 100%;
+    left: 0%;
 
-}
-
-.menu-button:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  background-color:  ${(props) =>   props.theme === "dark" ? `#fff` : "#000"} !important;;
-  top:100%;
-  left: 0%;
-  
-  transition: all 0.2s ease-in-out;
-}
-
+    transition: all 0.2s ease-in-out;
+  }
 
   .a-menu-button:before {
-  transform: translateX(0%) rotate(45deg);
-  top: 50%;
-  transition: all 0.2s ease-in-out;
-  
-}
+    transform: translateX(0%) rotate(45deg);
+    top: 50%;
+    transition: all 0.2s ease-in-out;
+  }
 
-.a-menu-button > .menu-line {
-  transform: translateX(0%) rotate(45deg);
-  top: 50%;
-  transition: all 0.2s ease-in-out;
-  opacity: 0;
-  
-}
-.a-menu-button:after {
-  transform: translateX(0%) rotate(-45deg);
-  top: 50%;
-  transition: all 0.2s ease-in-out;
-  
-}
-
+  .a-menu-button > .menu-line {
+    transform: translateX(0%) rotate(45deg);
+    top: 50%;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+  }
+  .a-menu-button:after {
+    transform: translateX(0%) rotate(-45deg);
+    top: 50%;
+    transition: all 0.2s ease-in-out;
+  }
 `;

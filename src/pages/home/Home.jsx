@@ -12,6 +12,8 @@ import Contact from '../../components/contact/Contact'
 import Topbar from '../../components/topbar/Topbar'
 import Menu from '../../components/menu/Menu'
 import "../../app.scss"
+import Footer from '../../components/footer/Footer'
+
 const Home = () => {
     const [menuOpen, setMenuOpen] = useState(false)
 
@@ -28,6 +30,7 @@ const Home = () => {
 
     const hiddenElements = document.querySelectorAll('.hidden');
     hiddenElements.forEach((el) => observer.observe(el));
+    const [theme, setTheme] = useState("light")
     return (
         <div className="app">
             <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
@@ -35,14 +38,15 @@ const Home = () => {
             <div className="sections">
                 <Video />
                 <Works />
-                <Intro />
-                <Print />
                 <Informacion />
                 <Segmentos />
+                <Intro />
+                <Print />
                 <Servicios />
                 <Impresiones />
                 <Clientes />
                 <Contact />
+                <Footer theme={theme} heigth="auto" />
             </div>
         </div>
     )

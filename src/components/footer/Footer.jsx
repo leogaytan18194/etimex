@@ -18,40 +18,9 @@ const socialIcons = [
     link:"http://www.facebook.com"
   }
 ];
-const tabItems = [
-  {
-    ico: "/assets/svg/materiales",
-    text: "Materiales",
-    route: "/material",
-    top: "-5px",
-  },
-  {
-    ico: "/assets/svg/tintas",
-    text: "Tintas",
-    route: "/tintas",
-    top: "2px",
-  },
-  {
-    ico: "/assets/svg/acabados",
-    text: "Acabados",
-    route: "/acaabados",
-    top: "-2px",
-  },
-]
 const Footer = ({theme, heigth}) => {
   return (
     <FooterStyles theme={theme} heigth={heigth}>
-      <div className='footer-tab'>
-        <div className='footer-tab-items'>
-          {
-            tabItems.map((tabItem) => (
-              <TabItem icon={tabItem.ico} top={tabItem.top} theme={theme}>
-                {tabItem.text}
-              </TabItem>
-            ))
-          }
-        </div>
-      </div>
       <div className="footer-container">
         <div className='footer-items'>
           <ul className="footer-list">

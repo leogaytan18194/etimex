@@ -3,13 +3,18 @@
 .topbar {
   width: 100%;
   height: 70px;
-  background-color: rgba(154, 154, 154, 0.5);
+  //background-color: rgba(154, 154, 154);
+  background-color: rgb(227 227 227);
   opacity: .8;
   color: $mainColor;
   position: fixed;
   top: 0;
   z-index: 3;
   transition: all 1s ease;
+  @include smallTablet{
+    background-color: rgb(227 227 227);
+    opacity: 1;
+  }
 
   .wrapper {
     padding: 10px 30px;
@@ -24,7 +29,7 @@
     .left {
       display: flex;
       align-items: center;
-
+     
       .logo {
         font-size: 40px;
         font-weight: 700;
@@ -55,6 +60,7 @@
       @include mobile{
         display:flex;
         gap: 10px;
+        color: #000;
       }
       .hamburger {
         @include mobile{
@@ -64,34 +70,41 @@
           flex-direction: column;
           justify-content: space-between;
           cursor: pointer;
+
           }
         span {
           width: 100%;
           height: 3px;
           background-color: $mainColor;
+          @include mobile{
+            background-color: #000;
+          }
           transform-origin: left;
           transition: all 2s ease;
+          @include mobile{
+            color: #000;
+          }
         }
       }
     }
   }
 
   &.active {
-    background-color: $mainColor;
-    color: white;
+   // background-color: $mainColor;
+    color: #000;
 
     .hamburger {
       
       span {
         &:first-child {
-          background-color: white;
+          background-color: #000;
           transform: rotate(45deg);
         }
         &:nth-child(2) {
           opacity: 0;
         }
         &:last-child {
-          background-color: white;
+          background-color: #000;
           transform: rotate(-45deg);
         }
       }

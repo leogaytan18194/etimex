@@ -1,27 +1,38 @@
 @import "../../global.scss";
 
+.into-txt {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-self: end;
+  width: 100%;
+}
 .intro {
   display: flex;
-  height: 250px;
+  height: 63vh !important;
 
   @include mobile{
     flex-direction: column;
     align-items: center;
+    height:  auto !important;
   }
 
 
     .wrapper {
       width: 100%;
-      padding-left: 10%;
+      //padding-left: 10%;
       display: flex;
       flex-direction: column;
       justify-content: center;
-
+      
       position: relative;
       background-repeat: no-repeat;
       background-size: cover;
 
       background-image: url("./banneretimex.png");
+      background-position:center;
+      align-items: end;
 
       @include mobile{
         height: 250px;
@@ -29,9 +40,10 @@
         align-items: center;
         position: relative;
         background-size: cover;
-        background-position: left;
+        background-position: center;
 
         background-image: url("./banneretimex.png");
+
       }
 
       h1 {
@@ -47,9 +59,19 @@
         font-size: 25px;
         color: white;
         width: 60%;
-
+        font-weight: lighter;
+        @include smallTablet{
+          width: 80%;
+        }
         @include mobile{
           font-size: 18px;
+        }
+        @include mediumMobile{
+          width: 100%;
+          
+        }
+        @include smallMobile{
+          font-size: 13px;
         }
       }
       h3 {
