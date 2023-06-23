@@ -25,7 +25,7 @@ const Icon = ({ src, alt, text, isVisible }) => {
     );
 };
 
-const Container = ({ inverseOrder, title, subtitle, icon1, icon1Text, icon2, icon2Text, listTitle, listItems, backgroundImage }) => {
+const Container = ({ inverseOrder, title, subtitle, icon1, icon1Text, icon2, icon2Text, listTitle, listItems, backgroundImage, theme }) => {
     const ref = useRef();
     const [isVisible, setIsVisible] = useState(false);
 
@@ -94,7 +94,7 @@ const Container = ({ inverseOrder, title, subtitle, icon1, icon1Text, icon2, ico
       });
     return (
         <animated.div ref={ref} style={{ height: '100%' }}>
-            <ContainerStyles>
+            <ContainerStyles theme={theme}>
 
                 <animated.div className={containerStyle}>
                     <animated.div className='block block-left'>

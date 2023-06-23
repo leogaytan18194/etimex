@@ -3,6 +3,7 @@ import "./contact.scss";
 import { estadosOptions } from "./estados";
 import { sectoresOptions } from "./sectores";
 import { cantidadPiezasOptions } from "./piezas";
+import { FadeInScale } from "../intro/Intro";
 
 export default function Contact() {
   const [message, setMessage] = useState(false);
@@ -35,7 +36,7 @@ export default function Contact() {
 
             <div className="form-group" >
               <div className="input-group" style={{
-                
+
               }}>
 
                 <div className="flex-container">
@@ -52,7 +53,7 @@ export default function Contact() {
                 </div>
               </div>
               <div className="input-group" style={{
-                
+
               }}>
                 <div className="flex-container">
                   <label htmlFor="input1" className="input-label">
@@ -68,7 +69,7 @@ export default function Contact() {
                 </div>
               </div>
               <div className="input-group" style={{
-                
+
               }}>
                 <div className="flex-container">
                   <label htmlFor="input1" className="input-label">
@@ -103,7 +104,7 @@ export default function Contact() {
                     >
                       <option value="0"></option>
                       {
-                        estadosOptions.map(data =>  <option value={`${data.value}`}>{data.text}</option>)
+                        estadosOptions.map(data => <option value={`${data.value}`}>{data.text}</option>)
                       }
                     </select>
 
@@ -122,7 +123,7 @@ export default function Contact() {
                     >
                       <option value="0"></option>
                       {
-                        sectoresOptions.map(data =>  <option value={`${data.value}`}>{data.text}</option>)
+                        sectoresOptions.map(data => <option value={`${data.value}`}>{data.text}</option>)
                       }
                     </select>
 
@@ -141,7 +142,7 @@ export default function Contact() {
                     >
                       <option value="0"></option>
                       {
-                        cantidadPiezasOptions.map(data =>  <option value={`${data.value}`}>{data.text}</option>)
+                        cantidadPiezasOptions.map(data => <option value={`${data.value}`}>{data.text}</option>)
                       }
                     </select>
 
@@ -198,19 +199,23 @@ export default function Contact() {
       <div className="contact-info">
         <div className="contact-info-container">
           <div className="contact-info-item">
-            <p>{`Llámanos:
+            <FadeInScale>
+              <p>{`Llámanos:
 81 8479 0800`}</p>
+            </FadeInScale>
           </div>
           <div className="contact-info-item">
-            <p>{`Horario de atención:
+            <FadeInScale>
+              <p>{`Horario de atención:
 Lunes a viernes.
-9 am-5 pm`}</p>
+9 am-5 pm`}</p></FadeInScale>
           </div>
           <div className="contact-info-item">
-            <p>{`Ubicación:
+            <FadeInScale>
+              <p>{`Ubicación:
 Av. San Ángel 201,
 Col. Churubusco, C.P. 64590,
-Monterrey, N.L. México.`}</p>
+Monterrey, N.L. México.`}</p></FadeInScale>
           </div>
         </div>
       </div>

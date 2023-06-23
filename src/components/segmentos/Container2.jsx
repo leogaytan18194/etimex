@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { useSpring, animated } from 'react-spring';
 import { Container2Styles } from '../../styles/Styles';
 
-const Container2 = ({ inverseOrder, title, description, image, titleItem, index }) => {
+const Container2 = ({ inverseOrder, title, description, image, titleItem, index, theme }) => {
     const containerStyle = inverseOrder ? 'container inverse' : 'container';
     const ref = useRef();
     const [isVisible, setIsVisible] = useState(false);
@@ -94,7 +94,7 @@ const Container2 = ({ inverseOrder, title, description, image, titleItem, index 
 
     return (
         <animated.div  ref={ref}>
-            <Container2Styles>
+            <Container2Styles theme={theme}>
                 {titleItem && <animated.div style={scale} className='container-title'>
                     {titleItem}
                 </animated.div>}

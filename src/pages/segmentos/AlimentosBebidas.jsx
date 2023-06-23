@@ -122,7 +122,7 @@ const container2Data = [
 
 
 
-const containerMap = (data, index) => {
+const containerMap = (data, index, theme) => {
     return (
         <>
             <Container
@@ -136,12 +136,13 @@ const containerMap = (data, index) => {
                 listTitle={data.listTitle}
                 listItems={data.listItems}
                 backgroundImage={data.backgroundImage}
+                theme={theme}
             />
         </>
     );
 };
 
-const Container2Map = (data, index) => {
+const Container2Map = (data, index, theme) => {
     const ref = useRef();
 
     return (
@@ -152,6 +153,7 @@ const Container2Map = (data, index) => {
                 description={data.description}
                 image={data.image}
                 titleItem={data.titleItem}
+                theme={theme}
             />
         </div>
     );
@@ -169,9 +171,9 @@ const AlimentosBebidas = () => {
         delay: 300,
         config: { duration: 1000 },
     });
-    const container = containerData.map((elemento, index) => containerMap(elemento, index));
-    const container2 = container2Data.map((elemento, index) => Container2Map(elemento, index));
     const [theme, setTheme] = useState("light");
+    const container = containerData.map((elemento, index) => containerMap(elemento, index, theme));
+    const container2 = container2Data.map((elemento, index) => Container2Map(elemento, index, theme));
 
 
     return (
