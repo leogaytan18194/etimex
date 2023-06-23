@@ -1,5 +1,5 @@
 import "./topbar.scss";
-import logo from './logo.svg';
+import logo from './etimex-logo.png';
 import TranslateIcon from '@mui/icons-material/Translate';
 
 export default function Topbar({ menuOpen, setMenuOpen }) {

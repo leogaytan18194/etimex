@@ -1,14 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { useSpring, animated } from 'react-spring';
-
+import React, { useState, useEffect, useRef } from "react";
+import { useSpring, animated } from "react-spring";
 import "./works.scss";
 
-import { useRef } from "react";
-
-
 export default function Works() {
-
-
   const [currentSlide, setCurrentSlide] = useState(0);
   const data = [
     {
@@ -25,7 +19,7 @@ export default function Works() {
       desc:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       img:
-        "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+        "./assets/slider2.svg",
     },
     {
       id: "3",
@@ -33,14 +27,27 @@ export default function Works() {
       desc:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       img:
-        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+        "./assets/slider3.svg",
     },
   ];
+
+
+  const [backgroundColor, setBackgroundColor] = useState("#fff");
 
   const handleClick = (way) => {
     way === "left"
       ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
       : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
+
+    // Assuming the slide translate animation takes 500ms
+    setTimeout(() => {
+      const newSlide = way === "left"
+        ? currentSlide > 0 ? currentSlide - 1 : 2
+        : currentSlide < data.length - 1 ? currentSlide + 1 : 0;
+
+      const newColor = data[newSlide].id === "2" ? "#5A141E" : data[newSlide].id === "3" ? "#A9D5C2" : "transparent";
+      setBackgroundColor(newColor);
+    }, 500); // This delay should be the same as the duration of your slide transition
   };
 
   const ref = useRef();
@@ -50,23 +57,22 @@ export default function Works() {
     opacity: isVisible ? 1 : 0,
     from: { opacity: 0 },
     delay: 200,
-    config: { duration: 1000 }
+    config: { duration: 1000 },
   });
 
   const slideProps = useSpring({
-    transform: isVisible ? 'translateY(0px)' : 'translateY(20px)',
-    from: { transform: 'translateY(20px)' },
+    transform: isVisible ? "translateY(0px)" : "translateY(20px)",
+    from: { transform: "translateY(20px)" },
     delay: 400,
-    config: { duration: 1000 }
+    config: { duration: 1000 },
   });
 
   const scaleProps = useSpring({
-    transform: isVisible ? 'scale(1)' : 'scale(0.9)',
-    from: { transform: 'scale(0.9)' },
+    transform: data[currentSlide].id !== "3" ? "scale(1)" : "scale(0.9)",
+    from: { transform: "scale(0.9)" },
     delay: 600,
-    config: { duration: 1000 }
+    config: { duration: 1000 },
   });
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -90,33 +96,45 @@ export default function Works() {
     };
   }, []);
 
+  const springProps = useSpring({
+    backgroundColor,
+    config: { delay: 500 },
+  });
+
   return (
-    <div className="works" id="works" ref={ref}>
-      <div
-        className="slider"
-        style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
-      >
-        {data.map((d) => (
-          <div className="container">
-            <div className="item">
-              <div className="left">
-                <animated.img
-                  style={scaleProps}
-                  src="assets/bote2.png"
-                  alt=""
-                />
+    <animated.div className="works" id="works" ref={ref} style={springProps}>
+      <div className="slider" style={{ transform: `translateX(-${currentSlide * 100}vw)`, height: '100%' }}>
+        {data.map((d, index) => (
+          <div className="container" key={index}>
+            <animated.div className="item" style={springProps}>
+              <div
+                className="left"
+                style={{
+                  backgroundImage: `url(${d.img})`,
+                  backgroundSize: `${d.id !== "3" ? 0 : "cover"}`,
+                  backgroundRepeat: "no-repeat",
+                  overflow: "unset",
+                  backgroundPosition: "121% 0",
+
+                }}
+              >
+                {d.id !== '3' && <animated.img
+                  className={`${d.id === '2' ? "slider2-h" : ""}`}
+                  style={d.id !== '3' ? scaleProps : {}} src={d.img} alt="" />}
               </div>
               <div className="right">
-                <div className="rightContainer">
-                  <animated.h2 style={fadeInProps} className={`ITBold tset`}>
+                <div className="rightContainer" style={{
+                  color: `${d.id === '2' ? "#fff" : ""}`
+                }}>
+                  <animated.h2 style={fadeInProps} className="ITBold tset">
                     {d.title}
                   </animated.h2>
-                  <animated.p style={slideProps} className={`helvetica delay1`}>
+                  <animated.p style={slideProps} className="helvetica delay1">
                     {d.desc}
                   </animated.p>
                 </div>
               </div>
-            </div>
+            </animated.div>
           </div>
         ))}
       </div>
@@ -124,14 +142,9 @@ export default function Works() {
         src="assets/arrow.png"
         className="arrow left"
         alt=""
-        onClick={() => handleClick("right")}
+        onClick={() => handleClick("left")}
       />
-      <img
-        src="assets/arrow.png"
-        className="arrow right"
-        alt=""
-        onClick={() => handleClick()}
-      />
-    </div>
+      <img src="assets/arrow.png" className="arrow right" alt="" onClick={() => handleClick("right")} />
+    </animated.div>
   );
 }

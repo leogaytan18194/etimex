@@ -37,7 +37,7 @@
       }
     }
   }
-
+ 
   .slider {
     height: 550px;
     display: flex;
@@ -92,7 +92,7 @@
             height: 70%;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: space-evenly;
 
             h2 {
               font-size: 40px;
@@ -135,5 +135,8 @@
         }
       }
     }
+  }
+  .slider2-h{
+    width: 600px !important;
   }
 }
