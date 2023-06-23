@@ -15,17 +15,17 @@ export default function Works() {
     },
     {
       id: "2",
-      title: "Mobile Application",
+      title: "Misión",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Es superar con excelencia las expectativas de impresión de nuestros clientes.",
       img:
         "./assets/slider2.svg",
     },
     {
       id: "3",
-      title: "Branding",
+      title: "Creamos experiencias",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Buscamos crear etiquetas y empaques que hagan recordar, aspirar y sentir en el tiempo, conectando a las marcas y personas.",
       img:
         "./assets/slider3.svg",
     },
