@@ -5,7 +5,7 @@ export default function Video() {
 
   return (
     <video autoPlay loop muted id="video">
-      <source src="./assets/videoback.webm" type="video/mp4" />
+      <source src="./assets/videoback.webm" type="video/webm" />
     </video>
   );
 }
