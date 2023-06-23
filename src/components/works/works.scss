@@ -21,6 +21,7 @@
     @include mobile {
       //   display: none;
       //right: 0;
+      height: 20px;
     }
 
     &.right {
@@ -108,7 +109,8 @@
               font-size: 25px;
               padding-right: 160px;
               @include mobile {
-                display: none;
+                font-size: 12px;
+                padding-right: 10px;
               }
             }
             span {
