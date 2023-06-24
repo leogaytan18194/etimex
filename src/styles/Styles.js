@@ -2,13 +2,15 @@ import styled from "styled-components";
 
 export const PageStyles = styled.div`
   width: 100%;
-  background-color: ${(props) =>    props.theme === "dark" ? `#1d1d1b` : "#fff"} !important;
+  background-color: ${(props) =>
+    props.theme === "dark" ? `#1d1d1b` : "#fff"} !important;
   overflow: hidden;
   * {
     margin: 0;
     padding: 0;
-    color: ${(props) =>(props.theme === "dark" ? `#fff` : "#000")} !important;
-    border-color: ${(props) =>      props.theme === "dark" ? `#fff` : "#000"} !important;
+    color: ${(props) => (props.theme === "dark" ? `#fff` : "#000")} !important;
+    border-color: ${(props) =>
+      props.theme === "dark" ? `#fff` : "#000"} !important;
     list-style: none;
     overflow: unset;
   }
@@ -16,7 +18,8 @@ export const PageStyles = styled.div`
     padding: 20px;
     //border-radius: 10px;
     * {
-      color: ${(props) =>        props.theme === "dark" ? `#fff` : "#fff"} !important;
+      color: ${(props) =>
+        props.theme === "dark" ? `#fff` : "#fff"} !important;
     }
     font-size: 3rem;
   }
@@ -83,10 +86,11 @@ export const HeaderStyles = styled.header`
     width: 100%;
     max-height: 80.8539px;
     height: 100%;
-    background: ${(props) =>      props.theme === "dark"
+    background: ${(props) =>
+      props.theme === "dark"
         ? `rgba(0, 0, 0, 0.8)`
         : "rgba(229, 238, 239, 0.8)"};
-    color: ${(props) =>(props.theme === "dark" ? `#fff` : "#000")};
+    color: ${(props) => (props.theme === "dark" ? `#fff` : "#000")};
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -101,9 +105,11 @@ export const HeaderStyles = styled.header`
       overflow: unset;
     }
     a {
-      color: ${(props) =>        props.theme === "dark" ? `#fff` : "#000"} !important;
+      color: ${(props) =>
+        props.theme === "dark" ? `#fff` : "#000"} !important;
       @media (max-width: 980px) {
-        color: ${(props) =>          props.theme === "dark" ? `#000` : "#fff"} !important;
+        color: ${(props) =>
+          props.theme === "dark" ? `#000` : "#fff"} !important;
       }
     }
     ul {
@@ -128,7 +134,8 @@ export const HeaderStyles = styled.header`
       flex-direction: column;
       align-items: start;
       gap: 19px;
-      background: ${(props) =>        props.theme === "dark"
+      background: ${(props) =>
+        props.theme === "dark"
           ? `rgba(0, 0, 0, 0.8)`
           : "rgba(255, 255, 255, 0.8)"} !important;
       padding: 17px 0;
@@ -167,7 +174,8 @@ export const HeaderStyles = styled.header`
         position: absolute;
         width: 0%;
         height: 1px;
-        background-color: ${(props) =>          props.theme === "dark" ? `#fff` : "#000"} !important;
+        background-color: ${(props) =>
+          props.theme === "dark" ? `#fff` : "#000"} !important;
         bottom: 0;
         opacity: 1; /* Configuramos la opacidad inicial en 0 */
         animation: fadeIn 1s ease-in forwards; /* Aplicamos la animación llamada "fadeIn" durante 1 segundo */
@@ -200,7 +208,8 @@ export const CustomLi = styled.li`
     margin: 0;
     &:after {
       content: "";
-      background-image: url(/assets/segmentos/${(props) =>        props.icon ? `${props.icon}.svg` : ""});
+      background-image: url(/assets/segmentos/${(props) =>
+        props.icon ? `${props.icon}.svg` : ""});
       position: absolute;
       width: 25px;
       height: 25px;
@@ -215,7 +224,8 @@ export const CustomLi = styled.li`
       position: absolute;
       width: 0%;
       height: 1px;
-      background-color: ${(props) =>        props.theme === "dark" ? `#fff` : "#000"} !important;
+      background-color: ${(props) =>
+        props.theme === "dark" ? `#fff` : "#000"} !important;
       bottom: 0;
       opacity: 0;
       //visibility:hidden;
@@ -242,9 +252,9 @@ export const ContainerStyles = styled.div`
     align-items: center;
     justify-content: center;
   }
-  .image-container{
-    max-width:560px;
-    width:100%;
+  .image-container {
+    max-width: 560px;
+    width: 100%;
   }
   .text-container-txt {
     p {
@@ -280,7 +290,8 @@ export const ContainerStyles = styled.div`
           width: 5px;
           height: 5px;
           //background-color: #fff;
-          background-color: ${(props) =>    props.theme === "dark" ? `#fff` : "#000"} !important;
+          background-color: ${(props) =>
+            props.theme === "dark" ? `#fff` : "#000"} !important;
           display: flex;
           position: absolute;
           left: -10px;
@@ -336,6 +347,11 @@ export const ContainerStyles = styled.div`
       box-sizing: border-box;
       padding: 30px 0;
     }
+  }
+  .txt-container {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
   }
   /* .block-text-container {
     width: auto;
@@ -424,7 +440,6 @@ export const HeroBackground = styled.div`
     }
     //background-position: 0 -220px;
   }
-  
 `;
 
 export const Container2Styles = styled.div`
@@ -473,14 +488,23 @@ export const Container2Styles = styled.div`
     align-items: start;
     box-sizing: border-box;
     padding-left: 50px;
+    gap: 36px;
     h1 {
-      font-size: 40px;
       text-transform: uppercase;
       max-width: 150px;
+      font-family: "ITCAvantGardeStd-Bold";
+      font-size: 50px;
+      line-height: 45px;
       @media (max-width: 780px) {
         max-width: 100%;
         width: 100%;
         text-align: center;
+        font-size: 40px;
+        line-height: 35px;
+      }
+      @media (max-width: 580px) {
+        font-size: 30px;
+        line-height: 25px;
       }
     }
     p {
@@ -517,18 +541,23 @@ export const Container2Styles = styled.div`
     display: flex;
     justify-content: center;
     margin: 27px 0;
-    font-size: 80px;
+    font-size: 70px;
+    font-family: "ITCAvantGardeStd-Bold";
+    color: transparent !important;
+    -webkit-text-stroke: 1px white;
   }
 `;
 
 export const FooterStyles = styled.footer`
   width: 100%;
-  background-color: ${(props) =>    props.theme === "dark" ? `#1d1d1b` : "#fff"} !important;
+  background-color: ${(props) =>
+    props.theme === "dark" ? `#1d1d1b` : "#fff"} !important;
   height: auto !important;
   .footer-container {
     width: 100%;
     background-color: rgb(210, 173, 87);
-    background-color: ${(props) =>      props.theme === "dark" ? `rgb(210, 173, 87)` : "#efefef"} !important;
+    background-color: ${(props) =>
+      props.theme === "dark" ? `rgb(210, 173, 87)` : "#efefef"} !important;
     height: 93px;
     @media (max-width: 780px) {
       height: auto;
@@ -557,9 +586,9 @@ export const FooterStyles = styled.footer`
     gap: 20px;
     padding: 0px;
     @media (max-width: 1200px) {
-      flex-wrap:wrap;
+      flex-wrap: wrap;
       justify-content: space-between;
-      width:95%;
+      width: 95%;
     }
     @media (max-width: 780px) {
       flex-wrap: wrap;
@@ -573,7 +602,8 @@ export const FooterStyles = styled.footer`
     gap: 4px;
     img {
       height: 22.1503px;
-      filter: ${(props) =>        props.theme === "dark" ? `invert(1)` : "unset"} !important;
+      filter: ${(props) =>
+        props.theme === "dark" ? `invert(1)` : "unset"} !important;
     }
     img {
       &:hover {
@@ -621,7 +651,8 @@ export const TabItem = styled.div`
   }
   &:before {
     content: "";
-    background-image: url(${(props) =>      props.theme === "dark" ? `${props.icon}-d.svg` : `${props.icon}-l.svg`});
+    background-image: url(${(props) =>
+      props.theme === "dark" ? `${props.icon}-d.svg` : `${props.icon}-l.svg`});
     position: absolute;
     width: 25px;
     height: 25px;
@@ -656,7 +687,8 @@ export const MenuMobile = styled.div`
   .menu-line {
     width: 100%;
     height: 3px;
-    background-color: ${(props) =>      props.theme === "dark" ? `#fff` : "#000"} !important;
+    background-color: ${(props) =>
+      props.theme === "dark" ? `#fff` : "#000"} !important;
     margin: 5px 0;
     position: relative;
     transition: all 0.2s ease-in-out;
@@ -668,7 +700,8 @@ export const MenuMobile = styled.div`
     position: absolute;
     width: 100%;
     height: 3px;
-    background-color: ${(props) =>      props.theme === "dark" ? `#fff` : "#000"} !important;
+    background-color: ${(props) =>
+      props.theme === "dark" ? `#fff` : "#000"} !important;
     top: 0%;
     left: 0%;
 
@@ -680,7 +713,8 @@ export const MenuMobile = styled.div`
     position: absolute;
     width: 100%;
     height: 3px;
-    background-color: ${(props) =>      props.theme === "dark" ? `#fff` : "#000"} !important;
+    background-color: ${(props) =>
+      props.theme === "dark" ? `#fff` : "#000"} !important;
     top: 100%;
     left: 0%;
 
