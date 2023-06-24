@@ -64,9 +64,10 @@ const HeroContainer = ({ backgroundImage, text1, text2, theme }) => {
         delay: isVisible ? 500 : 0,
         opacity: isVisible ? 1 : 0,
     });
-
+    
     const slideInFromBottom = useSpring({
         transform: isVisible ? 'translateY(0)' : 'translateY(100%)',
+        opacity: isVisible ? 1 : 0,
         delay: isVisible ? 500 : 0,
     });
 //     const [backgroundPositionY, setBackgroundPositionY] = useState(0);
@@ -96,9 +97,9 @@ const HeroContainer = ({ backgroundImage, text1, text2, theme }) => {
                 style={{ backgroundImage: `url(${backgroundImage})`,                
                 //backgroundPositionY: `${backgroundPositionY}px`, backgroundSize: backgroundSize
                 }} ref={heroRef}>
-                <p className='hero-text'>
-                    <animated.span style={slideInFromBottom}>{text1}</animated.span> <animated.span style={slideInFromLeft}>{text2}</animated.span>
-                </p>
+                <div className='hero-text'>
+                    <animated.h1 style={slideInFromBottom}>{text1}{` `}</animated.h1><animated.h1 style={slideInFromLeft}>{text2}</animated.h1>
+                </div>
             </div>
         </HeroBackground>
     );
