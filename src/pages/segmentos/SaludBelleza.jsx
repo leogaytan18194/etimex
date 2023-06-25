@@ -12,9 +12,9 @@ const containerData = [
         inverseOrder: false,
         title: "Suplementos alimenticios",
         subtitle: "Disponible en papel",
-        icon1: "bond.svg",
+        icon1: "/assets/svg/bond.svg",
         icon1Text: "Bond",
-        icon2: "shrek.svg",
+        icon2: "/assets/svg/shrek.svg",
         icon2Text: "Tyvek",
         listTitle: "En película",
         listItems: [
@@ -28,9 +28,9 @@ const containerData = [
         inverseOrder: true,
         title: "Cosmética",
         subtitle: "Disponible en papel",
-        icon1: "bond.svg",
+        icon1: "/assets/svg/bond.svg",
         icon1Text: "Bond",
-        icon2: "shrek.svg",
+        icon2: "/assets/svg/shrek.svg",
         icon2Text: "Tyvek",
         listTitle: "En película",
         listItems: [
@@ -44,9 +44,9 @@ const containerData = [
         inverseOrder: false,
         title: "Hogar",
         subtitle: "Disponible en papel",
-        icon1: "bond.svg",
+        icon1: "/assets/svg/bond.svg",
         icon1Text: "Bond",
-        icon2: "shrek.svg",
+        icon2: "/assets/svg/shrek.svg",
         icon2Text: "Twvek",
         listTitle: "En película",
         listItems: [
@@ -63,42 +63,42 @@ const container2Data = [
         inverseOrder: false,
         title: `GLOSSY LAMINATE`,
         description: `Garantiza la duración de la impresión y protege de la intemperie.`,
-        image: "/assets/salud-y-belleza/cards/card5.png",
+        image: "/assets/alimentos-y-bebidas/cards/card5.png",
         titleItem: "Acabados"
     },
     {
         inverseOrder: true,
         title: "MATTE LAMINATE",
         description: `Al igual que el glossy garantiza la duración de la impresión y protege de la intemperie.`,
-        image: "/assets/salud-y-belleza/cards/card6.png",
+        image: "/assets/alimentos-y-bebidas/cards/card6.png",
         titleItem: false,
     },
     {
         inverseOrder: false,
-        title: "CAST CURE",
-        description: "Agrega efectos de hologramas como una excelente herramienta de diferenciación, valor agregado y prevención de falsificación.",
-        image: "/assets/salud-y-belleza/cards/card7.png",
+        title: "GLOSSY VARNISH",
+        description: "Genera una capa de protección ante factores ambientales que pueden perjudicar tu etiqueta con un look ultra brillante.",
+        image: "/assets/alimentos-y-bebidas/cards/card7.png",
         titleItem: false,
     },
     {
         inverseOrder: true,
-        title: "SILK SCREEN",
-        description: "Aporta un look premium y genera contraste visual con un aspecto metalizado hecho a tu medida.",
-        image: "/assets/salud-y-belleza/cards/card8.png",
+        title: "MATTE VARNISH",
+        description: "Da un look sofisticado de acabado sin brillo con un recubrimiento de alta resistencia al roce y excelente claridad.",
+        image: "/assets/alimentos-y-bebidas/cards/card8.png",
         titleItem: false,
     },
     {
         inverseOrder: false,
         title: "COLD FOIL",
         description: "Aporta un look premium y genera contraste visual con un aspecto metalizado hecho a tu medida.",
-        image: "/assets/salud-y-belleza/cards/card9.png",
+        image: "/assets/alimentos-y-bebidas/cards/card9.png",
         titleItem: false,
     },
     {
         inverseOrder: true,
         title: "MANGA TERMOENCOGIBLE",
         description: "Da un look sofisticado de acabado sin brillo con un recubrimiento de alta resistencia al roce y excelente claridad.",
-        image: "/assets/salud-y-belleza/cards/card10.png",
+        image: "/assets/alimentos-y-bebidas/cards/card10.png",
         titleItem: false,
     }
 ]
@@ -162,7 +162,7 @@ const SaludBelleza = () => {
     return (
         <PageStyles theme={theme}>
             <Header
-                logo={"logo-l.svg"}
+                logo={"/assets/svg/logo-l.svg"}
                 theme={theme}
             />
             <HeroContainer

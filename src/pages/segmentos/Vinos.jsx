@@ -14,7 +14,7 @@ const containerData = [
         subtitle: "Disponible en papel",
         icon1: "bond.svg",
         icon1Text: "Bondes",
-        icon2: "shrek.svg",
+        icon2: "/assets/svg/shrek.svg",
         icon2Text: "Tyvek",
         listTitle: "En película",
         listItems: [
@@ -30,7 +30,7 @@ const containerData = [
         subtitle: "Disponible en papel",
         icon1: "bond.svg",
         icon1Text: "Bond",
-        icon2: "shrek.svg",
+        icon2: "/assets/svg/shrek.svg",
         icon2Text: "Tyvek",
         listTitle: "En película",
         listItems: [
@@ -46,7 +46,7 @@ const containerData = [
         subtitle: "Disponible en papel",
         icon1: "bond.svg",
         icon1Text: "Bond",
-        icon2: "shrek.svg",
+        icon2: "/assets/svg/shrek.svg",
         icon2Text: "Tyvek",
         listTitle: "En película",
         listItems: [
@@ -164,7 +164,7 @@ const Vinos = () => {
     return (
         <PageStyles theme={theme}>
             <Header
-                logo={"logo.svg"}
+                logo={"/assets/svg/logo.svg"}
                 theme={theme}
             />
             <HeroContainer
