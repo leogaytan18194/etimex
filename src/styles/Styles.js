@@ -661,6 +661,14 @@ export const HeroBackground = styled.div`
     text-align: center;
     @media (max-width: 780px) {
         justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        font-weight: 400;
+        max-width: 230px;
+        font-size: 1.3rem;
+        padding: 0;
+
     }
     h1 {
       font-family: "HelveticaBold";
