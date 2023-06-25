@@ -29,7 +29,7 @@ export default function Works() {
       desc:
         "Buscamos crear etiquetas y empaques que hagan recordar, aspirar y sentir en el tiempo, conectando a las marcas y personas.",
       img:
-        "./assets/botella1.svg",
+        "./assets/botella1.png",
       img2:
         "./assets/botella2.png",
     },
