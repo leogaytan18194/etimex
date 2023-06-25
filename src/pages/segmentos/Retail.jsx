@@ -10,7 +10,7 @@ import { useSpring, animated } from 'react-spring';
 const containerData = [
     {
         inverseOrder: false,
-        title: "Suplementos alimenticios",
+        title: "Promocional",
         subtitle: "Disponible en papel",
         icon1: "bond.svg",
         icon1Text: "Bond",
@@ -22,11 +22,11 @@ const containerData = [
             { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
             { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
-        backgroundImage: "/assets/salud-y-belleza/cards/card1.png",
+        backgroundImage: "/assets/retail/cards/card1.png",
     },
     {
         inverseOrder: true,
-        title: "Cosmética",
+        title: "Marcas propias",
         subtitle: "Disponible en papel",
         icon1: "bond.svg",
         icon1Text: "Bond",
@@ -38,11 +38,11 @@ const containerData = [
             { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
             { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
-        backgroundImage: "/assets/salud-y-belleza/cards/card2.png",
+        backgroundImage: "/assets/retail/cards/card2.png",
     },
     {
         inverseOrder: false,
-        title: "Hogar",
+        title: "Preciadores",
         subtitle: "Disponible en papel",
         icon1: "bond.svg",
         icon1Text: "Bond",
@@ -54,7 +54,7 @@ const containerData = [
             { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
             { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
-        backgroundImage: "/assets/salud-y-belleza/cards/card3.png",
+        backgroundImage: "/assets/retail/cards/card3.png",
     },
 
 ]
@@ -63,42 +63,42 @@ const container2Data = [
         inverseOrder: false,
         title: `GLOSSY LAMINATE`,
         description: `Garantiza la duración de la impresión y protege de la intemperie.`,
-        image: "/assets/alimentos-y-bebidas/cards/card5.png",
+        image: "/assets/retail/cards/card4.png",
         titleItem: "Acabados"
     },
     {
         inverseOrder: true,
         title: "MATTE LAMINATE",
         description: `Al igual que el glossy garantiza la duración de la impresión y protege de la intemperie.`,
-        image: "/assets/alimentos-y-bebidas/cards/card6.png",
+        image: "/assets/retail/cards/card5.png",
         titleItem: false,
     },
     {
         inverseOrder: false,
         title: "GLOSSY VARNISH",
         description: "Genera una capa de protección ante factores ambientales que pueden perjudicar tu etiqueta con un look ultra brillante.",
-        image: "/assets/alimentos-y-bebidas/cards/card7.png",
+        image: "/assets/retail/cards/card6.png",
         titleItem: false,
     },
     {
         inverseOrder: true,
         title: "MATTE VARNISH",
         description: "Da un look sofisticado de acabado sin brillo con un recubrimiento de alta resistencia al roce y excelente claridad.",
-        image: "/assets/alimentos-y-bebidas/cards/card8.png",
+        image: "/assets/retail/cards/card6.png",
         titleItem: false,
     },
     {
         inverseOrder: false,
         title: "COLD FOIL",
         description: "Aporta un look premium y genera contraste visual con un aspecto metalizado hecho a tu medida.",
-        image: "/assets/alimentos-y-bebidas/cards/card9.png",
+        image: "/assets/retail/cards/card7.png",
         titleItem: false,
     },
     {
         inverseOrder: true,
         title: "MANGA TERMOENCOGIBLE",
         description: "Da un look sofisticado de acabado sin brillo con un recubrimiento de alta resistencia al roce y excelente claridad.",
-        image: "/assets/alimentos-y-bebidas/cards/card10.png",
+        image: "/assets/retail/cards/card8.png",
         titleItem: false,
     }
 ]
@@ -166,9 +166,9 @@ const Retail = () => {
                 theme={theme}
             />
             <HeroContainer
-                backgroundImage={"/assets/salud-y-belleza/hero.png"}
-                text1={"Haz que tu etiqueta"}
-                text2={"atraiga miradas"}
+                backgroundImage={"/assets/retail/hero.png"}
+                text1={"Brilla"}
+                text2={"en anaquel"}
                 theme={theme}
             />
             {container}

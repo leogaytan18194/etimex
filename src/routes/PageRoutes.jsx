@@ -6,6 +6,7 @@ import SaludBelleza from '../pages/segmentos/SaludBelleza'
 import AlimentosBebidas from '../pages/segmentos/AlimentosBebidas'
 import Tintas from '../pages/secciones/Tintas'
 import Industrial from '../pages/segmentos/Industrial'
+import Retail from '../pages/segmentos/Retail'
 
 const PageRoutes = () => {
     return (
@@ -16,6 +17,7 @@ const PageRoutes = () => {
             <Route path="/servicios/tintas" element={<Tintas />} />
             <Route path="/salud-y-belleza" element={<SaludBelleza />} />
             <Route path="/industrial" element={<Industrial />} />
+            <Route path="/retail" element={<Retail />} />
 
         </Routes>
     )
