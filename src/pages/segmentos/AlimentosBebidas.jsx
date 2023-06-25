@@ -183,7 +183,7 @@ const AlimentosBebidas = () => {
                 theme={theme}
             />
             <HeroContainer
-                backgroundImage={"/assets/alimentos-y-bebidas/hero.jpg"}
+                backgroundImage={"/assets/alimentos-y-bebidas/Golden_images01.jpg"}
                 text1={"Brilla"}
                 text2={"en el anaquel"}
                 theme={theme}
