@@ -82,13 +82,13 @@ export default function Works() {
   const scalePropsAndRotateTop = useSpring({
     transform: data[currentSlide].id !== "3" ? "scale(1) rotate(-30deg)   translate(0, -90vh)" : "scale(0.9) rotate(-30deg)  translate(0, 0)",
     from: { transform: "scale(0.9) rotate(0deg)  translate(0, -90vh)" },
-    delay: 600,
+    delay: 0,
     config: { duration: 1000 },
   });
   const scalePropsAndRotateBottom = useSpring({
     transform: data[currentSlide].id !== "3" ? "scale(1) rotate(-30deg)   translate(0, 90vh)" : "scale(0.9) rotate(-30deg)  translate(0, 0)",
     from: { transform: "scale(0.9) rotate(0deg)  translate(0, 90vh)" },
-    delay: 600,
+    delay: 0,
     config: { duration: 1000 },
   });
   useEffect(() => {
@@ -124,7 +124,7 @@ export default function Works() {
       <div className="slider" style={{ transform: `translateX(-${currentSlide * 100}vw)`, height: '100%' }}>
         {data.map((d, index) => (
           <div className="container" key={index}>
-            <animated.div className="item" style={springProps}>
+            <animated.div className={d.id === '3' ? "item-3" : "item"} style={springProps}>
               <div
                 className="left"
                 style={{
@@ -141,10 +141,10 @@ export default function Works() {
                 {(d.id === '3' && d.img2) ?
                   <>
                     <animated.img
-                      className={`imgdiagonal`}
+                      className={`imgdiagonal1`}
                       style={{ ...scalePropsAndRotateTop, position: "absolute", left: "20%" }} src={d.img} alt="" />
                     <animated.img
-                      className={`imgdiagonal`}
+                      className={`imgdiagonal2`}
                       style={{ ...scalePropsAndRotateBottom, position: "absolute", left: "59%" }} src={d.img2} alt="" />
                   </>
                   :

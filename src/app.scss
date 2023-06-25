@@ -1,3 +1,5 @@
+@import "./global.scss";
+
 /* Para Chrome y Opera */
 ::-webkit-scrollbar {
   width: 0;
@@ -41,6 +43,9 @@ img{
       scroll-snap-align: start;
       height: 80vh;
       overflow: hidden;
+      @include mobile{
+        height: 60vh;
+      }
       
     }
   }

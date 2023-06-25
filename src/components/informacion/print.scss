@@ -70,6 +70,9 @@
         margin-left: 20px;
         text-shadow: 0px 2px 0px #ffffffdb;
       }
+      @include mediumMobile {
+        font-size: 12px;
+      }
     }
   }
 
