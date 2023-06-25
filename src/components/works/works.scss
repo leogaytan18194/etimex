@@ -21,14 +21,14 @@
     @include mobile {
       //   display: none;
       //right: 0;
-      height: 20px;
+      height: 40px;
     }
 
     &.right {
       right: 100px;
       @include mobile {
         //   display: none;
-        right: 0;
+        right: 5px;
       }
     }
 
@@ -37,7 +37,7 @@
       transform: rotateY(180deg);
       @include mobile {
         //   display: none;
-        left: 0;
+        left: 5px;
       }
     }
   }

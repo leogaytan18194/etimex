@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useSpring, animated } from 'react-spring';
 import { HeroBackground } from '../../styles/Styles';
 
-const HeroContainer = ({ backgroundImage, text1, text2, theme }) => {
+const HeroContainer = ({ backgroundImage, text1, text2, theme, flexDirection }) => {
     const [isVisible, setIsVisible] = useState(false);
     const heroRef = useRef();
 
@@ -64,40 +64,45 @@ const HeroContainer = ({ backgroundImage, text1, text2, theme }) => {
         delay: isVisible ? 500 : 0,
         opacity: isVisible ? 1 : 0,
     });
-    
+
     const slideInFromBottom = useSpring({
         transform: isVisible ? 'translateY(0)' : 'translateY(100%)',
         opacity: isVisible ? 1 : 0,
         delay: isVisible ? 500 : 0,
     });
-//     const [backgroundPositionY, setBackgroundPositionY] = useState(0);
-//   const [backgroundSize, setBackgroundSize] = useState('100vh');
+    //     const [backgroundPositionY, setBackgroundPositionY] = useState(0);
+    //   const [backgroundSize, setBackgroundSize] = useState('100vh');
 
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       const scrollPosition = window.pageYOffset;
-//       const scaleFactor = 1 - scrollPosition * 0.001; // Ajusta la velocidad del efecto
+    //   useEffect(() => {
+    //     const handleScroll = () => {
+    //       const scrollPosition = window.pageYOffset;
+    //       const scaleFactor = 1 - scrollPosition * 0.001; // Ajusta la velocidad del efecto
 
-//       setBackgroundPositionY(scrollPosition);
-//       setBackgroundSize(`${scaleFactor * 100}vh`);
-//     };
+    //       setBackgroundPositionY(scrollPosition);
+    //       setBackgroundSize(`${scaleFactor * 100}vh`);
+    //     };
 
-//     window.addEventListener('scroll', handleScroll);
+    //     window.addEventListener('scroll', handleScroll);
 
-//     return () => {
-//       window.removeEventListener('scroll', handleScroll);
-//     };
-//   }, []);
+    //     return () => {
+    //       window.removeEventListener('scroll', handleScroll);
+    //     };
+    //   }, []);
 
-  
+
 
     return (
         <HeroBackground theme={theme}>
             <div className='hero bloque'
-                style={{ backgroundImage: `url(${backgroundImage})`,                
-                //backgroundPositionY: `${backgroundPositionY}px`, backgroundSize: backgroundSize
+                style={{
+                    backgroundImage: `url(${backgroundImage})`,
+                    //backgroundPositionY: `${backgroundPositionY}px`, backgroundSize: backgroundSize
                 }} ref={heroRef}>
-                <div className='hero-text'>
+                <div className='hero-text'
+                style={{                    
+                    flexDirection: flexDirection,
+                }}
+                >
                     <animated.h1 style={slideInFromBottom}>{text1}{` `}</animated.h1><animated.h1 style={slideInFromLeft}>{text2}</animated.h1>
                 </div>
             </div>

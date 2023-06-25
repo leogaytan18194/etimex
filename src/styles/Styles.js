@@ -494,7 +494,10 @@ export const ContainerStyles = styled.div`
   }
   .block-left {
     width: 100%;
-    max-width: 500px;
+    max-width: 860px;
+    @media (max-width: 1668px) {
+     // max-width: 500px;      
+    }
     @media (max-width: 968px) {
       width: 100%;
       max-width: 100%;
@@ -654,6 +657,8 @@ export const HeroBackground = styled.div`
     font-size: 2rem;
     display: flex;
     flex-wrap: wrap;
+    text-shadow: 2px 5px 7px black;
+    text-align: center;
     h1 {
       font-family: "HelveticaBold";
     }
@@ -685,7 +690,16 @@ export const HeroBackground = styled.div`
     transition: background-size 1s;
     background-attachment: fixed;
     animation: fadeIn 1s ease-in forwards; /* Aplicamos la animación llamada "fadeIn" durante 1 segundo */
-
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    //  background-color: rgba(0,0,0,0.5);
+    }
     @media (max-width: 980px) {
       height: 75vh !important;
       background-attachment: scroll;
