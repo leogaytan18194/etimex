@@ -179,7 +179,7 @@ const AlimentosBebidas = () => {
     return (
         <PageStyles theme={theme}>
             <Header
-                logo={"logo-l.svg"}
+                logo={"/assets/svg/logo-l.svg"}
                 theme={theme}
             />
             <HeroContainer

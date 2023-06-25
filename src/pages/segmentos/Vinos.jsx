@@ -164,7 +164,7 @@ const Vinos = () => {
     return (
         <PageStyles theme={theme}>
             <Header
-                logo={"logo.svg"}
+                logo={"/assets/svg/logo.svg"}
                 theme={theme}
             />
             <HeroContainer
