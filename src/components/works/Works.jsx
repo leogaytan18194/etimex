@@ -21,9 +21,7 @@ export default function Works() {
       desc:
         "Es superar con excelencia las expectativas de impresión de nuestros clientes.",
       img:
-        "./assets/slider2.svg",
-      img2:
-        "",
+        "./assets/slide2.png",
     },
     {
       id: "3",
