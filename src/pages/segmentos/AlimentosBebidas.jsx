@@ -12,9 +12,9 @@ const containerData = [
         inverseOrder: false,
         title: "Congelados",
         subtitle: "Disponible en papel",
-        icon1: "bond.svg",
+        icon1: "/assets/svg/bond.svg",
         icon1Text: "Bond",
-        icon2: "shrek.svg",
+        icon2: "/assets/svg/shrek.svg",
         icon2Text: "Tyvek",
         listTitle: "En película",
         listItems: [
@@ -28,9 +28,9 @@ const containerData = [
         inverseOrder: true,
         title: "Refrescos y jugos",
         subtitle: "Disponible en papel",
-        icon1: "bond.svg",
+        icon1: "/assets/svg/bond.svg",
         icon1Text: "Bond",
-        icon2: "shrek.svg",
+        icon2: "/assets/svg/shrek.svg",
         icon2Text: "Tyvek",
         listTitle: "En película",
         listItems: [
@@ -44,9 +44,9 @@ const containerData = [
         inverseOrder: false,
         title: "Alimentos",
         subtitle: "Disponible en papel",
-        icon1: "bond.svg",
+        icon1: "/assets/svg/bond.svg",
         icon1Text: "Bond",
-        icon2: "shrek.svg",
+        icon2: "/assets/svg/shrek.svg",
         icon2Text: "Twvek",
         listTitle: "En película",
         listItems: [
@@ -61,9 +61,9 @@ const containerData = [
         inverseOrder: true,
         title: "Aguas",
         subtitle: "Disponible en papel",
-        icon1: "bond.svg",
+        icon1: "/assets/svg/bond.svg",
         icon1Text: "Bond",
-        icon2: "shrek.svg",
+        icon2: "/assets/svg/shrek.svg",
         icon2Text: "Twvek",
         listTitle: "En película",
         listItems: [
@@ -179,7 +179,7 @@ const AlimentosBebidas = () => {
     return (
         <PageStyles theme={theme}>
             <Header
-                logo={"logo-l.svg"}
+                logo={"/assets/svg/logo-l.svg"}
                 theme={theme}
             />
             <HeroContainer
