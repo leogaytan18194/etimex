@@ -12,7 +12,6 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             <img className="logo" src={logo} alt="" />
           </a>
           <div className="itemContainer">
-            
             <span className="ITBk">inicio</span>
           </div>
           <div className="itemContainer">

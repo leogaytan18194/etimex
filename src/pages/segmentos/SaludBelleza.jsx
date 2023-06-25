@@ -10,7 +10,7 @@ import { useSpring, animated } from 'react-spring';
 const containerData = [
     {
         inverseOrder: false,
-        title: "Congelados",
+        title: "Suplementos alimenticios",
         subtitle: "Disponible en papel",
         icon1: "/assets/svg/bond.svg",
         icon1Text: "Bond",
@@ -22,11 +22,11 @@ const containerData = [
             { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
             { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
-        backgroundImage: "/assets/alimentos-y-bebidas/cards/card1.png",
+        backgroundImage: "/assets/salud-y-belleza/cards/card1.png",
     },
     {
         inverseOrder: true,
-        title: "Refrescos y jugos",
+        title: "Cosmética",
         subtitle: "Disponible en papel",
         icon1: "/assets/svg/bond.svg",
         icon1Text: "Bond",
@@ -38,11 +38,11 @@ const containerData = [
             { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
             { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
-        backgroundImage: "/assets/alimentos-y-bebidas/cards/card2.png",
+        backgroundImage: "/assets/salud-y-belleza/cards/card2.png",
     },
     {
         inverseOrder: false,
-        title: "Alimentos",
+        title: "Hogar",
         subtitle: "Disponible en papel",
         icon1: "/assets/svg/bond.svg",
         icon1Text: "Bond",
@@ -54,24 +54,7 @@ const containerData = [
             { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
             { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
-        backgroundImage: "/assets/alimentos-y-bebidas/cards/card3.png",
-    },
-    
-    {
-        inverseOrder: true,
-        title: "Aguas",
-        subtitle: "Disponible en papel",
-        icon1: "/assets/svg/bond.svg",
-        icon1Text: "Bond",
-        icon2: "/assets/svg/shrek.svg",
-        icon2Text: "Twvek",
-        listTitle: "En película",
-        listItems: [
-            { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
-            { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
-            { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
-        ],
-        backgroundImage: "/assets/alimentos-y-bebidas/cards/card4.png",
+        backgroundImage: "/assets/salud-y-belleza/cards/card3.png",
     },
 
 ]
@@ -183,9 +166,9 @@ const SaludBelleza = () => {
                 theme={theme}
             />
             <HeroContainer
-                backgroundImage={"/assets/alimentos-y-bebidas/Golden_images01.jpg"}
-                text1={"Brilla"}
-                text2={"en el anaquel"}
+                backgroundImage={"/assets/salud-y-belleza/hero.png"}
+                text1={"Haz que tu etiqueta"}
+                text2={"atraiga miradas"}
                 theme={theme}
             />
             {container}

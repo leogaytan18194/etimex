@@ -131,12 +131,12 @@ const Header = ({ logo, theme }) => {
         },
         {
             item: 'servicios',
-            route: '/servicios',
+            route: '/servicios/tintas',
             section: 'servicios'
         },
         {
             item: 'segmentos',
-            route: '/segmentos',
+            route: '/vinos-y-licores',
             section: 'segmentos'
         },
         {
