@@ -104,8 +104,8 @@ const Container = ({ inverseOrder, title, subtitle, icon1, icon1Text, icon2, ico
                                 <animated.p style={slideInFromBottom}>{subtitle}:</animated.p>
                             </animated.div>
                             <animated.div className='icon-container'>
-                                <Icon src={icon1} alt='icon1' text={icon1Text} isVisible={isVisible}/>
-                                <Icon src={icon2} alt='icon2' text={icon2Text} isVisible={isVisible}/>
+                                <Icon src={icon1} alt='icon1' text={icon1Text} isVisible={isVisible} theme={theme}/>
+                                <Icon src={icon2} alt='icon2' text={icon2Text} isVisible={isVisible} theme={theme}/>
                             </animated.div>
                             <animated.div className='list-container'>
                                 <animated.p style={slideInFromLeft}>{listTitle}:</animated.p>
