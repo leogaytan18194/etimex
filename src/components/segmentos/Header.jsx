@@ -142,7 +142,7 @@ const Header = ({ logo, theme }) => {
                                     </div>
 
                                 </MenuMobile>
-                                <div style={{ position: 'absolute', left: `${showMenuMo ? '50%' : '100%'}`, opacity: `${showMenuMo === true ? 1 : 0}`, transition: 'all 0.3s' }} className='menu-mobile-container'>
+                                <div style={{ position: 'absolute', left: `${showMenuMo ? '0' : '100%'}`, opacity: `${showMenuMo === true ? 1 : 0}`, transition: 'all 0.3s' }} className='menu-mobile-container'>
                                     <CustomLi theme={theme} icon={`${pathname === '/vinos-y-licores' ? "vinos-y-licores" : ""}`} className={`${pathname === '/vinos-y-licores' ? "activeMenu" : ""}`}>
                                         <Link to="/vinos-y-licores">
                                             <animated.span style={textAnimation}>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { useSpring, animated } from "react-spring";
+import { useSpring, animated, useSprings } from "react-spring";
 import "./works.scss";
 
 export default function Works() {
@@ -73,12 +73,22 @@ export default function Works() {
     config: { duration: 1000 },
   });
 
-  const scaleProps = useSpring({
-    transform: data[currentSlide].id !== "3" ? "scale(1)" : "scale(0.9)",
-    from: { transform: "scale(0.9)" },
-    delay: 600,
-    config: { duration: 1000 },
-  });
+  // const scaleProps = useSpring({
+  //   transform: data[currentSlide].id !== "3" ? "scale(1)" : "scale(0.9)",
+  //   from: { transform: "scale(0.9)" },
+  //   delay: 600,
+  //   config: { duration: 1000 },
+  // });
+  const scaleProps = useSprings(
+    data.length,
+    data.map((d, i) => ({
+      transform: i === currentSlide ? (d.id === "2" ? "scale(1)" : "scale(1)") : "scale(0.9)",
+      from: { transform: "scale(0.9)" },
+      delay: 600,
+      config: { duration: 1000 },
+    }))
+  );
+
   const scalePropsAndRotateTop = useSpring({
     transform: data[currentSlide].id !== "3" ? "scale(1) rotate(-30deg)   translate(0, -90vh)" : "scale(0.9) rotate(-30deg)  translate(0, 0)",
     from: { transform: "scale(0.9) rotate(0deg)  translate(0, -90vh)" },
@@ -128,13 +138,7 @@ export default function Works() {
               <div
                 className="left"
                 style={{
-                  // backgroundImage: `url(${d.img})`,
-                  // backgroundSize: `${d.id !== "3" ? 0 : "cover"}`,
-                  // backgroundRepeat: "no-repeat",
-                  // overflow: "unset",
-                  // backgroundPosition: "121% 0",
                   backgroundImage: d.id === "3" ? `linear-gradient(60deg, rgb(223 138 145) 50%, rgb(168 213 193) 50%)` : "",
-
                 }}
               >
 
@@ -150,7 +154,7 @@ export default function Works() {
                   :
                   <animated.img
                     className={`${d.id === '2' ? "slider2-h" : ""}`}
-                    style={{ ...scaleProps, position: "absolute", left: "20%" }} src={d.img} alt="" />
+                    style={{ ...scaleProps[index] }} src={d.img} alt="" />
                 }
               </div>
               <div className="right">
@@ -168,6 +172,9 @@ export default function Works() {
             </animated.div>
           </div>
         ))}
+
+
+
       </div>
       <img
         src="assets/arrow.png"

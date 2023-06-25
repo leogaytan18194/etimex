@@ -147,7 +147,7 @@ export const HeaderStyles = styled.header`
       padding: 17px 0;
       @media (max-width: 468px) {
         width: 100%;
-        left: 0 !important;
+        //left: 0 !important;
       }
     }
     .logo {
@@ -659,8 +659,12 @@ export const HeroBackground = styled.div`
     flex-wrap: wrap;
     text-shadow: 2px 5px 7px black;
     text-align: center;
+    @media (max-width: 780px) {
+        justify-content: center;
+    }
     h1 {
       font-family: "HelveticaBold";
+     
     }
   }
   @keyframes fadeIn2 {
