@@ -135,7 +135,7 @@ export const HeaderStyles = styled.header`
       }
     }
     .menu-mobile-container {
-      width: 50%;
+      width: 100%;
       top: 80px;
       display: flex;
       flex-direction: column;
@@ -291,7 +291,7 @@ export const HeaderStylesSecciones = styled.header`
       }
     }
     .menu-mobile-container {
-      width: 50%;
+      width: 100%;
       top: 80px;
       display: flex;
       flex-direction: column;
@@ -374,6 +374,9 @@ export const CustomLi = styled.li`
       height: 25px;
       background-repeat: no-repeat;
       left: -30px;
+      @media (max-width: 980px) {
+        left: -40px;
+      }
       top: 5px;
       opacity: 0; /* Configuramos la opacidad inicial en 0 */
       animation: fadeIn 1s ease-in forwards; /* Aplicamos la animación llamada "fadeIn" durante 1 segundo */
@@ -1208,6 +1211,10 @@ cursor: pointer;
   background-position: center;
   background-size: ${(props) => props.bgsz ? `${props.bgsz}` : "cover"};
   background-repeat: no-repeat;    
+  @media (max-width: 780px) {
+    width: 303px;
+    height: 381px;
+  }
   &:hover {
     animation: hoverAnimation 0.6s ease forwards;
   }
@@ -1246,6 +1253,7 @@ cursor: pointer;
     padding: 30px;
     gap: 20px 0;
     position: relative;
+    box-sizing: border-box;
     
     &:before {
       content: "";
@@ -1262,11 +1270,18 @@ cursor: pointer;
   .card-title{
     font-size:40px;
     font-weight:700;
+    @media (max-width: 780px) {
+      font-size:25px;
+      font-weight:700;
+    }
   }
   .card-desc{
     font-size:15px;
     text-align:center;
     max-width:85%;
+    @media (max-width: 780px) {
+      max-width:100%;
+    }
   }
   
   
