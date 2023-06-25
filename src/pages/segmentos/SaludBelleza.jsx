@@ -12,9 +12,9 @@ const containerData = [
         inverseOrder: false,
         title: "Suplementos alimenticios",
         subtitle: "Disponible en papel",
-        icon1: "/assets/svg/bond.svg",
+        icon1: "bond.svg",
         icon1Text: "Bond",
-        icon2: "/assets/svg/shrek.svg",
+        icon2: "shrek.svg",
         icon2Text: "Tyvek",
         listTitle: "En película",
         listItems: [
@@ -28,9 +28,9 @@ const containerData = [
         inverseOrder: true,
         title: "Cosmética",
         subtitle: "Disponible en papel",
-        icon1: "/assets/svg/bond.svg",
+        icon1: "bond.svg",
         icon1Text: "Bond",
-        icon2: "/assets/svg/shrek.svg",
+        icon2: "shrek.svg",
         icon2Text: "Tyvek",
         listTitle: "En película",
         listItems: [
@@ -44,9 +44,9 @@ const containerData = [
         inverseOrder: false,
         title: "Hogar",
         subtitle: "Disponible en papel",
-        icon1: "/assets/svg/bond.svg",
+        icon1: "bond.svg",
         icon1Text: "Bond",
-        icon2: "/assets/svg/shrek.svg",
+        icon2: "shrek.svg",
         icon2Text: "Twvek",
         listTitle: "En película",
         listItems: [
@@ -162,7 +162,7 @@ const SaludBelleza = () => {
     return (
         <PageStyles theme={theme}>
             <Header
-                logo={"/assets/svg/logo-l.svg"}
+                logo={"logo-l.svg"}
                 theme={theme}
             />
             <HeroContainer

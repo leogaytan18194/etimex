@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { ContainerStyles } from '../../styles/Styles';
 import { useSpring, animated } from 'react-spring';
 
-const Icon = ({ src, alt, text, isVisible }) => {
+const Icon = ({ src, alt, text, isVisible, theme }) => {
     const spin = useSpring({
         from: { transform: 'rotate(0deg)' }, // Comienza sin rotar
         to: { transform: 'rotate(360deg)' }, // Gira 360 grados
@@ -16,7 +16,7 @@ const Icon = ({ src, alt, text, isVisible }) => {
     return (
         <animated.div style={fade} className='icon-text-container'>
             <div className='icon'>
-                <img src={src} alt={alt} />
+                <img src={`/assets/svg/${theme === 'dark' ? src : `l-${src}`}`} alt={alt} />
             </div>
             <div className='text-icon'>
                 <p>{text}</p>
@@ -104,8 +104,8 @@ const Container = ({ inverseOrder, title, subtitle, icon1, icon1Text, icon2, ico
                                 <animated.p style={slideInFromBottom}>{subtitle}:</animated.p>
                             </animated.div>
                             <animated.div className='icon-container'>
-                                <Icon src={icon1} alt='icon1' text={icon1Text} isVisible={isVisible} />
-                                <Icon src={icon2} alt='icon2' text={icon2Text} isVisible={isVisible} />
+                                <Icon src={icon1} alt='icon1' text={icon1Text} isVisible={isVisible}/>
+                                <Icon src={icon2} alt='icon2' text={icon2Text} isVisible={isVisible}/>
                             </animated.div>
                             <animated.div className='list-container'>
                                 <animated.p style={slideInFromLeft}>{listTitle}:</animated.p>
