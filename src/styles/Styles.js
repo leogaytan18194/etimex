@@ -29,6 +29,7 @@ export const PageStyles = styled.div`
     margin: 0 auto;
     margin-top:60px;
     gap: 43px;
+    justify-content: center;
   }
 `;
 
@@ -104,8 +105,10 @@ export const HeaderStyles = styled.header`
     top: 0;
     height: 100%;
     z-index: 99;
+    overflow: unset;
     span {
       transform: translateY(0);
+      color: ${(props) =>(props.theme === "dark" ? `#fff` : "#000")};
     }
     * {
       overflow: unset;
@@ -258,8 +261,10 @@ export const HeaderStylesSecciones = styled.header`
     top: 0;
     height: 100%;
     z-index: 99;
+    overflow: unset;
     span {
       transform: translateY(0);
+      color: ${(props) =>(props.theme === "dark" ? `#fff` : "#000")};
     }
     * {
       overflow: unset;
@@ -293,8 +298,8 @@ export const HeaderStylesSecciones = styled.header`
       align-items: start;
       gap: 19px;
       background: ${(props) =>        props.theme === "dark"
-          ? `rgba(0, 0, 0, 0.8)`
-          : "rgba(255, 255, 255, 0.8)"} !important;
+          ? `rgba(0, 0, 0, 1)`
+          : "rgb(227, 227, 227)"} !important;
       padding: 17px 0;
       @media (max-width: 468px) {
         width: 100%;
@@ -1067,6 +1072,12 @@ export const TabItemSecciones = styled.div`
   text-transform: uppercase;
   overflow: unset;
   font-family: 'ITCAvantGardeStd-Demi';
+  @media (max-width: 980px) {
+    text-align: center;
+    font-size: 0.8em;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
   &:hover {
     opacity: 0.6;
   }
