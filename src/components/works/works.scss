@@ -131,7 +131,7 @@
           position: relative;
 
           img {
-            width: 200px;
+         //   width: 200px;
             transform: rotate(-30deg);
             @include laptop {
               width: 150px;
@@ -199,7 +199,9 @@
             }
           }
         }
+       
         .imgdiagonal1{
+          width: 250px;
           @include tablet {
             left: 15% !important;
           }
@@ -209,6 +211,9 @@
           @include smallMobile {
             left: 15% !important;
           }
+        }
+        .imgdiagonal2{
+          width: 250px;
         }
         .left {
           flex: 5;
@@ -220,7 +225,7 @@
           position: relative;
 
           img {
-            width: 200px;
+            
             transform: rotate(-30deg);
             @include laptop {
               width: 150px;
@@ -234,14 +239,20 @@
               height: 60%;
             }
           }
+         
+         
         }
       }
      
     }
   }
+  .slider1-h{
+    width: 300px;
+  }
   .slider2-h{
     height: 100% !important;
     max-height: 600px;
+    min-width: 200px;
     width: auto !important;
     @include mobile {      
       height: 60% !important;

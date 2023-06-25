@@ -153,7 +153,7 @@ export default function Works() {
                   </>
                   :
                   <animated.img
-                    className={`${d.id === '2' ? "slider2-h" : ""}`}
+                    className={`${d.id === '2' ? "slider2-h" : "slider1-h"}`}
                     style={{ ...scaleProps[index] }} src={d.img} alt="" />
                 }
               </div>
