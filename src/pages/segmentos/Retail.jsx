@@ -84,21 +84,14 @@ const container2Data = [
         inverseOrder: true,
         title: "MATTE VARNISH",
         description: "Da un look sofisticado de acabado sin brillo con un recubrimiento de alta resistencia al roce y excelente claridad.",
-        image: "/assets/retail/cards/card6.png",
-        titleItem: false,
-    },
-    {
-        inverseOrder: false,
-        title: "COLD FOIL",
-        description: "Aporta un look premium y genera contraste visual con un aspecto metalizado hecho a tu medida.",
         image: "/assets/retail/cards/card7.png",
         titleItem: false,
     },
     {
-        inverseOrder: true,
+        inverseOrder: false,
         title: "MANGA TERMOENCOGIBLE",
         description: "Da un look sofisticado de acabado sin brillo con un recubrimiento de alta resistencia al roce y excelente claridad.",
-        image: "/assets/retail/cards/card8.png",
+        image: "/assets/retail/cards/card9.png",
         titleItem: false,
     }
 ]
