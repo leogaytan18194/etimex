@@ -31,7 +31,7 @@ export default function Works() {
       desc:
         "Buscamos crear etiquetas y empaques que hagan recordar, aspirar y sentir en el tiempo, conectando a las marcas y personas.",
       img:
-      "./assets/botella1.svg",
+        "./assets/botella1.svg",
       img2:
         "./assets/botella2.png",
     },
@@ -76,6 +76,18 @@ export default function Works() {
   const scaleProps = useSpring({
     transform: data[currentSlide].id !== "3" ? "scale(1)" : "scale(0.9)",
     from: { transform: "scale(0.9)" },
+    delay: 600,
+    config: { duration: 1000 },
+  });
+  const scalePropsAndRotateTop = useSpring({
+    transform: data[currentSlide].id !== "3" ? "scale(1) rotate(-30deg)   translate(0, -90vh)" : "scale(0.9) rotate(-30deg)  translate(0, 0)",
+    from: { transform: "scale(0.9) rotate(0deg)  translate(0, -90vh)" },
+    delay: 600,
+    config: { duration: 1000 },
+  });
+  const scalePropsAndRotateBottom = useSpring({
+    transform: data[currentSlide].id !== "3" ? "scale(1) rotate(-30deg)   translate(0, 90vh)" : "scale(0.9) rotate(-30deg)  translate(0, 0)",
+    from: { transform: "scale(0.9) rotate(0deg)  translate(0, 90vh)" },
     delay: 600,
     config: { duration: 1000 },
   });
@@ -126,30 +138,20 @@ export default function Works() {
                 }}
               >
 
-                {/* {d.id !== '3' && <animated.img
-                  className={`${d.id === '2' ? "slider2-h" : ""}`}
-                  style={d.id !== '3' ? scaleProps : {}} src={d.img} alt="" />} 
-                  
-                      
-    z-index: 9;
-    left: 20%;
-                  
-        width: auto;
-    height: 60%;
-
-
-    
-}
-
-    position: absolute;
-    left: 59%;
-                  */}
-                <animated.img
-                  className={`${d.id === '2' ? "slider2-h" : ""}`}
-                  style={d.id !== '3' ? scaleProps : {position: "absolute", left: "20%"}} src={d.img} alt="" />
-                {(d.id === '3' && d.img2 ) ?  <animated.img
-                  className={`${d.id === '2' ? "slider2-h" : ""}`}
-                  style={d.id !== '3' ? scaleProps : {position: "absolute", left: "59%"}} src={d.img2} alt="" /> :"" }
+                {(d.id === '3' && d.img2) ?
+                  <>
+                    <animated.img
+                      className={`imgdiagonal`}
+                      style={{ ...scalePropsAndRotateTop, position: "absolute", left: "20%" }} src={d.img} alt="" />
+                    <animated.img
+                      className={`imgdiagonal`}
+                      style={{ ...scalePropsAndRotateBottom, position: "absolute", left: "59%" }} src={d.img2} alt="" />
+                  </>
+                  :
+                  <animated.img
+                    className={`${d.id === '2' ? "slider2-h" : ""}`}
+                    style={{ ...scaleProps, position: "absolute", left: "20%" }} src={d.img} alt="" />
+                }
               </div>
               <div className="right">
                 <div className="rightContainer" style={{
