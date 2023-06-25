@@ -128,10 +128,11 @@
           align-items: center;
           justify-content: center;
           overflow: hidden;
+          position: relative;
 
           img {
-            width: 300px;
-            transform: rotate(-10deg);
+            width: 200px;
+            transform: rotate(-30deg);
             @include mobile {
               width: auto;
               height: 60%;

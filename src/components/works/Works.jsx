@@ -12,6 +12,8 @@ export default function Works() {
         "Es una empresa que desde más de cinco décadas, se dedica a la industria de la producción de impresión de empaques y  etiquetas.",
       img:
         "./assets/bote2.png",
+      img2:
+        "",
     },
     {
       id: "2",
@@ -20,6 +22,8 @@ export default function Works() {
         "Es superar con excelencia las expectativas de impresión de nuestros clientes.",
       img:
         "./assets/slider2.svg",
+      img2:
+        "",
     },
     {
       id: "3",
@@ -27,7 +31,9 @@ export default function Works() {
       desc:
         "Buscamos crear etiquetas y empaques que hagan recordar, aspirar y sentir en el tiempo, conectando a las marcas y personas.",
       img:
-        "./assets/slider3.svg",
+      "./assets/botella1.svg",
+      img2:
+        "./assets/botella2.png",
     },
   ];
 
@@ -110,17 +116,40 @@ export default function Works() {
               <div
                 className="left"
                 style={{
-                  backgroundImage: `url(${d.img})`,
-                  backgroundSize: `${d.id !== "3" ? 0 : "cover"}`,
-                  backgroundRepeat: "no-repeat",
-                  overflow: "unset",
-                  backgroundPosition: "121% 0",
+                  // backgroundImage: `url(${d.img})`,
+                  // backgroundSize: `${d.id !== "3" ? 0 : "cover"}`,
+                  // backgroundRepeat: "no-repeat",
+                  // overflow: "unset",
+                  // backgroundPosition: "121% 0",
+                  backgroundImage: d.id === "3" ? `linear-gradient(60deg, rgb(223 138 145) 50%, rgb(168 213 193) 50%)` : "",
 
                 }}
               >
-                {d.id !== '3' && <animated.img
+
+                {/* {d.id !== '3' && <animated.img
                   className={`${d.id === '2' ? "slider2-h" : ""}`}
-                  style={d.id !== '3' ? scaleProps : {}} src={d.img} alt="" />}
+                  style={d.id !== '3' ? scaleProps : {}} src={d.img} alt="" />} 
+                  
+                      
+    z-index: 9;
+    left: 20%;
+                  
+        width: auto;
+    height: 60%;
+
+
+    
+}
+
+    position: absolute;
+    left: 59%;
+                  */}
+                <animated.img
+                  className={`${d.id === '2' ? "slider2-h" : ""}`}
+                  style={d.id !== '3' ? scaleProps : {position: "absolute", left: "20%"}} src={d.img} alt="" />
+                {(d.id === '3' && d.img2 ) ?  <animated.img
+                  className={`${d.id === '2' ? "slider2-h" : ""}`}
+                  style={d.id !== '3' ? scaleProps : {position: "absolute", left: "59%"}} src={d.img2} alt="" /> :"" }
               </div>
               <div className="right">
                 <div className="rightContainer" style={{

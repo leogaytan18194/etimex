@@ -303,7 +303,7 @@ export const HeaderStylesSecciones = styled.header`
       padding: 17px 0;
       @media (max-width: 468px) {
         width: 100%;
-        left: 0 !important;
+        left: 0;
       }
     }
     .logo {

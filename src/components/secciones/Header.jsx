@@ -156,6 +156,8 @@ const Header = ({ logo, theme }) => {
         },
 
     ]
+
+    console.log(showMenuMo);
     return (
         <HeaderStylesSecciones theme={theme}>
             {transitions((styles, item) =>
@@ -177,7 +179,7 @@ const Header = ({ logo, theme }) => {
                                     </div>
 
                                 </MenuMobile>
-                                <div style={{ position: 'absolute', left: `${showMenuMo ? '50%' : '100%'}`, opacity: `${showMenuMo === true ? 1 : 0}`, transition: 'all 0.3s' }} className='menu-mobile-container'>
+                                <div style={{ position: 'absolute', visibility: `${showMenuMo === true ? 1 : 0}`, left: `${showMenuMo === true ? "0" : "100%"}`, transition: 'all 0.3s' }} className='menu-mobile-container'>
                                     {
                                         menuList.map((menu, index) => (
                                             <CustomLi theme={theme} className={`${pathname.includes(menu.section) ? "activeMenu" : ""}`}>
