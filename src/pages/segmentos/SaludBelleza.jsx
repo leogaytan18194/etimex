@@ -1,116 +1,128 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { PageStyles } from '../styles/Styles'
-import Header from '../components/segmentos/Header'
-import Container from '../components/segmentos/Container'
-import HeroContainer from '../components/segmentos/HeroContainer'
-import Footer from '../components/segmentos/Footer'
-import Container2 from '../components/segmentos/Container2'
+import { PageStyles } from '../../styles/Styles'
+import Header from '../../components/segmentos/Header'
+import Container from '../../components/segmentos/Container'
+import HeroContainer from '../../components/segmentos/HeroContainer'
+import Footer from '../../components/segmentos/Footer'
+import Container2 from '../../components/segmentos/Container2'
 import { useSpring, animated } from 'react-spring';
 
 const containerData = [
     {
         inverseOrder: false,
-        title: "Vinos",
-        subtitle: "Disponoble en papel",
+        title: "Congelados",
+        subtitle: "Disponible en papel",
         icon1: "/assets/svg/bond.svg",
         icon1Text: "Bond",
         icon2: "/assets/svg/shrek.svg",
-        icon2Text: "Twvek",
+        icon2Text: "Tyvek",
         listTitle: "En película",
         listItems: [
-            { id: 1, name: 'Elemento 1', description: 'Descripción del elemento 1' },
-            { id: 2, name: 'Elemento 2', description: 'Descripción del elemento 2' },
-            { id: 3, name: 'Elemento 3', description: 'Descripción del elemento 3' },
-            { id: 4, name: 'Elemento 4', description: 'Descripción del elemento 4' },
+            { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
+            { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
+            { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
-        backgroundImage: "/assets/vinos-y-licores/cards/card1.png",
+        backgroundImage: "/assets/alimentos-y-bebidas/cards/card1.png",
     },
     {
         inverseOrder: true,
-        title: "Vinos",
-        subtitle: "Disponoble en papel",
+        title: "Refrescos y jugos",
+        subtitle: "Disponible en papel",
         icon1: "/assets/svg/bond.svg",
         icon1Text: "Bond",
         icon2: "/assets/svg/shrek.svg",
-        icon2Text: "Twvek",
+        icon2Text: "Tyvek",
         listTitle: "En película",
         listItems: [
-            { id: 1, name: 'Elemento 1', description: 'Descripción del elemento 1' },
-            { id: 2, name: 'Elemento 2', description: 'Descripción del elemento 2' },
-            { id: 3, name: 'Elemento 3', description: 'Descripción del elemento 3' },
-            { id: 4, name: 'Elemento 4', description: 'Descripción del elemento 4' },
+            { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
+            { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
+            { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
-        backgroundImage: "/assets/vinos-y-licores/cards/card2.png",
+        backgroundImage: "/assets/alimentos-y-bebidas/cards/card2.png",
     },
     {
         inverseOrder: false,
-        title: "Vinos",
-        subtitle: "Disponoble en papel",
+        title: "Alimentos",
+        subtitle: "Disponible en papel",
         icon1: "/assets/svg/bond.svg",
         icon1Text: "Bond",
         icon2: "/assets/svg/shrek.svg",
         icon2Text: "Twvek",
         listTitle: "En película",
         listItems: [
-            { id: 1, name: 'Elemento 1', description: 'Descripción del elemento 1' },
-            { id: 2, name: 'Elemento 2', description: 'Descripción del elemento 2' },
-            { id: 3, name: 'Elemento 3', description: 'Descripción del elemento 3' },
-            { id: 4, name: 'Elemento 4', description: 'Descripción del elemento 4' },
+            { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
+            { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
+            { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
-        backgroundImage: "/assets/vinos-y-licores/cards/card3.png",
+        backgroundImage: "/assets/alimentos-y-bebidas/cards/card3.png",
+    },
+    
+    {
+        inverseOrder: true,
+        title: "Aguas",
+        subtitle: "Disponible en papel",
+        icon1: "/assets/svg/bond.svg",
+        icon1Text: "Bond",
+        icon2: "/assets/svg/shrek.svg",
+        icon2Text: "Twvek",
+        listTitle: "En película",
+        listItems: [
+            { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
+            { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
+            { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
+        ],
+        backgroundImage: "/assets/alimentos-y-bebidas/cards/card4.png",
     },
 
 ]
 const container2Data = [
     {
         inverseOrder: false,
-        title: `COLD FOIL`,
-        description: `Aporta un look premium y genera
-                contraste visual con un aspecto metalizado 
-                hecho a tu medida.`,
-        image: "/assets/vinos-y-licores/cards/card4.png",
+        title: `GLOSSY LAMINATE`,
+        description: `Garantiza la duración de la impresión y protege de la intemperie.`,
+        image: "/assets/alimentos-y-bebidas/cards/card5.png",
         titleItem: "Acabados"
     },
     {
         inverseOrder: true,
-        title: "HOT FOIL",
-        description: `Agrega motivos metálicos y holográficos en frío especial para materiales lisos y mangas termoencogibles.v`,
-        image: "/assets/vinos-y-licores/cards/card5.png",
+        title: "MATTE LAMINATE",
+        description: `Al igual que el glossy garantiza la duración de la impresión y protege de la intemperie.`,
+        image: "/assets/alimentos-y-bebidas/cards/card6.png",
         titleItem: false,
     },
     {
         inverseOrder: false,
-        title: "EMBOSS",
-        description: "description",
-        image: "/assets/vinos-y-licores/cards/card6.png",
+        title: "GLOSSY VARNISH",
+        description: "Genera una capa de protección ante factores ambientales que pueden perjudicar tu etiqueta con un look ultra brillante.",
+        image: "/assets/alimentos-y-bebidas/cards/card7.png",
         titleItem: false,
     },
     {
         inverseOrder: true,
-        title: "DEBOSS",
-        description: "description",
-        image: "/assets/vinos-y-licores/cards/card7.png",
+        title: "MATTE VARNISH",
+        description: "Da un look sofisticado de acabado sin brillo con un recubrimiento de alta resistencia al roce y excelente claridad.",
+        image: "/assets/alimentos-y-bebidas/cards/card8.png",
         titleItem: false,
     },
     {
         inverseOrder: false,
-        title: "SILK SCREEN",
-        description: "description",
-        image: "/assets/vinos-y-licores/cards/card8.png",
+        title: "COLD FOIL",
+        description: "Aporta un look premium y genera contraste visual con un aspecto metalizado hecho a tu medida.",
+        image: "/assets/alimentos-y-bebidas/cards/card9.png",
         titleItem: false,
     },
     {
         inverseOrder: true,
-        title: "CAST & CURE",
-        description: "description",
-        image: "/assets/vinos-y-licores/cards/card9.png",
+        title: "MANGA TERMOENCOGIBLE",
+        description: "Da un look sofisticado de acabado sin brillo con un recubrimiento de alta resistencia al roce y excelente claridad.",
+        image: "/assets/alimentos-y-bebidas/cards/card10.png",
         titleItem: false,
     }
 ]
 
 
 
-const containerMap = (data, index) => {
+const containerMap = (data, index, theme) => {
     return (
         <>
             <Container
@@ -124,12 +136,13 @@ const containerMap = (data, index) => {
                 listTitle={data.listTitle}
                 listItems={data.listItems}
                 backgroundImage={data.backgroundImage}
+                theme={theme}
             />
         </>
     );
 };
 
-const Container2Map = (data, index) => {
+const Container2Map = (data, index, theme) => {
     const ref = useRef();
 
     return (
@@ -140,12 +153,13 @@ const Container2Map = (data, index) => {
                 description={data.description}
                 image={data.image}
                 titleItem={data.titleItem}
+                theme={theme}
             />
         </div>
     );
 };
 
-const AlimentosBebidas = () => {
+const SaludBelleza = () => {
 
 
     const ref = useRef();
@@ -157,9 +171,9 @@ const AlimentosBebidas = () => {
         delay: 300,
         config: { duration: 1000 },
     });
-    const container = containerData.map((elemento, index) => containerMap(elemento, index));
-    const container2 = container2Data.map((elemento, index) => Container2Map(elemento, index));
     const [theme, setTheme] = useState("light");
+    const container = containerData.map((elemento, index) => containerMap(elemento, index, theme));
+    const container2 = container2Data.map((elemento, index) => Container2Map(elemento, index, theme));
 
 
     return (
@@ -169,7 +183,7 @@ const AlimentosBebidas = () => {
                 theme={theme}
             />
             <HeroContainer
-                backgroundImage={"/assets/alimentos-y-bebidas/hero.jpg"}
+                backgroundImage={"/assets/alimentos-y-bebidas/Golden_images01.jpg"}
                 text1={"Brilla"}
                 text2={"en el anaquel"}
                 theme={theme}
@@ -182,4 +196,4 @@ const AlimentosBebidas = () => {
     )
 }
 
-export default AlimentosBebidas
+export default SaludBelleza

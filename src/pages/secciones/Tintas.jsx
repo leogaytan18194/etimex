@@ -15,7 +15,7 @@ const cardItems = [
         desc: "Crea un efecto de color que al activarse con luz UV, lucen más fuertes y brillantes, realzando formas y detalles.",
         bg: "/assets/tintas/cards/1.webp",
         delay: 200,
-        bgsz:"100%",
+        bgsz:"90%",
     },
     {
         title: "Invisible",

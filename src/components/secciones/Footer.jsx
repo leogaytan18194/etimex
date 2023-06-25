@@ -1,5 +1,5 @@
 import React from 'react';
-import { FooterStyles, TabItemSecciones } from '../../styles/Styles';
+import { FooterStylesSecciones, TabItemSecciones } from '../../styles/Styles';
 
 const socialIcons = [
   {
@@ -41,7 +41,7 @@ const tabItems = [
 ]
 const Footer = ({theme, heigth}) => {
   return (
-    <FooterStyles theme={theme} heigth={heigth}>
+    <FooterStylesSecciones theme={theme} heigth={heigth}>
       <div className='footer-tab'>
         <div className='footer-tab-items'>
           {
@@ -72,7 +72,7 @@ const Footer = ({theme, heigth}) => {
 
         </div>
       </div>
-    </FooterStyles>
+    </FooterStylesSecciones>
   );
 };
 

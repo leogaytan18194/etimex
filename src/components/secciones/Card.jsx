@@ -7,7 +7,7 @@ function Card({ delay, title, desc, bg, bgsz }) {
   const [isVisible, setIsVisible] = useState(false);
 
   const animationProps = useSpring({
-    transform: isVisible ? 'translateY(30px)' : 'translateY(0px)',
+    transform: isVisible ? 'translateY(0px)' : 'translateY(30px)',
     opacity: isVisible ? 1 : 0,
     delay,
     config: { duration: 500 },

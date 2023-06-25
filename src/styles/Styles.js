@@ -26,7 +26,8 @@ export const PageStyles = styled.div`
     flex-wrap: wrap;
    // grid-template-columns: repeat(3, 1fr);
     max-width: 1300px;
-    margin: 0px auto;
+    margin: 0 auto;
+    margin-top:60px;
     gap: 43px;
   }
 `;
@@ -248,7 +249,7 @@ export const HeaderStylesSecciones = styled.header`
     height: 100%;
     background: ${(props) =>      props.theme === "dark"
         ? `rgba(0, 0, 0, 0.8)`
-        : "rgba(229, 238, 239, 0.8)"};
+        : "#e3e3e3"};
     color: ${(props) =>(props.theme === "dark" ? `#fff` : "#000")};
     display: flex;
     justify-content: center;
@@ -413,7 +414,7 @@ export const ContainerStyles = styled.div`
       margin-bottom: 5px;
       text-align: center;
     }
-    h1 {
+    h2 {
       font-size: 4rem;
     }
   }
@@ -566,7 +567,7 @@ export const ContainerStylesSecciones = styled.div`
       margin-bottom: 5px;
       text-align: center;
     }
-    h1 {
+    h2 {
       font-size: 4rem;
     }
   }
@@ -797,11 +798,12 @@ export const Container2Styles = styled.div`
     box-sizing: border-box;
     padding-left: 50px;
     gap: 36px;
-    h1 {
+    overflow: hidden;
+    h2 {
       text-transform: uppercase;
       max-width: 150px;
       font-family: "ITCAvantGardeStd-Bold";
-      font-size: 50px;
+      font-size: 40px;
       line-height: 45px;
       color: ${(props) =>        props.theme === "dark" ? `#C2A364` : "#000"} !important;
       @media (max-width: 780px) {
@@ -853,7 +855,7 @@ export const Container2Styles = styled.div`
     font-size: 70px;
     font-family: "ITCAvantGardeStd-Bold";
     color: transparent !important;
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: ${(props) =>    props.theme === "dark" ? `1px #fff` : "1px #000"} !important;;
   }
 `;
 
@@ -940,6 +942,89 @@ export const FooterStyles = styled.footer`
     }
   }
 `;
+export const FooterStylesSecciones = styled.footer`
+  width: 100%;
+  background-color: ${(props) =>    props.theme === "dark" ? `#1d1d1b` : "#fff"} !important;
+  height: auto !important;
+  .footer-container {
+    width: 100%;
+    background-color: rgb(210, 173, 87);
+    background-color: ${(props) =>      props.theme === "dark" ? `rgb(210, 173, 87)` : "#efefef"} !important;
+    height: 93px;
+    @media (max-width: 780px) {
+      height: auto;
+    }
+  }
+  .footer-items {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1250px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-items: center;
+    box-sizing: border-box;
+    padding-top: 15px;
+    @media (max-width: 1200px) {
+      grid-template-columns: 90% 1fr;
+    }
+    @media (max-width: 780px) {
+      grid-template-columns: repeat(1, 100%);
+      gap: 10px;
+      max-width: 100%;
+    }
+  }
+  ul.footer-list {
+    display: flex;
+    gap: 20px;
+    padding: 0px;
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 95%;
+    }
+    @media (max-width: 780px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 4px;
+    img {
+      height: 22.1503px;
+      filter: ${(props) =>        props.theme === "dark" ? `invert(1)` : "unset"} !important;
+    }
+    img {
+      &:hover {
+        animation: spin 0.3s linear;
+      }
+      &:not(:hover) {
+        animation: spin-reverse 0.3s forwards;
+      }
+    }
+  }
+  .footer-tab {
+    width: 100%;
+    margin: 50px 0;
+  }
+  .footer-tab-items {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 60px;
+    @media (max-width: 480px) {
+      grid-template-columns: repeat(1, 100%);
+      justify-items: center;
+      gap: 5px;
+    }
+  }
+`;
 
 export const TabItem = styled.div`
   width: auto;
@@ -981,6 +1066,7 @@ export const TabItemSecciones = styled.div`
   height: 50px;
   text-transform: uppercase;
   overflow: unset;
+  font-family: 'ITCAvantGardeStd-Demi';
   &:hover {
     opacity: 0.6;
   }
@@ -1085,7 +1171,31 @@ cursor: pointer;
   background-position: center;
   background-size: ${(props) => props.bgsz ? `${props.bgsz}` : "cover"};
   background-repeat: no-repeat;    
+  &:hover {
+    animation: hoverAnimation 0.6s ease forwards;
+  }
   
+  &:not(:hover) {
+    animation: hoverAnimationInverse 0.6s ease forwards;
+  }
+  
+  @keyframes hoverAnimation {       
+    from{
+      background-size: ${(props) => props.bgsz ? `${props.bgsz}` : "cover"};
+    } 
+    to {
+      background-size: 250%;
+    }
+  }
+  
+  @keyframes hoverAnimationInverse {        
+    from {
+      background-size: 250%;
+    }
+    to {
+      background-size: ${(props) => props.bgsz ? `${props.bgsz}` : ""};
+    }
+  }
   * {
     color: #fff;
     font-family: "HelveticaBold";
@@ -1122,29 +1232,5 @@ cursor: pointer;
     max-width:85%;
   }
   
-  &:hover {
-    animation: hoverAnimation 0.6s ease forwards;
-  }
   
-  &:not(:hover) {
-    animation: hoverAnimationInverse 0.6s ease forwards;
-  }
-  
-  @keyframes hoverAnimation {       
-    from{
-      background-size: ${(props) => props.bgsz ? `${props.bgsz}` : "cover"};
-    } 
-    to {
-      background-size: 250%;
-    }
-  }
-  
-  @keyframes hoverAnimationInverse {        
-    from {
-      background-size: 250%;
-    }
-    to {
-      background-size: ${(props) => props.bgsz ? `${props.bgsz}` : "cover"};
-    }
-  }
 `;

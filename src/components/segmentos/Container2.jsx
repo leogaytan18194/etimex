@@ -104,7 +104,7 @@ const Container2 = ({ inverseOrder, title, description, image, titleItem, index,
                         <img src={image} alt='' />
                     </animated.div>
                     <div className='text-container'>
-                        <animated.h1 style={fadeSlide}>{title}</animated.h1>
+                        <animated.h2 style={fadeSlide}>{title}</animated.h2>
                         <animated.p style={scale}>{description}</animated.p>
                     </div>
                 </animated.div>

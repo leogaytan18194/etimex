@@ -13,6 +13,7 @@ import Topbar from '../../components/topbar/Topbar'
 import Menu from '../../components/menu/Menu'
 import "../../app.scss"
 import Footer from '../../components/footer/Footer'
+import Header from '../../components/secciones/Header'
 
 const Home = () => {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -33,8 +34,12 @@ const Home = () => {
     const [theme, setTheme] = useState("light")
     return (
         <div className="app">
-            <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-            <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+            <Header
+                logo={"/assets/etimex-logo.png"}
+                theme={theme}
+            />
+            {/* <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+            <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> */}
             <div className="sections">
                 <Video />
                 <Works />
