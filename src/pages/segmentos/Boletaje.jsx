@@ -148,6 +148,7 @@ const Boletaje = () => {
                 backgroundImage={"/assets/boletaje/hero.png"}
                 text1={"Haz de tu boletaje"}
                 text2={"toda una experiencia"}
+                flexDirection="column"
                 theme={theme}
             />
             {container}

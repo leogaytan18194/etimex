@@ -75,6 +75,7 @@ const Industrial = () => {
                 backgroundImage={"/assets/industrial/hero.png"}
                 text1={"+Fuertes"}
                 text2={"atraiga miradas"}
+                flexDirection={"column"}
                 theme={theme}
             />
             {container2}
