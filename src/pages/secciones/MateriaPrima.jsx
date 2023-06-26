@@ -166,16 +166,35 @@ const MateriaPrima = () => {
         transform: isVisible ? 'translateY(0px)' : 'translateY(50px)',
         delay: 300,
         config: { duration: 1000 },
-    });
-    const [theme, setTheme] = useState("light");
-    const container = containerData.map((elemento, index) => containerMap(elemento, index, theme));
-
+    });    
+    const container = containerData.map((elemento, index) => containerMap(elemento, index, "light"));
+    const tabItems = [
+        {
+            ico: "/assets/svg/dot",
+            text: "Materias Primas",
+            route: "/servicios/materia-prima",
+            top: "0",
+        },
+        {
+            ico: "/assets/svg/dot",
+            text: "ACABADOS BÁSICOS & PREMIUM",
+            route: "/servicios/acabados-basicos-premium",
+            top: "0",
+        },
+        {
+            //MATERIAS PRIMAS   ·      ·    
+            ico: "/assets/svg/dot",
+            text: "ASESORÍA INTEGRAL",
+            route: "/servicios/asesoria-integral",
+            top: "0",
+        },
+    ]
 
     return (
-        <PageStyles theme={theme}>
+        <PageStyles theme={"light"}>
             <Header
                 logo={"/assets/etimex-logo.png"}
-                theme={theme}
+                theme={"light"}
             />
             <HeroContainer
                 backgroundImage={"/assets/materia-prima/herov2.png"}
@@ -184,13 +203,13 @@ const MateriaPrima = () => {
                 </>}
                 text2={"Prima"}
                 text3={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore "}
-                theme={theme}
+                theme={"dark"}
                 h1Only={true}
             />
 
             {container}
 
-            <Footer theme={theme} />
+            <Footer theme={"light"} tabItems={tabItems} />
 
         </PageStyles>
     )

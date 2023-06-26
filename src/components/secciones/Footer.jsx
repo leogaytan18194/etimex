@@ -19,28 +19,8 @@ const socialIcons = [
     link: "http://www.facebook.com"
   }
 ];
-const tabItems = [
-  {
-    ico: "/assets/svg/dot",
-    text: "Materias Primas",
-    route: "/servicios/materia-prima",
-    top: "0",
-  },
-  {
-    ico: "/assets/svg/dot",
-    text: "ACABADOS BÁSICOS & PREMIUM",
-    route: "/servicios/acabados-basicos-premium",
-    top: "0",
-  },
-  {
-    //MATERIAS PRIMAS   ·      ·    
-    ico: "/assets/svg/dot",
-    text: "ASESORÍA INTEGRAL",
-    route: "/servicios/asesoria-integral",
-    top: "0",
-  },
-]
-const Footer = ({ theme, heigth }) => {
+
+const Footer = ({ theme, heigth, tabItems }) => {
   return (
     <FooterStylesSecciones theme={theme} heigth={heigth}>
       <div className='footer-tab'>

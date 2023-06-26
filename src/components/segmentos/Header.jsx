@@ -79,6 +79,13 @@ const Header = ({ logo, theme }) => {
         config: { tension: 200, friction: 20 },
         delay: 900,
     });
+    const textAnimation6 = useSpring({
+        from: { opacity: 0, transform: 'translateY(-50px)' },
+        to: { opacity: 1, transform: 'translateY(0)' },
+        config: { tension: 200, friction: 20 },
+        delay: 1000,
+    });
+
 
     const circleAnimation = useSpring({
         from: { opacity: 0, transform: 'scale(0) rotate(180deg)', },
@@ -121,6 +128,7 @@ const Header = ({ logo, theme }) => {
     const load = () => {
         setShowMenuMo(false);
     }
+    const [lang, setLang] = useState("USA");
     return (
         <HeaderStyles theme={theme}>
             {transitions((styles, item) =>
@@ -186,9 +194,9 @@ const Header = ({ logo, theme }) => {
                                         </Link>
                                     </CustomLi>
                                     <CustomLi theme={theme} >
-                                        <Link to="/boletaje">
-                                        <animated.span style={textAnimation5} className={`${theme === "dark" ? "item-lang-dark" : "item-lang-light"}`}>
-                                                Usa
+                                        <Link to="#">
+                                            <animated.span style={textAnimation6} className={`${theme === "dark" ? "item-lang-dark" : "item-lang-light"}`}>
+                                                {lang}
                                             </animated.span>
                                         </Link>
                                     </CustomLi>
@@ -245,11 +253,17 @@ const Header = ({ logo, theme }) => {
                                                 Boletaje
                                             </animated.span>
                                         </Link>
-                                    </CustomLi>                                    
+                                    </CustomLi>
                                     <CustomLi theme={theme} >
-                                        <Link to="/boletaje">
+                                        <Link to="#" className='no-link' onClick={() => setLang(prev => {
+                                            if (prev === "USA") {
+                                                return "MX";
+                                            } else {
+                                                return "USA";
+                                            }
+                                        })}>
                                             <animated.span style={textAnimation5} className={`${theme === "dark" ? "item-lang-dark" : "item-lang-light"}`}>
-                                                Usa
+                                                {lang}
                                             </animated.span>
                                         </Link>
                                     </CustomLi>

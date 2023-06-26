@@ -5,6 +5,55 @@ export const PageStyles = styled.div`
   width: 100%;
   background-color: ${(props) =>    props.theme === "dark" ? `#1d1d1b` : "#fff"} !important;
   overflow: hidden;
+  .small-cards {
+    width: 100%;
+    display: flex;
+    margin: 70px 0;
+  }
+  .small-cards-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+    @media (max-width: 1280px) {
+      max-width: 1000px;
+    }
+    @media (max-width: 980px) {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 700px;
+    }
+    @media (max-width: 580px) {
+      grid-template-columns: repeat(1, 100%);
+      max-width: 320px;
+    }
+  }
+  .card-animation {
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+  }
+  .small-card-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    svg {
+        height: 125px;
+        width: 125px;
+    }
+  }
+  
+  .small-card-title{
+    font-family:'ITCAvantGardeStd-Bold';
+    font-size:2.5em;
+  }
+  .small-card-desc{    
+    font-size:1.2em;
+  }
   * {
     margin: 0;
     padding: 0;
@@ -34,6 +83,7 @@ export const PageStyles = styled.div`
 `;
 
 export const HeaderStyles = styled.header`
+  margin-bottom: 80px;
   @keyframes fadeIn {
     from {
       opacity: 0; /* La opacidad al inicio de la animación es 0 */
@@ -190,6 +240,7 @@ export const HeaderStyles = styled.header`
   }
 `;
 export const HeaderStylesSecciones = styled.header`
+  margin-bottom: 80px;
   @keyframes fadeIn {
     from {
       opacity: 0; /* La opacidad al inicio de la animación es 0 */
@@ -724,7 +775,7 @@ export const HeroBackground = styled.div`
   }
 `;
 export const HeroBackgroundSecciones = styled.div`
-
+  
   .hero-text {
     padding: 20px;
     //border-radius: 10px;
@@ -736,7 +787,7 @@ export const HeroBackgroundSecciones = styled.div`
     flex-direction: column;
     gap: 1em 0;
     * {
-      color: ${(props) =>        props.theme === "dark" ? `#fff` : "#000"} !important;
+      color: ${(props) => props.theme === "dark" ? `#000` : "#fff"} !important;
       font-family: "ITCAvantGardeStd-Bold";
     }
     .strokeText {
@@ -744,18 +795,44 @@ export const HeroBackgroundSecciones = styled.div`
    // font-size: 70px;
     font-family: "ITCAvantGardeStd-Bold";
     color: transparent !important;
-    -webkit-text-stroke: 2px #000;
+    -webkit-text-stroke: ${(props) =>
+    props.theme === "dark" ? "2px #000" : "2px #fff"};
+    @media (max-width: 680px) {
+      -webkit-text-stroke: ${(props) =>
+      props.theme === "dark" ? "1px #000" : "1px #fff"};
+    }
   }
     h1 {
       font-size: 3.5rem;
       font-weight: 700;
       @media (max-width: 780px) {
         font-size: 2.5rem;
+        span{
+          min-width:600px !important;
+        }
+      }
+      @media (max-width: 580px) {
+        font-size: 1.8rem;
+        span{
+          min-width:360px !important;
+        }
       }
     }
     p {
       font-size: 1.2rem;
       max-width: 850px;
+      margin: 0 auto;
+      @media (max-width: 980px) {        
+        max-width: 650px;
+      }
+      @media (max-width: 780px) {        
+        font-size: 1rem;
+        max-width: 450px;
+      }
+      @media (max-width: 480px) {        
+        font-size: 0.8rem;
+        max-width: 320px;
+      }
     }
   }
   @keyframes fadeIn2 {
@@ -788,6 +865,10 @@ export const HeroBackgroundSecciones = styled.div`
 
     @media (max-width: 980px) {
       height: 75vh !important;
+      background-attachment: scroll;
+    }
+    @media (max-width: 780px) {
+      height: 55vh !important;
       background-attachment: scroll;
     }
     //background-position: 0 -220px;

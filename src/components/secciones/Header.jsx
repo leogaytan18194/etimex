@@ -81,6 +81,21 @@ const Header = ({ logo, theme }) => {
         config: { tension: 200, friction: 20 },
         delay: 900,
     });
+    const textAnimation6 = useSpring({
+        from: { opacity: 0, transform: 'translateY(-50px)' },
+        to: { opacity: 1, transform: 'translateY(0)' },
+        config: { tension: 200, friction: 20 },
+        delay: 1000,
+    });
+
+    const textAnimation7 = useSpring({
+        from: { opacity: 0, transform: 'translateY(-50px)' },
+        to: { opacity: 1, transform: 'translateY(0)' },
+        config: { tension: 200, friction: 20 },
+        delay: 1100,
+    });
+
+
 
     const circleAnimation = useSpring({
         from: { opacity: 0, transform: 'scale(0) rotate(180deg)', },
@@ -118,7 +133,7 @@ const Header = ({ logo, theme }) => {
     const isMobile = window.innerWidth <= 980;
 
     const [showMenu1, setShowMenu1] = useState(false);
-    const [lang, setLang] = useState("ES");
+    const [lang, setLang] = useState("USA");
     const [showMenuMo, setShowMenuMo] = useState(false);
     const load = () => {
         setShowMenuMo(false);
@@ -128,57 +143,71 @@ const Header = ({ logo, theme }) => {
             item: 'inicio',
             route: '/',
             section: 'home',
-            callback:() =>{
-
+            animation: textAnimation,
+            callback: () => {
+                return;
             }
         },
         {
             item: 'servicios',
             route: '/servicios/tintas',
             section: 'servicios',
-            callback:() =>{
-
+            animation: textAnimation2,
+            callback: () => {
+                return;
             }
         },
         {
             item: 'segmentos',
             route: '/vinos-y-licores',
             section: 'segmentos',
-            callback:() =>{
-
+            animation: textAnimation3,
+            callback: () => {
+                return;
             }
         },
         {
             item: 'clientes',
             route: '/clientes',
             section: 'clientes',
-            callback:() =>{
-
+            animation: textAnimation4,
+            callback: () => {
+                return;
             }
         },
         {
             item: 'contacto',
             route: '/contacto',
             section: 'contacto',
-            callback:() =>{
-
+            animation: textAnimation5,
+            callback: () => {
+                return;
             }
         },
         {
             item: 'blog',
             route: '/blog',
             section: 'blog',
-            callback:() =>{
-
+            animation: textAnimation6,
+            callback: () => {
+                return;
             }
         },
         {
-            item: 'USA',
+            item: `${lang}`,
             route: '#',
             section: 'lang',
-            callback:() =>{
-                setLang("USA");
-            }   
+            animation: textAnimation7,
+            callback: () => {
+                setLang(prev => {
+                    if (prev === "USA") {
+                        return "MX";
+                    }
+                    if (prev === "MX") {
+                        return "USA";
+                    }
+                });
+            }
         },
 
     ]
@@ -209,8 +238,12 @@ const Header = ({ logo, theme }) => {
                                     {
                                         menuList.map((menu, index) => (
                                             <CustomLi theme={theme} className={`${pathname.includes(menu.section) ? "activeMenu" : ""}`}>
-                                               <Link to={menu.route}>
-                                               <animated.span style={textAnimation} className={`${ menu.section === "lang" ? theme === "dark" ? "item-lang-dark" : "item-lang-light":  ""}`}>
+                                                <Link to={menu.route}>
+                                                    <animated.span
+                                                        onClick={menu.callback}
+                                                        style={
+                                                            menu.animation
+                                                        } className={`${menu.section === "lang" ? theme === "dark" ? "item-lang-dark" : "item-lang-light" : ""}`}>
                                                         {menu.item}
                                                     </animated.span>
                                                 </Link>
@@ -235,9 +268,12 @@ const Header = ({ logo, theme }) => {
                                         menuList.map((menu, index) => (
                                             <CustomLi theme={theme} className={`${pathname.includes(menu.section) ? "activeMenu" : ""}`}>
                                                 <Link to={menu.route}>
-                                                    <animated.span style={textAnimation} className={`${ menu.section === "lang" ? theme === "dark" ? "item-lang-dark" : "item-lang-light":  ""}`}>
+                                                    <animated.span
+                                                        onClick={menu.callback}
+                                                        style={
+                                                            menu.animation
+                                                        } className={`${menu.section === "lang" ? theme === "dark" ? "item-lang-dark" : "item-lang-light" : ""}`}>
                                                         {menu.item}
-                                                        
                                                     </animated.span>
                                                 </Link>
                                             </CustomLi>

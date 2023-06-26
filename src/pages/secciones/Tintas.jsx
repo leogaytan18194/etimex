@@ -15,42 +15,42 @@ const cardItems = [
         desc: "Crea un efecto de color que al activarse con luz UV, lucen más fuertes y brillantes, realzando formas y detalles.",
         bg: "/assets/tintas/cards/1.webp",
         delay: 200,
-        bgsz:"90%",
+        bgsz: "90%",
     },
     {
         title: "Invisible",
         desc: "Añade elementos de seguridad que solo pueden visualizarse bajo luz UV, perfecta para aplicaciones en textos, códigos y formas invisibles.",
         bg: "/assets/tintas/cards/2.webp",
         delay: 400,
-        bgsz:"100%",
+        bgsz: "100%",
     },
     {
         title: "Inkjet",
         desc: "Da relieve a detalles finos y precisos con aplicaciones nítidas, creando una experiencia de textura en tu etiqueta.",
         bg: "/assets/tintas/cards/3.webp",
         delay: 600,
-        bgsz:"190%",
+        bgsz: "190%",
     },
     {
         title: "Plateada",
         desc: "Agrega valor y aspecto premium con tintas plateadas, ideales para detalles sutiles en textos.",
         bg: "/assets/tintas/cards/4.webp",
         delay: 800,
-        bgsz:"100%",
+        bgsz: "100%",
     },
     {
         title: "Termocromática",
         desc: "Incluye la característica que permite cambiar reversiblemente los colores en tu etiqueta con la temperatura.",
         bg: "/assets/tintas/cards/5.webp",
         delay: 1000,
-        bgsz:"150%",
+        bgsz: "150%",
     },
     {
         title: "Aromática",
         desc: "Brinda una experiencia mulsisensorial con microcápsulas perfumadas que al rascarse desprenden olor.",
         bg: "/assets/tintas/cards/6.webp",
         delay: 1200,
-        bgsz:"190%",
+        bgsz: "190%",
     },
 ]
 
@@ -69,6 +69,27 @@ const containerMap = (data, index, theme) => {
     );
 };
 
+const tabItems = [
+    {
+        ico: "/assets/svg/dot",
+        text: "Materias Primas",
+        route: "/servicios/materia-prima",
+        top: "0",
+    },
+    {
+        ico: "/assets/svg/dot",
+        text: "ACABADOS BÁSICOS & PREMIUM",
+        route: "/servicios/acabados-basicos-premium",
+        top: "0",
+    },
+    {
+        //MATERIAS PRIMAS   ·      ·    
+        ico: "/assets/svg/dot",
+        text: "ASESORÍA INTEGRAL",
+        route: "/servicios/asesoria-integral",
+        top: "0",
+    },
+]
 const Tintas = () => {
 
 
@@ -100,7 +121,7 @@ const Tintas = () => {
             <div className='cards-container'>
                 {container}
             </div>
-            <Footer theme={theme} />
+            <Footer theme={theme} tabItems={tabItems} />
 
         </PageStyles>
     )
