@@ -37,8 +37,6 @@ const containerData = [
         icon1Text: "Bond",
         icon2: "shrek.svg",
         icon2Text: "Tyvek",
-        icon3: "shrek.svg",
-        icon3Text: "Tyvek2",
         listTitle: "En película",
         listItems: [
             { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
