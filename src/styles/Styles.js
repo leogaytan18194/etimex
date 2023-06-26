@@ -5,6 +5,14 @@ export const PageStyles = styled.div`
   width: 100%;
   background-color: ${(props) =>    props.theme === "dark" ? `#1d1d1b` : "#fff"} !important;
   overflow: hidden;
+  .logos-sustentabilidad {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      height: 100%;
+      margin-bottom: 80px;
+      margin-top: 40px;
+  }
   .small-cards {
     width: 100%;
     display: flex;
@@ -239,8 +247,164 @@ export const HeaderStyles = styled.header`
     }
   }
 `;
-export const HeaderStylesSecciones = styled.header`
+export const HeaderStyles2 = styled.header`
   margin-bottom: 80px;
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* La opacidad al inicio de la animación es 0 */
+    }
+
+    to {
+      opacity: 1; /* La opacidad al final de la animación es 1 */
+      width: 100%;
+    }
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes spin-reverse {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+  .mobile-menu-cont {
+    display: none;
+    position: absolute;
+    top: 60px;
+    flex-direction: column;
+    background: #151618a8;
+    box-sizing: border-box;
+    padding: 7px 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    left: -10px;
+  }
+  .mobile-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .m-web {
+    @media (max-width: 980px) {
+      display: none;
+    }
+  }
+  .m-mobile {
+    display: none;
+    @media (max-width: 980px) {
+      display: block;
+    }
+  }
+  .menu-container {
+    width: 100%;
+    max-height: 80.8539px;
+    height: 100%;
+    background:#1D451B;
+    color: ${(props) =>(props.theme === "dark" ? `#fff` : "#000")};
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 99;
+    overflow: unset;
+    span {
+      transform: translateY(0);
+      color: ${(props) =>(props.theme === "dark" ? `#fff` : "#000")};
+    }
+    * {
+      overflow: unset;
+    }
+    a {
+      color: ${(props) =>        props.theme === "dark" ? `#fff` : "#000"} !important;
+      @media (max-width: 980px) {
+        color: ${(props) =>          props.theme === "dark" ? `#000` : "#fff"} !important;
+      }
+    }
+    ul {
+      display: grid;
+      //grid-template-columns: repeat(8, auto);
+      grid-template-columns: 1fr 2fr 12fr;
+      max-width: 1100px;
+      margin: 0 auto;
+      width: 100%;
+      list-style: none;
+
+      @media (max-width: 980px) {
+        grid-template-columns: repeat(2, auto);
+        justify-content: space-between;
+        padding: 0 30px;
+        box-sizing: border-box;
+      }
+    }
+    .menu-mobile-container {
+      width: 100%;
+      top: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 19px;
+      background: ${(props) =>        props.theme === "dark"
+          ? `rgba(0, 0, 0, 0.8)`
+          : "rgba(255, 255, 255, 0.8)"} !important;
+      padding: 17px 0;
+      @media (max-width: 468px) {
+        width: 100%;
+        //left: 0 !important;
+      }
+    }
+    .logo {
+      display: flex;
+      justify-content: end !important;
+      align-items: center !important;
+
+      @media (max-width: 1024px) {
+        justify-content: center !important;
+      }
+      a {
+        padding-right: 15px;
+        box-sizing: border-box;
+      }
+      img {
+        width: 35px;
+        height: 40px;
+      }
+    }
+  }
+  .fade-in {
+    opacity: 0; /* Configuramos la opacidad inicial en 0 */
+    animation: fadeIn 1s ease-in forwards; /* Aplicamos la animación llamada "fadeIn" durante 1 segundo */
+  }
+  .activeMenu {
+    a {
+      position: relative;
+
+      &:before {
+        position: absolute;
+        width: 0%;
+        height: 1px;
+        background-color: ${(props) =>          props.theme === "dark" ? `#fff` : "#000"} !important;
+        bottom: 0;
+        opacity: 1; /* Configuramos la opacidad inicial en 0 */
+        animation: fadeIn 1s ease-in forwards; /* Aplicamos la animación llamada "fadeIn" durante 1 segundo */
+        animation-iteration-count: 1;
+      }
+    }
+  }
+`;
+export const HeaderStylesSecciones = styled.header`
+  
   @keyframes fadeIn {
     from {
       opacity: 0; /* La opacidad al inicio de la animación es 0 */
@@ -401,6 +565,68 @@ export const CustomLi = styled.li`
   justify-content: center;
   align-items: center;
   list-style: none;
+  @media (max-width: 980px) {
+    height: 36px;
+  }
+  @keyframes exampleAnimation {
+    100% {
+      width: 100%;
+    }
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    margin: 0;
+    &:after {
+      content: "";
+      background-image: url(/assets/segmentos/${(props) =>        props.icon ? `${props.icon}.svg` : ""});
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      background-repeat: no-repeat;
+      left: -30px;
+      @media (max-width: 980px) {
+        left: -40px;
+      }
+      top: 5px;
+      opacity: 0; /* Configuramos la opacidad inicial en 0 */
+      animation: fadeIn 1s ease-in forwards; /* Aplicamos la animación llamada "fadeIn" durante 1 segundo */
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 1px;
+      background-color: ${(props) =>        props.theme === "dark" ? `#fff` : "#000"} !important;
+      bottom: 0;
+      opacity: 0;
+      //visibility:hidden;
+    }
+  }
+  &:hover {
+    a {
+      &:before {
+        opacity: 1;
+        animation-name: exampleAnimation;
+        animation-duration: 0.3s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+`;
+export const CustomLi2 = styled.li`
+  width: 100%;
+  display: flex;
+  justify-content: ${(props => props.justify ? props.justify : "center")};
+  align-items: center;
+  list-style: none;
+  
   @media (max-width: 980px) {
     height: 36px;
   }
@@ -758,6 +984,7 @@ export const HeroBackground = styled.div`
     background-attachment: fixed;
     animation: fadeIn 1s ease-in forwards; /* Aplicamos la animación llamada "fadeIn" durante 1 segundo */
     position: relative;
+    margin-top: 80px;
     &:before{
       content: "";
       position: absolute;
@@ -769,6 +996,105 @@ export const HeroBackground = styled.div`
     }
     @media (max-width: 980px) {
       height: 75vh !important;
+      background-attachment: scroll;
+    }
+    //background-position: 0 -220px;
+  }
+`;
+export const HeroBackground2 = styled.div`
+
+  .strokeText {
+        justify-content: center;
+      // font-size: 70px;
+        font-family: "ITCAvantGardeStd-Bold";
+        color: transparent !important;
+        -webkit-text-stroke: ${(props) =>
+        props.theme === "dark" ? "2px #000" : "2px #fff"};
+        @media (max-width: 680px) {
+          -webkit-text-stroke: ${(props) =>
+          props.theme === "dark" ? "1px #000" : "1px #fff"};
+        }
+    }
+  .hero-text {
+    padding: 20px;
+    //border-radius: 10px;
+    font-size: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+   
+    text-align: left;
+    max-width:1100px;
+    width: 100%;
+    margin:0 auto;
+    @media (max-width: 780px) {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: 400;
+        max-width: 300px;
+        font-size: 1.3rem;
+        padding: 0;
+
+    }
+    @media (max-width: 580px) {
+      text-align: left;
+      font-weight: 400;
+      max-width: 260px;
+      font-size: 1.1rem;
+    }
+    h1 {
+      font-family: "HelveticaBold";
+     
+    }
+    p{
+      max-width: 600px;
+      text-shadow: ${(props) => props.theme2 === "dark" ? `rgb(255 255 255 / 69%) 1px 1px 2px ` : "rgb(0 0 0 / 69%) 1px 1px 2px"} !important;
+    }
+  }
+  @keyframes fadeIn2 {
+    from {
+      opacity: 0; /* La opacidad al inicio de la animación es 0 */
+    }
+
+    to {
+      opacity: 1; /* La opacidad al final de la animación es 1 */
+    }
+  }
+  .hero {
+    /* width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-size 1s;
+    background-attachment: fixed;
+    animation: fadeIn 1s ease-in forwards; /* Aplicamos la animación llamada "fadeIn" durante 1 segundo */
+    position: relative;
+    margin-top: 80px;
+    &:before{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    //  background-color: rgba(0,0,0,0.5);
+    }
+    @media (max-width: 980px) {
+      height: 75vh !important;
+      background-attachment: scroll;
+    }
+    @media (max-width: 780px) {
+      height: 50vh !important;
       background-attachment: scroll;
     }
     //background-position: 0 -220px;
@@ -786,22 +1112,23 @@ export const HeroBackgroundSecciones = styled.div`
     text-align: center;
     flex-direction: column;
     gap: 1em 0;
+    
     * {
       color: ${(props) => props.theme === "dark" ? `#000` : "#fff"} !important;
       font-family: "ITCAvantGardeStd-Bold";
     }
     .strokeText {
-    justify-content: center;
-   // font-size: 70px;
-    font-family: "ITCAvantGardeStd-Bold";
-    color: transparent !important;
-    -webkit-text-stroke: ${(props) =>
-    props.theme === "dark" ? "2px #000" : "2px #fff"};
-    @media (max-width: 680px) {
+      justify-content: center;
+    // font-size: 70px;
+      font-family: "ITCAvantGardeStd-Bold";
+      color: transparent !important;
       -webkit-text-stroke: ${(props) =>
-      props.theme === "dark" ? "1px #000" : "1px #fff"};
+      props.theme === "dark" ? "2px #000" : "2px #fff"};
+      @media (max-width: 680px) {
+        -webkit-text-stroke: ${(props) =>
+        props.theme === "dark" ? "1px #000" : "1px #fff"};
+      }
     }
-  }
     h1 {
       font-size: 3.5rem;
       font-weight: 700;
@@ -819,6 +1146,7 @@ export const HeroBackgroundSecciones = styled.div`
       }
     }
     p {
+      text-shadow: ${(props) => props.theme2 === "dark" ? `rgb(0 0 0 / 69%) 1px 1px 2px ` : "rgb(255 255 255 / 69%) 1px 1px 2px "} !important;
       font-size: 1.2rem;
       max-width: 850px;
       margin: 0 auto;
@@ -862,7 +1190,7 @@ export const HeroBackgroundSecciones = styled.div`
     transition: background-size 1s;
     background-attachment: fixed;
     animation: fadeIn 1s ease-in forwards; /* Aplicamos la animación llamada "fadeIn" durante 1 segundo */
-
+    margin-top: 80px;
     @media (max-width: 980px) {
       height: 75vh !important;
       background-attachment: scroll;

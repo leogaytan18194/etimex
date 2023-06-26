@@ -303,7 +303,7 @@ div#clientes {
 .contact-info-container {
   width: 100%;
   max-width: 1250px;
-  margin: 60px auto;
+  margin: 60px auto !important;
   white-space: pre-line;
   display: grid;
   grid-template-columns: repeat(3, 1fr);

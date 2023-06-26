@@ -378,6 +378,7 @@ const AsesoriaIntegral = () => {
 
                 En ETIMEX recomendamos la impresión y materiales deacuerdo al objetivo del proyecto, tipo de marca, producto, alcances, y presupuestos. `}
                 theme={theme}
+                theme2={"light"}
                 h1Only={true}
             />
 

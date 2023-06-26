@@ -1,9 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useSpring, animated } from 'react-spring';
-import { HeroBackgroundSecciones } from '../../styles/Styles';
+import { HeroBackground2 } from '../../styles/Styles';
 
-
-const HeroContainer = ({ backgroundImage, text1, text2, theme, theme2, h1Only, text3 }) => {
+const HeroContainer2 = ({ backgroundImage, text1, text2, theme, theme2, flexDirection, h1Only, text3 }) => {
     const [isVisible, setIsVisible] = useState(false);
     const heroRef = useRef();
 
@@ -93,23 +92,27 @@ const HeroContainer = ({ backgroundImage, text1, text2, theme, theme2, h1Only, t
 
 
     return (
-        <HeroBackgroundSecciones theme={theme} theme2={theme2}>
+        <HeroBackground2 theme={theme} theme2={theme2}>
             <div className='hero bloque'
                 style={{
                     backgroundImage: `url(${backgroundImage})`,
                     //backgroundPositionY: `${backgroundPositionY}px`, backgroundSize: backgroundSize
                 }} ref={heroRef}>
-                <div className='hero-text'>
+                <div className='hero-text'
+                    style={{
+                        flexDirection: flexDirection,
+                    }}
+                >
 
                     {h1Only ?
 
                         <>
                             <div style={{
                                 display: 'flex',
-                                flexDirection: 'row',
+                                flexDirection: flexDirection,
                                 flexWrap: 'wrap',
                                 justifyContent: 'center',
-                                textAlign: 'center',
+                                textAlign: 'start',
                             }}>
                                 <animated.h1 style={slideInFromBottom}>{text1}{` `}</animated.h1>
                                 <animated.h1 style={slideInFromLeft}>{text2}</animated.h1>
@@ -122,11 +125,10 @@ const HeroContainer = ({ backgroundImage, text1, text2, theme, theme2, h1Only, t
                             <animated.p style={slideInFromLeft}>{text2}</animated.p>
                         </>
                     }
-
                 </div>
             </div>
-        </HeroBackgroundSecciones>
+        </HeroBackground2>
     );
 };
 
-export default HeroContainer;
+export default HeroContainer2;

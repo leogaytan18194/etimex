@@ -58,4 +58,5 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0 14px;
     color: #000 !important;
 }
+
 `;

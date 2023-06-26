@@ -3,7 +3,7 @@ import { useSpring, animated } from 'react-spring';
 import { HeroBackgroundSecciones } from '../../styles/Styles';
 
 
-const HeroContainerBottom = ({ backgroundImage, text1, text2, theme, h1Only, text3 }) => {
+const HeroContainerBottom = ({ backgroundImage, text1, text2, theme, h1Only, text3, theme2 }) => {
     const [isVisible, setIsVisible] = useState(false);
     const heroRef = useRef();
 
@@ -93,7 +93,7 @@ const HeroContainerBottom = ({ backgroundImage, text1, text2, theme, h1Only, tex
 
 
     return (
-        <HeroBackgroundSecciones theme={theme}>
+        <HeroBackgroundSecciones theme={theme} theme2={theme2}>
             <div className='hero bloque'
                 style={{
                     backgroundImage: `url(${backgroundImage})`,

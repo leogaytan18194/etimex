@@ -10,6 +10,8 @@ import Retail from '../pages/segmentos/Retail'
 import Boletaje from '../pages/segmentos/Boletaje'
 import MateriaPrima from '../pages/secciones/MateriaPrima'
 import AsesoriaIntegral from '../pages/secciones/AsesoriaIntegral'
+import { NotFound } from '../pages/NotFound'
+import Sustentabilidad from '../pages/segmentos/Sustentabilidad'
 
 const PageRoutes = () => {
     return (
@@ -21,10 +23,11 @@ const PageRoutes = () => {
             <Route path="/industrial" element={<Industrial />} />
             <Route path="/boletaje" element={<Boletaje />} />
             <Route path="/retail" element={<Retail />} />
+            <Route path="/sustentabilidad" element={<Sustentabilidad />} />
             <Route path="/servicios/tintas" element={<Tintas />} />
             <Route path="/servicios/materia-prima" element={<MateriaPrima />} />
             <Route path="/servicios/asesoria-integral" element={<AsesoriaIntegral />} />
-
+            <Route path="*" element={<NotFound />} />
         </Routes>
     )
 }

@@ -101,27 +101,27 @@ const Tintas = () => {
         transform: isVisible ? 'translateY(0px)' : 'translateY(50px)',
         delay: 300,
         config: { duration: 1000 },
-    });
-    const [theme, setTheme] = useState("light");
-    const container = cardItems.map((elemento, index) => containerMap(elemento, index, theme));
+    });    
+    const container = cardItems.map((elemento, index) => containerMap(elemento, index, "light"));
 
 
     return (
-        <PageStyles theme={theme}>
+        <PageStyles theme={"light"}>
             <Header
                 logo={"/assets/etimex-logo.png"}
-                theme={theme}
+                theme={"light"}
             />
             <HeroContainer
                 backgroundImage={"/assets/tintas/hero.webp"}
                 text1={"Tintas"}
                 text2={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore "}
-                theme={theme}
+                theme={"dark"}
+                theme2={"light"}
             />
             <div className='cards-container'>
                 {container}
             </div>
-            <Footer theme={theme} tabItems={tabItems} />
+            <Footer theme={"light"} tabItems={tabItems} />
 
         </PageStyles>
     )
