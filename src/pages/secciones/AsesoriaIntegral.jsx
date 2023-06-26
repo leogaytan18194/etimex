@@ -155,7 +155,7 @@ const containerMap = (data, index, theme) => {
 };
 
 
-const MateriaPrima = () => {
+const AsesoriaIntegral = () => {
 
 
     const ref = useRef();
@@ -178,12 +178,12 @@ const MateriaPrima = () => {
                 theme={theme}
             />
             <HeroContainer
-                backgroundImage={"/assets/materia-prima/herov2.png"}
+                backgroundImage={"/assets/asesoria-integral/hero.png"}
                 text1={<>
-                    <span className='strokeText'>Materia</span>
+                    <span className='strokeText'>Asesoría</span>
                 </>}
-                text2={"Prima"}
-                text3={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore "}
+                text2={"integral"}
+                text3={""}
                 theme={theme}
                 h1Only={true}
             />
@@ -196,4 +196,4 @@ const MateriaPrima = () => {
     )
 }
 
-export default MateriaPrima
+export default AsesoriaIntegral

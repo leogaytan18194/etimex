@@ -1,53 +1,56 @@
 import React from 'react';
 import { FooterStylesSecciones, TabItemSecciones } from '../../styles/Styles';
+import { Link } from 'react-router-dom';
 
 const socialIcons = [
   {
     ico: "/assets/svg/in.svg",
     alt: "LinkedIn",
-    link:"http://www.linkedin.com"
+    link: "http://www.linkedin.com"
   },
   {
     ico: "/assets/svg/ins.svg",
     alt: "Instagram",
-    link:"http://www.instagram.com"
+    link: "http://www.instagram.com"
   },
   {
     ico: "/assets/svg/fb.svg",
     alt: "Facebook",
-    link:"http://www.facebook.com"
+    link: "http://www.facebook.com"
   }
 ];
 const tabItems = [
   {
     ico: "/assets/svg/dot",
     text: "Materias Primas",
-    route: "/materias-primas",
+    route: "/servicios/materia-prima",
     top: "0",
   },
   {
     ico: "/assets/svg/dot",
     text: "ACABADOS BÁSICOS & PREMIUM",
-    route: "/acabados-basicos-premium",
+    route: "/servicios/acabados-basicos-premium",
     top: "0",
   },
   {
     //MATERIAS PRIMAS   ·      ·    
     ico: "/assets/svg/dot",
     text: "ASESORÍA INTEGRAL",
-    route: "/asesoria-integral",
+    route: "/servicios/asesoria-integral",
     top: "0",
   },
 ]
-const Footer = ({theme, heigth}) => {
+const Footer = ({ theme, heigth }) => {
   return (
     <FooterStylesSecciones theme={theme} heigth={heigth}>
       <div className='footer-tab'>
         <div className='footer-tab-items'>
           {
             tabItems.map((tabItem) => (
-              <TabItemSecciones icon={tabItem.ico} top={tabItem.top} theme={theme}>
-                {tabItem.text}
+              <TabItemSecciones icon={tabItem.ico} top={tabItem.top} theme={theme} >
+                <Link to={tabItem.route}>
+                  {tabItem.text}
+                </Link>
               </TabItemSecciones>
             ))
           }

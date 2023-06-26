@@ -185,6 +185,13 @@ const Header = ({ logo, theme }) => {
                                             </animated.span>
                                         </Link>
                                     </CustomLi>
+                                    <CustomLi theme={theme} >
+                                        <Link to="/boletaje">
+                                        <animated.span style={textAnimation5} className={`${theme === "dark" ? "item-lang-dark" : "item-lang-light"}`}>
+                                                Usa
+                                            </animated.span>
+                                        </Link>
+                                    </CustomLi>
                                 </div>
 
                             </ul>
@@ -236,6 +243,13 @@ const Header = ({ logo, theme }) => {
                                         <Link to="/boletaje">
                                             <animated.span style={textAnimation5}>
                                                 Boletaje
+                                            </animated.span>
+                                        </Link>
+                                    </CustomLi>                                    
+                                    <CustomLi theme={theme} >
+                                        <Link to="/boletaje">
+                                            <animated.span style={textAnimation5} className={`${theme === "dark" ? "item-lang-dark" : "item-lang-light"}`}>
+                                                Usa
                                             </animated.span>
                                         </Link>
                                     </CustomLi>

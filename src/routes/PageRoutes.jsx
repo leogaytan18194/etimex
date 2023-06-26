@@ -8,6 +8,8 @@ import Tintas from '../pages/secciones/Tintas'
 import Industrial from '../pages/segmentos/Industrial'
 import Retail from '../pages/segmentos/Retail'
 import Boletaje from '../pages/segmentos/Boletaje'
+import MateriaPrima from '../pages/secciones/MateriaPrima'
+import AsesoriaIntegral from '../pages/secciones/AsesoriaIntegral'
 
 const PageRoutes = () => {
     return (
@@ -15,11 +17,13 @@ const PageRoutes = () => {
             <Route path="/" element={<Home />} />
             <Route path="/vinos-y-licores" element={<Vinos />} />
             <Route path="/alimentos-y-bebidas" element={<AlimentosBebidas />} />
-            <Route path="/servicios/tintas" element={<Tintas />} />
             <Route path="/salud-y-belleza" element={<SaludBelleza />} />
             <Route path="/industrial" element={<Industrial />} />
             <Route path="/boletaje" element={<Boletaje />} />
             <Route path="/retail" element={<Retail />} />
+            <Route path="/servicios/tintas" element={<Tintas />} />
+            <Route path="/servicios/materia-prima" element={<MateriaPrima />} />
+            <Route path="/servicios/asesoria-integral" element={<AsesoriaIntegral />} />
 
         </Routes>
     )

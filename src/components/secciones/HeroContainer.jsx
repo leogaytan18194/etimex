@@ -3,7 +3,7 @@ import { useSpring, animated } from 'react-spring';
 import { HeroBackgroundSecciones } from '../../styles/Styles';
 
 
-const HeroContainer = ({ backgroundImage, text1, text2, theme }) => {
+const HeroContainer = ({ backgroundImage, text1, text2, theme, h1Only, text3 }) => {
     const [isVisible, setIsVisible] = useState(false);
     const heroRef = useRef();
 
@@ -100,8 +100,29 @@ const HeroContainer = ({ backgroundImage, text1, text2, theme }) => {
                     //backgroundPositionY: `${backgroundPositionY}px`, backgroundSize: backgroundSize
                 }} ref={heroRef}>
                 <div className='hero-text'>
-                    <animated.h1 style={slideInFromBottom}>{text1}{` `}</animated.h1>
-                    <animated.p style={slideInFromLeft}>{text2}</animated.p>
+
+                    {h1Only ?
+
+                        <>
+                            <div style={{
+                                display: 'flex',
+                                flexDirection: 'row',
+                                flexWrap: 'wrap',
+                                justifyContent: 'center',
+                                textAlign: 'center',
+                            }}>
+                                <animated.h1 style={slideInFromBottom}>{text1}{` `}</animated.h1>
+                                <animated.h1 style={slideInFromLeft}>{text2}</animated.h1>
+                            </div>
+                            <animated.p style={slideInFromLeft}>{text3}</animated.p>
+                        </>
+                        :
+                        <>
+                            <animated.h1 style={slideInFromBottom}>{text1}{` `}</animated.h1>
+                            <animated.p style={slideInFromLeft}>{text2}</animated.p>
+                        </>
+                    }
+
                 </div>
             </div>
         </HeroBackgroundSecciones>

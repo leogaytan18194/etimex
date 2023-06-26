@@ -29,4 +29,33 @@ export const GlobalStyle = createGlobalStyle`
   *{
     font-family: "Helvetica2";
   }
+  a{
+    text-decoration: none;
+  }
+  .item-lang-light {
+    width: 40px;
+    height: 40px;
+    background: #000;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    box-sizing: border-box;
+    padding: 0 14px;
+    color: #fff !important;
+}
+  .item-lang-dark {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    box-sizing: border-box;
+    padding: 0 14px;
+    color: #000 !important;
+}
 `;
