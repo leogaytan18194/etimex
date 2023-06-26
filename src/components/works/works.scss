@@ -201,7 +201,10 @@
         }
        
         .imgdiagonal1{
-          width: 250px;
+          max-width: 250px;
+          @include smallDesktop {
+            max-width: 200px;
+          }
           @include tablet {
             left: 15% !important;
           }
@@ -213,7 +216,10 @@
           }
         }
         .imgdiagonal2{
-          width: 250px;
+          max-width: 250px;
+          @include smallDesktop {
+            max-width: 200px;
+          }
         }
         .left {
           flex: 5;
