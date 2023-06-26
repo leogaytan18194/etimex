@@ -26,14 +26,14 @@ export default function Servicios() {
       <div className="container">
           <div className="item">
             <img
-              src="assets/servicios2.png"
+              src="assets/servicios3.png"
               alt="Tintas"
             />
             <h3>Tintas</h3>
           </div>
           <div className="item">
             <img
-              src="assets/servicios4.jpg"
+              src="assets/servicio4.png"
               alt=""
             />
             <h3>Asesoría Integral</h3>

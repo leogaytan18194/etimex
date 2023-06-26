@@ -62,7 +62,7 @@ export default function Print() {
           to connect
         </animated.h2>
         <animated.h3 style={fadeInProps} className="helvetica">
-          Diferenciarnos en el punto de venta es lo mas importante para capta la atención, nuestra gama de materiales, acabaos en formato digital es el futuro.
+          Diferenciarnos en el punto de venta es lo mas importante para capta la atención, nuestra gama de materiales, acabados en formato digital es el futuro.
         </animated.h3>
       </div>
     </div>
