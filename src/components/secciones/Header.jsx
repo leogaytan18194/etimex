@@ -150,7 +150,7 @@ const Header = ({ logo, theme }) => {
         },
         {
             item: 'servicios',
-            route: '/servicios/tintas',
+            route: '/#servicios',
             section: 'servicios',
             animation: textAnimation2,
             callback: () => {
@@ -159,7 +159,7 @@ const Header = ({ logo, theme }) => {
         },
         {
             item: 'segmentos',
-            route: '/vinos-y-licores',
+            route: '/#segmentos',
             section: 'segmentos',
             animation: textAnimation3,
             callback: () => {
@@ -168,7 +168,7 @@ const Header = ({ logo, theme }) => {
         },
         {
             item: 'clientes',
-            route: '/clientes',
+            route: '/#clientes',
             section: 'clientes',
             animation: textAnimation4,
             callback: () => {
@@ -177,7 +177,7 @@ const Header = ({ logo, theme }) => {
         },
         {
             item: 'contacto',
-            route: '/contacto',
+            route: '/#contacto',
             section: 'contacto',
             animation: textAnimation5,
             callback: () => {
