@@ -205,9 +205,9 @@ const Sustentabilidad = () => {
             <div className="contact-section">
                 <Contact2 />
             </div>
-            <FooterStyles theme={theme} heigth={""}>
+            <FooterStyles theme={"dark"} heigth={""} >
 
-                <div className="footer-container">
+                <div className="footer-container-green">
                     <div className='footer-items'>
                         <ul className="footer-list">
                             <li>Copyright © 2023 Etimex</li>

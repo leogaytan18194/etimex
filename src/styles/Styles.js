@@ -1324,6 +1324,21 @@ export const FooterStyles = styled.footer`
       height: auto;
     }
   }
+  .footer-container-green {
+    width: 100%;
+    background-color: #1D451B;
+    //background-color: ${(props) =>      props.theme === "dark" ? `rgb(210, 173, 87)` : "#efefef"} !important;
+    height: 93px;
+    @media (max-width: 780px) {
+      height: auto;
+    }
+  }
+  .footer-list{
+    *{
+      color: ${(props) =>      props.theme === "dark" ? `#fff` : "#efefef"} !important;
+
+    }
+  }
   .footer-items {
     width: 100%;
     margin: 0 auto;
