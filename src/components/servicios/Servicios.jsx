@@ -1,4 +1,5 @@
 import "./servicios.scss";
+import { Link } from 'react-router-dom'
 
 
 export default function Servicios() {
@@ -8,13 +9,15 @@ export default function Servicios() {
     <div className="servicios" id="servicios">
       <h1 className="ITBold">Servicios</h1>
       <div className="container">
+          <Link to="/servicios/materia-prima" className="card featured">
           <div className="item">
-            <img
-              src="assets/servicios1.jpg"
-              alt="Materias primas"
-            />
-            <h3>Materias Primas</h3>
+                <img
+                  src="assets/servicios1.jpg"
+                  alt="Materias primas"
+                />
+                <h3>Materias Primas</h3>
           </div>
+          </Link>
           <div className="item">
             <img
               src="assets/servicios2.png"
@@ -24,13 +27,15 @@ export default function Servicios() {
           </div>
       </div>
       <div className="container">
-          <div className="item">
-            <img
-              src="assets/servicios3.png"
-              alt="Tintas"
-            />
-            <h3>Tintas</h3>
-          </div>
+      <Link to="/servicios/tintas" className="card featured">
+            <div className="item">
+              <img
+                src="assets/servicios3.png"
+                alt="Tintas"
+              />
+              <h3>Tintas</h3>
+            </div>
+          </Link>
           <div className="item">
             <img
               src="assets/servicio4.png"
