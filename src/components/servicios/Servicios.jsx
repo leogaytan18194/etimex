@@ -7,7 +7,7 @@ export default function Servicios() {
 
   return (
     <div className="servicios" id="servicios">
-      <h1 className="ITBold">Servicios</h1>
+      <h2 className="ITBold">Servicios</h2>
       <div className="container">
           <Link to="/servicios/materia-prima" className="card featured">
           <div className="item">

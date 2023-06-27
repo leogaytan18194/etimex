@@ -8,7 +8,7 @@ function Segmentos() {
     return (
         <div className="segmentos" id="segmentos">
             <div id="comunidad" className='hashlink-id'></div>
-            <h1 className="ITBold">Segmentos</h1>
+            <h2 className="ITBold">Segmentos</h2>
             <div className="container">
                 <Card delay={200}>
                     <Link to="/vinos-y-licores" className="card featured">

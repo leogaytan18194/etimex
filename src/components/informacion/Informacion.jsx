@@ -75,7 +75,7 @@ export default function Informacion() {
     <div className="informacion" id="informacion">
       <div className="right">
         <div className="wrapper">
-          <h2 className="helvetica"><FadeInFromLeft>Etimex brinda soluciones de impresión, a través de una asesoría personalizada, ofreciendo los materiales de la mas </FadeInFromLeft><FadeInFromRight>alta gama en el mundo, asegurando distinción, calidad de impresión y tiempo de entrega únicos en el mercado. </FadeInFromRight></h2>
+          <p className="helvetica"><FadeInFromLeft>Etimex brinda soluciones de impresión, a través de una asesoría personalizada, ofreciendo los materiales de la mas </FadeInFromLeft><FadeInFromRight>alta gama en el mundo, asegurando distinción, calidad de impresión y tiempo de entrega únicos en el mercado. </FadeInFromRight></p>
         </div>
       </div>
     </div>

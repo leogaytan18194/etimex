@@ -55,15 +55,15 @@ export default function Print() {
   return (
     <div className="print" id="print" ref={ref}>
       <div className="wrapper">
-        <animated.h1 style={slideInFromLeftProps} className="ITBold">
+        <animated.h2 style={slideInFromLeftProps} className="ITBold">
           Print
-        </animated.h1>
-        <animated.h2 style={slideInFromRightProps}>
-          to connect
         </animated.h2>
-        <animated.h3 style={fadeInProps} className="helvetica">
-          Diferenciarnos en el punto de venta es lo mas importante para capta la atención, nuestra gama de materiales, acabados en formato digital es el futuro.
+        <animated.h3 style={slideInFromRightProps}>
+          to connect
         </animated.h3>
+        <animated.h4 style={fadeInProps} className="helvetica">
+          Diferenciarnos en el punto de venta es lo mas importante para capta la atención, nuestra gama de materiales, acabados en formato digital es el futuro.
+        </animated.h4>
       </div>
     </div>
   );

@@ -27,7 +27,7 @@ export default function Contact() {
       <div className="contenedor-padre" id="contacto">
         <div className="contenedor-hijo-1">
           <div>
-            <h1>Contáctanos</h1>
+            <h2>Contáctanos</h2>
           </div>
         </div>
 
