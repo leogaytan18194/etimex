@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function Segmentos() {
 
     return (
-        <div className="segmentos" id="">
+        <div className="segmentos" id="segmentos">
             <div id="comunidad" className='hashlink-id'></div>
             <h1 className="ITBold">Segmentos</h1>
             <div className="container">

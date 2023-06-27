@@ -24,7 +24,7 @@ export default function Contact() {
   const [selectedRadio, setSelectedRadio] = useState(false);
   return (
     <>
-      <div className="contenedor-padre" id="contact">
+      <div className="contenedor-padre" id="contacto">
         <div className="contenedor-hijo-1">
           <div>
             <h1>Contáctanos</h1>

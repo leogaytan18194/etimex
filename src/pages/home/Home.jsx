@@ -40,7 +40,7 @@ const Home = () => {
             />
             {/* <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> */}
-            <div className="sections">
+            <div className="sections" id='inicio'>
                 <Video />
                 <Works />
                 <Informacion />
