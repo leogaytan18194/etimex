@@ -4,6 +4,7 @@ import { estadosOptions } from "./estados";
 import { sectoresOptions } from "./sectores";
 import { cantidadPiezasOptions } from "./piezas";
 import { FadeInScale } from "../intro/Intro";
+import { Link } from 'react-router-dom'
 
 export default function Contact() {
   const [message, setMessage] = useState(false);
@@ -202,6 +203,7 @@ export default function Contact() {
             <FadeInScale>
               <p>{`Llámanos:
 81 8479 0800`}</p>
+              <p><Link to="/sustentabilidad" className="card featured">Sustentabilidad</Link></p>
             </FadeInScale>
           </div>
           <div className="contact-info-item">
