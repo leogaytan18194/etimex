@@ -222,7 +222,7 @@ const Header = ({ logo, theme }) => {
                         {isMobile ? <animated.div style={styles} className="menu-container m-mobile">
                             <ul>
                                 <li className="logo" >
-                                    <HashLink to="/#home">
+                                    <HashLink to="/#inicio" smooth>
                                         <animated.img src={`${logo}`} alt="Logo" />
                                     </HashLink>
                                 </li>
@@ -260,7 +260,7 @@ const Header = ({ logo, theme }) => {
                             <animated.div style={styles} className="menu-container m-web">
                                 <ul>
                                     <li className="logo" >
-                                        <HashLink to="/#home">
+                                        <HashLink to="/#inicio" smooth>
                                             <animated.img src={`${logo}`} alt="Logo" />
                                         </HashLink>
                                     </li>

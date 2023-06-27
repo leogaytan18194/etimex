@@ -144,7 +144,7 @@ export default function Works() {
                   <>
                     <animated.img
                       className={`imgdiagonal1`}
-                      style={{ ...scalePropsAndRotateTop, position: "absolute", left: "20%" }} src={d.img} alt="" />
+                      style={{ ...scalePropsAndRotateTop, position: "absolute", left: "18%" }} src={d.img} alt="" />
                     <animated.img
                       className={`imgdiagonal2`}
                       style={{ ...scalePropsAndRotateBottom, position: "absolute", left: "59%" }} src={d.img2} alt="" />
