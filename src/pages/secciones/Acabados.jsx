@@ -33,7 +33,7 @@ const containerData = [
             { id: 4, name: 'Poliéster blanco', },
             { id: 5, name: 'Vinil blanco', },
         ],
-        backgroundImage: "/assets/vinos-y-licores/cards/card1.png",
+        backgroundImage: "/assets/acabados/b/card1.png",
     },
     {
         inverseOrder: false,
@@ -55,7 +55,7 @@ const containerData = [
             { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
             { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
-        backgroundImage: "/assets/vinos-y-licores/cards/card2.png",
+        backgroundImage: "/assets/acabados/b/card2.png",
     },
     {
         inverseOrder: true,
@@ -73,7 +73,7 @@ const containerData = [
             { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
             { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
-        backgroundImage: "/assets/vinos-y-licores/cards/card3.png",
+        backgroundImage: "/assets/acabados/b/card3.png",
     },
     {
         inverseOrder: false,
@@ -91,7 +91,7 @@ const containerData = [
             { id: 1, name: 'Pet', description: 'Descripción del elemento 1' },
             { id: 2, name: 'Pet G', description: 'Descripción del elemento 2' },
         ],
-        backgroundImage: "/assets/vinos-y-licores/cards/card3.png",
+        backgroundImage: "/assets/acabados/b/card3_1.png",
     }, 
 
 ]
