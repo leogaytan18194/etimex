@@ -215,7 +215,7 @@ const MateriaPrima = () => {
                     <span className='strokeText'>Materia</span>
                 </>}
                 text2={"Prima"}
-                text3={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore "}
+                text3={"Innovación y alta calidad para cubrir a la perfección tus necesidades."}
                 theme={"dark"}
                 theme2={"light"}
                 h1Only={true}
