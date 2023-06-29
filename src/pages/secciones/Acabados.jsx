@@ -388,7 +388,7 @@ const Acabados = () => {
                         textShadow: "unset !important"
                     }}
                 >
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    Destaca en el anaquel con acabados inigualables
                 </span>}
                 theme={"light"}
                 h1Only={true}
