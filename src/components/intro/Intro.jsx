@@ -17,7 +17,7 @@ export const FadeInScale = ({ children }) => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => setIsVisible(entry.isIntersecting),
-      {        
+      {
         threshold: 0.1,
       }
     );
@@ -43,12 +43,13 @@ export default function Intro() {
       <div className="wrapper">
         <div className="into-txt">
           <FadeInScale>
-            <h2 className="helvetica">Las etiquetas de nuestras marcas representan sus valores...</h2>
+            <h2 className="helvetica">Detrás década etiqueta y empaque hay pasión e ingenio de un equipo
+              dedicado que busca la perfección y la conexión de tu marca con tu consumidor.
+              <br />
+              <br />
+              Déjanos contar su personalidad.
+            </h2>
           </FadeInScale>
-          <FadeInScale>
-            <h2 className="helvetica">su personalidad.</h2>
-          </FadeInScale>
-
         </div>
       </div>
     </div>
