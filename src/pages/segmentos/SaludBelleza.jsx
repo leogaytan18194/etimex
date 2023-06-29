@@ -38,7 +38,7 @@ const containerData = [
             { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
             { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
-        backgroundImage: "/assets/salud-y-belleza/cards/card2.png",
+        backgroundImage: "/assets/salud-y-belleza/cards/cosmetica.png",
     },
     {
         inverseOrder: false,
