@@ -324,7 +324,7 @@ const AsesoriaIntegral = () => {
                 theme={theme}
             />
             <HeroContainer
-                backgroundImage={"/assets/asesoria-integral/hero.png"}
+                backgroundImage={"/assets/asesoria-integral/hero2.jpg"}
                 text1={<>
                     <span className='strokeText'>Asesoría</span>
                 </>}
