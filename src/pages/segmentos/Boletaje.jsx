@@ -70,14 +70,14 @@ const container2Data = [
         inverseOrder: true,
         title: "CAST & CURE",
         description: "Agrega efectos de hologramas como una excelente herramienta de diferenciación, valor agregado y prevención de falsificación.",
-        image: "/assets/boletaje/cards/boletaje cast&cure.png",
+        image: "/assets/boletaje/cards/boletaje-cast&cure.png",
         titleItem: false,
     },
     {
         inverseOrder: false,
         title: "SILK SCREEN",
         description: "Aporta un look premium y genera contraste visual con un aspecto metalizado hecho a tu medida.",
-        image: "/assets/boletaje/cards/BOLETAJE-SILK-SCREEN.heic",
+        image: "/assets/boletaje/cards/BOLETAJE-SILK-SCREEN.png",
         titleItem: false,
     },
 ]
