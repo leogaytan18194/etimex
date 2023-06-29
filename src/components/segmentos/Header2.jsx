@@ -55,6 +55,12 @@ const Header2 = ({ logo, theme }) => {
         config: { tension: 200, friction: 20 },
         delay: 500,
     });
+    const logoAnimation = useSpring({
+        from: { opacity: 0, transform: 'translateY(-50px)' },
+        to: { opacity: 1, transform: 'translateY(0)' },
+        config: { tension: 200, friction: 20 },
+        delay: 300,
+    });
     const textAnimation2 = useSpring({
         from: { opacity: 0, transform: 'translateY(-50px)' },
         to: { opacity: 1, transform: 'translateY(0)' },
@@ -137,9 +143,9 @@ const Header2 = ({ logo, theme }) => {
 
                         {isMobile ? <animated.div style={styles} className="menu-container m-mobile">
                             <ul>
-                                <li className="logo" >
+                                <li className="logov2" >
                                     <HashLink to="/#home">
-                                        <animated.img src={`${logo}`} alt="Logo" style={circleAnimation} />
+                                           <animated.img src={`${logo}`} alt="Logo" style={logoAnimation} />
                                     </HashLink>
                                 </li>
 
@@ -172,9 +178,9 @@ const Header2 = ({ logo, theme }) => {
                         </animated.div> :
                             <animated.div style={styles} className="menu-container m-web">
                                 <ul>
-                                    <li className="logo" >
+                                    <li className="logov2" >
                                         <HashLink to="/#home">
-                                            <animated.img src={`${logo}`} alt="Logo" style={circleAnimation} />
+                                               <animated.img src={`${logo}`} alt="Logo" style={logoAnimation} />
                                         </HashLink>
                                     </li>
                                     <CustomLi2 theme={theme} icon={`${pathname === '/sustentabilidad' ? "sustentabilidad" : ""}`} className={`${pathname === '/sustentabilidad' ? "activeMenu" : ""}`}>

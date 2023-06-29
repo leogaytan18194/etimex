@@ -182,7 +182,7 @@ const Sustentabilidad = () => {
     return (
         <PageStyles theme={theme}>
             <Header2
-                logo={"/assets/svg/logo.svg"}
+                logo={"/assets/svg/logov2.svg"}
                 theme={"dark"}
             />
             <HeroContainer2

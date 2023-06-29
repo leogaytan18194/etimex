@@ -39,7 +39,7 @@ export const PageStyles = styled.div`
     }
   }
   .card-animation {
-      justify-content: center;
+      justify-content: start;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -60,7 +60,9 @@ export const PageStyles = styled.div`
     font-size:2.5em;
   }
   .small-card-desc{    
-    font-size:1.2em;
+    font-size:1em;
+    //max-width:300px
+    
   }
   * {
     margin: 0;
@@ -259,6 +261,15 @@ export const HeaderStyles = styled.header`
       }
     }
   }
+  .logov2{
+    width: 130px;
+    display:flex;
+    align-items:center;
+    a{
+      width: 100%;
+      display: flex;
+    }
+  }
   .fade-in {
     opacity: 0; /* Configuramos la opacidad inicial en 0 */
     animation: fadeIn 1s ease-in forwards; /* Aplicamos la animación llamada "fadeIn" durante 1 segundo */
@@ -308,7 +319,15 @@ export const HeaderStyles2 = styled.header`
       transform: rotate(0deg);
     }
   }
-
+  .logov2{
+    width: 130px;
+    display:flex;
+    align-items:center;
+    a{
+      width: 100%;
+      display: flex;
+    }
+  }
   .mobile-menu-cont {
     display: none;
     position: absolute;

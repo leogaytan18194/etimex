@@ -13,8 +13,8 @@ const Header = ({ logo, theme }) => {
 
     // Crear una animación de desplazamiento desde la derecha
     const slideInFromRight = useSpring({
-        from: { transform: 'translateX(100%)' },
-        to: { transform: 'translateX(0)' },
+        from: { transform: 'translateY(100%)' },
+        to: { transform: 'translateY(100)' },
         delay: 300,
     });
 
@@ -48,6 +48,12 @@ const Header = ({ logo, theme }) => {
         from: { opacity: 0, transform: 'translateY(-50px)' },
         to: { opacity: 1, transform: 'translateY(0)' },
         config: { tension: 200, friction: 20 },
+    });
+    const logoAnimation = useSpring({
+        from: { opacity: 0, transform: 'translateY(-50px)' },
+        to: { opacity: 1, transform: 'translateY(0)' },
+        config: { tension: 200, friction: 20 },
+        delay: 300,
     });
     const textAnimation = useSpring({
         from: { opacity: 0, transform: 'translateY(-50px)' },
@@ -137,9 +143,9 @@ const Header = ({ logo, theme }) => {
 
                         {isMobile ? <animated.div style={styles} className="menu-container m-mobile">
                             <ul>
-                                <li className="logo" >
+                                <li className="logov2" >
                                     <HashLink to="/#home">
-                                        <animated.img src={`${logo}`} alt="Logo" style={circleAnimation} />
+                                        <animated.img src={`${logo}`} alt="Logo" style={logoAnimation} />
                                     </HashLink>
                                 </li>
 
@@ -207,9 +213,9 @@ const Header = ({ logo, theme }) => {
                         </animated.div> :
                             <animated.div style={styles} className="menu-container m-web">
                                 <ul>
-                                    <li className="logo" >
+                                    <li className="logov2" >
                                         <HashLink to="/#home">
-                                            <animated.img src={`${logo}`} alt="Logo" style={circleAnimation} />
+                                            <animated.img src={`${logo}`} alt="Logo" style={logoAnimation} />
                                         </HashLink>
                                     </li>
                                     <CustomLi theme={theme} icon={`${pathname === '/vinos-y-licores' ? "vinos-y-licores" : ""}`} className={`${pathname === '/vinos-y-licores' ? "activeMenu" : ""}`}>

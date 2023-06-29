@@ -238,7 +238,7 @@ const Header = ({ logo, theme }) => {
                                     {
                                         menuList.map((menu, index) => (
                                             <CustomLi theme={theme} className={`${pathname.includes(menu.section) ? "activeMenu" : ""}`}>
-                                                <HashLink to={`#${menu.route}`} smooth>
+                                                <HashLink to={`/#${menu.route}`} smooth>
                                                     <animated.span
                                                         onClick={menu.callback}
                                                         style={
@@ -267,7 +267,7 @@ const Header = ({ logo, theme }) => {
                                     {
                                         menuList.map((menu, index) => (
                                             <CustomLi theme={theme} className={`${pathname.includes(menu.section) ? "activeMenu" : ""}`}>
-                                                <HashLink to={`#${menu.route}`} smooth>
+                                                <HashLink to={`/#${menu.route}`} smooth>
                                                     <animated.span
                                                         onClick={menu.callback}
                                                         style={
