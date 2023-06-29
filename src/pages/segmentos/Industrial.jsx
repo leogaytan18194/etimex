@@ -18,7 +18,7 @@ const container2Data = [
         inverseOrder: true,
         title: "MATTE LAMINATE",
         description: `Al igual que el glossy garantiza la duración de la impresión y protege de la intemperie.`,
-        image: "/assets/industrial/cards/card2.png",
+        image: "/assets/industrial/cards/aceites.png",
         titleItem: false,
     },
     {

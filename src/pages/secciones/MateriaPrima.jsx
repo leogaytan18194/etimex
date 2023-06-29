@@ -27,7 +27,7 @@ const containerData = [
             { id: 4, name: 'Poliéster blanco', },
             { id: 5, name: 'Vinil blanco', },
         ],
-        backgroundImage: "/assets/vinos-y-licores/cards/card1.png",
+        backgroundImage: "/assets/materia-prima/cards/autoaderible.png",
     },
     {
         inverseOrder: false,
@@ -43,7 +43,7 @@ const containerData = [
             { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
             { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
-        backgroundImage: "/assets/vinos-y-licores/cards/card2.png",
+        backgroundImage: "/assets/materia-prima/cards/envolvente.png",
     },
     {
         inverseOrder: true,
@@ -61,27 +61,10 @@ const containerData = [
             { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
             { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
-        backgroundImage: "/assets/vinos-y-licores/cards/card3.png",
+        backgroundImage: "/assets/materia-prima/cards/manga.png",
     },
     {
         inverseOrder: false,
-        title: "Manga termoencongible",
-        subtitle: "Disponible en papel",
-        icon1: "bond.svg",
-        icon1Text: "Bond",
-        icon2: "shrek.svg",
-        icon2Text: "Tyvek",
-        icon3: "shrek.svg",
-        icon3Text: "Tyvek3",
-        listTitle: "En película",
-        listItems: [
-            { id: 1, name: 'Pet', description: 'Descripción del elemento 1' },
-            { id: 2, name: 'Pet G', description: 'Descripción del elemento 2' },
-        ],
-        backgroundImage: "/assets/vinos-y-licores/cards/card3.png",
-    },
-    {
-        inverseOrder: true,
         title: "Letreros y boletaje",
         subtitle: "Disponible en papel",
         icon1: "bond.svg",
@@ -92,7 +75,7 @@ const containerData = [
         listItems: [
             { id: 1, name: 'No disponible', description: 'Descripción del elemento 1' },
         ],
-        backgroundImage: "/assets/vinos-y-licores/cards/card3.png",
+        backgroundImage: "/assets/materia-prima/cards/card3.png",
     },
 
 ]
