@@ -25,7 +25,7 @@ const container2Data = [
         inverseOrder: false,
         title: "GLOSSY VARNISH",
         description: "Genera una capa de protección ante factores ambientales que pueden perjudicar tu etiqueta con un look ultra brillante.",
-        image: "/assets/industrial/cards/card3.png",
+        image: "/assets/industrial/cards/glossy_ind.jpg",
         titleItem: false,
     },
 ]

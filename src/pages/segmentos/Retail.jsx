@@ -81,7 +81,7 @@ const container2Data = [
         titleItem: false,
     },
     {
-        inverseOrder: false,
+        inverseOrder: true,
         title: "INMOLD",
         description: "Impresión sobre films especiales, que permiten fusionarse al envase de manera permanente",
         image: "/assets/retail/cards/INMOLD-RETAIL.png",
