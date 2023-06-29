@@ -226,28 +226,28 @@ export const Card4Svg = () => (
 const cardItems = [
     {
         title: "Calidad",
-        desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut",
+        desc: "Nuestros materiales, acabados y el servicio de nuestra gente garantiza la calidad de tus etiquetas y empaques.",
         img: <Card1Svg />,
         delay: 200,
         bgsz: "90%",
     },
     {
         title: "Innovación",
-        desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut",
+        desc: "Trabajamos con tecnología de punta en nuestra planta para asegurar impresión premium en cada etiqueta y empaque que se producen en nuestras instalaciones.",
         img: <Card2Svg />,
         delay: 400,
         bgsz: "100%",
     },
     {
         title: "Rapidez",
-        desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut",
+        desc: "Los tiempos de entrega nos distinguen, todos los días trabajamos por optimizarlos para entregarte tus pedidos en el menor tiempo posible.",
         img: <Card3Svg />,
         delay: 600,
         bgsz: "190%",
     },
     {
         title: "Diseño",
-        desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut",
+        desc: "Contamos con equipo de diseño para plasmar juntos la historia de tu producto en su etiqueta, de esta manera podemos ofrecerte el servicio 360° para brillar en el anaquel.",
         img: <Card4Svg />,
         delay: 800,
         bgsz: "100%",
