@@ -81,7 +81,7 @@ const containerData = [
         backgroundImage: "/assets/vinos-y-licores/cards/card3.png",
     },
     {
-        inverseOrder: false,
+        inverseOrder: true,
         title: "Letreros y boletaje",
         subtitle: "Disponible en papel",
         icon1: "bond.svg",
@@ -191,7 +191,7 @@ const MateriaPrima = () => {
         {
             ico: "/assets/svg/dot",
             text: "ACABADOS BÁSICOS & PREMIUM",
-            route: "/servicios/acabados-basicos-premium",
+            route: "/servicios/acabados",
             top: "0",
         },
         {

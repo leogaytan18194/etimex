@@ -79,7 +79,7 @@ const tabItems = [
     {
         ico: "/assets/svg/dot",
         text: "ACABADOS BÁSICOS & PREMIUM",
-        route: "/servicios/acabados-basicos-premium",
+        route: "/servicios/acabados",
         top: "0",
     },
     {
