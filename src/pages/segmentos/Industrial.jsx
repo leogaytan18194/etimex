@@ -11,21 +11,21 @@ const container2Data = [
         inverseOrder: false,
         title: `GLOSSY LAMINATE`,
         description: `Garantiza la duración de la impresión y protege de la intemperie.`,
-        image: "/assets/industrial/cards/card1.png",
+        image: "/assets/industrial/cards/escaleras-industrial.jpg",
         titleItem: "Acabados"
     },
     {
         inverseOrder: true,
         title: "MATTE LAMINATE",
         description: `Al igual que el glossy garantiza la duración de la impresión y protege de la intemperie.`,
-        image: "/assets/industrial/cards/aceites.png",
+        image: "/assets/industrial/cards/mattelami-industrial.jpg",
         titleItem: false,
     },
     {
         inverseOrder: false,
         title: "GLOSSY VARNISH",
         description: "Genera una capa de protección ante factores ambientales que pueden perjudicar tu etiqueta con un look ultra brillante.",
-        image: "/assets/industrial/cards/card3.png",
+        image: "/assets/industrial/cards/aceites.png",
         titleItem: false,
     },
 ]
