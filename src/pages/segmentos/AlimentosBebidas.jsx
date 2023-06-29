@@ -115,7 +115,7 @@ const container2Data = [
         inverseOrder: true,
         title: "MANGA TERMOENCOGIBLE",
         description: "Da un look sofisticado de acabado sin brillo con un recubrimiento de alta resistencia al roce y excelente claridad.",
-        image: "/assets/alimentos-y-bebidas/cards/card10.png",
+        image: "/assets/alimentos-y-bebidas/cards/manga-alimentos.jpg",
         titleItem: false,
     }
 ]
