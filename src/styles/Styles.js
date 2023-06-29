@@ -1638,7 +1638,10 @@ export const Container2Styles = styled.div`
     font-size: 70px;
     font-family: "ITCAvantGardeStd-Bold";
     color: transparent !important;
-    -webkit-text-stroke: ${(props) =>    props.theme === "dark" ? `1px #fff` : "1px #000"} !important;;
+    -webkit-text-stroke: ${(props) =>    props.theme === "dark" ? `1px #fff` : "1px #000"} !important;
+    @media (max-width: 580px) {
+      font-size:50px;
+    }
   } 
 `;
 
