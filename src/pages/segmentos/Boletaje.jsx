@@ -141,7 +141,7 @@ const Boletaje = () => {
     return (
         <PageStyles theme={theme}>
             <Header
-                logo={"/assets/svg/logo-l.svg"}
+                logo={"/assets/svg/logov2d.svg"}
                 theme={theme}
             />
             <HeroContainer

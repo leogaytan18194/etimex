@@ -8,7 +8,7 @@ const Header = ({ logo, theme }) => {
     const location = useLocation();
     const { pathname } = location;
 
-    console.log(pathname)
+    
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -211,8 +211,7 @@ const Header = ({ logo, theme }) => {
         },
 
     ]
-
-    console.log(showMenuMo);
+    
     return (
         <HeaderStylesSecciones theme={theme}>
             {transitions((styles, item) =>
