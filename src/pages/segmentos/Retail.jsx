@@ -155,7 +155,7 @@ const Retail = () => {
     return (
         <PageStyles theme={theme}>
             <Header
-                logo={"/assets/svg/logov2d.svg"}
+                logo={"/assets/etimex_negro.svg"}
                 theme={theme}
             />
             <HeroContainer

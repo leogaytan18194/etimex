@@ -56,7 +56,7 @@ const containerData = [
         ],
         backgroundImage: "/assets/alimentos-y-bebidas/cards/card3.png",
     },
-    
+
     {
         inverseOrder: true,
         title: "Aguas",
@@ -179,7 +179,7 @@ const AlimentosBebidas = () => {
     return (
         <PageStyles theme={theme}>
             <Header
-                logo={"/assets/svg/logov2d.svg"}
+                logo={"/assets/etimex_negro.svg"}
                 theme={theme}
             />
             <HeroContainer

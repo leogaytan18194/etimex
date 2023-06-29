@@ -1614,10 +1614,7 @@ export const FooterStyles = styled.footer`
     }
   }
   .footer-list{
-    *{
-      color: ${(props) =>      props.theme === "dark" ? `#fff` : "#efefef"} !important;
-
-    }
+   
   }
   .footer-items {
     width: 100%;
