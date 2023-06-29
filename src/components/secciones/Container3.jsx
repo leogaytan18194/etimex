@@ -17,11 +17,11 @@ export const Icon = ({ src, alt, text, isVisible, theme }) => {
         <animated.div style={fade} className='icon-text-container'>
             <div className='icon'>
                 <img src={`/assets/acabados/icos/${theme === 'dark' ? src : `${src}`}`}
-                style={{
-                    height: "30px",
-                    width: "30px",
-                }}
-                alt={alt} />
+                    style={{
+                        height: "30px",
+                        width: "30px",
+                    }}
+                    alt={alt} />
             </div>
         </animated.div>
     );
@@ -98,13 +98,18 @@ const Container3 = ({ inverseOrder, title, subtitle, icon1, icon1Text, icon2, ic
 
         <ContainerStyles2 theme={"dark"} ref={ref} >
             <animated.div style={{
-                ...scale, backgroundImage: `url(${backgroundImage})`,              
+                ...scale, backgroundImage: `url(${backgroundImage})`,
             }} className='image-container-bg'>
 
                 <animated.div className='block-text-container'>
                     <animated.div style={slideInFromBottom} className='txt-container'>
                         <animated.h2>{title}</animated.h2>
-                        <animated.p style={slideInFromBottom}>{subtitle}:</animated.p>
+                        <animated.p style={{
+                            ...slideInFromBottom,
+                            maxWidth: "95%",
+                            margin: "0 auto",
+
+                        }}>{subtitle}</animated.p>
                     </animated.div>
                     <animated.div className='icon-container'
                         style={
