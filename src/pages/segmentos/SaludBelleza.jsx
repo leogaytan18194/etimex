@@ -70,7 +70,7 @@ const container2Data = [
         inverseOrder: true,
         title: "MATTE LAMINATE",
         description: `Al igual que el glossy garantiza la duración de la impresión y protege de la intemperie.`,
-        image: "/assets/salud-y-belleza/cards/card6.png",
+        image: "/assets/salud-y-belleza/cards/matte-salud.webp",
         titleItem: false,
     },
     {
