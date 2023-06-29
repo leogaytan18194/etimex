@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useSpring, animated } from 'react-spring';
 import { HeroBackground } from '../../styles/Styles';
 
-const HeroContainer = ({ backgroundImage, text1, text2, theme, flexDirection }) => {
+const HeroContainer = ({ backgroundImage, text1, text2, text3, theme, flexDirection, h1Only }) => {
     const [isVisible, setIsVisible] = useState(false);
     const heroRef = useRef();
 
@@ -103,7 +103,28 @@ const HeroContainer = ({ backgroundImage, text1, text2, theme, flexDirection }) 
                     flexDirection: flexDirection,
                 }}
                 >
-                    <animated.h1 style={slideInFromBottom}>{text1}{` `}</animated.h1><animated.h1 style={slideInFromLeft}>{text2}</animated.h1>
+                    {/* <animated.h1 style={slideInFromBottom}>{text1}{` `}</animated.h1><animated.h1 style={slideInFromLeft}>{text2}</animated.h1> */}
+                    {h1Only ?
+
+                        <>
+                            <div style={{
+                                display: 'flex',
+                                flexDirection: flexDirection,
+                                flexWrap: 'wrap',
+                                justifyContent: 'center',
+                                textAlign: 'center',
+                            }}>
+                                <animated.h1 style={slideInFromBottom}>{text1}{` `}</animated.h1>
+                                <animated.h1 style={slideInFromLeft}>{text2}</animated.h1>
+                                <animated.h1 style={slideInFromBottom}>{text3}</animated.h1>
+                            </div>
+                            
+                        </>
+                        :
+                        <>
+                            <animated.h1 style={slideInFromBottom}>{text1}{` `}</animated.h1><animated.h1 style={slideInFromLeft}>{text2}</animated.h1>
+                        </>
+                        }
                 </div>
             </div>
         </HeroBackground>

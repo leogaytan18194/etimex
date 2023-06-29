@@ -5,6 +5,42 @@ export const PageStyles = styled.div`
   width: 100%;
   background-color: ${(props) =>    props.theme === "dark" ? `#1d1d1b` : "#fff"} !important;
   overflow: hidden;
+  .industrial-container {
+      width: 100%;
+      background: #EFEFEF;
+  }
+  .industrial-items {
+      display: flex;
+      width: 100%;
+      margin: 0px auto;
+      max-width: 1100px;
+      padding: 39px 0;
+      justify-content: space-between;
+      flex-wrap:wrap;
+      @media (max-width: 980px) {
+        justify-content: center;
+        gap: 25px;
+        max-width: 800px;
+      }
+      @media (max-width: 580px) {
+        max-width: 320px;
+       
+      }
+      
+  }
+  .industrial-item-txt {
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      box-sizing: border-box;
+      font-family:"Helvetica2";
+      font-weight: bold;
+      font-size:1.5em;
+      max-width:450px;
+      p{
+        text-align: justify;
+      }
+  }
   .logos-sustentabilidad {
       width: 100%;
       max-width: 800px;
@@ -17,6 +53,21 @@ export const PageStyles = styled.div`
     width: 100%;
     display: flex;
     margin: 70px 0;
+  }
+  .industrial-item-img {
+
+    @media (max-width: 780px) {
+        width: 100%;
+        img{
+          width: 100%;
+        }
+        max-width: 430px;
+    }
+    @media (max-width: 580px) {
+        max-width: 320px;
+       
+    }
+     
   }
   .small-cards-container {
     width: 100%;

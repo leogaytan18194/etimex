@@ -74,11 +74,23 @@ const Industrial = () => {
             <HeroContainer
                 backgroundImage={"/assets/industrial/hero.png"}
                 text1={"+Fuertes"}
-                text2={"atraiga miradas"}
+                text2={"+Resistentes"}
+                text3={"+Durables"}
+                h1Only={true}
                 flexDirection={"column"}
                 theme={theme}
             />
             {container2}
+            <div className='industrial-container'>
+                <div className='industrial-items'>
+                    <div className='industrial-item-txt'>
+                        <p>Etimex brinda soluciones de impresión, a través de una asesoría personalizada, ofreciendo los materiales de la mas alta gama en el mundo, asegurando distinción, calidad de impresión y tiempo de entrega únicos en el mercado. </p>
+                    </div>
+                    <div className='industrial-item-img'>
+                        <img src="/assets/industrial/cards/card4.png" alt="" />
+                    </div>
+                </div>
+            </div>
             <Footer theme={theme} />
 
         </PageStyles>

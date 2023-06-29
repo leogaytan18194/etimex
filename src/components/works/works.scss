@@ -133,9 +133,7 @@
           img {
          //   width: 200px;
             transform: rotate(-30deg);
-            @include laptop {
-              width: 150px;
-            }
+          
             @include mobile {
               width: auto;
               height: 60%;
@@ -233,9 +231,7 @@
           img {
             
             transform: rotate(-30deg);
-            @include laptop {
-              width: 150px;
-            }
+          
             @include mobile {
               width: 80px;
             //  height: 60%;
@@ -253,7 +249,12 @@
     }
   }
   .slider1-h{
-    width: 300px;
+    width: 350px;
+    @include mobile { 
+      width: 350px;
+
+
+    }
   }
   .slider2-h{
     height: 100% !important;
