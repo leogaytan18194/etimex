@@ -75,22 +75,15 @@ const container2Data = [
     },
     {
         inverseOrder: false,
-        title: "GLOSSY VARNISH",
-        description: "Genera una capa de protección ante factores ambientales que pueden perjudicar tu etiqueta con un look ultra brillante.",
-        image: "/assets/retail/cards/card6.png",
-        titleItem: false,
-    },
-    {
-        inverseOrder: true,
-        title: "MATTE VARNISH",
+        title: "MANGA TERMOENCOGIBLE",
         description: "Da un look sofisticado de acabado sin brillo con un recubrimiento de alta resistencia al roce y excelente claridad.",
-        image: "/assets/retail/cards/card7.png",
+        image: "/assets/retail/cards/card8.png",
         titleItem: false,
     },
     {
         inverseOrder: false,
-        title: "MANGA TERMOENCOGIBLE",
-        description: "Da un look sofisticado de acabado sin brillo con un recubrimiento de alta resistencia al roce y excelente claridad.",
+        title: "INMOLD",
+        description: "Impresión sobre films especiales, que permiten fusionarse al envase de manera permanente",
         image: "/assets/retail/cards/card8.png",
         titleItem: false,
     }
