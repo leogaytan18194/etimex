@@ -166,7 +166,7 @@ const SaludBelleza = () => {
                 theme={theme}
             />
             <HeroContainer
-                backgroundImage={"/assets/salud-y-belleza/hero.png"}
+                backgroundImage={"/assets/salud-y-belleza/cover-salud.jpg"}
                 text1={"Haz que tu etiqueta"}
                 text2={"atraiga miradas"}
                 theme={theme}
