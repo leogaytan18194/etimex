@@ -75,7 +75,7 @@ const containerData = [
         listItems: [
             { id: 1, name: 'No disponible', description: 'Descripción del elemento 1' },
         ],
-        backgroundImage: "/assets/materia-prima/cards/card3.png",
+        backgroundImage: "/assets/materia-prima/cards/letreros.png",
     },
 
 ]
@@ -121,7 +121,7 @@ const cardItems = [
     {
         title: "Aromática",
         desc: "Brinda una experiencia mulsisensorial con microcápsulas perfumadas que al rascarse desprenden olor.",
-        bg: "/assets/tintas/cards/6.webp",
+        bg: "/assets/tintas/cards/letreros.png",
         delay: 1200,
         bgsz: "190%",
     },
