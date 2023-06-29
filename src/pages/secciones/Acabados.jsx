@@ -373,7 +373,7 @@ const Acabados = () => {
     return (
         <PageStyles theme={"light"}>
             <Header
-                logo={"/assets/etimex-logo.png"}
+                logo={"/assets/etimex_negro.svg"}
                 theme={"light"}
             />
             <HeroContainer

@@ -320,7 +320,7 @@ const AsesoriaIntegral = () => {
     return (
         <PageStyles theme={theme}>
             <Header
-                logo={"/assets/etimex-logo.png"}
+                logo={"/assets/etimex_negro.svg"}
                 theme={theme}
             />
             <HeroContainer
