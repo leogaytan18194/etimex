@@ -22,7 +22,7 @@ const containerData = [
             { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
             { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
-        backgroundImage: "/assets/retail/cards/card1.png",
+        backgroundImage: "/assets/retail/cards/PROMOCIONAL-RETAIL.png",
     },
     {
         inverseOrder: true,
@@ -54,7 +54,7 @@ const containerData = [
             { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
             { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
-        backgroundImage: "/assets/retail/cards/card3.png",
+        backgroundImage: "/assets/retail/cards/preciadores-retail.png",
     },
 
 ]
