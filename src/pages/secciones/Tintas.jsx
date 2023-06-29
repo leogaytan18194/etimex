@@ -114,7 +114,7 @@ const Tintas = () => {
             <HeroContainer
                 backgroundImage={"/assets/tintas/hero.webp"}
                 text1={"Tintas"}
-                text2={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore "}
+                text2={"Da detalles especiales para hacer la diferencia."}
                 theme={"dark"}
                 theme2={"light"}
             />

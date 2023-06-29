@@ -35,7 +35,7 @@ const Home = () => {
     return (
         <div className="app">
             <Header
-                logo={"/assets/logo.png"}
+                logo={"/assets/etimex_negro.png"}
                 theme={"theme"}
             />
             {/* <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
