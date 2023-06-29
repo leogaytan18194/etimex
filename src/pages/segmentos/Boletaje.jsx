@@ -63,21 +63,21 @@ const container2Data = [
         inverseOrder: false,
         title: "MATTE LAMINATE",
         description: `Al igual que el glossy garantiza la duración de la impresión y protege de la intemperie.`,
-        image: "/assets/boletaje/cards/card4.png",
+        image: "/assets/boletaje/cards/boletaje-matte.png",
         titleItem: "Acabados"
     },
     {
         inverseOrder: true,
         title: "CAST & CURE",
         description: "Agrega efectos de hologramas como una excelente herramienta de diferenciación, valor agregado y prevención de falsificación.",
-        image: "/assets/boletaje/cards/card5.png",
+        image: "/assets/boletaje/cards/boletaje cast&cure.png",
         titleItem: false,
     },
     {
         inverseOrder: false,
         title: "SILK SCREEN",
         description: "Aporta un look premium y genera contraste visual con un aspecto metalizado hecho a tu medida.",
-        image: "/assets/boletaje/cards/card6.png",
+        image: "/assets/boletaje/cards/BOLETAJE-SILK-SCREEN.heic",
         titleItem: false,
     },
 ]
