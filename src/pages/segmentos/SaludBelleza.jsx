@@ -22,7 +22,7 @@ const containerData = [
             { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
             { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
-        backgroundImage: "/assets/salud-y-belleza/cards/card1.png",
+        backgroundImage: "/assets/salud-y-belleza/cards/suplementes-salud.jpg",
     },
     {
         inverseOrder: true,
@@ -54,7 +54,7 @@ const containerData = [
             { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
             { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
-        backgroundImage: "/assets/salud-y-belleza/cards/card3.png",
+        backgroundImage: "/assets/salud-y-belleza/cards/hogar-salud.webp",
     },
 
 ]
@@ -63,42 +63,42 @@ const container2Data = [
         inverseOrder: false,
         title: `GLOSSY LAMINATE`,
         description: `Garantiza la duración de la impresión y protege de la intemperie.`,
-        image: "/assets/alimentos-y-bebidas/cards/card5.png",
+        image: "/assets/salud-y-belleza/cards/card5.png",
         titleItem: "Acabados"
     },
     {
         inverseOrder: true,
         title: "MATTE LAMINATE",
         description: `Al igual que el glossy garantiza la duración de la impresión y protege de la intemperie.`,
-        image: "/assets/alimentos-y-bebidas/cards/card6.png",
+        image: "/assets/salud-y-belleza/cards/card6.png",
         titleItem: false,
     },
     {
         inverseOrder: false,
         title: "GLOSSY VARNISH",
         description: "Genera una capa de protección ante factores ambientales que pueden perjudicar tu etiqueta con un look ultra brillante.",
-        image: "/assets/alimentos-y-bebidas/cards/card7.png",
+        image: "/assets/salud-y-belleza/cards/glossyvarnish_salud.jpg",
         titleItem: false,
     },
     {
         inverseOrder: true,
         title: "MATTE VARNISH",
         description: "Da un look sofisticado de acabado sin brillo con un recubrimiento de alta resistencia al roce y excelente claridad.",
-        image: "/assets/alimentos-y-bebidas/cards/card8.png",
+        image: "/assets/salud-y-belleza/cards/mattevarnish-salud.webp",
         titleItem: false,
     },
     {
         inverseOrder: false,
         title: "COLD FOIL",
         description: "Aporta un look premium y genera contraste visual con un aspecto metalizado hecho a tu medida.",
-        image: "/assets/alimentos-y-bebidas/cards/card9.png",
+        image: "/assets/salud-y-belleza/cards/card9.png",
         titleItem: false,
     },
     {
         inverseOrder: true,
         title: "MANGA TERMOENCOGIBLE",
         description: "Da un look sofisticado de acabado sin brillo con un recubrimiento de alta resistencia al roce y excelente claridad.",
-        image: "/assets/alimentos-y-bebidas/cards/card10.png",
+        image: "/assets/salud-y-belleza/cards/manga-salud.jpg",
         titleItem: false,
     }
 ]
