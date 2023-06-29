@@ -72,7 +72,7 @@ const Industrial = () => {
                 theme={theme}
             />
             <HeroContainer
-                backgroundImage={"/assets/industrial/hero.png"}
+                backgroundImage={"/assets/industrial/cover-industrial.webp"}
                 text1={"+Fuertes"}
                 text2={"+Resistentes"}
                 text3={"+Durables"}
