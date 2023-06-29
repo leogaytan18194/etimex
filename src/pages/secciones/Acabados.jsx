@@ -13,7 +13,7 @@ import NavTab from '../../components/secciones/NavTab';
 const containerData = [
     {
         inverseOrder: true,
-        title: "Auto adheribles",
+        title: "GLOSSY LAMINATE",
         subtitle: "Garantiza la duración de la impresión y protege de la intemperie.",
 
         listTitle: "En película",
@@ -28,7 +28,7 @@ const containerData = [
     },
     {
         inverseOrder: false,
-        title: "Envolventes",
+        title: "MATTE LAMINATE",
         subtitle: "Al igual que el glossy garantiza la duración de la impresión y protege de la intemperie.",
 
         listTitle: "En película",

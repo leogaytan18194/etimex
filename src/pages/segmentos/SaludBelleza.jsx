@@ -91,7 +91,7 @@ const container2Data = [
         inverseOrder: false,
         title: "COLD FOIL",
         description: "Aporta un look premium y genera contraste visual con un aspecto metalizado hecho a tu medida.",
-        image: "/assets/salud-y-belleza/cards/card9.png",
+        image: "/assets/salud-y-belleza/cards/coldfoil-sauld.jpeg",
         titleItem: false,
     },
     {
