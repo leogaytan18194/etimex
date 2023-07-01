@@ -110,11 +110,12 @@ const HeroContainer = ({ backgroundImage, text1, text2, theme, theme2, h1Only, t
                                 flexWrap: 'wrap',
                                 justifyContent: 'center',
                                 textAlign: 'center',
+
                             }}>
-                                <animated.h1 style={slideInFromBottom}>{text1}{` `}</animated.h1>
-                                <animated.h1 style={slideInFromLeft}>{text2}</animated.h1>
+                                <animated.h1 style={{ ...slideInFromBottom }}>{text1}{` `}</animated.h1>
+                                <animated.h1 style={{ ...slideInFromLeft, textShadow: "rgb(0 0 0) 1px 1px 2px" }}>{text2}</animated.h1>
                             </div>
-                            <animated.p style={slideInFromLeft}>{text3}</animated.p>
+                            <animated.p className={"white-text-shadow"} style={slideInFromLeft}>{text3}</animated.p>
                         </>
                         :
                         <>

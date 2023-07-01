@@ -1333,7 +1333,48 @@ export const HeroBackground = styled.div`
   }
 `;
 export const HeroBackground2 = styled.div`
-
+  .hero-logo {
+      width: 100%;
+      position: absolute;
+      right: 0;
+      bottom: 52px;
+      margin: 0 auto;
+      @media (max-width: 780px) {
+        bottom: 30px;
+      }
+      @media (max-width: 580px) {
+        bottom: 20px;
+      }
+      .hero-logo-container {
+          width: 100%;
+          margin: 0 auto;
+          max-width: 1100px;
+          display: flex;
+          justify-content: end;
+          
+          @media (max-width: 1280px) {
+            max-width: 1000px;
+          }
+          @media (max-width: 1024px) {
+            max-width: 800px;
+          }
+          @media (max-width: 780px) {
+            max-width: 500px;
+          }
+          @media (max-width: 480px) {
+            max-width: 330px;
+          }
+          img {
+              width: 160px;
+              @media (max-width: 780px) {
+                width: 130px;
+              }
+              @media (max-width: 580px) {
+                width: 120px;
+              }
+          }
+      }
+  }
   .strokeText {
         justify-content: center;
       // font-size: 70px;
@@ -1432,7 +1473,9 @@ export const HeroBackground2 = styled.div`
   }
 `;
 export const HeroBackgroundSecciones = styled.div`
-  
+  .tintas-bg-white{
+    text-shadow: ${(props) => props.theme2 === "dark" ? `rgb(0 0 0 / 69%) 1px 1px 2px` : "rgb(255 255 255 / 69%) 1px 1px 2px"} !important;
+  }
   .hero-text {
     padding: 20px;
     //border-radius: 10px;
@@ -1460,6 +1503,18 @@ export const HeroBackgroundSecciones = styled.div`
         props.theme === "dark" ? "1px #000" : "1px #fff"};
       }
     }
+    .strokeTex2 {
+      justify-content: center;
+    // font-size: 70px;
+      font-family: "ITCAvantGardeStd-Bold";
+      color: transparent !important;
+      -webkit-text-stroke: ${(props) =>
+      props.theme === "dark" ? "2px #fff" : "2px #000"};
+      @media (max-width: 680px) {
+        -webkit-text-stroke: ${(props) =>
+        props.theme === "dark" ? "1px #fff" : "1px #000"};
+      }
+    }
     h1 {
       font-size: 3.5rem;
       font-weight: 700;
@@ -1477,7 +1532,7 @@ export const HeroBackgroundSecciones = styled.div`
       }
     }
     p {
-      text-shadow: ${(props) => props.theme2 === "dark" ? `rgb(0 0 0 / 69%) 1px 1px 2px ` : "rgb(255 255 255 / 69%) 1px 1px 2px "} !important;
+      text-shadow: ${(props) => props.theme2 === "dark" ? `rgb(0 0 0 / 100%) 1px 1px 2px ` : "rgb(255 255 255 / 100%) 1px 1px 2px "} !important;
       font-size: 1.2rem;
       max-width: 850px;
       margin: 0 auto;
@@ -1649,6 +1704,11 @@ export const FooterStyles = styled.footer`
   width: 100%;
   background-color: ${(props) =>    props.theme === "dark" ? `#1d1d1b` : "#fff"} !important;
   height: auto !important;
+  .light-theme{
+    *{
+      color: #fff !important;
+    }
+  }
   .footer-container {
     width: 100%;
     background-color: rgb(210, 173, 87);

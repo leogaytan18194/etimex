@@ -182,11 +182,11 @@ const Sustentabilidad = () => {
     return (
         <PageStyles theme={theme}>
             <Header2
-                logo={"/assets/svg/logov2.svg"}
+                logo={"/assets/sustentabilidad/logo.svg"}
                 theme={"dark"}
             />
             <HeroContainer2
-                backgroundImage={"/assets/sustentabilidad/hero.webp"}
+                backgroundImage={"/assets/sustentabilidad/hero2.webp"}
                 text1={<>
                     <span className='strokeText'>Planta libre</span>
                 </>}
@@ -198,6 +198,7 @@ const Sustentabilidad = () => {
                 h1Only={true}
                 theme2={"light"}
                 flexDirection="column"
+                logo={true}
             />
             <div className="logos-sustentabilidad">
                 <img src="/assets/sustentabilidad/logos.svg" alt=""/>
@@ -209,7 +210,7 @@ const Sustentabilidad = () => {
 
                 <div className="footer-container-green">
                     <div className='footer-items'>
-                        <ul className="footer-list">
+                        <ul className="footer-list light-theme">
                             <li>Copyright © 2023 Etimex</li>
                             <li>Contacto: info@etimex.com</li>
                             <li>81 8479 0800</li>

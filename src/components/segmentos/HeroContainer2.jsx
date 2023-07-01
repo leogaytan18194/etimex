@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useSpring, animated } from 'react-spring';
 import { HeroBackground2 } from '../../styles/Styles';
 
-const HeroContainer2 = ({ backgroundImage, text1, text2, theme, theme2, flexDirection, h1Only, text3 }) => {
+const HeroContainer2 = ({ backgroundImage, text1, text2, theme, theme2, flexDirection, h1Only, text3, logo }) => {
     const [isVisible, setIsVisible] = useState(false);
     const heroRef = useRef();
 
@@ -126,6 +126,12 @@ const HeroContainer2 = ({ backgroundImage, text1, text2, theme, theme2, flexDire
                         </>
                     }
                 </div>
+                {logo && <div className='hero-logo'>
+                    <div className='hero-logo-container'>
+                        <img src="/assets/sustentabilidad/logo.svg" alt="" />
+
+                    </div>
+                </div>}
             </div>
         </HeroBackground2>
     );

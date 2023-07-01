@@ -7,7 +7,7 @@ export default function Works() {
   const data = [
     {
       id: "1",
-      title: "ETIMEX",
+      title: "etimex",
       desc:
         "Es una empresa que desde más de cinco décadas, se dedica a la industria de la producción de impresión de empaques y  etiquetas.",
       img:

@@ -61,7 +61,7 @@ const containerData = [
             { id: 1, name: 'Pet', description: 'Descripción del elemento 1' },
             { id: 2, name: 'Pet G', description: 'Descripción del elemento 2' },
         ],
-        backgroundImage: "/assets/acabados/b/card3_1.png",
+        backgroundImage: "/assets/acabados/b/card4.webp",
     }, 
 
 ]
@@ -131,8 +131,6 @@ const containerData2 = [
         inverseOrder: false,
         title: "CAST&CURE",
         subtitle: "Agrega efectos de hologramas como una excelente herramienta de diferenciación, valor agregado y prevención de falsificación.",
-        icon2: "2.svg",
-        icon2Text: "Tyvek",
         listItems: [
             { id: 1, name: 'Pet', description: 'Descripción del elemento 1' },
             { id: 2, name: 'Pet G', description: 'Descripción del elemento 2' },
@@ -374,8 +372,9 @@ const Acabados = () => {
 
                             <div className='acabados-bottom'>
                             <animated.div style={{
-                                ...scale, backgroundImage: `url("/assets/acabados/b/5.png")`, 
-                                marginTop: 10             
+                                ...scale, backgroundImage: `url("/assets/acabados/b/card5.jpg")`, 
+                                marginTop: 10,
+                                backgroundPosition:"center 66%",
                             }} className='image-container-bg'>
 
                                 <animated.div className='block-text-container'>
@@ -390,9 +389,9 @@ const Acabados = () => {
                                             }
                                         }
                                     >
-                                        <Icon src={"4.svg"} alt='icon1' text={"icon1Text"} isVisible={isVisible} theme={"dark"} />
+                                        {/* <Icon src={"4.svg"} alt='icon1' text={"icon1Text"} isVisible={isVisible} theme={"dark"} />
                                         <Icon src={"2.svg"} alt='icon2' text={"icon2Text"} isVisible={isVisible} theme={"dark"} />
-                                        <Icon src={"1.svg"} alt='icon3' text={"icon3Text"} isVisible={isVisible} theme={"dark"} />
+                                        <Icon src={"1.svg"} alt='icon3' text={"icon3Text"} isVisible={isVisible} theme={"dark"} /> */}
                                     </animated.div>
                                 </animated.div>
                             </animated.div>

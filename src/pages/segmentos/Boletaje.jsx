@@ -145,7 +145,7 @@ const Boletaje = () => {
                 theme={theme}
             />
             <HeroContainer
-                backgroundImage={"/assets/boletaje/hero.png"}
+                backgroundImage={"/assets/boletaje/hero.webp"}
                 text1={"Haz de tu boletaje"}
                 text2={"toda una experiencia"}
                 flexDirection="column"

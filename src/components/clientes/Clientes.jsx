@@ -56,6 +56,9 @@ export default function Clientes() {
           <div className="item">
             <img src="assets/clientes.png" alt="Clientes Etimex" className="imgClientes"/>
           </div>
+          <div className='txt-more-clients'>
+              <h3>y mas...</h3>
+          </div>
       </div>
       
     </animated.div>

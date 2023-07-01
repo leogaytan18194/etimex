@@ -47,7 +47,7 @@ export default function Intro() {
               dedicado que busca la perfección y la conexión de tu marca con tu consumidor.
               <br />
               <br />
-              Déjanos contar su personalidad.
+              Déjanos contar tu historia.
             </h2>
           </FadeInScale>
         </div>

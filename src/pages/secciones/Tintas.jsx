@@ -113,10 +113,14 @@ const Tintas = () => {
             />
             <HeroContainer
                 backgroundImage={"/assets/tintas/cover-tintas.jpg"}
-                text1={"Tintas"}
+                text1={
+                    <div className='tintas-bg-white'>
+                        Tintas
+                    </div>
+                }
                 text2={"Da detalles especiales para hacer la diferencia."}
-                theme={"dark"}
-                theme2={"light"}
+                theme={"light"}
+                theme2={"dark"}
             />
             <div className='cards-container'>
                 {container}
