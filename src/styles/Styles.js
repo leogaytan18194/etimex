@@ -595,7 +595,7 @@ export const HeaderStylesSecciones = styled.header`
     }
     ul {
       display: grid;
-      grid-template-columns: repeat(8, auto);
+      grid-template-columns: repeat(9, auto);
       max-width: 1100px;
       margin: 0 auto;
       width: 100%;

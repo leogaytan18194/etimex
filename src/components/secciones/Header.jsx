@@ -144,6 +144,7 @@ const Header = ({ logo, theme }) => {
             route: 'inicio',
             section: 'home',
             animation: textAnimation,
+            link:false,
             callback: () => {
                 return;
             }
@@ -153,6 +154,7 @@ const Header = ({ logo, theme }) => {
             route: 'servicios',
             section: 'servicios',
             animation: textAnimation2,
+            link:false,
             callback: () => {
                 return;
             }
@@ -162,6 +164,7 @@ const Header = ({ logo, theme }) => {
             route: 'segmentos',
             section: 'segmentos',
             animation: textAnimation3,
+            link:false,
             callback: () => {
                 return;
             }
@@ -170,6 +173,17 @@ const Header = ({ logo, theme }) => {
             item: 'clientes',
             route: 'clientes',
             section: 'clientes',
+            animation: textAnimation4,
+            link:false,
+            callback: () => {
+                return;
+            }
+        },
+        {
+            item: 'sustentabilidad',
+            route: 'sustentabilidad',
+            section: 'sustentabilidad',
+            link:true,
             animation: textAnimation4,
             callback: () => {
                 return;
@@ -180,6 +194,7 @@ const Header = ({ logo, theme }) => {
             route: 'contacto',
             section: 'contacto',
             animation: textAnimation5,
+            link:false,
             callback: () => {
                 return;
             }
@@ -189,6 +204,7 @@ const Header = ({ logo, theme }) => {
             route: '/blog',
             section: 'blog',
             animation: textAnimation6,
+            link:false,
             callback: () => {
                 return;
             }
@@ -198,6 +214,7 @@ const Header = ({ logo, theme }) => {
             route: '#',
             section: 'lang',
             animation: textAnimation7,
+            link:false,
             callback: () => {
                 setLang(prev => {
                     if (prev === "USA") {
@@ -237,7 +254,7 @@ const Header = ({ logo, theme }) => {
                                     {
                                         menuList.map((menu, index) => (
                                             <CustomLi theme={theme} className={`${pathname.includes(menu.section) ? "activeMenu" : ""}`}>
-                                                <HashLink to={`/#${menu.route}`} smooth>
+                                                <HashLink to={`/${menu.link ? "":"#"}${menu.route}`} smooth>
                                                     <animated.span
                                                         onClick={menu.callback}
                                                         style={
@@ -266,7 +283,7 @@ const Header = ({ logo, theme }) => {
                                     {
                                         menuList.map((menu, index) => (
                                             <CustomLi theme={theme} className={`${pathname.includes(menu.section) ? "activeMenu" : ""}`}>
-                                                <HashLink to={`/#${menu.route}`} smooth>
+                                                <HashLink to={`/${menu.link ? "":"#"}${menu.route}`} smooth>
                                                     <animated.span
                                                         onClick={menu.callback}
                                                         style={
