@@ -100,6 +100,13 @@ const container2Data = [
         description: "Da un look sofisticado de acabado sin brillo con un recubrimiento de alta resistencia al roce y excelente claridad.",
         image: "/assets/salud-y-belleza/cards/manga-salud.jpg",
         titleItem: false,
+    },
+    {
+        inverseOrder: true,
+        title: "SOFT TOUCH",
+        description: "Da un look sofisticado de acabado sin brillo con un recubrimiento de alta resistencia al roce y excelente claridad.",
+        image: "/assets/salud-y-belleza/cards/SOFT_TOUCH.png",
+        titleItem: false,
     }
 ]
 
