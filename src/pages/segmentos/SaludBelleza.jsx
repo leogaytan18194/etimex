@@ -102,7 +102,7 @@ const container2Data = [
         titleItem: false,
     },
     {
-        inverseOrder: true,
+        inverseOrder: false,
         title: "SOFT TOUCH",
         description: "Da un look sofisticado de acabado sin brillo con un recubrimiento de alta resistencia al roce y excelente claridad.",
         image: "/assets/salud-y-belleza/cards/SOFT_TOUCH.png",
