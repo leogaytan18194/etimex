@@ -34,7 +34,7 @@ const tabItems = [
   },
   {
     ico: "/assets/svg/acabados",
-    text: "Acabados",
+    text: "Acabados de embellecimiento",
     route: "/servicios/acabados",
     top: "-2px",
   },

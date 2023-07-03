@@ -13,7 +13,7 @@ import NavTab from '../../components/secciones/NavTab';
 const containerData = [
     {
         inverseOrder: true,
-        title: "GLOSSY LAMINATE",
+        title: "GLOSSY LAMINATION​",
         subtitle: "Garantiza la duración de la impresión y protege de la intemperie.",
 
         listTitle: "En película",
@@ -28,7 +28,7 @@ const containerData = [
     },
     {
         inverseOrder: false,
-        title: "MATTE LAMINATE",
+        title: "MATTE LAMINATION​",
         subtitle: "Al igual que el glossy garantiza la duración de la impresión y protege de la intemperie.",
 
         listTitle: "En película",
@@ -69,7 +69,7 @@ const containerData2 = [
     {
         inverseOrder: true,
         title: "COLD FOIL",
-        subtitle: "Aporta un look premium y genera contraste visual con un aspecto metalizado hecho a tu medida.",
+        subtitle: "Agrega motivos metálicos y holográficos en frío especial para materiales lisos y mangas termoencogibles.​​",
         listTitle: "En película",
         listItems: [
             { id: 1, name: 'BOPP transparente', },
@@ -83,7 +83,7 @@ const containerData2 = [
     {
         inverseOrder: false,
         title: "HOT FOIL",
-        subtitle: "Agrega motivos metálicos y holográficos en frío especial para materiales lisos y mangas termoencogibles.",
+        subtitle: "Aporta un look premium y genera contraste visual con un aspecto metalizado hecho a tu medida.",
 
         listItems: [
             { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
@@ -119,7 +119,7 @@ const containerData2 = [
     {
         inverseOrder: false,
         title: "SILK SCREEN",
-        subtitle: "Aporta un look premium y genera contraste visual con un aspecto metalizado hecho a tu medida.",
+        subtitle: "Agrega motivos metálicos y holográficos en frío especial para materiales lisos y mangas termoencogibles.​",
         listTitle: "En película",
         listItems: [
             { id: 1, name: 'Pet', description: 'Descripción del elemento 1' },
@@ -279,8 +279,8 @@ const Acabados = () => {
     const tabItems = [
         {
             ico: "/assets/svg/dot",
-            text: "Materias Primas",
-            route: "/servicios/materia-prima",
+            text: "Materiales",
+            route: "/servicios/materiales",
             top: "0",
         },
         {
@@ -290,7 +290,7 @@ const Acabados = () => {
             top: "0",
         },
         {
-            //MATERIAS PRIMAS   ·      ·    
+            //Materiales   ·      ·    
             ico: "/assets/svg/dot",
             text: "ASESORÍA INTEGRAL",
             route: "/servicios/asesoria-integral",

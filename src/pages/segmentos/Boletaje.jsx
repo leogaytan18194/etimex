@@ -61,7 +61,7 @@ const containerData = [
 const container2Data = [
     {
         inverseOrder: false,
-        title: "MATTE LAMINATE",
+        title: "MATTE LAMINATION​",
         description: `Al igual que el glossy garantiza la duración de la impresión y protege de la intemperie.`,
         image: "/assets/boletaje/cards/boletaje-matte.png",
         titleItem: "Acabados"
@@ -76,7 +76,7 @@ const container2Data = [
     {
         inverseOrder: false,
         title: "SILK SCREEN",
-        description: "Aporta un look premium y genera contraste visual con un aspecto metalizado hecho a tu medida.",
+        description: "Agrega motivos metálicos y holográficos en frío especial para materiales lisos y mangas termoencogibles.​",
         image: "/assets/boletaje/cards/BOLETAJE-SILK-SCREEN.png",
         titleItem: false,
     },

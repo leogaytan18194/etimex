@@ -61,14 +61,14 @@ const containerData = [
 const container2Data = [
     {
         inverseOrder: false,
-        title: `GLOSSY LAMINATE`,
+        title: `GLOSSY LAMINATION​`,
         description: `Garantiza la duración de la impresión y protege de la intemperie.`,
         image: "/assets/retail/cards/card4.png",
         titleItem: "Acabados"
     },
     {
         inverseOrder: true,
-        title: "MATTE LAMINATE",
+        title: "MATTE LAMINATION​",
         description: `Al igual que el glossy garantiza la duración de la impresión y protege de la intemperie.`,
         image: "/assets/retail/cards/card5.png",
         titleItem: false,

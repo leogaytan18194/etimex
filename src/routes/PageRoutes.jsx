@@ -22,11 +22,11 @@ const PageRoutes = () => {
             <Route path="/alimentos-y-bebidas" element={<AlimentosBebidas />} />
             <Route path="/salud-y-belleza" element={<SaludBelleza />} />
             <Route path="/industrial" element={<Industrial />} />
-            <Route path="/boletaje" element={<Boletaje />} />
+            <Route path="/admision" element={<Boletaje />} />
             <Route path="/retail" element={<Retail />} />
             <Route path="/sustentabilidad" element={<Sustentabilidad />} />
             <Route path="/servicios/tintas" element={<Tintas />} />
-            <Route path="/servicios/materia-prima" element={<MateriaPrima />} />
+            <Route path="/servicios/materiales" element={<MateriaPrima />} />
             <Route path="/servicios/asesoria-integral" element={<AsesoriaIntegral />} />
             <Route path="/servicios/acabados" element={<Acabados />} />
             <Route path="*" element={<NotFound />} />

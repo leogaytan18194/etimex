@@ -9,14 +9,14 @@ import { useSpring, animated } from 'react-spring';
 const container2Data = [
     {
         inverseOrder: false,
-        title: `GLOSSY LAMINATE`,
+        title: `GLOSSY LAMINATION​`,
         description: `Garantiza la duración de la impresión y protege de la intemperie.`,
         image: "/assets/industrial/cards/card1.png",
         titleItem: "Acabados"
     },
     {
         inverseOrder: true,
-        title: "MATTE LAMINATE",
+        title: "MATTE LAMINATION​",
         description: `Al igual que el glossy garantiza la duración de la impresión y protege de la intemperie.`,
         image: "/assets/industrial/cards/mattelami-industrial.jpg",
         titleItem: false,

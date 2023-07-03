@@ -65,7 +65,7 @@ const containerData = [
     },
     {
         inverseOrder: false,
-        title: "Letreros y boletaje",
+        title: "Señalización y Boletaje",
         subtitle: "Disponible en papel",
         icon1: "bond.svg",
         icon1Text: "Bond",
@@ -167,8 +167,8 @@ const MateriaPrima = () => {
     const tabItems = [
         {
             ico: "/assets/svg/dot",
-            text: "Materias Primas",
-            route: "/servicios/materia-prima",
+            text: "Materiales",
+            route: "/servicios/materiales",
             top: "0",
         },
         {
@@ -178,7 +178,7 @@ const MateriaPrima = () => {
             top: "0",
         },
         {
-            //MATERIAS PRIMAS   ·      ·    
+            //Materiales   ·      ·    
             ico: "/assets/svg/dot",
             text: "ASESORÍA INTEGRAL",
             route: "/servicios/asesoria-integral",
@@ -195,9 +195,9 @@ const MateriaPrima = () => {
             <HeroContainer
                 backgroundImage={"/assets/materia-prima/herov2.png"}
                 text1={<>
-                    <span className='strokeTex2'>Materia</span>
+                    <span className='strokeTex2'>Materiales</span>
                 </>}
-                text2={"Prima"}
+                text2={false}
                 text3={"Innovación y alta calidad para cubrir a la perfección tus necesidades."}
                 theme={"light"}
                 theme2={"dark"}

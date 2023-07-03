@@ -64,16 +64,14 @@ const container2Data = [
     {
         inverseOrder: false,
         title: `COLD FOIL`,
-        description: `Aporta un look premium y genera
-                contraste visual con un aspecto metalizado 
-                hecho a tu medida.`,
+        description: `Agrega motivos metálicos y holográficos en frío especial para materiales lisos y mangas termoencogibles.`,
         image: "/assets/vinos-y-licores/cards/card4.png",
         titleItem: "Acabados"
     },
     {
         inverseOrder: true,
         title: "HOT FOIL",
-        description: `Agrega motivos metálicos y holográficos en frío especial para materiales lisos y mangas termoencogibles.`,
+        description: `Aporta un look premium y genera contraste visual con un aspecto metalizado hecho a tu medida.`,
         image: "/assets/vinos-y-licores/cards/card5.png",
         titleItem: false,
     },
@@ -94,7 +92,7 @@ const container2Data = [
     {
         inverseOrder: false,
         title: "SILK SCREEN",
-        description: "Aporta un look premium y genera contraste visual con un aspecto metalizado hecho a tu medida.",
+        description: "Agrega motivos metálicos y holográficos en frío especial para materiales lisos y mangas termoencogibles.​",
         image: "/assets/vinos-y-licores/cards/card8.png",
         titleItem: false,
     },
@@ -164,21 +162,21 @@ const Sustentabilidad = () => {
 
     const socialIcons = [
         {
-          ico: "/assets/svg/in.svg",
-          alt: "LinkedIn",
-          link: "http://www.linkedin.com"
+            ico: "/assets/svg/in.svg",
+            alt: "LinkedIn",
+            link: "http://www.linkedin.com"
         },
         {
-          ico: "/assets/svg/ins.svg",
-          alt: "Instagram",
-          link: "http://www.instagram.com"
+            ico: "/assets/svg/ins.svg",
+            alt: "Instagram",
+            link: "http://www.instagram.com"
         },
         {
-          ico: "/assets/svg/fb.svg",
-          alt: "Facebook",
-          link: "http://www.facebook.com"
+            ico: "/assets/svg/fb.svg",
+            alt: "Facebook",
+            link: "http://www.facebook.com"
         }
-      ];
+    ];
     return (
         <PageStyles theme={theme}>
             <Header2
@@ -201,7 +199,7 @@ const Sustentabilidad = () => {
                 logo={true}
             />
             <div className="logos-sustentabilidad">
-                <img src="/assets/sustentabilidad/logos.svg" alt=""/>
+                <img src="/assets/sustentabilidad/logos.svg" alt="" />
             </div>
             <div className="contact-section">
                 <Contact2 />

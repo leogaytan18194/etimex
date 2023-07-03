@@ -192,10 +192,10 @@ const Header = ({ logo, theme }) => {
                                             </animated.span>
                                         </Link>
                                     </CustomLi>
-                                    <CustomLi theme={theme} icon={`${pathname === '/boletaje' ? "boletaje" : ""}`} className={`${pathname === '/boletaje' ? "activeMenu" : ""}`}>
-                                        <Link to="/boletaje">
+                                    <CustomLi theme={theme} icon={`${pathname === '/admision' ? "boletaje" : ""}`} className={`${pathname === '/admision' ? "activeMenu" : ""}`}>
+                                        <Link to="/admision">
                                             <animated.span style={textAnimation5}>
-                                                Boletaje
+                                                Admisión
                                             </animated.span>
                                         </Link>
                                     </CustomLi>
@@ -253,10 +253,10 @@ const Header = ({ logo, theme }) => {
                                             </animated.span>
                                         </Link>
                                     </CustomLi>
-                                    <CustomLi theme={theme} icon={`${pathname === '/boletaje' ? "boletaje" : ""}`} className={`${pathname === '/boletaje' ? "activeMenu" : ""}`}>
-                                        <Link to="/boletaje">
+                                    <CustomLi theme={theme} icon={`${pathname === '/admision' ? "boletaje" : ""}`} className={`${pathname === '/admision' ? "activeMenu" : ""}`}>
+                                        <Link to="/admision">
                                             <animated.span style={textAnimation5}>
-                                                Boletaje
+                                                Admisión
                                             </animated.span>
                                         </Link>
                                     </CustomLi>

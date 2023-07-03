@@ -61,14 +61,14 @@ const containerData = [
 const container2Data = [
     {
         inverseOrder: false,
-        title: `GLOSSY LAMINATE`,
+        title: `GLOSSY LAMINATION​`,
         description: `Garantiza la duración de la impresión y protege de la intemperie.`,
         image: "/assets/salud-y-belleza/cards/card5.png",
         titleItem: "Acabados"
     },
     {
         inverseOrder: true,
-        title: "MATTE LAMINATE",
+        title: "MATTE LAMINATION​",
         description: `Al igual que el glossy garantiza la duración de la impresión y protege de la intemperie.`,
         image: "/assets/salud-y-belleza/cards/matte-salud.webp",
         titleItem: false,
@@ -90,7 +90,7 @@ const container2Data = [
     {
         inverseOrder: false,
         title: "COLD FOIL",
-        description: "Aporta un look premium y genera contraste visual con un aspecto metalizado hecho a tu medida.",
+        description: "Agrega motivos metálicos y holográficos en frío especial para materiales lisos y mangas termoencogibles.​",
         image: "/assets/salud-y-belleza/cards/coldfoil-sauld.jpeg",
         titleItem: false,
     },

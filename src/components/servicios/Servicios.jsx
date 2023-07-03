@@ -71,12 +71,12 @@ export default function Servicios() {
       <animated.h1 style={fadeInProps} className="ITBold">Servicios</animated.h1>
       <div className="container">
         <animated.div  style={slideProps4}>
-          <Link to="servicios/materia-prima" className="item">
+          <Link to="servicios/materiales" className="item">
             <img
               src="assets/servicios1.jpg"
-              alt="Materias primas"
+              alt="Materiales"
             />
-            <h3>Materias Primas</h3>
+            <h3>Materiales</h3>
           </Link>
 
         </animated.div>
@@ -87,7 +87,7 @@ export default function Servicios() {
               src="assets/servicios2.png"
               alt="Acabados"
             />
-            <h3>Acabados</h3>
+            <h3>Acabados de embellecimiento</h3>
           </Link>
         </animated.div>
       </div>

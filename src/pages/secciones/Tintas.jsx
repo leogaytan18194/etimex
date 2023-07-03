@@ -72,8 +72,8 @@ const containerMap = (data, index, theme) => {
 const tabItems = [
     {
         ico: "/assets/svg/dot",
-        text: "Materias Primas",
-        route: "/servicios/materia-prima",
+        text: "Materiales",
+        route: "/servicios/materiales",
         top: "0",
     },
     {
@@ -83,7 +83,7 @@ const tabItems = [
         top: "0",
     },
     {
-        //MATERIAS PRIMAS   ·      ·    
+        //Materiales   ·      ·    
         ico: "/assets/svg/dot",
         text: "ASESORÍA INTEGRAL",
         route: "/servicios/asesoria-integral",

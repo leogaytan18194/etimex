@@ -21,6 +21,7 @@ const containerData = [
             { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
             { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
             { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
+            { id: 4, name: 'Inmold​', description: 'Descripción del elemento 3' },
         ],
         backgroundImage: "/assets/alimentos-y-bebidas/cards/card1.png",
     },
@@ -78,14 +79,14 @@ const containerData = [
 const container2Data = [
     {
         inverseOrder: false,
-        title: `GLOSSY LAMINATE`,
+        title: `GLOSSY LAMINATION​`,
         description: `Garantiza la duración de la impresión y protege de la intemperie.`,
         image: "/assets/alimentos-y-bebidas/cards/card5.png",
         titleItem: "Acabados"
     },
     {
         inverseOrder: true,
-        title: "MATTE LAMINATE",
+        title: "MATTE LAMINATION​",
         description: `Al igual que el glossy garantiza la duración de la impresión y protege de la intemperie.`,
         image: "/assets/alimentos-y-bebidas/cards/card6.png",
         titleItem: false,
@@ -107,7 +108,7 @@ const container2Data = [
     {
         inverseOrder: false,
         title: "COLD FOIL",
-        description: "Aporta un look premium y genera contraste visual con un aspecto metalizado hecho a tu medida.",
+        description: "Agrega motivos metálicos y holográficos en frío especial para materiales lisos y mangas termoencogibles.​",
         image: "/assets/alimentos-y-bebidas/cards/card9.png",
         titleItem: false,
     },
