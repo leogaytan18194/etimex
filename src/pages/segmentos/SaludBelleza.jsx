@@ -104,7 +104,7 @@ const container2Data = [
     {
         inverseOrder: false,
         title: "SOFT TOUCH",
-        description: "Da un look sofisticado de acabado sin brillo con un recubrimiento de alta resistencia al roce y excelente claridad.",
+        description: "Acabado con propiedades táctiles que lo hacen totalmente diferente, gracias al juego con texturas satinadas y mate, aporta una sensación de elegancia y suavidad al tacto.",
         image: "/assets/salud-y-belleza/cards/SOFT_TOUCH.png",
         titleItem: false,
     }

@@ -103,6 +103,14 @@ const container2Data = [
         image: "/assets/vinos-y-licores/cards/card9.png",
         titleItem: false,
     }
+    ,
+    {
+        inverseOrder: false,
+        title: "SOFT TOUCH",
+        description: "Acabado con propiedades táctiles que lo hacen totalmente diferente, gracias al juego con texturas satinadas y mate, aporta una sensación de elegancia y suavidad al tacto.",
+        image: "/assets/salud-y-belleza/cards/SOFT_TOUCH.png",
+        titleItem: false,
+    }
 ]
 
 
