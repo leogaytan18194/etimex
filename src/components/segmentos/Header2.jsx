@@ -142,10 +142,12 @@ const Header2 = ({ logo, theme }) => {
                     ? <>
 
                         {isMobile ? <animated.div style={styles} className="menu-container m-mobile">
-                            <ul>
+                            <ul style={{
+                                gap: '20px'
+                            }}>
                                 <li className="logov2" >
                                     <HashLink to="/#home">
-                                           <animated.img src={`${logo}`} alt="Logo" style={logoAnimation} />
+                                        <animated.img src={`${logo}`} alt="Logo" style={logoAnimation} />
                                     </HashLink>
                                 </li>
 
@@ -176,22 +178,24 @@ const Header2 = ({ logo, theme }) => {
                             </ul>
 
                         </animated.div> :
-                            <animated.div style={styles} className="menu-container m-web">
-                                <ul>
+                            <animated.div style={{ ...styles }} className="menu-container m-web">
+                                <ul style={{
+                                    gap: '20px'
+                                }}>
                                     <li className="logov2" >
                                         <HashLink to="/#home">
-                                               <animated.img src={`${logo}`} alt="Logo" style={logoAnimation} />
+                                            <animated.img src={`${logo}`} alt="Logo" style={logoAnimation} />
                                         </HashLink>
                                     </li>
                                     <CustomLi2 theme={theme} icon={`${pathname === '/sustentabilidad' ? "sustentabilidad" : ""}`} className={`${pathname === '/sustentabilidad' ? "activeMenu" : ""}`}>
                                         <Link to="/sustentabilidad">
                                             <animated.span style={textAnimation}>
-                                            Sustentabilidad
+                                                Sustentabilidad
                                             </animated.span>
                                         </Link>
-                                    </CustomLi2>                                    
+                                    </CustomLi2>
                                     <CustomLi2 theme={theme} justify="end" style={{
-                                        width:"96%",
+                                        width: "96%",
                                     }}>
                                         <Link to="#" className='no-link' onClick={() => setLang(prev => {
                                             if (prev === "USA") {
