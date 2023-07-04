@@ -21,7 +21,7 @@ export const PageStyles = styled.div`
         justify-content: center;
         gap: 25px;
         max-width: 800px;
-      }
+      } 
       @media (max-width: 580px) {
         max-width: 320px;
        
