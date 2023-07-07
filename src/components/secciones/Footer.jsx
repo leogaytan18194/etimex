@@ -6,18 +6,18 @@ const socialIcons = [
   {
     ico: "/assets/svg/in.svg",
     alt: "LinkedIn",
-    link: "http://www.linkedin.com"
-  },
-  {
+    link: "https://www.linkedin.com/company/etimex/"
+},
+{
     ico: "/assets/svg/ins.svg",
     alt: "Instagram",
-    link: "http://www.instagram.com"
-  },
-  {
+    link: "https://www.instagram.com/etimex.print/"
+},
+{
     ico: "/assets/svg/fb.svg",
     alt: "Facebook",
-    link: "http://www.facebook.com"
-  }
+    link: "https://www.facebook.com/etimex1/"
+}
 ];
 
 const Footer = ({ theme, heigth, tabItems }) => {

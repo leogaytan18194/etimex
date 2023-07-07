@@ -40,6 +40,7 @@ const Home = () => {
             />
             {/* <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> */}
+            <a href="https://wa.link/5754nh"><img class="whatsapp-icon" src="assets/whatsapp.png" alt="" /></a>
             <div className="sections" id='inicio'>
                 <Video />
                 <Works />
