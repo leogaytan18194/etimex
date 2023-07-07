@@ -134,7 +134,7 @@ const Header = ({ logo, theme }) => {
     const load = () => {
         setShowMenuMo(false);
     }
-    const [lang, setLang] = useState("USA");
+    const [lang, setLang] = useState("ENG");
     return (
         <HeaderStyles theme={theme}>
             {transitions((styles, item) =>
@@ -262,10 +262,10 @@ const Header = ({ logo, theme }) => {
                                     </CustomLi>
                                     <CustomLi theme={theme} >
                                         <Link to="#" className='no-link' onClick={() => setLang(prev => {
-                                            if (prev === "USA") {
-                                                return "MX";
+                                            if (prev === "ENG") {
+                                                return "ES";
                                             } else {
-                                                return "USA";
+                                                return "ENG";
                                             }
                                         })}>
                                             <animated.span style={textAnimation5} className={`${theme === "dark" ? "item-lang-dark" : "item-lang-light"}`}>

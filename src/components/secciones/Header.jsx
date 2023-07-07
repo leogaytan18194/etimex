@@ -133,7 +133,7 @@ const Header = ({ logo, theme }) => {
     const isMobile = window.innerWidth <= 980;
 
     const [showMenu1, setShowMenu1] = useState(false);
-    const [lang, setLang] = useState("USA");
+    const [lang, setLang] = useState("ENG");
     const [showMenuMo, setShowMenuMo] = useState(false);
     const load = () => {
         setShowMenuMo(false);
@@ -217,11 +217,11 @@ const Header = ({ logo, theme }) => {
             link:false,
             callback: () => {
                 setLang(prev => {
-                    if (prev === "USA") {
-                        return "MX";
+                    if (prev === "ENG") {
+                        return "ES";
                     }
-                    if (prev === "MX") {
-                        return "USA";
+                    if (prev === "ES") {
+                        return "ENG";
                     }
                 });
             }
