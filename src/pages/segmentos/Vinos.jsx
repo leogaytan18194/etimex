@@ -98,7 +98,7 @@ const container2Data = [
         inverseOrder: true,
         title: "CAST & CURE",
         description: "Agrega efectos de hologramas como una excelente herramienta de diferenciación, valor agregado y prevención de falsificación.",
-        image: "/assets/vinos-y-licores/cards/card9.png",
+        image: "/assets/vinos-y-licores/cards/marine.jpg",
         titleItem: false,
     }
     ,
