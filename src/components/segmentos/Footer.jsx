@@ -21,21 +21,18 @@ const socialIcons = [
 ];
 const tabItems = [
   {
-    ico: "/assets/svg/materiales",
     text: "Materiales",
     route: "/servicios/materiales",
     top: "-5px",
   },
   {
-    ico: "/assets/svg/tintas",
-    text: "Tintas",
-    route: "/servicios/tintas",
-    top: "2px",
-  },
-  {
-    ico: "/assets/svg/acabados",
     text: "Acabados de embellecimiento",
     route: "/servicios/acabados",
+    top: "-2px",
+  },
+  {
+    text: "Asesoria integral",
+    route: "/servicios/asesoria-integral",
     top: "-2px",
   },
 ]
