@@ -43,12 +43,12 @@ export default function Intro() {
       <div className="wrapper">
         <div className="into-txt">
           <FadeInScale>
-            <h2 className="helvetica">Detrás de cada etiqueta y empaque hay pasión e ingenio de un equipo
+            <p className="helvetica">Detrás de cada etiqueta y empaque hay pasión e ingenio de un equipo
               dedicado que busca la perfección y la conexión de tu marca con tu consumidor.
               <br />
               <br />
               Déjanos contar tu historia.
-            </h2>
+            </p>
           </FadeInScale>
         </div>
       </div>
