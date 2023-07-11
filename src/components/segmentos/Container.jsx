@@ -114,8 +114,9 @@ const Container = ({ inverseOrder, title, subtitle, icon1, icon1Text, icon2, ico
                                 <animated.ul style={slideInFromBottom}>
                                     {listItems2.map((item, index) => <li key={index}>{item.name}</li>)}
                                 </animated.ul>
+                                <animated.p style={slideInFromLeft}>{listTitle3}</animated.p>
                             </animated.div>
-                            {listTitle3}
+                            
                         </animated.div>
                     </animated.div>
 
