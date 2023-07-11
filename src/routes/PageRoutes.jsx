@@ -30,13 +30,6 @@ const PageRoutes = () => {
             <Route path="/servicios/asesoria-integral" element={<AsesoriaIntegral />} />
             <Route path="/servicios/acabados" element={<Acabados />} />
             <Route path="*" element={<NotFound />} />
-            <Route path="/contacto" element={<Home />} />
-            <Route path="/mangas-termoencogibles" element={<AlimentosBebidas />} />
-            <Route path="/etiquetas-industriales" element={<Industrial />} />
-            <Route path="/el-significado-de-los-colores-en-el-empaque" element={<Industrial />} />
-            <Route path="/etiquetas-resistentes-al-agua" element={<AlimentosBebidas />} />
-            <Route path="/que-funcion-cumplen-las-etiquetas-laminadas" element={<AlimentosBebidas />} />
-            <Route path="/etiquetas-para-vinos-y-licores" element={<Vinos />} />
         </Routes>
     )
 }
