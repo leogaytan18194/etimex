@@ -11,7 +11,7 @@ const containerData = [
     {
         inverseOrder: false,
         title: "Congelados",
-        subtitle: "Disponible en papel",
+        subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bond",
         icon2: "shrek.svg",
@@ -31,12 +31,13 @@ const containerData = [
             { id: 3, name: 'BOPP metalizado', description: 'Descripción del elemento 2' },
             { id: 4, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
+        listTitle3: "-En Inmold",
         backgroundImage: "/assets/alimentos-y-bebidas/cards/card1.png",
     },
     {
         inverseOrder: true,
         title: "Refrescos y jugos",
-        subtitle: "Disponible en papel",
+        subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bond",
         icon2: "shrek.svg",
@@ -56,12 +57,13 @@ const containerData = [
             { id: 3, name: 'BOPP metalizado', description: 'Descripción del elemento 2' },
             { id: 4, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
+        listTitle3: "-En Manga termoencongible",
         backgroundImage: "/assets/alimentos-y-bebidas/cards/card2.png",
     },
     {
         inverseOrder: false,
         title: "Alimentos",
-        subtitle: "Disponible en papel",
+        subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bond",
         icon2: "shrek.svg",
@@ -81,13 +83,14 @@ const containerData = [
             { id: 3, name: 'BOPP metalizado', description: 'Descripción del elemento 2' },
             { id: 4, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
+        listTitle3: "",
         backgroundImage: "/assets/alimentos-y-bebidas/cards/card3.png",
     },
 
     {
         inverseOrder: true,
         title: "Aguas",
-        subtitle: "Disponible en papel",
+        subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bond",
         icon2: "shrek.svg",
@@ -106,6 +109,7 @@ const containerData = [
             { id: 3, name: 'BOPP metalizado', description: 'Descripción del elemento 2' },
             { id: 4, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
+        listTitle3: "-En Manga termoencongible",
         backgroundImage: "/assets/alimentos-y-bebidas/cards/card4.png",
     },
 
@@ -172,6 +176,7 @@ const containerMap = (data, index, theme) => {
                 listItems={data.listItems}
                 listTitle2={data.listTitle2}
                 listItems2={data.listItems2}
+                listTitle3={data.listTitle3}
                 backgroundImage={data.backgroundImage}
                 theme={theme}
             />

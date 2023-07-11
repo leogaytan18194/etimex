@@ -46,8 +46,8 @@ const containerData = [
     },
     {
         inverseOrder: false,
-        title: "Vuelos",
-        subtitle: "Disponible en papel",
+        title: "Aerolíneas",
+        subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bond",
         icon2: "shrek.svg",

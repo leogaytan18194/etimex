@@ -11,7 +11,7 @@ const containerData = [
     {
         inverseOrder: false,
         title: "Suplementos alimenticios",
-        subtitle: "Disponible en papel",
+        subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bond",
         icon2: "shrek.svg",
@@ -36,7 +36,7 @@ const containerData = [
     {
         inverseOrder: true,
         title: "Cosmética",
-        subtitle: "Disponible en papel",
+        subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bond",
         icon2: "shrek.svg",
@@ -61,7 +61,7 @@ const containerData = [
     {
         inverseOrder: false,
         title: "Hogar",
-        subtitle: "Disponible en papel",
+        subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bond",
         icon2: "shrek.svg",
@@ -80,6 +80,7 @@ const containerData = [
             { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
             { id: 3, name: 'BOPP metalizado', description: 'Descripción del elemento 2' },
             { id: 4, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
+            { id: 5, name: '-En Manga Termoencogible', description: 'Descripción del elemento 3' },
         ],
         backgroundImage: "/assets/salud-y-belleza/cards/hogar-salud.webp",
     },

@@ -11,7 +11,7 @@ const containerData = [
     {
         inverseOrder: false,
         title: "Promocional",
-        subtitle: "Disponible en papel",
+        subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bond",
         icon2: "shrek.svg",
@@ -36,7 +36,7 @@ const containerData = [
     {
         inverseOrder: true,
         title: "Marcas propias",
-        subtitle: "Disponible en papel",
+        subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bond",
         icon2: "shrek.svg",
@@ -58,7 +58,7 @@ const containerData = [
     {
         inverseOrder: false,
         title: "Preciadores",
-        subtitle: "Disponible en papel",
+        subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bond",
         icon2: "shrek.svg",

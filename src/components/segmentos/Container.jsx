@@ -25,7 +25,7 @@ const Icon = ({ src, alt, text, isVisible, theme }) => {
     );
 };
 
-const Container = ({ inverseOrder, title, subtitle, icon1, icon1Text, icon2, icon2Text, listTitle, listItems, listTitle2, listItems2, backgroundImage, theme }) => {
+const Container = ({ inverseOrder, title, subtitle, icon1, icon1Text, icon2, icon2Text, listTitle, listItems, listTitle2, listItems2, listTitle3, backgroundImage, theme }) => {
     const ref = useRef();
     const [isVisible, setIsVisible] = useState(false);
 
@@ -115,7 +115,7 @@ const Container = ({ inverseOrder, title, subtitle, icon1, icon1Text, icon2, ico
                                     {listItems2.map((item, index) => <li key={index}>{item.name}</li>)}
                                 </animated.ul>
                             </animated.div>
-
+                            {listTitle3}
                         </animated.div>
                     </animated.div>
 
