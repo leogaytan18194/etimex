@@ -8,8 +8,9 @@ import HeroContainer from '../../components/secciones/HeroContainer';
 import Footer from '../../components/secciones/Footer';
 import Container3, { Icon } from '../../components/secciones/Container3';
 import NavTab from '../../components/secciones/NavTab';
+import Container2 from '../../components/segmentos/Container2'
 
-
+//Contenido de basicos
 const containerData = [
     {
         inverseOrder: true,
@@ -65,6 +66,7 @@ const containerData = [
     }, 
 
 ]
+//Contenido de premium
 const containerData2 = [
     {
         inverseOrder: true,
@@ -141,51 +143,51 @@ const containerData2 = [
 ]
 
 
-
-const cardItems = [
+const container2Data = [
     {
-        title: "Fluorescente",
-        desc: "Crea un efecto de color que al activarse con luz UV, lucen más fuertes y brillantes, realzando formas y detalles.",
-        bg: "/assets/tintas/cards/1.webp",
-        delay: 200,
-        bgsz: "90%",
+        inverseOrder: false,
+        title: `Fluorescente​`,
+        description: `Crea un efecto de color que al activarse con luz UV, lucen más fuerte y brillantes, realzando formas y detalles.`,
+        image: "/assets/acabados/cards/card1.png",
+        titleItem: "Acabados"
     },
     {
-        title: "Invisible",
-        desc: "Añade elementos de seguridad que solo pueden visualizarse bajo luz UV, perfecta para aplicaciones en textos, códigos y formas invisibles.",
-        bg: "/assets/tintas/cards/2.webp",
-        delay: 400,
-        bgsz: "100%",
+        inverseOrder: true,
+        title: "Invisible​",
+        description: `Añade elementos de seguridad que solo pueden visualizarse bajo luz UV, perfecta para aplicaciones en textos, códigos y formas invisibles`,
+        image: "/assets/acabados/cards/card2.png",
+        titleItem: false,
     },
     {
+        inverseOrder: false,
         title: "Inkjet",
-        desc: "Da relieve a detalles finos y precisos con aplicaciones nítidas, creando una experiencia de textura en tu etiqueta.",
-        bg: "/assets/tintas/cards/3.webp",
-        delay: 600,
-        bgsz: "190%",
+        description: "Da relieve a detalles finos y precisos con aplicaciones nítidas, creando una experiencia de textura en tu etiqueta.",
+        image: "/assets/acabados/cards/card3.png",
+        titleItem: false,
     },
     {
+        inverseOrder: true,
         title: "Plateada",
-        desc: "Agrega valor y aspecto premium con tintas plateadas, ideales para detalles sutiles en textos.",
-        bg: "/assets/tintas/cards/4.webp",
-        delay: 800,
-        bgsz: "100%",
+        description: "Agrega valor y aspecto premium con tintas plateadas, ideales para detalles sutiles en textos.",
+        image: "/assets/acabados/cards/card4.png",
+        titleItem: false,
     },
     {
+        inverseOrder: false,
         title: "Termocromática",
-        desc: "Incluye la característica que permite cambiar reversiblemente los colores en tu etiqueta con la temperatura.",
-        bg: "/assets/tintas/cards/5.webp",
-        delay: 1000,
-        bgsz: "150%",
+        description: "Incluye la característica que permite cambiar reversiblemente los colores en tu etiqueta con la temperatura.​",
+        image: "/assets/acabados/cards/card5.png",
+        titleItem: false,
     },
     {
+        inverseOrder: true,
         title: "Aromática",
-        desc: "Brinda una experiencia mulsisensorial con microcápsulas perfumadas que al rascarse desprenden olor.",
-        bg: "/assets/tintas/cards/6.webp",
-        delay: 1200,
-        bgsz: "190%",
-    },
+        description: "Brinda una experiencia multisensorial con microcápsulas perfumadas que al rascarse desprenden olor.",
+        image: "/assets/acabados/cards/card6.png",
+        titleItem: false,
+    }
 ]
+
 
 
 
@@ -240,6 +242,23 @@ const containerMap2 = (data, index, theme) => {
     );
 };
 
+const Container2Map = (data, index, theme) => {
+    const ref = useRef();
+
+    return (
+        <div ref={ref}>
+            <Container2
+                inverseOrder={data.inverseOrder}
+                title={data.title}
+                description={data.description}
+                image={data.image}
+                titleItem={data.titleItem}
+                theme={theme}
+            />
+        </div>
+    );
+};
+
 
 const Acabados = () => {
 
@@ -274,8 +293,10 @@ const Acabados = () => {
         delay: 300,
         config: { duration: 1000 },
     });
+    
     const container = containerData.map((elemento, index) => containerMap(elemento, index, "dark"));
     const container2 = containerData2.map((elemento, index) => containerMap2(elemento, index, "dark"));
+    const container3 = container2Data.map((elemento, index) => Container2Map(elemento, index, "light"));
     const tabItems = [
         {
             ico: "/assets/svg/dot",
@@ -403,7 +424,9 @@ const Acabados = () => {
                         <AcabadosPremium>
                             <div className='acabados-container'>
                                 {container2}
+                                
                             </div>
+                            {container3}
 
                         </AcabadosPremium>}
                 />
