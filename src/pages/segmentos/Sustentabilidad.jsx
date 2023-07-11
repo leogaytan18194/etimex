@@ -199,7 +199,21 @@ const Sustentabilidad = () => {
                 logo={true}
             />
             <div className="logos-sustentabilidad">
-                <img src="/assets/sustentabilidad/logos.svg" alt="" />
+                <div className='logos-s'>
+                    <div className='logo-s'>
+                        <img src="/assets/sustentabilidad/LOGO_ISO.png" alt="" />
+                    </div>
+                    <div className='logo-s'>
+                        <img src="/assets/sustentabilidad/UL_Mark.png" alt="" />
+                    </div>
+                    <div className='logo-s'>
+                        <img src="/assets/sustentabilidad/sa_imagen.png" alt="" />
+                    </div>
+                    <div className='logo-s'>
+                        <img src="/assets/sustentabilidad/reutilizar.png" alt="" />
+                    </div>
+
+                </div>
             </div>
             <div className="contact-section">
                 <Contact2 />

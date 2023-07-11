@@ -43,7 +43,7 @@ export const PageStyles = styled.div`
   }
   .logos-sustentabilidad {
       width: 100%;
-      max-width: 800px;
+      max-width: 1200px;
       margin: 0 auto;
       height: 100%;
       margin-bottom: 80px;
@@ -173,7 +173,44 @@ export const PageStyles = styled.div`
       }
     }
   }
-
+  .logos-s {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 15px;
+      
+    /* @media (max-width: 780px) {
+        width: 100%;
+    }
+    @media (max-width: 580px) {
+        max-width: 320px;
+       
+    } */
+  }
+  .logo-s {
+      width: 100%;
+      height: 150px;
+      background: #e9e9e9;
+      max-width: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+      img {
+          height: 50%;
+      }
+      
+    @media (max-width: 780px) {
+      max-width: 150px;
+        
+    }
+    @media (max-width: 580px) {
+        max-width: 200px;
+       
+    }
+}
 `;
 
 export const HeaderStyles = styled.header`
