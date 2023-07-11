@@ -207,7 +207,7 @@ const Sustentabilidad = () => {
                         <img src="/assets/sustentabilidad/UL_Mark.png" alt="" />
                     </div>
                     <div className='logo-s'>
-                        <img src="/assets/sustentabilidad/sa_imagen.png" alt="" />
+                        <img src="/assets/sustentabilidad/sustentabilidad3.png" alt="" />
                     </div>
                     <div className='logo-s'>
                         <img src="/assets/sustentabilidad/reutilizar.png" alt="" />
