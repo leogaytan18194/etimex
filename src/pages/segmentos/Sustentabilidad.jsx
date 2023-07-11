@@ -201,7 +201,7 @@ const Sustentabilidad = () => {
             <div className="logos-sustentabilidad">
                 <div className='logos-s'>
                     <div className='logo-s'>
-                        <img src="/assets/sustentabilidad/LOGO_ISO.png" alt="" />
+                        <img src="/assets/sustentabilidad/ISO_LOGO.png" alt="" />
                     </div>
                     <div className='logo-s'>
                         <img src="/assets/sustentabilidad/UL_Mark.png" alt="" />
