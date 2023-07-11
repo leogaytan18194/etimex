@@ -119,7 +119,7 @@ const containerData2 = [
     {
         inverseOrder: false,
         title: "SILK SCREEN",
-        subtitle: "Agrega motivos metálicos y holográficos en frío especial para materiales lisos y mangas termoencogibles.​",
+        subtitle: "Barniz sutil y elegante que brinda una experiencia táctil hasta en los detalles más finos de tu etiqueta, elevando su experiencia.​",
         listTitle: "En película",
         listItems: [
             { id: 1, name: 'Pet', description: 'Descripción del elemento 1' },

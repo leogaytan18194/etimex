@@ -16,12 +16,20 @@ const containerData = [
         icon1Text: "Bond",
         icon2: "shrek.svg",
         icon2Text: "Tyvek",
-        listTitle: "En película",
+        listTitle: "Disponible en",
         listItems: [
+            { id: 1, name: 'Papel Texturizado',  },
+            { id: 2, name: 'Papel Metalizado',  },
+            { id: 3, name: 'Papel Hi-gloss',  },
+            { id: 4, name: 'Papel Semi coated',  },
+            { id: 5, name: 'Papel Mate',  },
+        ],
+        listTitle2: "En película:",
+        listItems2: [
             { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
             { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
-            { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
-            { id: 4, name: 'Inmold​', description: 'Descripción del elemento 3' },
+            { id: 3, name: 'BOPP metalizado', description: 'Descripción del elemento 2' },
+            { id: 4, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
         backgroundImage: "/assets/alimentos-y-bebidas/cards/card1.png",
     },
@@ -33,11 +41,20 @@ const containerData = [
         icon1Text: "Bond",
         icon2: "shrek.svg",
         icon2Text: "Tyvek",
-        listTitle: "En película",
+        listTitle: "Disponible en",
         listItems: [
+            { id: 1, name: 'Papel Texturizado',  },
+            { id: 2, name: 'Papel Metalizado',  },
+            { id: 3, name: 'Papel Hi-gloss',  },
+            { id: 4, name: 'Papel Semi coated',  },
+            { id: 5, name: 'Papel Mate',  },
+        ],
+        listTitle2: "En película:",
+        listItems2: [
             { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
             { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
-            { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
+            { id: 3, name: 'BOPP metalizado', description: 'Descripción del elemento 2' },
+            { id: 4, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
         backgroundImage: "/assets/alimentos-y-bebidas/cards/card2.png",
     },
@@ -49,11 +66,20 @@ const containerData = [
         icon1Text: "Bond",
         icon2: "shrek.svg",
         icon2Text: "Twvek",
-        listTitle: "En película",
+        listTitle: "Disponible en",
         listItems: [
+            { id: 1, name: 'Papel Texturizado',  },
+            { id: 2, name: 'Papel Metalizado',  },
+            { id: 3, name: 'Papel Hi-gloss',  },
+            { id: 4, name: 'Papel Semi coated',  },
+            { id: 5, name: 'Papel Mate',  },
+        ],
+        listTitle2: "En película:",
+        listItems2: [
             { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
             { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
-            { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
+            { id: 3, name: 'BOPP metalizado', description: 'Descripción del elemento 2' },
+            { id: 4, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
         backgroundImage: "/assets/alimentos-y-bebidas/cards/card3.png",
     },
@@ -66,11 +92,19 @@ const containerData = [
         icon1Text: "Bond",
         icon2: "shrek.svg",
         icon2Text: "Twvek",
-        listTitle: "En película",
+        listTitle: "Disponible en",
         listItems: [
+            { id: 1, name: 'Papel Texturizado',  },
+            { id: 2, name: 'Papel Hi-gloss',  },
+            { id: 3, name: 'Papel Semi coated',  },
+            { id: 4, name: 'Papel mate',  },
+        ],
+        listTitle2: "En película:",
+        listItems2: [
             { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
             { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
-            { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
+            { id: 3, name: 'BOPP metalizado', description: 'Descripción del elemento 2' },
+            { id: 4, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
         backgroundImage: "/assets/alimentos-y-bebidas/cards/card4.png",
     },
@@ -136,6 +170,8 @@ const containerMap = (data, index, theme) => {
                 icon2Text={data.icon2Text}
                 listTitle={data.listTitle}
                 listItems={data.listItems}
+                listTitle2={data.listTitle2}
+                listItems2={data.listItems2}
                 backgroundImage={data.backgroundImage}
                 theme={theme}
             />

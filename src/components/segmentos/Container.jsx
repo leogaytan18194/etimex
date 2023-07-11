@@ -25,7 +25,7 @@ const Icon = ({ src, alt, text, isVisible, theme }) => {
     );
 };
 
-const Container = ({ inverseOrder, title, subtitle, icon1, icon1Text, icon2, icon2Text, listTitle, listItems, backgroundImage, theme }) => {
+const Container = ({ inverseOrder, title, subtitle, icon1, icon1Text, icon2, icon2Text, listTitle, listItems, listTitle2, listItems2, backgroundImage, theme }) => {
     const ref = useRef();
     const [isVisible, setIsVisible] = useState(false);
 
@@ -101,18 +101,19 @@ const Container = ({ inverseOrder, title, subtitle, icon1, icon1Text, icon2, ico
                         <animated.div className='block-text-container'>
                             <animated.div style={slideInFromBottom} className='txt-container'>
                                 <animated.h2>{title}</animated.h2>
-                                <animated.p style={slideInFromBottom}>{subtitle}:</animated.p>
-                            </animated.div>
-                            <animated.div className='icon-container'>
-                                <Icon src={icon1} alt='icon1' text={icon1Text} isVisible={isVisible} theme={theme}/>
-                                <Icon src={icon2} alt='icon2' text={icon2Text} isVisible={isVisible} theme={theme}/>
+                                <animated.p>{subtitle}</animated.p>
                             </animated.div>
                             <animated.div className='list-container'>
                                 <animated.p style={slideInFromLeft}>{listTitle}:</animated.p>
                                 <animated.ul style={slideInFromBottom}>
                                     {listItems.map((item, index) => <li key={index}>{item.name}</li>)}
                                 </animated.ul>
-
+                            </animated.div>
+                            <animated.div className='list-container'>
+                                <animated.p style={slideInFromLeft}>{listTitle2}</animated.p>
+                                <animated.ul style={slideInFromBottom}>
+                                    {listItems2.map((item, index) => <li key={index}>{item.name}</li>)}
+                                </animated.ul>
                             </animated.div>
 
                         </animated.div>

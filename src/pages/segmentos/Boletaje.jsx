@@ -11,32 +11,36 @@ const containerData = [
     {
         inverseOrder: false,
         title: "Eventos",
-        subtitle: "Disponible en papel",
+        subtitle: "Disponible en",
         icon1: "bond.svg",
         icon1Text: "Bond",
         icon2: "shrek.svg",
         icon2Text: "Tyvek",
-        listTitle: "En película",
+        listTitle: "-Cartulina",
         listItems: [
-            { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
-            { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
-            { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
+            { id: 1, name: '    Thermal TC 4.0', description: 'Descripción del elemento 2' },
+            { id: 2, name: '    Thermal TC 7.0', description: 'Descripción del elemento 3' },
+        ],
+        listTitle2: "",
+        listItems2: [
         ],
         backgroundImage: "/assets/boletaje/cards/card1.png",
     },
     {
         inverseOrder: true,
         title: "Estacionamientos",
-        subtitle: "Disponible en papel",
         icon1: "bond.svg",
         icon1Text: "Bond",
         icon2: "shrek.svg",
         icon2Text: "Tyvek",
-        listTitle: "En película",
+        listTitle: "-Cartulina",
         listItems: [
-            { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
-            { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
-            { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
+            { id: 1, name: '    Thermal TC 4.0', description: 'Descripción del elemento 2' },
+            { id: 2, name: '    Thermal TC 7.0', description: 'Descripción del elemento 3' },
+        ],
+        listTitle2: "",
+        listItems2: [
+
         ],
         backgroundImage: "/assets/boletaje/cards/card2.png",
     },
@@ -48,11 +52,13 @@ const containerData = [
         icon1Text: "Bond",
         icon2: "shrek.svg",
         icon2Text: "Twvek",
-        listTitle: "En película",
+        listTitle: "-Cartulina",
         listItems: [
-            { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
-            { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
-            { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
+            { id: 1, name: 'Thermal TC 4.0 - 7.0', description: 'Descripción del elemento 2' },
+        ],
+        listTitle2: "",
+        listItems2: [
+
         ],
         backgroundImage: "/assets/boletaje/cards/card3.png",
     },
@@ -76,7 +82,7 @@ const container2Data = [
     {
         inverseOrder: false,
         title: "SILK SCREEN",
-        description: "Agrega motivos metálicos y holográficos en frío especial para materiales lisos y mangas termoencogibles.​",
+        description: "Barniz sutil y elegante que brinda una experiencia táctil hasta en los detalles más finos de tu etiqueta, elevando su experiencia.​",
         image: "/assets/boletaje/cards/BOLETAJE-SILK-SCREEN.png",
         titleItem: false,
     },
@@ -97,6 +103,8 @@ const containerMap = (data, index, theme) => {
                 icon2Text={data.icon2Text}
                 listTitle={data.listTitle}
                 listItems={data.listItems}
+                listTitle2={data.listTitle2}
+                listItems2={data.listItems2}
                 backgroundImage={data.backgroundImage}
                 theme={theme}
             />

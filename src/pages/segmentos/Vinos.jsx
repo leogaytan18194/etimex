@@ -16,11 +16,19 @@ const containerData = [
         icon1Text: "Bondes",
         icon2: "shrek.svg",
         icon2Text: "Tyvek",
-        listTitle: "En película",
+        listTitle: "Disponible en",
         listItems: [
-            { id: 1, name: 'BOPP transparente',  },
-            { id: 2, name: 'BOPP blanco',  },
-            { id: 3, name: 'Vinil blanco',  },
+            { id: 1, name: 'Papel Texturizado',  },
+            { id: 2, name: 'Papel Hi-gloss',  },
+            { id: 3, name: 'Papel Semi coated',  },
+            { id: 4, name: 'Papel mate',  },
+        ],
+        listTitle2: "En película:",
+        listItems2: [
+            { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
+            { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
+            { id: 3, name: 'BOPP metalizado', description: 'Descripción del elemento 2' },
+            { id: 4, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
         backgroundImage: "/assets/vinos-y-licores/cards/card1.png",
     },
@@ -32,11 +40,19 @@ const containerData = [
         icon1Text: "Bond",
         icon2: "shrek.svg",
         icon2Text: "Tyvek",
-        listTitle: "En película",
+        listTitle: "Disponible en",
         listItems: [
+            { id: 1, name: 'Papel Texturizado',  },
+            { id: 2, name: 'Papel Hi-gloss',  },
+            { id: 3, name: 'Papel Semi coated',  },
+            { id: 4, name: 'Papel mate',  },
+        ],
+        listTitle2: "En película:",
+        listItems2: [
             { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
             { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
-            { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
+            { id: 3, name: 'BOPP metalizado', description: 'Descripción del elemento 2' },
+            { id: 4, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
         backgroundImage: "/assets/vinos-y-licores/cards/card2.png",
     },
@@ -48,11 +64,19 @@ const containerData = [
         icon1Text: "Bond",
         icon2: "shrek.svg",
         icon2Text: "Tyvek",
-        listTitle: "En película",
+        listTitle: "Disponible en",
         listItems: [
+            { id: 1, name: 'Papel Texturizado',  },
+            { id: 2, name: 'Papel Hi-gloss',  },
+            { id: 3, name: 'Papel Semi coated',  },
+            { id: 4, name: 'Papel mate',  },
+        ],
+        listTitle2: "En película:",
+        listItems2: [
             { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
             { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
-            { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
+            { id: 3, name: 'BOPP metalizado', description: 'Descripción del elemento 2' },
+            { id: 4, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
         backgroundImage: "/assets/vinos-y-licores/cards/cervezas.png",
     },
@@ -90,7 +114,7 @@ const container2Data = [
     {
         inverseOrder: false,
         title: "SILK SCREEN",
-        description: "Agrega motivos metálicos y holográficos en frío especial para materiales lisos y mangas termoencogibles.​",
+        description: "Barniz sutil y elegante que brinda una experiencia táctil hasta en los detalles más finos de tu etiqueta, elevando su experiencia.​",
         image: "/assets/vinos-y-licores/cards/card8.png",
         titleItem: false,
     },
@@ -119,13 +143,14 @@ const containerMap = (data, index,  theme) => {
             <Container
                 inverseOrder={data.inverseOrder}
                 title={data.title}
-                subtitle={data.subtitle}
                 icon1={data.icon1}
                 icon1Text={data.icon1Text}
                 icon2={data.icon2}
                 icon2Text={data.icon2Text}
                 listTitle={data.listTitle}
                 listItems={data.listItems}
+                listTitle2={data.listTitle2}
+                listItems2={data.listItems2}
                 backgroundImage={data.backgroundImage}
                 theme={theme}
             />

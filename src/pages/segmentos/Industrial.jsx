@@ -1,10 +1,65 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { PageStyles } from '../../styles/Styles'
 import Header from '../../components/segmentos/Header'
+import Container from '../../components/segmentos/Container'
 import HeroContainer from '../../components/segmentos/HeroContainer'
 import Footer from '../../components/segmentos/Footer'
 import Container2 from '../../components/segmentos/Container2'
 import { useSpring, animated } from 'react-spring';
+
+
+const containerData = [
+    {
+        inverseOrder: false,
+        title: "Promocional",
+        subtitle: "Disponible en papel",
+        icon1: "bond.svg",
+        icon1Text: "Bond",
+        icon2: "shrek.svg",
+        icon2Text: "Tyvek",
+        listTitle: "Disponible en",
+        listItems: [
+            { id: 1, name: 'Papel Texturizado',  },
+            { id: 2, name: 'Papel Metalizado',  },
+            { id: 3, name: 'Papel Hi-gloss',  },
+            { id: 4, name: 'Papel Semi coated',  },
+            { id: 5, name: 'Papel Mate',  },
+        ],
+        listTitle2: "En película:",
+        listItems2: [
+            { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
+            { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
+            { id: 3, name: 'BOPP metalizado', description: 'Descripción del elemento 2' },
+            { id: 4, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
+        ],
+        backgroundImage: "/assets/industrial/cards/aceites_cuadrado.png",
+    },
+    {
+        inverseOrder: true,
+        title: "Marcas propias",
+        subtitle: "Disponible en papel",
+        icon1: "bond.svg",
+        icon1Text: "Bond",
+        icon2: "shrek.svg",
+        icon2Text: "Tyvek",
+        listTitle: "Disponible en",
+        listItems: [
+            { id: 1, name: 'Papel Thermal NTC',  },
+            { id: 2, name: 'Papel Thermal TC',  },
+        ],
+        listTitle2: "En película:",
+        listItems2: [
+            { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
+            { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
+            { id: 3, name: 'BOPP metalizado', description: 'Descripción del elemento 2' },
+            { id: 4, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
+            { id: 5, name: 'Poliéster', description: 'Descripción del elemento 3' },
+        ],
+        backgroundImage: "/assets/industrial/cards/escaleras-industrial.jpg",
+    },
+
+
+]
 
 const container2Data = [
     {
@@ -30,6 +85,27 @@ const container2Data = [
     },
 ]
 
+const containerMap = (data, index, theme) => {
+    return (
+        <>
+            <Container
+                inverseOrder={data.inverseOrder}
+                title={data.title}
+                subtitle={data.subtitle}
+                icon1={data.icon1}
+                icon1Text={data.icon1Text}
+                icon2={data.icon2}
+                icon2Text={data.icon2Text}
+                listTitle={data.listTitle}
+                listItems={data.listItems}
+                listTitle2={data.listTitle2}
+                listItems2={data.listItems2}
+                backgroundImage={data.backgroundImage}
+                theme={theme}
+            />
+        </>
+    );
+};
 
 
 const Container2Map = (data, index, theme) => {
@@ -62,6 +138,7 @@ const Industrial = () => {
         config: { duration: 1000 },
     });
     const [theme, setTheme] = useState("light");
+    const container = containerData.map((elemento, index) => containerMap(elemento, index, theme));
     const container2 = container2Data.map((elemento, index) => Container2Map(elemento, index, theme));
 
 
@@ -80,6 +157,7 @@ const Industrial = () => {
                 flexDirection={"column"}
                 theme={theme}
             />
+            {container}
             {container2}
             <div className='industrial-container'>
                 <div className='industrial-items'>

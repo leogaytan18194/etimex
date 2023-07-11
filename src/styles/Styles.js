@@ -815,6 +815,7 @@ export const ContainerStyles = styled.div`
     }
   }
   .list-container {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     gap: 15px;

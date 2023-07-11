@@ -12,54 +12,73 @@ const containerData = [
     {
         inverseOrder: true,
         title: "Auto adheribles",
-        subtitle: "Disponible en papel",
-        icon1: "bond.svg",
-        icon1Text: "Bond",
-        icon2: "termico.svg",
-        icon2Text: "Térmico",
-        icon3: "shrek.svg",
-        icon3Text: "Tyvek",
-        listTitle: "En película",
+        subtitle: "Etiqueta con pegamento integrado",
+        subtitle2: " para auto adherirse al tocar la superficie.",
+        listTitle: "Disponible en",
         listItems: [
+            { id: 1, name: 'Papel texturizado', },
+            { id: 2, name: 'Papel Metalizado', },
+            { id: 3, name: 'Papel Hi-gloss', },
+            { id: 4, name: 'Papel Semi coated', },
+            { id: 5, name: 'Papel mate', },
+        ],
+        listTitle2: "En película",
+        listItems2: [
             { id: 1, name: 'BOPP transparente', },
             { id: 2, name: 'BOPP blanco', },
-            { id: 3, name: 'Poliéster metalizado', },
+            { id: 3, name: 'BOPP metalizado', },
             { id: 4, name: 'Poliéster blanco', },
-            { id: 5, name: 'Vinil blanco', },
+            { id: 5, name: 'Poliéster metalizado', },
+            { id: 6, name: 'Vinil blanco', },
         ],
         backgroundImage: "/assets/materia-prima/cards/autoaderible.png",
     },
     {
         inverseOrder: false,
         title: "Envolventes",
-        subtitle: "Disponible en papel",
-        icon1: "bond.svg",
-        icon1Text: "Bond",
-        icon2: "shrek.svg",
-        icon2Text: "Tyvek",
-        listTitle: "En película",
+        subtitle: "Etiqueta con pegamento en los extremos para unir  ",
+        subtitle2: "uno con el otro al rodear la circunferencia del envase.",
+        listTitle: "Disponible en",
         listItems: [
-            { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
-            { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
-            { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
+            { id: 1, name: 'Papel texturizado', },
+            { id: 2, name: 'Papel Metalizado', },
+            { id: 3, name: 'Papel Hi-gloss', },
+            { id: 4, name: 'Papel Semi coated', },
+            { id: 5, name: 'Papel mate', },
+        ],
+        listTitle2: "En película",
+        listItems2: [
+            { id: 1, name: 'BOPP transparente', },
+            { id: 2, name: 'BOPP blanco', },
+            { id: 3, name: 'BOPP metalizado', },
+            { id: 4, name: 'Poliéster blanco', },
+            { id: 5, name: 'Poliéster metalizado', },
+            { id: 6, name: 'Vinil blanco', },
         ],
         backgroundImage: "/assets/materia-prima/cards/envolvente.png",
     },
     {
         inverseOrder: true,
         title: "Manga Termoencogible",
-        subtitle: "Disponible en papel",
+        subtitle: "Funda retráctil de material sintético ",
+        subtitle2: "para vestir el 100% del envase.",
         icon1: "none.svg",
         icon1Text: false,
         icon2: false,
         icon2Text: false,
         icon3: false,
         icon3Text: false,
-        listTitle: "En película",
+        listTitle: "Disponible en",
         listItems: [
-            { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
-            { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
-            { id: 3, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
+            { id: 1, name: 'No disponible', description: 'Descripción del elemento 1' },
+        ],
+        listTitle2: "En película",
+        listItems2: [
+            { id: 1, name: 'BOPP transparente', },
+            { id: 2, name: 'BOPP blanco', },
+            { id: 3, name: 'Poliéster metalizado', },
+            { id: 4, name: 'Poliéster blanco', },
+            { id: 5, name: 'Vinil blanco', },
         ],
         backgroundImage: "/assets/materia-prima/cards/manga.png",
     },
@@ -67,6 +86,7 @@ const containerData = [
         inverseOrder: false,
         title: "Señalización y Boletaje",
         subtitle: "Disponible en papel",
+        subtitle2: " para auto adherirse al tocar la superficie.",
         icon1: "bond.svg",
         icon1Text: "Bond",
         icon2: "termico.svg",
@@ -74,6 +94,14 @@ const containerData = [
         listTitle: "En película",
         listItems: [
             { id: 1, name: 'No disponible', description: 'Descripción del elemento 1' },
+        ],
+        listTitle2: "En película",
+        listItems2: [
+            { id: 1, name: 'BOPP transparente', },
+            { id: 2, name: 'BOPP blanco', },
+            { id: 3, name: 'Poliéster metalizado', },
+            { id: 4, name: 'Poliéster blanco', },
+            { id: 5, name: 'Vinil blanco', },
         ],
         backgroundImage: "/assets/materia-prima/cards/letreros.png",
     },
@@ -134,15 +162,12 @@ const containerMap = (data, index, theme) => {
             <Container2
                 inverseOrder={data.inverseOrder}
                 title={data.title}
-                subtitle={data.subtitle}
-                icon1={data.icon1}
-                icon1Text={data.icon1Text}
-                icon2={data.icon2}
-                icon2Text={data.icon2Text}
-                icon3={data.icon3}
-                icon3Text={data.icon3Text}
+                subtitle={data.subtitle} 
+                subtitle2={data.subtitle2}  
                 listTitle={data.listTitle}
                 listItems={data.listItems}
+                listTitle2={data.listTitle2}
+                listItems2={data.listItems2}
                 backgroundImage={data.backgroundImage}
                 theme={theme}
             />

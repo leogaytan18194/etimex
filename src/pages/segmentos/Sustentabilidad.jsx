@@ -92,7 +92,7 @@ const container2Data = [
     {
         inverseOrder: false,
         title: "SILK SCREEN",
-        description: "Agrega motivos metálicos y holográficos en frío especial para materiales lisos y mangas termoencogibles.​",
+        description: "Barniz sutil y elegante que brinda una experiencia táctil hasta en los detalles más finos de tu etiqueta, elevando su experiencia.​",
         image: "/assets/vinos-y-licores/cards/card8.png",
         titleItem: false,
     },
