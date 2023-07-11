@@ -199,7 +199,7 @@ export const PageStyles = styled.div`
       align-items: center;
       border-radius: 15px;
       img {
-          height: 50%;
+          height: 70%;
       }
       
     @media (max-width: 780px) {
@@ -209,7 +209,7 @@ export const PageStyles = styled.div`
     @media (max-width: 580px) {
         max-width: 200px;
        
-    }
+    }     
 }
 `;
 

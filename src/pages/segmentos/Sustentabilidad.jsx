@@ -212,7 +212,6 @@ const Sustentabilidad = () => {
                     <div className='logo-s'>
                         <img src="/assets/sustentabilidad/reutilizar.png" alt="" />
                     </div>
-
                 </div>
             </div>
             <div className="contact-section">
