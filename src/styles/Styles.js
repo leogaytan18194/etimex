@@ -192,9 +192,9 @@ export const PageStyles = styled.div`
   .logo-s {
       width: 100%;
       max-height: 260px;
-      min-height: 260px;
+      min-height: 300px;
       background: rgb(233, 233, 233);
-      max-width: 375px;
+      max-width: 250px;
       display: flex;
       justify-content: start;
       align-items: center;
