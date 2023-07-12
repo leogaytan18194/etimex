@@ -21,7 +21,7 @@ const PageRoutes = () => {
     return (
         <>
             <FloatingWhatsApp
-            phoneNumber="+5218131166651"
+            phoneNumber="528131166651"
             accountName="Etimex"
             statusMessage="Normalmente responde en 1 hora."
             chatMessage={<>¡Hola! 🤝 ¿En qué podemos ayudarte? </>}
