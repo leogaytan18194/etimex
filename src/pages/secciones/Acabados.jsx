@@ -426,7 +426,9 @@ const Acabados = () => {
                                 {container2}
                                 
                             </div>
-                            {container3}
+                            <div className='cards-container'>
+                                {container3}
+                            </div>
 
                         </AcabadosPremium>}
                 />
