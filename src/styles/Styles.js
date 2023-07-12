@@ -2170,7 +2170,7 @@ cursor: pointer;
 export const NavbTabContainer = styled.div`
     
     @media (max-width: 580px) {
-      //width: 100%;
+      width: 100%;
     }
 .tab-btn{
   font-size: 39px;
@@ -2201,6 +2201,9 @@ export const NavbTabContainer = styled.div`
       grid-template-columns: auto auto auto;
       //grid-template-columns: 1fr;
     }
+}
+.tab-item{
+  width: 100%;
 }
 .tab-divider {
     display: flex;

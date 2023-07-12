@@ -8,6 +8,20 @@ const Container2 = ({ inverseOrder, title, description, image, titleItem, index,
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
+        let thresholdValue;
+        const windowWidth = window.innerWidth;
+
+        if(windowWidth <= 480) {
+            // Si la resolución es <= 480px, el umbral será 0.5
+            thresholdValue = 0.5;
+        } else if (windowWidth <= 768) {
+            // Si la resolución es <= 768px, el umbral será 0.7
+            thresholdValue = 0.7;
+        } else {
+            // Si la resolución es mayor, el umbral será 0.9
+            thresholdValue = 0.8;
+        }
+
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if(entry.isIntersecting && !isVisible) {
@@ -15,7 +29,7 @@ const Container2 = ({ inverseOrder, title, description, image, titleItem, index,
                 }
             },
             {
-                threshold: 0.8,
+                threshold: thresholdValue,
             }
         );
 
@@ -29,6 +43,7 @@ const Container2 = ({ inverseOrder, title, description, image, titleItem, index,
             }
         };
     }, []);
+
 
     const fade = useSpring({
         opacity: isVisible ? 1 : 0,
