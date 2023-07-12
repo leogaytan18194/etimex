@@ -43,7 +43,7 @@ export const PageStyles = styled.div`
   }
   .logos-sustentabilidad {
       width: 100%;
-      max-width: 1200px;
+      max-width: 1600px;
       margin: 0 auto;
       height: 100%;
       margin-bottom: 80px;
@@ -174,12 +174,12 @@ export const PageStyles = styled.div`
     }
   }
   .logos-s {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      width: 100%;
-      gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 15px;
       
     /* @media (max-width: 780px) {
         width: 100%;
@@ -191,15 +191,27 @@ export const PageStyles = styled.div`
   }
   .logo-s {
       width: 100%;
-      height: 150px;
-      background: #e9e9e9;
-      max-width: 200px;
+      max-height: 260px;
+      min-height: 260px;
+      background: rgb(233, 233, 233);
+      max-width: 375px;
       display: flex;
-      justify-content: center;
+      justify-content: start;
       align-items: center;
       border-radius: 15px;
+      flex-direction: column;
+      font-size: 13px;
+      box-sizing: border-box;
+      padding: 15px 0;
+      p {
+          box-sizing: border-box;
+          padding: 15px 25px;
+        //  white-space: pre-line;
+          line-height:20px;
+          text-align: center;
+      }
       img {
-          height: 70%;
+          height: 120px;
       }
       
     @media (max-width: 780px) {

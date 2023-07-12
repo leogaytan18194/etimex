@@ -202,15 +202,33 @@ const Sustentabilidad = () => {
                 <div className='logos-s'>
                     <div className='logo-s'>
                         <img src="/assets/sustentabilidad/ISO_LOGO.png" alt="" />
+                        <p>{`Estándar internacional enfocado en proporcionar productos y/o​
+
+servicios que cumplan con los requerimientos internos y externos de manera​
+
+eficaz para controlar y mejorar su rendimiento.`}</p>
                     </div>
                     <div className='logo-s'>
                         <img src="/assets/sustentabilidad/UL_Mark.png" alt="" />
+                        <p>{`Norma que garantiza el cumplimiento de requisitos aplicables a​
+
+productos con respecto a su potencial riesgo de incendio, descarga eléctrica​
+
+y peligros mecánicos.`}</p>
                     </div>
                     <div className='logo-s'>
                         <img src="/assets/sustentabilidad/sustentabilidad3.png" alt="" />
+                        <p>{`Norma que aprueba productos y/o procesos según un estándar​
+
+canadiense o estadounidense.`}</p>
                     </div>
                     <div className='logo-s'>
                         <img src="/assets/sustentabilidad/reutilizar.png" alt="" />
+                        <p>{`Materiales con certificaciones sustentables que nos ayudan en el​
+
+compromiso de cuidado del ambiente con materiales que ayudan en el​
+
+proceso de reciclado.`}</p>
                     </div>
                 </div>
             </div>
