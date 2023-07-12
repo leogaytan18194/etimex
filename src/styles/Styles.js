@@ -215,12 +215,15 @@ export const PageStyles = styled.div`
       }
       
     @media (max-width: 780px) {
-      max-width: 150px;
-        
+      
+      max-height: 660px;      
+      max-height: 660px;
+      height: 360px;
+      
     }
     @media (max-width: 580px) {
-        max-width: 200px;
-       
+        max-width: 300px;
+        height:auto;
     }     
 }
 `;
