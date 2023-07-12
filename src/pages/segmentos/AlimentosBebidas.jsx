@@ -31,7 +31,7 @@ const containerData = [
             { id: 3, name: 'BOPP metalizado', description: 'Descripción del elemento 2' },
             { id: 4, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
-        listTitle3: "-En Inmold",
+        listTitle3: "En Inmold",
         backgroundImage: "/assets/alimentos-y-bebidas/cards/card1.png",
     },
     {
@@ -57,7 +57,7 @@ const containerData = [
             { id: 3, name: 'BOPP metalizado', description: 'Descripción del elemento 2' },
             { id: 4, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
-        listTitle3: "-En Manga termoencongible",
+        listTitle3: "En Manga termoencongible",
         backgroundImage: "/assets/alimentos-y-bebidas/cards/card2.png",
     },
     {
