@@ -10,7 +10,7 @@ import { useSpring, animated } from 'react-spring';
 const containerData = [
     {
         inverseOrder: false,
-        title: "Suplementos alimenticios",
+        title: "SUPLEMENTOS ALIMENTICIOS",
         subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bond",
@@ -35,7 +35,7 @@ const containerData = [
     },
     {
         inverseOrder: true,
-        title: "Cosmética",
+        title: "COSMÉTICA",
         subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bond",
@@ -60,7 +60,7 @@ const containerData = [
     },
     {
         inverseOrder: false,
-        title: "Hogar",
+        title: "HOGAR",
         subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bond",

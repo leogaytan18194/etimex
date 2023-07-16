@@ -875,6 +875,9 @@ export const ContainerStyles = styled.div`
       justify-content: center;
       align-items: center;
     }
+    h3{
+      text-decoration: underline;
+    }
     ul {
       margin: 0 5px;
       li {
@@ -1044,6 +1047,9 @@ export const ContainerStyles2 = styled.div`
   }
   .block-text-container * {
       text-align: center;
+      h3{
+        text-decoration: underline;
+      }
   }
   .text-container-txt {
     p {
@@ -1069,6 +1075,10 @@ export const ContainerStyles2 = styled.div`
     @media (max-width: 768px) {
       justify-content: center;
       align-items: center;
+
+      h3{
+        text-decoration: underline;
+      }
     }
     ul {
       margin: 0 5px;
@@ -1173,6 +1183,10 @@ export const ContainerStyles2 = styled.div`
       }
     }
     
+  }
+
+  h3{
+    text-decoration: underline;
   }
   /* .block-text-container {
     width: auto;

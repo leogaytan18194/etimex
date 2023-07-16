@@ -11,7 +11,7 @@ import { useSpring, animated } from 'react-spring';
 const containerData = [
     {
         inverseOrder: false,
-        title: "Promocional",
+        title: "PROMOCIONAL",
         subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bond",
@@ -36,7 +36,7 @@ const containerData = [
     },
     {
         inverseOrder: true,
-        title: "Marcas propias",
+        title: "MARCAS PROPRIAS",
         subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bond",

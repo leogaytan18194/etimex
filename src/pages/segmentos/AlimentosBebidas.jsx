@@ -10,7 +10,7 @@ import { useSpring, animated } from 'react-spring';
 const containerData = [
     {
         inverseOrder: false,
-        title: "Congelados",
+        title: "CONGELADOS",
         subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bond",
@@ -36,7 +36,7 @@ const containerData = [
     },
     {
         inverseOrder: true,
-        title: "Refrescos y jugos",
+        title: "REFRESCOS Y JUGOS",
         subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bond",
@@ -62,7 +62,7 @@ const containerData = [
     },
     {
         inverseOrder: false,
-        title: "Alimentos",
+        title: "ALIMENTOS",
         subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bond",
@@ -89,7 +89,7 @@ const containerData = [
 
     {
         inverseOrder: true,
-        title: "Aguas",
+        title: "AGUAS",
         subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bond",
@@ -109,7 +109,7 @@ const containerData = [
             { id: 3, name: 'BOPP metalizado', description: 'Descripción del elemento 2' },
             { id: 4, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
         ],
-        listTitle3: "-En Manga termoencongible",
+        listTitle3: "En Manga termoencongible",
         backgroundImage: "/assets/alimentos-y-bebidas/cards/card4.png",
     },
 

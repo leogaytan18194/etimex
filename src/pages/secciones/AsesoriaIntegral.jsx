@@ -12,7 +12,7 @@ import Card2 from '../../components/secciones/Card2';
 const containerData = [
     {
         inverseOrder: true,
-        title: "Auto adheribles",
+        title: "AUTO ADHERIBLES",
         subtitle: "Disponible en papel",
         icon1: "bond.svg",
         icon1Text: "Bondes",
@@ -30,7 +30,7 @@ const containerData = [
     },
     {
         inverseOrder: false,
-        title: "Envolventes",
+        title: "ENVOLVENTES",
         subtitle: "Disponible en papel",
         icon1: "bond.svg",
         icon1Text: "Bond",
@@ -48,7 +48,7 @@ const containerData = [
     },
     {
         inverseOrder: true,
-        title: "Manga Termoencogible",
+        title: "MANGA TERMOENCOGIBLE",
         subtitle: "Disponible en papel",
         icon1: "none.svg",
         icon1Text: false,
@@ -66,7 +66,7 @@ const containerData = [
     },
     {
         inverseOrder: false,
-        title: "Señalización y Boletaje",
+        title: "SEÑALIZACIÓN Y BOLETAJE",
         subtitle: "Disponible en papel",
         icon1: "bond.svg",
         icon1Text: "Bond",

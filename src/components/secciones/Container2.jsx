@@ -105,13 +105,13 @@ const Container2 = ({ inverseOrder, title, subtitle, subtitle2, icon1, icon1Text
                                 <animated.p style={slideInFromBottom}>{subtitle2}</animated.p>
                             </animated.div>
                             <animated.div className='list-container'>
-                                <animated.p style={slideInFromLeft}>{listTitle}</animated.p>
+                                <animated.h3 style={slideInFromLeft}>{listTitle}</animated.h3>
                                 <animated.ul style={slideInFromBottom}>
                                     {listItems.map((item, index) => <li key={index}>{item.name}</li>)}
                                 </animated.ul>
                             </animated.div>
                             <animated.div className='list-container'>
-                                <animated.p style={slideInFromLeft}>{listTitle2}</animated.p>
+                                <animated.h3 style={slideInFromLeft}>{listTitle2}</animated.h3>
                                 <animated.ul style={slideInFromBottom}>
                                     {listItems2.map((item, index) => <li key={index}>{item.name}</li>)}
                                 </animated.ul>

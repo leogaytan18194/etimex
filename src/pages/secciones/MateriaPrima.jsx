@@ -11,7 +11,7 @@ import Container2 from '../../components/secciones/Container2';
 const containerData = [
     {
         inverseOrder: true,
-        title: "Auto adheribles",
+        title: "AUTO ADHERIBLES",
         subtitle: "Etiqueta con pegamento integrado",
         subtitle2: " para auto adherirse al tocar la superficie.",
         listTitle: "Disponible en",
@@ -35,7 +35,7 @@ const containerData = [
     },
     {
         inverseOrder: false,
-        title: "Envolventes",
+        title: "ENVOLVENTES",
         subtitle: "Etiqueta con pegamento en los extremos para unir  ",
         subtitle2: "uno con el otro al rodear la circunferencia del envase.",
         listTitle: "Disponible en",
@@ -59,7 +59,7 @@ const containerData = [
     },
     {
         inverseOrder: true,
-        title: "Manga Termoencogible",
+        title: "MANGA TERMOENCOGIBLE",
         subtitle: "Funda retráctil de material sintético ",
         subtitle2: "para vestir el 100% del envase.",
         icon1: "none.svg",
@@ -68,9 +68,9 @@ const containerData = [
         icon2Text: false,
         icon3: false,
         icon3Text: false,
-        listTitle: "Disponible en",
+        listTitle: "",
         listItems: [
-            { id: 1, name: 'No disponible', description: 'Descripción del elemento 1' },
+            
         ],
         listTitle2: "En película",
         listItems2: [
@@ -84,7 +84,7 @@ const containerData = [
     },
     {
         inverseOrder: false,
-        title: "Señalización y Boletaje",
+        title: "SEÑALIZACIÓN Y BOLETAJE",
         subtitle: "Disponible en",
         subtitle2: "-Cartulina",
         icon1: "bond.svg",
