@@ -80,8 +80,8 @@ const containerData = [
             { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
             { id: 3, name: 'BOPP metalizado', description: 'Descripción del elemento 2' },
             { id: 4, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
-            { id: 5, name: '-En Manga Termoencogible', description: 'Descripción del elemento 3' },
         ],
+        listTitle3: "En Manga Termoencogible",
         backgroundImage: "/assets/salud-y-belleza/cards/hogar-salud.webp",
     },
 
@@ -155,6 +155,7 @@ const containerMap = (data, index, theme) => {
                 listItems={data.listItems}
                 listTitle2={data.listTitle2}
                 listItems2={data.listItems2}
+                listTitle3={data.listTitle3}
                 backgroundImage={data.backgroundImage}
                 theme={theme}
             />
