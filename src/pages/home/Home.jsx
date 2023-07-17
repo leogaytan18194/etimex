@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Video from '../../components/video/Video'
-import VideoDesk from '../../components/video/Video_desktop'
+import VideoMobile from '../../components/video/VideoMobile'
 import Works from '../../components/works/Works'
 import Intro from '../../components/intro/Intro'
 import Print from '../../components/informacion/Print'
@@ -43,7 +43,7 @@ const Home = () => {
             <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> */}            
             <div className="sections" id='inicio'>
                 <Video />
-                <VideoDesk />
+                <VideoMobile />
                 <Works />
                 <Informacion />
                 <Segmentos />
