@@ -10,73 +10,73 @@ import { useSpring, animated } from 'react-spring';
 const containerData = [
     {
         inverseOrder: false,
-        title: "VINOS",
+        title: "WINES",
         subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bondes",
         icon2: "shrek.svg",
         icon2Text: "Tyvek",
-        listTitle: "Disponible en",
+        listTitle: "Available on",
         listItems: [
-            { id: 1, name: 'Papel Texturizado',  },
-            { id: 2, name: 'Papel Hi-gloss',  },
-            { id: 3, name: 'Papel Semi coated',  },
-            { id: 4, name: 'Papel mate',  },
+            { id: 1, name: 'Textured',  },
+            { id: 2, name: 'Hi-gloss paper',  },
+            { id: 3, name: 'Semi coated paper',  },
+            { id: 4, name: 'Mate paper',  },
         ],
-        listTitle2: "En película:",
+        listTitle2: "On Film:",
         listItems2: [
-            { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
-            { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
-            { id: 3, name: 'BOPP metalizado', description: 'Descripción del elemento 2' },
-            { id: 4, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
+            { id: 1, name: 'Transparent BOPP', description: 'Descripción del elemento 1' },
+            { id: 2, name: 'White BOPP', description: 'Descripción del elemento 2' },
+            { id: 3, name: 'Metalized BOPP', description: 'Descripción del elemento 2' },
+            { id: 4, name: 'White vinyl', description: 'Descripción del elemento 3' },
         ],
         backgroundImage: "/assets/vinos-y-licores/cards/card1.png",
     },
     {
         inverseOrder: true,
-        title: "LICORES",
+        title: "SPIRITS",
         subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bond",
         icon2: "shrek.svg",
         icon2Text: "Tyvek",
-        listTitle: "Disponible en",
+        listTitle: "Available on",
         listItems: [
-            { id: 1, name: 'Papel Texturizado',  },
-            { id: 2, name: 'Papel Hi-gloss',  },
-            { id: 3, name: 'Papel Semi coated',  },
-            { id: 4, name: 'Papel mate',  },
+            { id: 1, name: 'Textured',  },
+            { id: 2, name: 'Hi-gloss paper',  },
+            { id: 3, name: 'Semi coated paper',  },
+            { id: 4, name: 'Mate paper',  },
         ],
-        listTitle2: "En película:",
+        listTitle2: "On Film:",
         listItems2: [
-            { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
-            { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
-            { id: 3, name: 'BOPP metalizado', description: 'Descripción del elemento 2' },
-            { id: 4, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
+            { id: 1, name: 'Transparent BOPP', description: 'Descripción del elemento 1' },
+            { id: 2, name: 'White BOPP', description: 'Descripción del elemento 2' },
+            { id: 3, name: 'Metalized BOPP', description: 'Descripción del elemento 2' },
+            { id: 4, name: 'White vinyl', description: 'Descripción del elemento 3' },
         ],
         backgroundImage: "/assets/vinos-y-licores/cards/card2.png",
     },
     {
         inverseOrder: false,
-        title: "CERVEZA ARTESANAL",
+        title: "CRAFT BEER",
         subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bond",
         icon2: "shrek.svg",
         icon2Text: "Tyvek",
-        listTitle: "Disponible en",
+        listTitle: "Available on",
         listItems: [
-            { id: 1, name: 'Papel Texturizado',  },
-            { id: 2, name: 'Papel Hi-gloss',  },
-            { id: 3, name: 'Papel Semi coated',  },
-            { id: 4, name: 'Papel mate',  },
+            { id: 1, name: 'Textured',  },
+            { id: 2, name: 'Hi-gloss paper',  },
+            { id: 3, name: 'Semi coated paper',  },
+            { id: 4, name: 'Mate paper',  },
         ],
-        listTitle2: "En película:",
+        listTitle2: "On Film:",
         listItems2: [
-            { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
-            { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
-            { id: 3, name: 'BOPP metalizado', description: 'Descripción del elemento 2' },
-            { id: 4, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
+            { id: 1, name: 'Transparent BOPP', description: 'Descripción del elemento 1' },
+            { id: 2, name: 'White BOPP', description: 'Descripción del elemento 2' },
+            { id: 3, name: 'Metalized BOPP', description: 'Descripción del elemento 2' },
+            { id: 4, name: 'White vinyl', description: 'Descripción del elemento 3' },
         ],
         backgroundImage: "/assets/vinos-y-licores/cards/cervezas.png",
     },
@@ -86,42 +86,42 @@ const container2Data = [
     {
         inverseOrder: false,
         title: `COLD FOIL`,
-        description: `Agrega motivos metálicos y holográficos en frío especial para materiales lisos y mangas termoencogibles.`,
+        description: `Add special cold metal and holographic motives for smooth materials and shrink sleeves.`,
         image: "/assets/vinos-y-licores/cards/card4.png",
-        titleItem: "Acabados"
+        titleItem: "Embellishment"
     },
     {
         inverseOrder: true,
         title: "HOT FOIL",
-        description: `Aporta un look premium y genera contraste visual con un aspecto metalizado hecho a tu medida.`,
+        description: `Add a premium look and make a metalized visual contrast just for your needs.`,
         image: "/assets/vinos-y-licores/cards/card5.png",
         titleItem: false,
     },
     {
         inverseOrder: false,
         title: "EMBOSS",
-        description: "Brinda una experiencia táctil y realza patrones de diseño específicos en la superficie de tu etiqueta.",
+        description: "Show tactile excellence and make specific design patterns on your label.",
         image: "/assets/vinos-y-licores/cards/card6.png",
         titleItem: false,
     },
     {
         inverseOrder: true,
         title: "DEBOSS",
-        description: "Genera un aspecto de profundidad acentuando atributos distintivos para una imagen elegante y sofisticada.",
+        description: "It creates a look of depth by accentuating distinctive attributes for an elegant and sophisticated image.",
         image: "/assets/vinos-y-licores/cards/card7.png",
         titleItem: false,
     },
     {
         inverseOrder: false,
         title: "SILK SCREEN",
-        description: "Barniz sutil y elegante que brinda una experiencia táctil hasta en los detalles más finos de tu etiqueta, elevando su experiencia.​",
+        description: "Subtle and elegant varnish that provides a tactile experience even in the finest details of your label, elevating your experience​",
         image: "/assets/vinos-y-licores/cards/card8.png",
         titleItem: false,
     },
     {
         inverseOrder: true,
         title: "CAST & CURE",
-        description: "Agrega efectos de hologramas como una excelente herramienta de diferenciación, valor agregado y prevención de falsificación.",
+        description: "Add holographic effects as an excellent differentiation value and falsification prevention.",
         image: "/assets/vinos-y-licores/cards/marine.jpg",
         titleItem: false,
     }
@@ -129,7 +129,7 @@ const container2Data = [
     {
         inverseOrder: false,
         title: "SOFT TOUCH",
-        description: "Acabado con propiedades táctiles que lo hacen totalmente diferente, gracias al juego con texturas satinadas y mate, aporta una sensación de elegancia y suavidad al tacto.",
+        description: "Finished with tactile properties that make it totally different, thanks to the combination of satin and matte textures, gives an elegant sensation with soft touch.",
         image: "/assets/salud-y-belleza/cards/SOFT_TOUCH.png",
         titleItem: false,
     }
@@ -200,8 +200,8 @@ const Vinos = () => {
             />
             <HeroContainer
                 backgroundImage={"/assets/vinos-y-licores/hVinos2.png"}
-                text1={"Se único,"}
-                text2={"se audaz"}
+                text1={"Be unique,"}
+                text2={"be bold."}
             />
             {container}
             {container2}

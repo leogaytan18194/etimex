@@ -9,7 +9,7 @@ export default function Works() {
       id: "1",
       title: "etimex",
       desc:
-        "It is a company that for more than five decades has been dedicated to the packaging and label printing production industry.",
+        "is a proud Mexican born company, with more than five decades leading in technology and innovation through label printing and flexible packaging.",
       img:
         "./assets/bote2.png",
       img2:
@@ -19,7 +19,7 @@ export default function Works() {
       id: "2",
       title: "Mission",
       desc:
-        "It is to exceed with excellence the printing expectations of our clients.",
+        "To exceed with excellence our clients printing expectations.",
       img:
         "./assets/slide2.png",
     },
@@ -27,7 +27,7 @@ export default function Works() {
       id: "3",
       title: "We create experiences",
       desc:
-        "We seek to create labels and packaging that make you remember, aspire and feel over time, connecting brands and people..",
+        "We print labels and flexible packaging that make us remember, aspire and feel through time connecting brands and people.",
       img:
         "./assets/botella1.png",
       img2:

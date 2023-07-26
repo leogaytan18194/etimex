@@ -63,17 +63,17 @@ const PageRoutes = () => {
                 <Route path="/servicios/asesoria-integral" element={<AsesoriaIntegral />} />
                 <Route path="/servicios/acabados" element={<Acabados />} />
                 <Route path="/en" element={<HomeEn />} />
-                <Route path="/en/vinos-y-licores/" element={<VinosEn />} />
-                <Route path="/en/alimentos-y-bebidas/" element={<AlimentosBebidasEn />} />
-                <Route path="/en/salud-y-belleza/" element={<SaludBellezaEn />} />
+                <Route path="/en/wines-and-spirits/" element={<VinosEn />} />
+                <Route path="/en/food-and-drinks/" element={<AlimentosBebidasEn />} />
+                <Route path="/en/health-and-beauty/" element={<SaludBellezaEn />} />
                 <Route path="/en/industrial/" element={<IndustrialEn />} />
-                <Route path="/en/admision/" element={<BoletajeEn />} />
+                <Route path="/en/admission/" element={<BoletajeEn />} />
                 <Route path="/en/retail/" element={<RetailEn />} />
                 <Route path="/en/sustentabilidad/" element={<SustentabilidadEn />} />
-                <Route path="/en/servicios/tintas/" element={<TintasEn />} />
-                <Route path="/en/servicios/materiales/" element={<MateriaPrimaEn />} />
-                <Route path="/en/servicios/asesoria-integral/" element={<AsesoriaIntegralEn />} />
-                <Route path="/en/servicios/acabados/" element={<AcabadosEn />} />
+                <Route path="/en/services/tintas/" element={<TintasEn />} />
+                <Route path="/en/services/materials/" element={<MateriaPrimaEn />} />
+                <Route path="/en/services/integral-advises/" element={<AsesoriaIntegralEn />} />
+                <Route path="/en/services/embellishments/" element={<AcabadosEn />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </>

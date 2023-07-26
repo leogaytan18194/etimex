@@ -10,13 +10,13 @@ import { useSpring, animated } from 'react-spring';
 const containerData = [
     {
         inverseOrder: false,
-        title: "EVENTOS",
-        subtitle: "Disponible en",
+        title: "EVENTS",
+        subtitle: "Available on",
         icon1: "bond.svg",
         icon1Text: "Bond",
         icon2: "shrek.svg",
         icon2Text: "Tyvek",
-        listTitle: "-Cartulina",
+        listTitle: "-Cardboard",
         listItems: [
             { id: 1, name: '    Thermal TC 4.0', description: 'Descripción del elemento 2' },
             { id: 2, name: '    Thermal TC 7.0', description: 'Descripción del elemento 3' },
@@ -28,12 +28,12 @@ const containerData = [
     },
     {
         inverseOrder: true,
-        title: "ESTACIONAMIENTOS",
+        title: "PARKING LOT",
         icon1: "bond.svg",
         icon1Text: "Bond",
         icon2: "shrek.svg",
         icon2Text: "Tyvek",
-        listTitle: "-Cartulina",
+        listTitle: "-Cardboard",
         listItems: [
             { id: 1, name: '    Thermal TC 4.0', description: 'Descripción del elemento 2' },
             { id: 2, name: '    Thermal TC 7.0', description: 'Descripción del elemento 3' },
@@ -46,15 +46,15 @@ const containerData = [
     },
     {
         inverseOrder: false,
-        title: "AEROLÍNEAS",
+        title: "AIRLINES",
         subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bond",
         icon2: "shrek.svg",
         icon2Text: "Twvek",
-        listTitle: "-Cartulina",
+        listTitle: "-Cardboard",
         listItems: [
-            { id: 1, name: 'Thermal TC 4.0 - 7.0', description: 'Descripción del elemento 2' },
+            { id: 1, name: 'NTC 4.0 - 7.0', description: 'Descripción del elemento 2' },
         ],
         listTitle2: "",
         listItems2: [
@@ -70,7 +70,7 @@ const container2Data = [
         title: "MATTE LAMINATION​",
         description: `Al igual que el glossy garantiza la duración de la impresión y protege de la intemperie.`,
         image: "/assets/boletaje/cards/boletaje-matte.png",
-        titleItem: "Acabados"
+        titleItem: "Embellishments"
     },
     {
         inverseOrder: true,

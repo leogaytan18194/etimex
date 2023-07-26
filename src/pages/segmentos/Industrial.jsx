@@ -67,7 +67,7 @@ const container2Data = [
         title: `GLOSSY LAMINATION​`,
         description: `Garantiza la duración de la impresión y protege de la intemperie.`,
         image: "/assets/industrial/cards/card1.png",
-        titleItem: "Acabados"
+        titleItem: "Embellishments"
     },
     {
         inverseOrder: true,

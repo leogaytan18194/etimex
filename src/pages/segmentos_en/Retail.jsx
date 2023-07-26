@@ -10,70 +10,72 @@ import { useSpring, animated } from 'react-spring';
 const containerData = [
     {
         inverseOrder: false,
-        title: "PROMOCIONAL",
+        title: "PROMOTIONAL",
         subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bond",
         icon2: "shrek.svg",
         icon2Text: "Tyvek",
-        listTitle: "Disponible en",
+        listTitle: "Available on",
         listItems: [
-            { id: 1, name: 'Papel Texturizado',  },
-            { id: 2, name: 'Papel Metalizado',  },
-            { id: 3, name: 'Papel Hi-gloss',  },
-            { id: 4, name: 'Papel Semi coated',  },
-            { id: 5, name: 'Papel Mate',  },
+            { id: 1, name: 'Textured paper',  },
+            { id: 2, name: 'Metalized paper',  },
+            { id: 3, name: 'Hi-gloss paper',  },
+            { id: 4, name: 'Semi coated paper',  },
+            { id: 5, name: 'Matte paper',  },
         ],
-        listTitle2: "En película",
+        listTitle2: "On film",
         listItems2: [
-            { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
-            { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
-            { id: 3, name: 'BOPP metalizado', description: 'Descripción del elemento 2' },
-            { id: 4, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
+            { id: 1, name: 'Transparent BOPP', description: 'Descripción del elemento 1' },
+            { id: 2, name: 'White BOPP', description: 'Descripción del elemento 2' },
+            { id: 3, name: 'Metalized BOPP', description: 'Descripción del elemento 2' },
+            { id: 4, name: 'White vinyl', description: 'Descripción del elemento 3' },
         ],
         backgroundImage: "/assets/retail/cards/PROMOCIONAL-RETAIL.png",
     },
     {
         inverseOrder: true,
-        title: "MARCAS PROPIAS",
+        title: "OWN BRANDS",
         subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bond",
         icon2: "shrek.svg",
         icon2Text: "Tyvek",
-        listTitle: "Disponible en",
+        listTitle: "Available on",
         listItems: [
-            { id: 1, name: 'Papel Thermal NTC',  },
-            { id: 2, name: 'Papel Thermal TC',  },
+            { id: 1, name: 'Pressure Sensitive label',  },
+            { id: 2, name: 'Thermal NTC paper',  },
+            { id: 3, name: 'Thermal TC paper',  },
         ],
-        listTitle2: "En película",
+        listTitle2: "On film",
         listItems2: [
-            { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
-            { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
-            { id: 3, name: 'BOPP metalizado', description: 'Descripción del elemento 2' },
-            { id: 4, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
+            { id: 1, name: 'Transparent BOPP', description: 'Descripción del elemento 1' },
+            { id: 2, name: 'White BOPP', description: 'Descripción del elemento 2' },
+            { id: 3, name: 'Metalized BOPP', description: 'Descripción del elemento 2' },
+            { id: 4, name: 'White vinyl', description: 'Descripción del elemento 3' },
         ],
         backgroundImage: "/assets/retail/cards/card2.png",
     },
     {
         inverseOrder: false,
-        title: "PRECIADORES",
+        title: "SALES LABEL",
         subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bond",
         icon2: "shrek.svg",
         icon2Text: "Twvek",
-        listTitle: "Disponible en",
+        listTitle: "Available on",
         listItems: [
-            { id: 1, name: 'Papel Thermal NTC',  },
-            { id: 2, name: 'Papel Thermal TC',  },
+            { id: 1, name: 'Pressure Sensitive label',  },
+            { id: 2, name: 'Thermal NTC paper',  },
+            { id: 3, name: 'Thermal TC paper',  },
         ],
-        listTitle2: "En película",
+        listTitle2: "On film",
         listItems2: [
-            { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
-            { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
-            { id: 3, name: 'BOPP metalizado', description: 'Descripción del elemento 2' },
-            { id: 4, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
+            { id: 1, name: 'Transparent BOPP', description: 'Descripción del elemento 1' },
+            { id: 2, name: 'White BOPP', description: 'Descripción del elemento 2' },
+            { id: 3, name: 'Metalized BOPP', description: 'Descripción del elemento 2' },
+            { id: 4, name: 'White vinyl', description: 'Descripción del elemento 3' },
         ],
         backgroundImage: "/assets/retail/cards/preciadores-retail.jpg",
     },
@@ -85,7 +87,7 @@ const container2Data = [
         title: `GLOSSY LAMINATION​`,
         description: `Garantiza la duración de la impresión y protege de la intemperie.`,
         image: "/assets/retail/cards/card4.png",
-        titleItem: "Acabados"
+        titleItem: "Embellishment"
     },
     {
         inverseOrder: true,
@@ -176,8 +178,8 @@ const Retail = () => {
             />
             <HeroContainer
                 backgroundImage={"/assets/retail/hero.png"}
-                text1={"Brilla"}
-                text2={"en anaquel"}
+                text1={"Shine"}
+                text2={"on the shelf"}
                 theme={theme}
             />
             {container}

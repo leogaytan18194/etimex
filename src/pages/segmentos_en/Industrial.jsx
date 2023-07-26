@@ -1,17 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { PageStyles } from '../../styles/Styles'
-import Header from '../../components/segmentos_en/Header'
-import Container from '../../components/segmentos_en/Container'
-import HeroContainer from '../../components/segmentos_en/HeroContainer'
-import Footer from '../../components/segmentos_en/Footer'
-import Container2 from '../../components/segmentos_en/Container2'
+import Header from '../../components/segmentos/Header'
+import Container from '../../components/segmentos/Container'
+import HeroContainer from '../../components/segmentos/HeroContainer'
+import Footer from '../../components/segmentos/Footer'
+import Container2 from '../../components/segmentos/Container2'
 import { useSpring, animated } from 'react-spring';
 
 
 const containerData = [
     {
         inverseOrder: false,
-        title: "PROMOCIONAL",
+        title: "OILS AND LUBRICANTS",
         subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bond",
@@ -19,24 +19,24 @@ const containerData = [
         icon2Text: "Tyvek",
         listTitle: "Disponible en",
         listItems: [
-            { id: 1, name: 'Papel Texturizado',  },
-            { id: 2, name: 'Papel Metalizado',  },
-            { id: 3, name: 'Papel Hi-gloss',  },
-            { id: 4, name: 'Papel Semi coated',  },
-            { id: 5, name: 'Papel Mate',  },
+            { id: 1, name: 'Textured paper',  },
+            { id: 2, name: 'Metalized paper',  },
+            { id: 3, name: 'Hi-gloss paper',  },
+            { id: 4, name: 'Semi coated paper',  },
+            { id: 5, name: 'Matte paper',  },
         ],
         listTitle2: "En película:",
         listItems2: [
-            { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
-            { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
-            { id: 3, name: 'BOPP metalizado', description: 'Descripción del elemento 2' },
-            { id: 4, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
+            { id: 1, name: 'Transparent BOPP', description: 'Descripción del elemento 1' },
+            { id: 2, name: 'White BOPP', description: 'Descripción del elemento 2' },
+            { id: 3, name: 'Metalized BOPP', description: 'Descripción del elemento 2' },
+            { id: 4, name: 'White vinyl', description: 'Descripción del elemento 3' },
         ],
         backgroundImage: "/assets/industrial/cards/aceites_cuadrado.png",
     },
     {
         inverseOrder: true,
-        title: "MARCAS PROPRIAS",
+        title: "STAIRS",
         subtitle: "",
         icon1: "bond.svg",
         icon1Text: "Bond",
@@ -44,16 +44,19 @@ const containerData = [
         icon2Text: "Tyvek",
         listTitle: "Disponible en",
         listItems: [
-            { id: 1, name: 'Papel Thermal NTC',  },
-            { id: 2, name: 'Papel Thermal TC',  },
+            { id: 1, name: 'Textured paper',  },
+            { id: 2, name: 'Metalized paper',  },
+            { id: 3, name: 'Hi-gloss paper',  },
+            { id: 4, name: 'Semi coated paper',  },
+            { id: 5, name: 'Matte paper',  },
         ],
         listTitle2: "En película:",
         listItems2: [
-            { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
-            { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
-            { id: 3, name: 'BOPP metalizado', description: 'Descripción del elemento 2' },
-            { id: 4, name: 'Vinil blanco', description: 'Descripción del elemento 3' },
-            { id: 5, name: 'Poliéster', description: 'Descripción del elemento 3' },
+            { id: 1, name: 'Transparent BOPP', description: 'Descripción del elemento 1' },
+            { id: 2, name: 'White BOPP', description: 'Descripción del elemento 2' },
+            { id: 3, name: 'Metalized BOPP', description: 'Descripción del elemento 2' },
+            { id: 4, name: 'White vinyl', description: 'Descripción del elemento 3' },
+            { id: 5, name: 'Polyester', description: 'Descripción del elemento 3' },
         ],
         backgroundImage: "/assets/industrial/cards/escaleras-industrial.jpg",
     },
@@ -65,21 +68,21 @@ const container2Data = [
     {
         inverseOrder: false,
         title: `GLOSSY LAMINATION​`,
-        description: `Garantiza la duración de la impresión y protege de la intemperie.`,
+        description: `: Guarantee the print lasting and protects from the outside conditions.`,
         image: "/assets/industrial/cards/card1.png",
         titleItem: "Acabados"
     },
     {
         inverseOrder: true,
         title: "MATTE LAMINATION​",
-        description: `Al igual que el glossy garantiza la duración de la impresión y protege de la intemperie.`,
+        description: `Similar to the glossy,  Guarantees long lasting printing  and protects  your label from outside conditions but with a fine matte finish. `,
         image: "/assets/industrial/cards/mattelami-industrial.jpg",
         titleItem: false,
     },
     {
         inverseOrder: false,
         title: "GLOSSY VARNISH",
-        description: "Genera una capa de protección ante factores ambientales que pueden perjudicar tu etiqueta con un look ultra brillante.",
+        description: "Generates a protector layer against ambiental factors that can badly affect your label with an extra brilliant look.",
         image: "/assets/industrial/cards/glossy_ind.jpg",
         titleItem: false,
     },

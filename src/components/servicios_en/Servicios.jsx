@@ -71,7 +71,7 @@ export default function Servicios() {
       <animated.h2 style={fadeInProps} className="ITBold">Services</animated.h2>
       <div className="container">
         <animated.div  style={slideProps4}>
-          <Link to="servicios/materiales" className="item">
+          <Link to="/en/services/materials" className="item">
             <img
               src="assets/servicios1.png"
               alt="Materiales"
@@ -82,18 +82,18 @@ export default function Servicios() {
         </animated.div>
         <animated.div  style={slideProps2}>
 
-          <Link to="servicios/acabados" className="item">
+          <Link to="/en/services/embellishments" className="item">
             <img
               src="assets/servicios2.png"
               alt="Acabados"
             />
-            <h3>Embellishment finishes</h3>
+            <h3>Embellishmt finishes</h3>
           </Link>
         </animated.div>
 
         <animated.div  style={slideProps}>
 
-          <Link to="servicios/asesoria-integral" className="item">
+          <Link to="/en/services/integral-advises" className="item">
             <img
               src="assets/servicios3.png"
               alt=""

@@ -21,18 +21,18 @@ const socialIcons = [
 ];
 const tabItems = [
   {
-    text: "Materiales",
-    route: "/servicios/materiales",
+    text: "Materials",
+    route: "/en/services/materials",
     top: "-5px",
   },
   {
-    text: "Acabados de embellecimiento",
-    route: "/servicios/acabados",
+    text: "Embellishment finishes",
+    route: "/en/services/embellishments",
     top: "-2px",
   },
   {
-    text: "Asesoria integral",
-    route: "/servicios/asesoria-integral",
+    text: "Integral advice",
+    route: "/en/services/integral-advises",
     top: "-2px",
   },
 ]
@@ -56,7 +56,7 @@ const Footer = ({ theme, heigth }) => {
         <div className='footer-items'>
           <ul className="footer-list">
             <li>Copyright © 2023 Etimex</li>
-            <li>Contacto: info@etimex.com</li>
+            <li>Contact: info@etimex.com</li>
             <li>81 8479 0800</li>
             <li>+52 (81) 3116 6651</li>
             <li>Dir. San Ángel 201, Churubusco, 64590 Monterrey, N.L. México</li>
