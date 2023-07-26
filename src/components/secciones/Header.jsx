@@ -210,20 +210,13 @@ const Header = ({ logo, theme }) => {
             }
         },
         {
-            item: `${lang}`,
-            route: '#',
+            item: `ENG`,
+            route: 'en',
             section: 'lang',
             animation: textAnimation7,
-            link:false,
+            link:true,
             callback: () => {
-                setLang(prev => {
-                    if (prev === "ENG") {
-                        return "ES";
-                    }
-                    if (prev === "ES") {
-                        return "ENG";
-                    }
-                });
+                return;
             }
         },
 

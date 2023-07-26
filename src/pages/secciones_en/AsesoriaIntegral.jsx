@@ -2,11 +2,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import { PageStyles } from '../../styles/Styles'
 
 import { useSpring, animated } from 'react-spring';
-import Header from '../../components/secciones/Header';
-import HeroContainer from '../../components/secciones/HeroContainer';
-import Footer from '../../components/secciones/Footer';
-import Container2 from '../../components/secciones/Container2';
-import Card2 from '../../components/secciones/Card2';
+import Header from '../../components/secciones_en/Header';
+import HeroContainer from '../../components/secciones_en/HeroContainer';
+import Footer from '../../components/secciones_en/Footer';
+import Container2 from '../../components/secciones_en/Container2';
+import Card2 from '../../components/secciones_en/Card2';
 
 
 const containerData = [

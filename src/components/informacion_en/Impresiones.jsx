@@ -79,7 +79,7 @@ export default function Impresiones() {
       <div className="wrapper">
 
 
-        <h2 className="helvetica">   <FadeInScale><b>Nuestra tecnología no tiene límite</b>, desde tiradas cortas, grandes y la flexibilidad para el desarrollo de diferentes empaques.      </FadeInScale></h2>
+        <h2 className="helvetica">   <FadeInScale><b>Our technology has no limit</b>, from short, large runs and the flexibility to develop different packaging.      </FadeInScale></h2>
 
       </div>
     </div>

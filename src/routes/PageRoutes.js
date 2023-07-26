@@ -36,7 +36,7 @@ const PageRoutes = () => {
             chatMessage:"¡Hola! 🤝 ¿En qué podemos ayudarte? " 
         },
         "en":{
-            chatMessage:"¡Hola! 🤝 ¿En qué podemos ayudarte? " 
+            chatMessage:"Hi! 🤝 ¿En qué podemos ayudarte? " 
         }
     }
     return (
@@ -63,17 +63,17 @@ const PageRoutes = () => {
                 <Route path="/servicios/asesoria-integral" element={<AsesoriaIntegral />} />
                 <Route path="/servicios/acabados" element={<Acabados />} />
                 <Route path="/en" element={<HomeEn />} />
-                <Route path="/vinos-y-licores/en" element={<VinosEn />} />
-                <Route path="/alimentos-y-bebidas/en" element={<AlimentosBebidasEn />} />
-                <Route path="/salud-y-belleza/en" element={<SaludBellezaEn />} />
-                <Route path="/industrial/en" element={<IndustrialEn />} />
-                <Route path="/admision/en" element={<BoletajeEn />} />
-                <Route path="/retail/en" element={<RetailEn />} />
-                <Route path="/sustentabilidad/en" element={<SustentabilidadEn />} />
-                <Route path="/servicios/tintas/en" element={<TintasEn />} />
-                <Route path="/servicios/materiales/en" element={<MateriaPrimaEn />} />
-                <Route path="/servicios/asesoria-integral/en" element={<AsesoriaIntegralEn />} />
-                <Route path="/servicios/acabados/en" element={<AcabadosEn />} />
+                <Route path="/en/vinos-y-licores/" element={<VinosEn />} />
+                <Route path="/en/alimentos-y-bebidas/" element={<AlimentosBebidasEn />} />
+                <Route path="/en/salud-y-belleza/" element={<SaludBellezaEn />} />
+                <Route path="/en/industrial/" element={<IndustrialEn />} />
+                <Route path="/en/admision/" element={<BoletajeEn />} />
+                <Route path="/en/retail/" element={<RetailEn />} />
+                <Route path="/en/sustentabilidad/" element={<SustentabilidadEn />} />
+                <Route path="/en/servicios/tintas/" element={<TintasEn />} />
+                <Route path="/en/servicios/materiales/" element={<MateriaPrimaEn />} />
+                <Route path="/en/servicios/asesoria-integral/" element={<AsesoriaIntegralEn />} />
+                <Route path="/en/servicios/acabados/" element={<AcabadosEn />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </>

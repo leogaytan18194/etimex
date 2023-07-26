@@ -160,7 +160,7 @@ const Header2 = ({ logo, theme }) => {
                                 </MenuMobile>
                                 <div style={{ position: 'absolute', left: `${showMenuMo ? '0' : '100%'}`, opacity: `${showMenuMo === true ? 1 : 0}`, transition: 'all 0.3s' }} className='menu-mobile-container'>
                                     <CustomLi2 theme={theme} icon={`${pathname === '/sustentabilidad' ? "sustentabilidad" : ""}`} className={`${pathname === '/sustentabilidad' ? "activeMenu" : ""}`}>
-                                        <Link to="/sustentabilidad">
+                                        <Link to="/en/sustentabilidad">
                                             <animated.span style={textAnimation}>
                                                 Sustentabilidad
                                             </animated.span>
@@ -188,7 +188,7 @@ const Header2 = ({ logo, theme }) => {
                                         </HashLink>
                                     </li>
                                     <CustomLi2 theme={theme} icon={`${pathname === '/sustentabilidad' ? "sustentabilidad" : ""}`} className={`${pathname === '/sustentabilidad' ? "activeMenu" : ""}`}>
-                                        <Link to="/sustentabilidad">
+                                        <Link to="/en/sustentabilidad">
                                             <animated.span style={textAnimation}>
                                                 Sustentabilidad
                                             </animated.span>
@@ -197,15 +197,9 @@ const Header2 = ({ logo, theme }) => {
                                     <CustomLi2 theme={theme} justify="end" style={{
                                         width: "96%",
                                     }}>
-                                        <Link to="#" className='no-link' onClick={() => setLang(prev => {
-                                            if (prev === "ENG") {
-                                                return "ES";
-                                            } else {
-                                                return "ENG";
-                                            }
-                                        })}>
+                                        <Link to="/sustentabilidad" className='no-link'>
                                             <animated.span style={textAnimation5} className={`${theme === "dark" ? "item-lang-dark" : "item-lang-light"}`}>
-                                                {lang}
+                                                ES
                                             </animated.span>
                                         </Link>
                                     </CustomLi2>

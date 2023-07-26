@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { FooterStyles, PageStyles } from '../../styles/Styles'
-import Header from '../../components/segmentos/Header'
-import Container from '../../components/segmentos/Container'
-import HeroContainer2 from '../../components/segmentos/HeroContainer2'
-import Footer from '../../components/segmentos/Footer'
-import Container2 from '../../components/segmentos/Container2'
+import Header from '../../components/segmentos_en/Header'
+import Container from '../../components/segmentos_en/Container'
+import HeroContainer2 from '../../components/segmentos_en/HeroContainer2'
+import Footer from '../../components/segmentos_en/Footer'
+import Container2 from '../../components/segmentos_en/Container2'
 import { useSpring, animated } from 'react-spring';
-import Header2 from '../../components/segmentos/Header2';
+import Header2 from '../../components/segmentos_en/Header2';
 import Contact2 from '../../components/contact/Contact2';
 
 const containerData = [

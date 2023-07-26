@@ -68,7 +68,7 @@ export default function Servicios() {
   }, []);
   return (
     <div className="servicios" id="servicios" ref={ref}>
-      <animated.h2 style={fadeInProps} className="ITBold">Servicios</animated.h2>
+      <animated.h2 style={fadeInProps} className="ITBold">Services</animated.h2>
       <div className="container">
         <animated.div  style={slideProps4}>
           <Link to="servicios/materiales" className="item">
@@ -76,7 +76,7 @@ export default function Servicios() {
               src="assets/servicios1.png"
               alt="Materiales"
             />
-            <h3>Materiales</h3>
+            <h3>Materials</h3>
           </Link>
 
         </animated.div>
@@ -87,7 +87,7 @@ export default function Servicios() {
               src="assets/servicios2.png"
               alt="Acabados"
             />
-            <h3>Acabados de embellecimiento</h3>
+            <h3>Embellishment finishes</h3>
           </Link>
         </animated.div>
 
@@ -98,7 +98,7 @@ export default function Servicios() {
               src="assets/servicios3.png"
               alt=""
             />
-            <h3>Asesoría Integral</h3>
+            <h3>Comprehensive advice</h3>
           </Link>
         </animated.div>
       </div>

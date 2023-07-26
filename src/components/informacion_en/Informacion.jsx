@@ -79,9 +79,9 @@ export default function Informacion() {
             style={{
               whiteSpace: 'pre-line',
             }}
-          ><FadeInFromLeft>{`Etimex brinda soluciones de impresión, a través de una asesoría personalizada, 
-          ofreciendo los materiales de la más alta gama en el mundo,​
-asegurando distinción, calidad de impresión y tiempos de entrega únicos en el mercado. ​`}</FadeInFromLeft>
+          ><FadeInFromLeft>{`Etimex provides printing solutions, through personalized advice,
+          offering the highest-end materials in the world,
+ensuring distinction, printing quality and unique delivery times in the market. ​`}</FadeInFromLeft>
             {/* <FadeInFromRight>alta gama en el mundo, asegurando distinción, calidad de impresión y tiempo de entrega únicos en el mercado. </FadeInFromRight> */}
           </p>
         </div>

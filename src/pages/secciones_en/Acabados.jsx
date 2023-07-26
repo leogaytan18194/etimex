@@ -3,11 +3,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import { ContainerStyles2, PageStyles } from '../../styles/Styles'
 
 import { useSpring, animated } from 'react-spring';
-import Header from '../../components/secciones/Header';
-import HeroContainer from '../../components/secciones/HeroContainer';
-import Footer from '../../components/secciones/Footer';
-import Container3, { Icon } from '../../components/secciones/Container3';
-import NavTab from '../../components/secciones/NavTab';
+import Header from '../../components/secciones_en/Header';
+import HeroContainer from '../../components/secciones_en/HeroContainer';
+import Footer from '../../components/secciones_en/Footer';
+import Container3, { Icon } from '../../components/secciones_en/Container3';
+import NavTab from '../../components/secciones_en/NavTab';
 import Container2 from '../../components/segmentos/Container2'
 
 //Contenido de basicos

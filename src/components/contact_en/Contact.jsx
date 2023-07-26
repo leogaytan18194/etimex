@@ -43,7 +43,7 @@ export default function Contact() {
       <div className="contenedor-padre" id="contacto">
         <div className="contenedor-hijo-1">
           <div>
-            <h2>Contáctanos</h2>
+            <h2>Contact us</h2>
           </div>
         </div>
 
@@ -55,7 +55,7 @@ export default function Contact() {
 
                 <div className="flex-container">
                   <label htmlFor="input1" className="input-label">
-                    Nombre completo
+                  Full name
                   </label>
                   <input type="text" id="input1" name="nombre" className="input-field"/>
 
@@ -66,7 +66,7 @@ export default function Contact() {
               }}>
                 <div className="flex-container">
                   <label htmlFor="input1" className="input-label">
-                    Correo
+                    E-mail
                   </label>
                   <input type="email" id="input1" name="correo" className="input-field"/>
 
@@ -77,7 +77,7 @@ export default function Contact() {
               }}>
                 <div className="flex-container">
                   <label htmlFor="input1" className="input-label">
-                    Teléfono
+                  Phone
                   </label>
 
                   <input type="text" id="input1" name="telefono" className="input-field" />
@@ -91,7 +91,7 @@ export default function Contact() {
                 <div className={`input-group${selectFocused ? " focused" : ""}`}>
                   <div className="flex-container">
                     <label htmlFor="select1" className="select-label">
-                      Estado
+                      State
                     </label>
                     <select id="select1" name="estado" className="select-field" onFocus={handleSelectFocus} onBlur={handleSelectBlur} >
                       <option value="0"></option>
@@ -105,7 +105,7 @@ export default function Contact() {
                 <div className={`input-group${selectFocused ? " focused" : ""}`}>
                   <div className="flex-container">
                     <label htmlFor="select2" className="select-label">
-                      Sector de mercado
+                    Market segment
                     </label>
                     <select id="select2" name="mercado" className="select-field" onFocus={handleSelectFocus} onBlur={handleSelectBlur}>
                       <option value="0"></option>
@@ -119,7 +119,7 @@ export default function Contact() {
                 <div className={`input-group${selectFocused ? " focused" : ""}`}>
                   <div className="flex-container">
                     <label htmlFor="select3" className="select-label">
-                      Cantidad de piezas
+                    Amount of pieces
                     </label>
                     <select id="select3" name="piezas" className="select-field" onFocus={handleSelectFocus} onBlur={handleSelectBlur}>
                       <option value="0"></option>
@@ -133,7 +133,7 @@ export default function Contact() {
               </div>
               <div className="form-gruop-container">
                 <div className="input-group-radio">
-                  <label className="no-animation">¿Cómo fué que nos conociste?</label>
+                  <label className="no-animation">¿How did you meet us?</label>
                   <div className="flex-container-radio">
                     <div>
                       <input type="radio" id="radio1" name="encontro" value="Google"/>
@@ -153,11 +153,11 @@ export default function Contact() {
                     </div>
                     <div>
                       <input type="radio" id="radio5" name="encontro" value="recomendacion"/>
-                      <label className="no-animation" htmlFor="radio5" name="encontro" value="recomendacion">recomendación</label>
+                      <label className="no-animation" htmlFor="radio5" name="encontro" value="recomendacion">recommendation</label>
                     </div>
                     <div>
                       <input type="radio" id="radio6" name="encontro" value="otro"/>
-                      <label className="no-animation" htmlFor="radio6" name="encontro" value="otro">otro</label>
+                      <label className="no-animation" htmlFor="radio6" name="encontro" value="otro">other</label>
                     </div>
                   </div>
                 </div>
@@ -167,12 +167,12 @@ export default function Contact() {
             <div
               className="textarea-container">
               <div className="textarea-item">
-                <label className="no-animation" htmlFor="radio1">Mensaje</label>
+                <label className="no-animation" htmlFor="radio1">Message</label>
                 <textarea rows="" cols="" name="mensaje"></textarea>
               </div>
             </div>
             <div className="btn-container">
-              <button>Enviar</button>
+              <button>Send</button>
             </div>
             {done && "Gracias solicitud enviada..."}
           </form>
@@ -183,19 +183,19 @@ export default function Contact() {
         <div className="contact-info-container">
           <div className="contact-info-item">
             <FadeInScale>
-              <p>{`Llámanos:
+              <p>{`Call us:
 81 8479 0800`}</p>
             </FadeInScale>
           </div>
           <div className="contact-info-item">
             <FadeInScale>
-              <p>{`Horario de atención:
-Lunes a viernes.
+              <p>{`Office hours:
+Monday to Friday.
 9 am-5 pm`}</p></FadeInScale>
           </div>
           <div className="contact-info-item">
             <FadeInScale>
-              <p>{`Ubicación:
+              <p>{`Location:
 Av. San Ángel 201,
 Col. Churubusco, C.P. 64590,
 Monterrey, N.L. México.`}</p></FadeInScale>

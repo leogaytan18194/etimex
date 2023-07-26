@@ -2,10 +2,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import { PageStyles } from '../../styles/Styles'
 
 import { useSpring, animated } from 'react-spring';
-import Header from '../../components/secciones/Header';
-import HeroContainer from '../../components/secciones/HeroContainer';
-import Footer from '../../components/secciones/Footer';
-import Container from '../../components/secciones/Container';
+import Header from '../../components/secciones_en/Header';
+import HeroContainer from '../../components/secciones_en/HeroContainer';
+import Footer from '../../components/secciones_en/Footer';
+import Container from '../../components/secciones_en/Container';
 
 
 
