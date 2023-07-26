@@ -1,0 +1,412 @@
+@import "../../global.scss";
+
+// .contact {
+//   background-color: white;
+//   display: flex;
+
+//   @include mobile {
+//     flex-direction: column;
+//   }
+
+//   .left {
+//     flex: 1;
+//     overflow: hidden;
+
+//     img {
+//       height: 100%;
+//     }
+//   }
+//   .right {
+//     flex: 1;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+
+//     h2 {
+//       font-size: 30px;
+//     }
+
+//     form {
+//       width: 70%;
+//       height: 70%;
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       justify-content: space-around;
+
+//       input {
+//         width: 300px;
+//         height: 30px;
+//         font-size: 14px;
+
+//         @include mobile {
+//           width: 200px;
+//           height: 20px;
+//         }
+//       }
+
+//       textarea {
+//         width: 300px;
+//         height: 200px;
+//         font-size: 14px;
+
+//         @include mobile {
+//           width: 200px;
+//           height: 100px;
+//         }
+//       }
+
+//       button {
+//         width: 150px;
+//         height: 30px;
+//         color: white;
+//         background-color: crimson;
+//         border: none;
+//         border-radius: 10px;
+//         font-weight: 500;
+//         cursor: pointer;
+
+//         &:focus {
+//           outline: none;
+//         }
+//       }
+
+//       span {
+//         color: green;
+//       }
+//     }
+//   }
+// }
+
+/* CSS */
+form {
+  overflow: unset;
+  * {
+    overflow: unset;
+  }
+}
+.contenedor-padre {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.contenedor-hijo-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    color: #333;
+    font-size: 2em;
+    font-weight: 400;
+  }
+}
+
+.contenedor-hijo-2 form {
+  margin-top: 20px;
+  overflow: unset;
+  @include smallLaptop {
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+}
+
+.contenedor-hijo-2 form label {
+  display: block;
+  //margin-bottom: 10px;
+}
+
+.contenedor-hijo-2 form input[type="text"],
+.contenedor-hijo-2 form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+
+  border: 0;
+  outline: unset;
+}
+
+textarea,
+select {
+  border-radius: 10px;
+}
+form .input-group {
+  position: relative;
+  overflow: unset;
+  min-height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contenedor-hijo-2 form .input-group input[type="text"],
+.contenedor-hijo-2 form .input-group select {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.input-group,
+.textarea-container {
+  label {
+    margin: 13px 0;
+  }
+  // position: absolute;
+  // left: 5%;
+  // top: 50%;
+  // transform: translate(0%, -50%);
+  // transition: 0.3s;
+  // pointer-events: none;
+}
+
+.contenedor-hijo-2 form .input-group input[type="text"]:focus ~ label,
+.contenedor-hijo-2 form .input-group select:focus + label,
+.contenedor-hijo-2 form .input-group .focused label {
+  // top: -30%;
+  // left: 0;
+  // transform: translate(0%, -50%);
+}
+
+.contenedor-hijo-2 form .input-group input[type="text"]:not(:focus) ~ label,
+.contenedor-hijo-2 form .input-group select:not(:focus) + label {
+  /* top: 50%;
+  left: 10px;
+  transform: translate(0%, -50%);*/
+}
+
+.contenedor-hijo-2 form .flex-container {
+  display: flex;
+  justify-content: space-between;
+  overflow: unset;
+  position: relative;
+  flex-direction: column;
+}
+
+.contenedor-hijo-2 form .flex-container .input-group {
+  width: 48%; /* Para considerar el espacio entre los inputs */
+}
+
+.contenedor-hijo-2 form .flex-container .input-group input[type="radio"],
+.contenedor-hijo-2 form .flex-container .input-group input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+#contacto {
+  max-width: 1200px;
+  overflow: unset;
+  height: auto;
+  padding: 10vh 0;
+}
+.input-group {
+  overflow: unset;
+}
+
+.radio-group {
+  label {
+    position: relative !important;
+    left: 0 !important;
+    top: unset !important;
+    transform: unset !important;
+  }
+}
+
+.no-animation {
+  position: relative !important;
+  left: 0 !important;
+  top: unset !important;
+  transform: unset !important;
+}
+.form-container {
+  display: grid;
+  grid-template-columns: 58% 40%;
+  justify-content: space-between;
+  overflow: unset;
+  @include mobile {
+    grid-template-columns: 100%;
+  }
+}
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: unset;
+}
+.form-gruop-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.input-group-radio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  &:nth-child(1) {
+    margin: 13px 0;
+  }
+}
+.contenedor-hijo-2 form label {
+  display: block;
+  width: 100%;
+}
+.flex-container-radio {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: start;
+  // width: auto;
+  // margin-left: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* crea dos columnas */
+  grid-template-rows: 1fr 1fr 1fr; /* crea tres filas */
+  gap: 10px 45px; /* espacio entre las celdas de la cuadrícula */
+  label {
+    text-transform: capitalize;
+  }
+  > div {
+    display: flex;
+    gap: 5px;
+    margin: 5px 0;
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr; /* crea una sola columna */
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; /* crea seis filas */
+    grid-auto-flow: row; /* llena las celdas de la cuadrícula por columnas */
+  }
+}
+div#clientes {
+  padding: 14vh 0;
+  @include mediumMobile{
+    padding: 4vh 0;
+  }
+}
+.textarea-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  textarea {
+    width: 100%;
+    height: 201.6765px;
+    box-sizing: border-box;
+    resize: none;
+  }
+}
+.contact-info {
+  height: auto !important;
+  background: #fff;
+}
+
+.contact-info-container {
+  width: 90%;
+  max-width: 1250px;
+  margin: 60px auto !important;
+  white-space: pre-line;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  div:nth-child(1) {
+    justify-self: start;
+    @include mobile {
+      text-align: center;
+    }
+  }
+  div:nth-child(2) {
+    justify-self: center;
+    @include mobile {
+      text-align: center;
+    }
+  }
+  div:nth-child(3) {
+    justify-self: end;
+    @include mobile {
+      text-align: center;
+    }
+  }
+  @include smallTablet {
+    box-sizing: border-box;
+    padding: 0 25px;
+  }
+  @include smallTablet {
+    padding: 0 29px;
+  }
+  @include mediumMobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    //flex-direction: column;
+  }
+  @include smallMobile {
+    gap: 22px;
+    //flex-direction: column;
+  }
+}
+
+.btn-container {
+  width: 100%;
+  display: grid;
+  padding: 15px 0;
+  button {
+    cursor: pointer;
+    transition: all 0.6s;
+    width: 123.2956px;
+    height: 37.7475px;
+    justify-self: end;
+    background: #000;
+    color: #fff;
+    border: 1px solid;
+    &:hover {
+      background: #fff;
+      color: #000;
+    }
+  }
+}
+
+.select-field {
+  appearance: none;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  background-image: url("./arrowSelect.svg");
+  background-position: calc(100% - 6px) center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  display: flex;
+  background-color: #fff;
+}
+.flex-container input {
+  height: 50px;
+}
+input[type="radio"] {
+  width: 20px;
+}
+.contact-info-item {
+  //width: 33.33%;
+  @include mobile {
+    width: 50%;
+  }
+  @include smallMobile {
+    width: 100%;
+  }
+  //margin: 0 auto;
+}
+
+.contenedor-hijo-2 {
+  .form-group > :nth-child(1) {
+    width: 100%;    
+  }
+  .form-group > :nth-child(2) {
+    width: 58%;
+    @include mediumMobile{
+      width: 100%;
+    }
+  }
+  .form-group > :nth-child(3) {
+    width: 40%;
+    @include mediumMobile{
+      width: 100%;
+    }
+  }
+}

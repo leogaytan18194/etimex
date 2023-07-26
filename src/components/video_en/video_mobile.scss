@@ -1,0 +1,17 @@
+@import "../../global.scss";
+
+#video{
+
+    @include mobile{
+        
+    }
+}
+.videoMobile{
+    
+    display: none;
+
+    @include mobile{
+        display: flex;
+        height: 100vh;
+    }
+}
