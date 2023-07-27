@@ -52,7 +52,9 @@ const PageRoutes = () => {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/vinos-y-licores" element={<Vinos />} />
+                <Route path="/etiquetas-para-vinos-y-licores" element={<Vinos />} />
                 <Route path="/alimentos-y-bebidas" element={<AlimentosBebidas />} />
+                <Route path="/etiquetas-para-alimentos-y-bebidas" element={<AlimentosBebidas />} />
                 <Route path="/salud-y-belleza" element={<SaludBelleza />} />
                 <Route path="/industrial" element={<Industrial />} />
                 <Route path="/admision" element={<Boletaje />} />
