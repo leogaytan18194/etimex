@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { PageStyles } from '../../styles/Styles'
-import Header from '../../components/segmentos/Header'
-import Container from '../../components/segmentos/Container'
-import HeroContainer from '../../components/segmentos/HeroContainer'
-import Footer from '../../components/segmentos/Footer'
-import Container2 from '../../components/segmentos/Container2'
+import Header from '../../components/segmentos_en/Header'
+import Container from '../../components/segmentos_en/Container'
+import HeroContainer from '../../components/segmentos_en/HeroContainer'
+import Footer from '../../components/segmentos_en/Footer'
+import Container2 from '../../components/segmentos_en/Container2'
 import { useSpring, animated } from 'react-spring';
 
 
@@ -17,7 +17,7 @@ const containerData = [
         icon1Text: "Bond",
         icon2: "shrek.svg",
         icon2Text: "Tyvek",
-        listTitle: "Disponible en",
+        listTitle: "Available on",
         listItems: [
             { id: 1, name: 'Textured paper',  },
             { id: 2, name: 'Metalized paper',  },
@@ -25,7 +25,7 @@ const containerData = [
             { id: 4, name: 'Semi coated paper',  },
             { id: 5, name: 'Matte paper',  },
         ],
-        listTitle2: "En película:",
+        listTitle2: "On film:",
         listItems2: [
             { id: 1, name: 'Transparent BOPP', description: 'Descripción del elemento 1' },
             { id: 2, name: 'White BOPP', description: 'Descripción del elemento 2' },
@@ -42,7 +42,7 @@ const containerData = [
         icon1Text: "Bond",
         icon2: "shrek.svg",
         icon2Text: "Tyvek",
-        listTitle: "Disponible en",
+        listTitle: "Available on",
         listItems: [
             { id: 1, name: 'Textured paper',  },
             { id: 2, name: 'Metalized paper',  },
@@ -50,7 +50,7 @@ const containerData = [
             { id: 4, name: 'Semi coated paper',  },
             { id: 5, name: 'Matte paper',  },
         ],
-        listTitle2: "En película:",
+        listTitle2: "On film:",
         listItems2: [
             { id: 1, name: 'Transparent BOPP', description: 'Descripción del elemento 1' },
             { id: 2, name: 'White BOPP', description: 'Descripción del elemento 2' },
@@ -68,9 +68,9 @@ const container2Data = [
     {
         inverseOrder: false,
         title: `GLOSSY LAMINATION​`,
-        description: `: Guarantee the print lasting and protects from the outside conditions.`,
+        description: `Guarantee the print lasting and protects from the outside conditions.`,
         image: "/assets/industrial/cards/card1.png",
-        titleItem: "Acabados"
+        titleItem: "Embellishment"
     },
     {
         inverseOrder: true,
@@ -153,9 +153,9 @@ const Industrial = () => {
             />
             <HeroContainer
                 backgroundImage={"/assets/industrial/cover-industrial.webp"}
-                text1={"+Fuertes"}
-                text2={"+Resistentes"}
-                text3={"+Durables"}
+                text1={"+Powerful"}
+                text2={"+Resistant"}
+                text3={"+Durable"}
                 h1Only={true}
                 flexDirection={"column"}
                 theme={theme}

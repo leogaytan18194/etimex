@@ -7,7 +7,7 @@ import Footer from '../../components/segmentos_en/Footer'
 import Container2 from '../../components/segmentos_en/Container2'
 import { useSpring, animated } from 'react-spring';
 import Header2 from '../../components/segmentos_en/Header2';
-import Contact2 from '../../components/contact/Contact2';
+import Contact2 from '../../components/contact_en/Contact2';
 
 const containerData = [
     {
@@ -186,12 +186,10 @@ const Sustentabilidad = () => {
             <HeroContainer2
                 backgroundImage={"/assets/sustentabilidad/hero2.webp"}
                 text1={<>
-                    <span className='strokeText'>Planta libre</span>
+                    <span className='strokeText'>Site free </span>
                 </>}
-                text2={"de CO2"}
-                text3={`Contribuimos a un planeta más sostenible
-                adecuando etiquetas y empaques, 
-                siempre comprometidos con la calidad.`}
+                text2={"from CO2"}
+                text3={`We contribute to a more sustainable planet adapting labels and packages, always engaged* with quality.`}
                 theme={"light"}
                 h1Only={true}
                 theme2={"light"}
@@ -202,33 +200,25 @@ const Sustentabilidad = () => {
                 <div className='logos-s'>
                     <div className='logo-s'>
                         <img src="/assets/sustentabilidad/ISO_LOGO.png" alt="" />
-                        <p>{`Estándar internacional enfocado en proporcionar productos y/o​
-
-servicios que cumplan con los requerimientos internos y externos de manera​
-
-eficaz para controlar y mejorar su rendimiento.`}</p>
+                        <p>{`International standard focused on providing products and services that meet the internal and external requirements in an effective way to control and improve their performance.`}</p>
                     </div>
                     <div className='logo-s'>
                         <img src="/assets/sustentabilidad/UL_Mark.png" alt="" />
-                        <p>{`Norma que garantiza el cumplimiento de requisitos aplicables a​
-
-productos con respecto a su potencial riesgo de incendio, descarga eléctrica​
-
-y peligros mecánicos.`}</p>
+                        <p>{`Standard that guarantees compliance with requirements applicable to
+products regarding their potential risk of fire, electric shock
+and mechanical hazards.
+`}</p>
                     </div>
                     <div className='logo-s'>
                         <img src="/assets/sustentabilidad/sustentabilidad3.png" alt="" />
-                        <p>{`Norma que aprueba productos y/o procesos según un estándar​
-
-canadiense o estadounidense.`}</p>
+                        <p>{`Standard that approves products or processes according to Canadian or American standards.`}</p>
                     </div>
                     <div className='logo-s'>
                         <img src="/assets/sustentabilidad/reutilizar.png" alt="" />
-                        <p>{`Materiales con certificaciones sustentables que nos ayudan en el​
-
-compromiso de cuidado del ambiente con materiales que ayudan en el​
-
-proceso de reciclado.`}</p>
+                        <p>{`Materials with sustainable certifications that help us in the
+commitment to care for the environment with materials that help in the
+recycling process.
+`}</p>
                     </div>
                 </div>
             </div>
@@ -241,7 +231,7 @@ proceso de reciclado.`}</p>
                     <div className='footer-items'>
                         <ul className="footer-list light-theme">
                             <li>Copyright © 2023 Etimex</li>
-                            <li>Contacto: info@etimex.com</li>
+                            <li>Contact: info@etimex.com</li>
                             <li>81 8479 0800</li>
                             <li>+52 (81) 3116 6651</li>
                             <li>Dir. San Ángel 201, Churubusco, 64590 Monterrey, N.L. México</li>

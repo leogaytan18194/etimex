@@ -11,57 +11,57 @@ import Container2 from '../../components/secciones_en/Container2';
 const containerData = [
     {
         inverseOrder: true,
-        title: "AUTO ADHERIBLES",
-        subtitle: "Etiqueta con pegamento integrado",
-        subtitle2: " para auto adherirse al tocar la superficie.",
-        listTitle: "Disponible en",
+        title: "PRESSURE SENSITIVE LABELS",
+        subtitle: "We offer limitless design possibilities that far ",
+        subtitle2: " exceed those of paper wet glue labels.",
+        listTitle: "Available on",
         listItems: [
-            { id: 1, name: 'Papel texturizado', },
-            { id: 2, name: 'Papel Metalizado', },
-            { id: 3, name: 'Papel Hi-gloss', },
-            { id: 4, name: 'Papel Semi coated', },
-            { id: 5, name: 'Papel mate', },
+            { id: 1, name: 'Textured paper', },
+            { id: 2, name: 'Metalized paper', },
+            { id: 3, name: 'Hi-gloss paper', },
+            { id: 4, name: 'Semi coated paper', },
+            { id: 5, name: 'Matte paper', },
         ],
-        listTitle2: "En película",
+        listTitle2: "On film",
         listItems2: [
-            { id: 1, name: 'BOPP transparente', },
-            { id: 2, name: 'BOPP blanco', },
-            { id: 3, name: 'BOPP metalizado', },
-            { id: 4, name: 'Poliéster blanco', },
-            { id: 5, name: 'Poliéster metalizado', },
-            { id: 6, name: 'Vinil blanco', },
+            { id: 1, name: 'Transparent BOPP', },
+            { id: 2, name: 'White BOPP', },
+            { id: 3, name: 'Metalized BOPP', },
+            { id: 4, name: 'Metalized polyester', },
+            { id: 5, name: 'White polyester', },
+            { id: 6, name: 'White vinyl', },
         ],
         backgroundImage: "/assets/materia-prima/cards/autoaderible.png",
     },
     {
         inverseOrder: false,
-        title: "ENVOLVENTES",
-        subtitle: "Etiqueta con pegamento en los extremos para unir  ",
-        subtitle2: "uno con el otro al rodear la circunferencia del envase.",
-        listTitle: "Disponible en",
+        title: "WRAPAROUNDS",
+        subtitle: "Flexible labels that are applied in a way that completely encircles the perimeter of a container.",
+        subtitle2: "Our process ensures color and quality consistency between label and tube wrap, making your brand pop.",
+        listTitle: "Available on",
         listItems: [
-            { id: 1, name: 'Papel texturizado', },
-            { id: 2, name: 'Papel Metalizado', },
-            { id: 3, name: 'Papel Hi-gloss', },
-            { id: 4, name: 'Papel Semi coated', },
-            { id: 5, name: 'Papel mate', },
+            { id: 1, name: 'Textured paper', },
+            { id: 2, name: 'Metalized paper', },
+            { id: 3, name: 'Hi-gloss paper', },
+            { id: 4, name: 'Semi coated paper', },
+            { id: 5, name: 'Matte paper', },
         ],
-        listTitle2: "En película",
+        listTitle2: "On film",
         listItems2: [
-            { id: 1, name: 'BOPP transparente', },
-            { id: 2, name: 'BOPP blanco', },
-            { id: 3, name: 'BOPP metalizado', },
-            { id: 4, name: 'Poliéster blanco', },
-            { id: 5, name: 'Poliéster metalizado', },
-            { id: 6, name: 'Vinil blanco', },
+            { id: 1, name: 'Transparent BOPP', },
+            { id: 2, name: 'White BOPP', },
+            { id: 3, name: 'Metalized BOPP', },
+            { id: 4, name: 'Metalized polyester', },
+            { id: 5, name: 'White polyester', },
+            { id: 6, name: 'White vinyl', },
         ],
         backgroundImage: "/assets/materia-prima/cards/envolvente.png",
     },
     {
         inverseOrder: true,
-        title: "MANGA TERMOENCOGIBLE",
-        subtitle: "Funda retráctil de material sintético ",
-        subtitle2: "para vestir el 100% del envase.",
+        title: "SHRINK SLEEVE",
+        subtitle: "Made of synthetic material ",
+        subtitle2: "to dress 100% of the container",
         icon1: "none.svg",
         icon1Text: false,
         icon2: false,
@@ -72,25 +72,25 @@ const containerData = [
         listItems: [
             
         ],
-        listTitle2: "En película",
+        listTitle2: "On film",
         listItems2: [
-            { id: 1, name: 'BOPP transparente', },
-            { id: 2, name: 'BOPP blanco', },
-            { id: 3, name: 'Poliéster metalizado', },
-            { id: 4, name: 'Poliéster blanco', },
-            { id: 5, name: 'Vinil blanco', },
+            { id: 1, name: 'Transparent BOPP', },
+            { id: 2, name: 'White BOPP', },
+            { id: 3, name: 'White polyester', },
+            { id: 4, name: 'Metalized polyester', },
+            { id: 5, name: 'White vinyl', },
         ],
         backgroundImage: "/assets/materia-prima/cards/manga.png",
     },
     {
         inverseOrder: false,
-        title: "SEÑALIZACIÓN Y BOLETAJE",
-        subtitle: "Disponible en",
-        subtitle2: "-Cartulina",
+        title: "SIGNAGE AND TICKETING",
+        subtitle: "Available on",
+        subtitle2: "-Cardboard",
         icon1: "bond.svg",
         icon1Text: "Bond",
         icon2: "termico.svg",
-        icon2Text: "Térmico",
+        icon2Text: "Thermal",
         listTitle: "",
         listItems: [
             { id: 1, name: 'Thermal TC 4.0', description: 'Descripción del elemento 1' },
@@ -190,21 +190,21 @@ const MateriaPrima = () => {
     const tabItems = [
         {
             ico: "/assets/svg/dot",
-            text: "Materiales",
-            route: "/servicios/materiales",
+            text: "Materials",
+            route: "/en/services/materials",
             top: "0",
         },
         {
             ico: "/assets/svg/dot",
-            text: "ACABADOS BÁSICOS & PREMIUM",
-            route: "/servicios/acabados",
+            text: "Embellishment finishes",
+            route: "/en/services/embellishments",
             top: "0",
         },
         {
             //Materiales   ·      ·    
             ico: "/assets/svg/dot",
-            text: "ASESORÍA INTEGRAL",
-            route: "/servicios/asesoria-integral",
+            text: "Integral advice",
+            route: "/en/services/integral-advises",
             top: "0",
         },
     ]
@@ -218,10 +218,10 @@ const MateriaPrima = () => {
             <HeroContainer
                 backgroundImage={"/assets/materia-prima/herov2.png"}
                 text1={<>
-                    <span className='strokeTex2'>Materiales</span>
+                    <span className='strokeTex2'>Materials</span>
                 </>}
                 text2={false}
-                text3={"Innovación y alta calidad para cubrir a la perfección tus necesidades."}
+                text3={"Innovation and high quality to perfectly cover your needs. "}
                 theme={"light"}
                 theme2={"dark"}
                 h1Only={true}

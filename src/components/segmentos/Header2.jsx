@@ -167,9 +167,9 @@ const Header2 = ({ logo, theme }) => {
                                         </Link>
                                     </CustomLi2>
                                     <CustomLi2 theme={theme} justify="end">
-                                        <Link to="#">
+                                        <Link to="/en/sustentabilidad">
                                             <animated.span style={textAnimation6} className={`${theme === "dark" ? "item-lang-dark" : "item-lang-light"}`}>
-                                                {lang}
+                                                ENG
                                             </animated.span>
                                         </Link>
                                     </CustomLi2>
@@ -197,15 +197,9 @@ const Header2 = ({ logo, theme }) => {
                                     <CustomLi2 theme={theme} justify="end" style={{
                                         width: "96%",
                                     }}>
-                                        <Link to="#" className='no-link' onClick={() => setLang(prev => {
-                                            if (prev === "ENG") {
-                                                return "ES";
-                                            } else {
-                                                return "ENG";
-                                            }
-                                        })}>
+                                        <Link to="/en/sustentabilidad" className='no-link'>
                                             <animated.span style={textAnimation5} className={`${theme === "dark" ? "item-lang-dark" : "item-lang-light"}`}>
-                                                {lang}
+                                                ENG
                                             </animated.span>
                                         </Link>
                                     </CustomLi2>

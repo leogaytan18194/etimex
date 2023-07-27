@@ -68,21 +68,21 @@ const container2Data = [
     {
         inverseOrder: false,
         title: "MATTE LAMINATION​",
-        description: `Al igual que el glossy garantiza la duración de la impresión y protege de la intemperie.`,
+        description: `Similar to the glossy,  Guarantees long lasting printing  and protects  your label from outside conditions but with a fine matte finish.`,
         image: "/assets/boletaje/cards/boletaje-matte.png",
         titleItem: "Embellishments"
     },
     {
         inverseOrder: true,
         title: "CAST & CURE",
-        description: "Agrega efectos de hologramas como una excelente herramienta de diferenciación, valor agregado y prevención de falsificación.",
+        description: "Add holographic effects as an excellent differentiation value and falsification prevention.",
         image: "/assets/boletaje/cards/boletaje-cast&cure.png",
         titleItem: false,
     },
     {
         inverseOrder: false,
         title: "SILK SCREEN",
-        description: "Barniz sutil y elegante que brinda una experiencia táctil hasta en los detalles más finos de tu etiqueta, elevando su experiencia.​",
+        description: "Add special cold metal and holographic motives for smooth materials and shrink sleeves.​",
         image: "/assets/boletaje/cards/BOLETAJE-SILK-SCREEN.png",
         titleItem: false,
     },
@@ -154,8 +154,8 @@ const Boletaje = () => {
             />
             <HeroContainer
                 backgroundImage={"/assets/boletaje/hero.webp"}
-                text1={"Haz de tu boletaje"}
-                text2={"toda una experiencia"}
+                text1={"Make your ticketing"}
+                text2={"a great experience"}
                 flexDirection="column"
                 theme={theme}
             />

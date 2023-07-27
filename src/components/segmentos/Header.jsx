@@ -261,15 +261,9 @@ const Header = ({ logo, theme }) => {
                                         </Link>
                                     </CustomLi>
                                     <CustomLi theme={theme} >
-                                        <Link to="#" className='no-link' onClick={() => setLang(prev => {
-                                            if (prev === "ENG") {
-                                                return "ES";
-                                            } else {
-                                                return "ENG";
-                                            }
-                                        })}>
+                                        <Link to="/en/" className='no-link'>
                                             <animated.span style={textAnimation5} className={`${theme === "dark" ? "item-lang-dark" : "item-lang-light"}`}>
-                                                {lang}
+                                                ENG
                                             </animated.span>
                                         </Link>
                                     </CustomLi>

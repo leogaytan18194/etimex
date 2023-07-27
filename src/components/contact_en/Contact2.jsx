@@ -28,19 +28,19 @@ export default function Contact2() {
         <div className="contact-info-container">
           <div className="contact-info-item">
             <FadeInScale>
-              <p>{`Llámanos:
+              <p>{`Call us:
 81 8479 0800`}</p>
             </FadeInScale>
           </div>
           <div className="contact-info-item">
             <FadeInScale>
-              <p>{`Horario de atención:
-Lunes a viernes.
+              <p>{`Office hours:
+Monday to Friday.
 9 am-5 pm`}</p></FadeInScale>
           </div>
           <div className="contact-info-item">
             <FadeInScale>
-              <p>{`Ubicación:
+              <p>{`Location:
 Av. San Ángel 201,
 Col. Churubusco, C.P. 64590,
 Monterrey, N.L. México.`}</p></FadeInScale>

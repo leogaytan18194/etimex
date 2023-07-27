@@ -192,8 +192,8 @@ const Header = ({ logo, theme }) => {
                                             </animated.span>
                                         </Link>
                                     </CustomLi>
-                                    <CustomLi theme={theme} icon={`${pathname === '/admision' ? "boletaje" : ""}`} className={`${pathname === '/admision' ? "activeMenu" : ""}`}>
-                                        <Link to="/en/admision">
+                                    <CustomLi theme={theme} icon={`${pathname === '/admission' ? "admission" : ""}`} className={`${pathname === '/admision' ? "activeMenu" : ""}`}>
+                                        <Link to="/en/admission">
                                             <animated.span style={textAnimation5}>
                                                 Admission
                                             </animated.span>
@@ -253,7 +253,7 @@ const Header = ({ logo, theme }) => {
                                             </animated.span>
                                         </Link>
                                     </CustomLi>
-                                    <CustomLi theme={theme} icon={`${pathname === '/admision' ? "boletaje" : ""}`} className={`${pathname === '/admision' ? "activeMenu" : ""}`}>
+                                    <CustomLi theme={theme} icon={`${pathname === '/admision' ? "admision" : ""}`} className={`${pathname === '/admision' ? "activeMenu" : ""}`}>
                                         <Link to="/en/admission">
                                             <animated.span style={textAnimation5}>
                                                 Admission

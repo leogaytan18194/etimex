@@ -146,7 +146,7 @@ const Header2 = ({ logo, theme }) => {
                                 gap: '20px'
                             }}>
                                 <li className="logov2" >
-                                    <HashLink to="/#home">
+                                    <HashLink to="/en/#home">
                                         <animated.img src={`${logo}`} alt="Logo" style={logoAnimation} />
                                     </HashLink>
                                 </li>
@@ -167,9 +167,9 @@ const Header2 = ({ logo, theme }) => {
                                         </Link>
                                     </CustomLi2>
                                     <CustomLi2 theme={theme} justify="end">
-                                        <Link to="#">
+                                        <Link to="/sustentabilidad">
                                             <animated.span style={textAnimation6} className={`${theme === "dark" ? "item-lang-dark" : "item-lang-light"}`}>
-                                                {lang}
+                                                ES
                                             </animated.span>
                                         </Link>
                                     </CustomLi2>
@@ -183,14 +183,14 @@ const Header2 = ({ logo, theme }) => {
                                     gap: '20px'
                                 }}>
                                     <li className="logov2" >
-                                        <HashLink to="/#home">
+                                        <HashLink to="/en/#home">
                                             <animated.img src={`${logo}`} alt="Logo" style={logoAnimation} />
                                         </HashLink>
                                     </li>
                                     <CustomLi2 theme={theme} icon={`${pathname === '/sustentabilidad' ? "sustentabilidad" : ""}`} className={`${pathname === '/sustentabilidad' ? "activeMenu" : ""}`}>
                                         <Link to="/en/sustentabilidad">
                                             <animated.span style={textAnimation}>
-                                                Sustentabilidad
+                                                Sustainability
                                             </animated.span>
                                         </Link>
                                     </CustomLi2>

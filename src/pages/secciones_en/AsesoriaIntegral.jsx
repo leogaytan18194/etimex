@@ -225,29 +225,29 @@ export const Card4Svg = () => (
 
 const cardItems = [
     {
-        title: "Calidad",
-        desc: "Nuestros materiales, acabados y el servicio de nuestra gente garantiza la calidad de tus etiquetas y empaques.",
+        title: "Quality",
+        desc: "Our materials and personal service guarantee the quality of your labels and packaging.",
         img: <Card1Svg />,
         delay: 200,
         bgsz: "90%",
     },
     {
-        title: "Innovación",
-        desc: "Trabajamos con tecnología de punta en nuestra planta para asegurar impresión premium en cada etiqueta y empaque que se producen en nuestras instalaciones.",
+        title: "Innovation",
+        desc: "We work with ultimate technology in our site ensuring premium printing in every label and packaging produced.",
         img: <Card2Svg />,
         delay: 400,
         bgsz: "100%",
     },
     {
-        title: "Rapidez",
-        desc: "Los tiempos de entrega nos distinguen, todos los días trabajamos por optimizarlos para entregarte tus pedidos en el menor tiempo posible.",
+        title: "Rapidly",
+        desc: "Delivery time distinguishes us, every day we optimize it to deliver your orders in the shortest possible time.",
         img: <Card3Svg />,
         delay: 600,
         bgsz: "190%",
     },
     {
-        title: "Diseño",
-        desc: "Contamos con equipo de diseño para plasmar juntos la historia de tu producto en su etiqueta, de esta manera podemos ofrecerte el servicio 360° para brillar en el anaquel.",
+        title: "Design",
+        desc: "We have a design team to capture together the history of your product on its label, in this way we can offer you 360° service to shine on the shelf.",
         img: <Card4Svg />,
         delay: 800,
         bgsz: "100%",
@@ -281,21 +281,21 @@ const containerMap = (data, index, theme) => {
 const tabItems = [
     {
         ico: "/assets/svg/dot",
-        text: "Materiales",
-        route: "/servicios/materiales",
+        text: "Materials",
+        route: "/en/services/materials",
         top: "0",
     },
     {
         ico: "/assets/svg/dot",
-        text: "TINTAS",
-        route: "/servicios/tintas",
+        text: "Embellishment finishes",
+        route: "/en/services/embellishments",
         top: "0",
     },
     {
         //Materiales   ·      ·    
         ico: "/assets/svg/dot",
-        text: "ASESORÍA INTEGRAL",
-        route: "/servicios/asesoria-integral",
+        text: "Integral advice",
+        route: "/en/services/integral-advises",
         top: "0",
     },
 ]
@@ -326,9 +326,9 @@ const AsesoriaIntegral = () => {
             <HeroContainer
                 backgroundImage={"/assets/asesoria-integral/hero3.png"}
                 text1={<>
-                    <span className='strokeText'>Asesoría</span>
+                    <span className='strokeText'>Integral</span>
                 </>}
-                text2={"integral"}
+                text2={"advises"}
                 text3={""}
                 theme={"dark"}
                 h1Only={true}
@@ -361,7 +361,7 @@ const AsesoriaIntegral = () => {
             <HeroContainer
                 backgroundImage={"/assets/asesoria-integral/hero2.png"}
                 text1={<>
-                    <span className='strokeText'>Generamos soluciones</span>
+                    <span className='strokeText'>We generate solutions </span>
                 </>}
                 text2={<>
                     <span style={{
@@ -371,12 +371,10 @@ const AsesoriaIntegral = () => {
                         minWidth: '1920px',
                         justifyContent: 'center',
                     }}>
-                        con un paso adelante,
+                        one step forward.
                     </span>
                 </>}
-                text3={`Somos el enlace entre el producto y consumidor, con la máxima calidad y escrupulosos en el factor respuesta y tiempo de entrega.
-
-                En ETIMEX recomendamos la impresión y materiales deacuerdo al objetivo del proyecto, tipo de marca, producto, alcances, y presupuestos. `}
+                text3={`We are the bond between the product and the consumer, with the best quality scrupulous on the answer factor and delivery time. In Etimex we recommend printings and materials according to the project objective, type of brand, product, reach, and budgets.`}
                 theme={theme}
                 theme2={"light"}
                 h1Only={true}

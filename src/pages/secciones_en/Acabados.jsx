@@ -15,9 +15,9 @@ const containerData = [
     {
         inverseOrder: true,
         title: "GLOSSY LAMINATION​",
-        subtitle: "Garantiza la duración de la impresión y protege de la intemperie.",
+        subtitle: "Guarantee the print lasting and protects from the outside conditions.",
 
-        listTitle: "En película",
+        listTitle: "On film",
         listItems: [
             { id: 1, name: 'BOPP transparente', },
             { id: 2, name: 'BOPP blanco', },
@@ -30,9 +30,9 @@ const containerData = [
     {
         inverseOrder: false,
         title: "MATTE LAMINATION​",
-        subtitle: "Al igual que el glossy garantiza la duración de la impresión y protege de la intemperie.",
+        subtitle: "Similar to the glossy,  Guarantees long lasting printing  and protects  your label from outside conditions but with a fine matte finish. ",
 
-        listTitle: "En película",
+        listTitle: "On film",
         listItems: [
             { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
             { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
@@ -43,9 +43,9 @@ const containerData = [
     {
         inverseOrder: true,
         title: "GLOSSY VARNISH",
-        subtitle: "Genera una capa de protección ante factores ambientales que pueden perjudicar tu etiqueta con un look ultra brillante.",
+        subtitle: "Generates a protector layer against ambiental factors that can badly affect your label with an extra brilliant look.",
 
-        listTitle: "En película",
+        listTitle: "On film",
         listItems: [
             { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
             { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
@@ -56,8 +56,8 @@ const containerData = [
     {
         inverseOrder: false,
         title: "MATTE VARNISH",
-        subtitle: "Da un look sofisticado de acabado sin brillo con un recubrimiento de alta resistencia al roce y excelente claridad.",
-        listTitle: "En película",
+        subtitle: "Gives a sophisticated look without shining with a high resistance cover and high definition.",
+        listTitle: "On film",
         listItems: [
             { id: 1, name: 'Pet', description: 'Descripción del elemento 1' },
             { id: 2, name: 'Pet G', description: 'Descripción del elemento 2' },
@@ -71,8 +71,8 @@ const containerData2 = [
     {
         inverseOrder: true,
         title: "COLD FOIL",
-        subtitle: "Agrega motivos metálicos y holográficos en frío especial para materiales lisos y mangas termoencogibles.​​",
-        listTitle: "En película",
+        subtitle: "Add special cold metal and holographic motives for smooth materials and shrink sleeves.",
+        listTitle: "On film",
         listItems: [
             { id: 1, name: 'BOPP transparente', },
             { id: 2, name: 'BOPP blanco', },
@@ -85,7 +85,7 @@ const containerData2 = [
     {
         inverseOrder: false,
         title: "HOT FOIL",
-        subtitle: "Aporta un look premium y genera contraste visual con un aspecto metalizado hecho a tu medida.",
+        subtitle: "Add a premium look and make a metalized visual contrast just for your needs.",
 
         listItems: [
             { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
@@ -97,9 +97,9 @@ const containerData2 = [
     {
         inverseOrder: true,
         title: "EMBOSS",
-        subtitle: "Brinda una experiencia táctil y realza patrones de diseño específicos en la superficie de tu etiqueta.",
+        subtitle: "Show tactile excellence and make specific design patterns on your label.",
 
-        listTitle: "En película",
+        listTitle: "On film",
         listItems: [
             { id: 1, name: 'BOPP transparente', description: 'Descripción del elemento 1' },
             { id: 2, name: 'BOPP blanco', description: 'Descripción del elemento 2' },
@@ -110,8 +110,8 @@ const containerData2 = [
     {
         inverseOrder: false,
         title: "DEBOSS",
-        subtitle: "Genera un aspecto de profundidad acentuando atributos distintivos para una imagen elegante y sofisticada.",
-        listTitle: "En película",
+        subtitle: "It creates a look of depth by accentuating distinctive attributes for an elegant and sophisticated image.",
+        listTitle: "On film",
         listItems: [
             { id: 1, name: 'Pet', description: 'Descripción del elemento 1' },
             { id: 2, name: 'Pet G', description: 'Descripción del elemento 2' },
@@ -121,8 +121,8 @@ const containerData2 = [
     {
         inverseOrder: false,
         title: "SILK SCREEN",
-        subtitle: "Barniz sutil y elegante que brinda una experiencia táctil hasta en los detalles más finos de tu etiqueta, elevando su experiencia.​",
-        listTitle: "En película",
+        subtitle: "Subtle and elegant varnish that provides a tactile experience even in the finest details of your label, elevating your experience.​",
+        listTitle: "On film",
         listItems: [
             { id: 1, name: 'Pet', description: 'Descripción del elemento 1' },
             { id: 2, name: 'Pet G', description: 'Descripción del elemento 2' },
@@ -132,7 +132,7 @@ const containerData2 = [
     {
         inverseOrder: false,
         title: "CAST&CURE",
-        subtitle: "Agrega efectos de hologramas como una excelente herramienta de diferenciación, valor agregado y prevención de falsificación.",
+        subtitle: " Add holographic effects as an excellent differentiation value and falsification prevention.",
         listItems: [
             { id: 1, name: 'Pet', description: 'Descripción del elemento 1' },
             { id: 2, name: 'Pet G', description: 'Descripción del elemento 2' },
@@ -146,43 +146,43 @@ const containerData2 = [
 const container2Data = [
     {
         inverseOrder: false,
-        title: `Fluorescente​`,
-        description: `Crea un efecto de color que al activarse con luz UV, lucen más fuerte y brillantes, realzando formas y detalles.`,
+        title: `Glow in the dark`,
+        description: `Create a color effect that activates with UV light, they look more strong and brilliant making shapes and details.`,
         image: "/assets/acabados/cards/card1.png",
-        titleItem: "Acabados"
+        titleItem: "Embellishments"
     },
     {
         inverseOrder: true,
         title: "Invisible​",
-        description: `Añade elementos de seguridad que solo pueden visualizarse bajo luz UV, perfecta para aplicaciones en textos, códigos y formas invisibles`,
+        description: `Give security elements that can only be visible under UV lights, perfect for text applications and invisible shapes.`,
         image: "/assets/acabados/cards/card2.png",
         titleItem: false,
     },
     {
         inverseOrder: false,
         title: "Inkjet",
-        description: "Da relieve a detalles finos y precisos con aplicaciones nítidas, creando una experiencia de textura en tu etiqueta.",
+        description: "Highlights fine and precise details with clear applications creating a label texture experience.",
         image: "/assets/acabados/cards/card3.png",
         titleItem: false,
     },
     {
         inverseOrder: true,
-        title: "Plateada",
-        description: "Agrega valor y aspecto premium con tintas plateadas, ideales para detalles sutiles en textos.",
+        title: "Silver",
+        description: "Gives value and premium look with silver inks, perfect for tiny text details.",
         image: "/assets/acabados/cards/card4.png",
         titleItem: false,
     },
     {
         inverseOrder: false,
-        title: "Termocromática",
-        description: "Incluye la característica que permite cambiar reversiblemente los colores en tu etiqueta con la temperatura.​",
+        title: "Thermochromic",
+        description: "Has the characteristic to change the colors of your label depending on the temperature.​",
         image: "/assets/acabados/cards/card5.png",
         titleItem: false,
     },
     {
         inverseOrder: true,
-        title: "Aromática",
-        description: "Brinda una experiencia multisensorial con microcápsulas perfumadas que al rascarse desprenden olor.",
+        title: "Aromatic",
+        description: "It provides a multisensory experience with scented microcapsules that give odor when scratched.",
         image: "/assets/acabados/cards/card6.png",
         titleItem: false,
     }
@@ -300,21 +300,21 @@ const Acabados = () => {
     const tabItems = [
         {
             ico: "/assets/svg/dot",
-            text: "Materiales",
-            route: "/servicios/materiales",
+            text: "Materials",
+            route: "/en/services/materials",
             top: "0",
         },
         {
             ico: "/assets/svg/dot",
-            text: "ACABADOS BÁSICOS & PREMIUM",
-            route: "/servicios/acabados",
+            text: "Embellishment finishes",
+            route: "/en/services/embellishments",
             top: "0",
         },
         {
             //Materiales   ·      ·    
             ico: "/assets/svg/dot",
-            text: "ASESORÍA INTEGRAL",
-            route: "/servicios/asesoria-integral",
+            text: "Integral advice",
+            route: "/en/services/integral-advises",
             top: "0",
         },
     ]
@@ -363,7 +363,7 @@ const Acabados = () => {
             <HeroContainer
                 backgroundImage={"/assets/acabados/hero.png"}
                 text1={<>
-                    Acabados
+                    Embellishments
                 </>}
                 text2={""}
                 text3={<span
@@ -372,7 +372,7 @@ const Acabados = () => {
                         textShadow: "unset !important"
                     }}
                 >
-                    Destaca en el anaquel con acabados inigualables
+                    Stand out on the shelf with unparalleled embellishments.
                 </span>}
                 theme={"light"}
                 h1Only={true}
@@ -381,7 +381,7 @@ const Acabados = () => {
             <div className='acabados'>
                 <NavTab
                     tab_title_1={"Premium"}
-                    tab_title_2={"Básicos"}
+                    tab_title_2={"Basics"}
                     theme={theme}
                     tab_item_1={
                         <AcabadosBasicos>
@@ -401,7 +401,7 @@ const Acabados = () => {
                                 <animated.div className='block-text-container'>
                                     <animated.div style={slideInFromBottom} className='txt-container'>
                                         <animated.h2>REGISTRATION VARNISH</animated.h2>
-                                        <animated.p style={slideInFromBottom}>Resalta elementos de forma sutil con una apariencia brillante potenciando colores y  gráficos destacables.</animated.p>
+                                        <animated.p style={slideInFromBottom}>Highlights elements in a subtle way with a bright appearance enhancing colors and remarkable graphics.</animated.p>
                                     </animated.div>
                                     <animated.div className='icon-container'
                                         style={
