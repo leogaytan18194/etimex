@@ -54,6 +54,7 @@ const PageRoutes = () => {
                 <Route path="/vinos-y-licores" element={<Vinos />} />
                 <Route path="/etiquetas-para-vinos-y-licores" element={<Vinos />} />
                 <Route path="/alimentos-y-bebidas" element={<AlimentosBebidas />} />
+                <Route path="/mangas-termoencogibles" element={<AlimentosBebidas />} />
                 <Route path="/etiquetas-para-alimentos-y-bebidas" element={<AlimentosBebidas />} />
                 <Route path="/salud-y-belleza" element={<SaludBelleza />} />
                 <Route path="/industrial" element={<Industrial />} />
@@ -62,6 +63,7 @@ const PageRoutes = () => {
                 <Route path="/sustentabilidad" element={<Sustentabilidad />} />
                 <Route path="/servicios/tintas" element={<Tintas />} />
                 <Route path="/servicios/materiales" element={<MateriaPrima />} />
+                <Route path="/materiales/" element={<MateriaPrima />} />
                 <Route path="/servicios/asesoria-integral" element={<AsesoriaIntegral />} />
                 <Route path="/servicios/acabados" element={<Acabados />} />
                 <Route path="/en" element={<HomeEn />} />
