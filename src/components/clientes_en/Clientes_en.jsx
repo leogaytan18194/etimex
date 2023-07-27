@@ -50,7 +50,7 @@ export default function ClientesEn() {
       className="clientes" 
       id="clientes"
     >
-      <h2 className="ITBold">Out <b>clients</b></h2>
+      <h2 className="ITBold">Our <b>clients</b></h2>
       <h3 className="helvetica">At <b>Etimex</b> we move forward, with the future of printing at the forefront of your brand</h3>
       <div className="container">
           <div className="item">
