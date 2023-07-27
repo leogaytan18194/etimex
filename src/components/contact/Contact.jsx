@@ -26,7 +26,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_u9vh00r','template_ll0d17l', form.current, 'Qsz3nDPWtqcesOuq8LExZ')
+    emailjs.sendForm('service_u9vh00r','template_ll0d17l', form.current, 'VH9dxa0YuS-LEFisK')
       .then(
         (result) => {
           console.log(result.text);
