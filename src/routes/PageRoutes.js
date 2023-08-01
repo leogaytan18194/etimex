@@ -45,7 +45,7 @@ const PageRoutes = () => {
             phoneNumber="528131166651"
             accountName="Etimex"
             statusMessage="Normalmente responde en 5-10 minutos."
-            chatMessage={<>{wppLANG[LANG]} </>}
+            chatMessage="¡Hola! 🤝 ¿En qué podemos ayudarte?"
             avatar="/assets/svg/logo.svg"
             />
             {/* <a href="https://wa.link/5754nh"><img class="whatsapp-icon" src="assets/whatsapp.png" alt="" /></a> */}
