@@ -56,8 +56,10 @@ const PageRoutes = () => {
                 <Route path="/alimentos-y-bebidas" element={<AlimentosBebidas />} />
                 <Route path="/mangas-termoencogibles" element={<AlimentosBebidas />} />
                 <Route path="/etiquetas-para-alimentos-y-bebidas" element={<AlimentosBebidas />} />
+                <Route path="/etiquetas-resistentes-al-agua" element={<AlimentosBebidas />} />
                 <Route path="/salud-y-belleza" element={<SaludBelleza />} />
                 <Route path="/industrial" element={<Industrial />} />
+                <Route path="/etiquetas-industriales" element={<Industrial />} />
                 <Route path="/admision" element={<Boletaje />} />
                 <Route path="/retail" element={<Retail />} />
                 <Route path="/sustentabilidad" element={<Sustentabilidad />} />
