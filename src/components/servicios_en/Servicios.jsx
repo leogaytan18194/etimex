@@ -87,7 +87,7 @@ export default function Servicios() {
               src="assets/servicios2.png"
               alt="Acabados"
             />
-            <h3>Embellishmt finishes</h3>
+            <h3>Embellishment finishes</h3>
           </Link>
         </animated.div>
 

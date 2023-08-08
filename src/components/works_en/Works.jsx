@@ -9,7 +9,7 @@ export default function Works() {
       id: "1",
       title: "etimex",
       desc:
-        "is a proud Mexican born company, with more than five decades leading in technology and innovation through label printing and flexible packaging.",
+        "We are a proud Mexican born company, with more than five decades leading in technology and innovation through label printing and flexible packaging.",
       img:
         "./assets/bote2.png",
       img2:
