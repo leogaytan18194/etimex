@@ -5,7 +5,7 @@ const isSafari = () => {
   const ua = navigator.userAgent.toLowerCase();
   return ua.indexOf("safari") > -1 && ua.indexOf("chrome") < 0;
 };
-const mainVideo = "./assets/video-oficial.mp4";
+const mainVideo = "./assets/etimex_eng_movil.mp4";
 
 export default function VideoMobile() {
 

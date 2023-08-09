@@ -5,7 +5,7 @@ export default function Video() {
 
   return (
     <video autoPlay loop muted id="video">
-        <source src="./assets/video-oficial.mp4" type="video/mp4"/>
+        <source src="./assets/etimex_eng.mp4" type="video/mp4"/>
         </video>
   );
 }
