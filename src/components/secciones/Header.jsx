@@ -201,10 +201,10 @@ const Header = ({ logo, theme }) => {
         },
         {
             item: 'blog',
-            route: '/blog',
+            route: 'blog',
             section: 'blog',
             animation: textAnimation6,
-            link:false,
+            link:true,
             callback: () => {
                 return;
             }
