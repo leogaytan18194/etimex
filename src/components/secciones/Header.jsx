@@ -243,6 +243,7 @@ const Header = ({ logo, theme }) => {
                                     <CustomLi theme={theme} className="lang">
                                                 <a href="/blog/" smooth>
                                                     <animated.span
+                                                        style={textAnimation6}
                                                          className="dark">
                                                         blog
                                                     </animated.span>
@@ -287,6 +288,7 @@ const Header = ({ logo, theme }) => {
                                     <CustomLi theme={theme} className="lang">
                                                 <a href="/blog/" smooth>
                                                     <animated.span
+                                                        style={textAnimation6}
                                                          className="dark">
                                                         blog
                                                     </animated.span>

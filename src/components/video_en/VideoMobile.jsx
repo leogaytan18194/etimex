@@ -5,7 +5,7 @@ const isSafari = () => {
   const ua = navigator.userAgent.toLowerCase();
   return ua.indexOf("safari") > -1 && ua.indexOf("chrome") < 0;
 };
-const mainVideo = "./assets/etimex_eng_movil.mp4";
+const mainVideo = "assets/etimex_eng_movil.mp4";
 
 export default function VideoMobile() {
 
@@ -56,7 +56,7 @@ export default function VideoMobile() {
             dangerouslySetInnerHTML={{
               __html: `
               <video autoPlay loop muted playsinline id="videoMobile">
-              <source src="./assets/video-oficial.mp4" type="video/mp4" />
+              <source src="/assets/video-oficial.mp4" type="video/mp4" />
             </video>`
             }}
           />

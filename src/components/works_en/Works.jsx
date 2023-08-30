@@ -11,7 +11,7 @@ export default function Works() {
       desc:
         "We are a proud Mexican born company, with more than five decades leading in technology and innovation through label printing and flexible packaging.",
       img:
-        "./assets/bote2.png",
+        "/assets/bote2.png",
       img2:
         "",
     },
@@ -21,7 +21,7 @@ export default function Works() {
       desc:
         "To exceed with excellence our clients printing expectations.",
       img:
-        "./assets/slide2.png",
+        "/assets/slide2.png",
     },
     {
       id: "3",
@@ -29,9 +29,9 @@ export default function Works() {
       desc:
         "We print labels and flexible packaging that make us remember, aspire and feel through time connecting brands and people.",
       img:
-        "./assets/botella1.png",
+        "/assets/botella1.png",
       img2:
-        "./assets/botella2.png",
+        "/assets/botella2.png",
     },
   ];
 
@@ -175,12 +175,12 @@ export default function Works() {
 
       </div>
       <img
-        src="assets/arrow.png"
+        src="/assets/arrow.png"
         className="arrow left"
         alt=""
         onClick={() => handleClick("left")}
       />
-      <img src="assets/arrow.png" className="arrow right" alt="" onClick={() => handleClick("right")} />
+      <img src="/assets/arrow.png" className="arrow right" alt="" onClick={() => handleClick("right")} />
     </animated.div>
   );
 }

@@ -73,7 +73,7 @@ export default function Servicios() {
         <animated.div  style={slideProps4}>
           <Link to="/en/services/materials" className="item">
             <img
-              src="assets/servicios1.png"
+              src="/assets/servicios1.png"
               alt="Materiales"
             />
             <h3>Materials</h3>
@@ -84,7 +84,7 @@ export default function Servicios() {
 
           <Link to="/en/services/embellishments" className="item">
             <img
-              src="assets/servicios2.png"
+              src="/assets/servicios2.png"
               alt="Acabados"
             />
             <h3>Embellishment finishes</h3>
@@ -95,7 +95,7 @@ export default function Servicios() {
 
           <Link to="/en/services/integral-advises" className="item">
             <img
-              src="assets/servicios3.png"
+              src="/assets/servicios3.png"
               alt=""
             />
             <h3>Comprehensive advice</h3>

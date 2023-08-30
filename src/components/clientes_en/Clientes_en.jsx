@@ -54,7 +54,7 @@ export default function ClientesEn() {
       <h3 className="helvetica">At <b>Etimex</b> we move forward, with the future of printing at the forefront of your brand</h3>
       <div className="container">
           <div className="item">
-            <img src="assets/clientes.png" alt="Clientes Etimex" className="imgClientes"/>
+            <img src="/assets/clientes.png" alt="Clientes Etimex" className="imgClientes"/>
           </div>
           <div className='txt-more-clients'>
               <h3 className='helvetica'>and more...</h3>
