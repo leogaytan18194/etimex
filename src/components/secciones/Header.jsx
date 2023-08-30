@@ -198,24 +198,7 @@ const Header = ({ logo, theme }) => {
             callback: () => {
                 return;
             }
-        },
-        {
-            item: 'blog',
-            route: 'blog/',
-            section: 'blog',
-            animation: textAnimation6,
-            link:true,
-        },
-        {
-            item: `ENG`,
-            route: 'en',
-            section: 'lang',
-            animation: textAnimation7,
-            link:true,
-            callback: () => {
-                return;
-            }
-        },
+        }
 
     ]
     
@@ -257,7 +240,22 @@ const Header = ({ logo, theme }) => {
 
                                         ))
                                     }
-
+                                    <CustomLi theme={theme} className="lang">
+                                                <a href="/blog/" smooth>
+                                                    <animated.span
+                                                         className="dark">
+                                                        blog
+                                                    </animated.span>
+                                                </a>
+                                    </CustomLi>
+                                    <CustomLi theme={theme} className="lang">
+                                                <HashLink to="/en/" smooth>
+                                                    <animated.span
+                                                         className="dark item-lang-light">
+                                                        ENG
+                                                    </animated.span>
+                                                </HashLink>
+                                    </CustomLi>
                                 </div>
 
                             </ul>
@@ -286,6 +284,22 @@ const Header = ({ logo, theme }) => {
 
                                         ))
                                     }
+                                    <CustomLi theme={theme} className="lang">
+                                                <a href="/blog/" smooth>
+                                                    <animated.span
+                                                         className="dark">
+                                                        blog
+                                                    </animated.span>
+                                                </a>
+                                    </CustomLi>
+                                    <CustomLi theme={theme} className="lang">
+                                                <HashLink to="/en/" smooth>
+                                                    <animated.span
+                                                         className="dark item-lang-light">
+                                                        ENG
+                                                    </animated.span>
+                                                </HashLink>
+                                    </CustomLi>
                                 </ul>
                             </animated.div>}
                     </>
