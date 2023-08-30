@@ -47,6 +47,7 @@ const PageRoutes = () => {
             statusMessage="Normalmente responde en 5-10 minutos."
             chatMessage="¡Hola! 🤝 ¿En qué podemos ayudarte?"
             avatar="/assets/svg/logo.svg"
+            buttonClassName="floating-whatsapp-button"
             />
             {/* <a href="https://wa.link/5754nh"><img class="whatsapp-icon" src="assets/whatsapp.png" alt="" /></a> */}
             <Routes>
