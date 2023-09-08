@@ -40,7 +40,7 @@ const PageRoutes = () => {
         }
     }
     return (
-        <>
+        <>{/* 
             <FloatingWhatsApp
             phoneNumber="528131166651"
             accountName="Etimex"
@@ -48,8 +48,8 @@ const PageRoutes = () => {
             chatMessage="¡Hola! 🤝 ¿En qué podemos ayudarte?"
             avatar="/assets/svg/logo.svg"
             buttonClassName="floating-whatsapp-button"
-            />
-            {/* <a href="https://wa.link/5754nh"><img class="whatsapp-icon" src="assets/whatsapp.png" alt="" /></a> */}
+            /> */}
+            <a href="https://bit.ly/WppEtim3x" target="_blank"><img class="whatsapp-icon" src="assets/icono-whatsapp.webp" alt="" /></a>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/vinos-y-licores" element={<Vinos />} />
