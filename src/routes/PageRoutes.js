@@ -26,6 +26,8 @@ import AsesoriaIntegralEn from '../pages/secciones_en/AsesoriaIntegral'
 import SustentabilidadEn from '../pages/segmentos_en/Sustentabilidad'
 import AcabadosEn from '../pages/secciones_en/Acabados'
 import HomeEn from '../pages/home/Home_en'
+import AvisoPrivacidadEN from '../pages/secciones_en/AvisoPrivacidad'
+import AvisoPrivacidad from '../pages/secciones/AvisoPrivacidad'
 
 localStorage.setItem("LANG", "es");
 const PageRoutes = () => {
@@ -82,6 +84,8 @@ const PageRoutes = () => {
                 <Route path="/en/services/integral-advises/" element={<AsesoriaIntegralEn />} />
                 <Route path="/en/services/embellishments/" element={<AcabadosEn />} />
                 <Route path="*" element={<NotFound />} />
+                <Route path="/aviso/" element={<AvisoPrivacidad />} />
+                <Route path="/aviso/en" element={<AvisoPrivacidadEN />} />
             </Routes>
         </>
     )

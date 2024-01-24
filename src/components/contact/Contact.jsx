@@ -68,7 +68,14 @@ export default function Contact() {
                   <label htmlFor="input1" className="input-label">
                     Correo
                   </label>
-                  <input type="email" id="input1" name="correo" className="input-field"/>
+                  <input type="email" id="input1" name="correo" className="input-field"
+                  style={{
+                    width: '100%',
+                    padding: '10px',
+                    boxSizing: 'border-box',
+                    outline:'none'
+                  }}
+                  />
 
                 </div>
               </div>

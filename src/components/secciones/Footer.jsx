@@ -40,6 +40,11 @@ const Footer = ({ theme, heigth, tabItems }) => {
         <div className='footer-items'>
           <ul className="footer-list">
             <li>Copyright © 2023 Etimex</li>
+            <li>
+              <Link to="/aviso">
+                Aviso de privacidad
+              </Link>
+            </li>
             <li>Contacto: info@etimex.com</li>
             <li>81 8479 0800</li>
             <li>+52 (81) 3116 6651</li>

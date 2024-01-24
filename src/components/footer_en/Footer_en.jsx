@@ -1,5 +1,6 @@
 import React from 'react';
 import { FooterStyles, TabItem } from '../../styles/Styles';
+import { Link } from 'react-router-dom';
 
 const socialIcons = [
   {
@@ -25,7 +26,12 @@ const FooterEn = ({theme, heigth}) => {
         <div className='footer-items'>
           <ul className="footer-list">
             <li>Copyright © 2023 Etimex</li>
-            <li>Contacto: info@etimex.com</li>
+            <li>
+              <Link to="/aviso/en">
+                Privacy Notice
+              </Link>
+            </li>
+            <li>Contact: info@etimex.com</li>
             <li>81 8479 0800</li>
             <li>+52 (81) 3116 6651</li>
             <li>Dir. San Ángel 201, Churubusco, 64590 Monterrey, N.L. México</li>

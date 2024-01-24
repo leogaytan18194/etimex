@@ -8,6 +8,7 @@ import Container2 from '../../components/segmentos_en/Container2'
 import { useSpring, animated } from 'react-spring';
 import Header2 from '../../components/segmentos_en/Header2';
 import Contact2 from '../../components/contact_en/Contact2';
+import { Link } from 'react-router-dom';
 
 const containerData = [
     {
@@ -231,6 +232,11 @@ recycling process.
                     <div className='footer-items'>
                         <ul className="footer-list light-theme">
                             <li>Copyright © 2023 Etimex</li>
+                            <li>
+                                <Link to="/aviso/en">
+                                    Privacy Notice
+                                </Link>
+                            </li>
                             <li>Contact: info@etimex.com</li>
                             <li>81 8479 0800</li>
                             <li>+52 (81) 3116 6651</li>

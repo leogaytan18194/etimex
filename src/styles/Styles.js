@@ -1800,7 +1800,7 @@ export const FooterStyles = styled.footer`
   .footer-items {
     width: 100%;
     margin: 0 auto;
-    max-width: 1250px;
+    max-width: 1450px;
     display: grid;
     grid-template-columns: auto 1fr;
     justify-items: center;
