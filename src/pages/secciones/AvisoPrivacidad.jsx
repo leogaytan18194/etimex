@@ -11,7 +11,7 @@ import { HashLink } from "react-router-hash-link";
 export default function AvisoPrivacidad() {
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-black-100 p-4">
       <div className="w-full max-w-2xl">
         <div>
           <h2>
@@ -20,7 +20,7 @@ export default function AvisoPrivacidad() {
             </b>
           </h2>
         </div>
-        <Grid className="text-sm text-gray-700 dark:text-gray-300 my-2" sx={{
+        <Grid className="text-sm text-black-700 dark:text-black-300 my-2" sx={{
           maxHeight: "70vh",
           overflowY: "scroll",
           padding: "10px 15px"
