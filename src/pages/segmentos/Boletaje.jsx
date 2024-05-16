@@ -11,7 +11,7 @@ const containerData = [
     {
         inverseOrder: false,
         title: "EVENTOS",
-        subtitle: "Disponible en",
+        subtitle: "Papeles",
         icon1: "bond.svg",
         icon1Text: "Bond",
         icon2: "shrek.svg",

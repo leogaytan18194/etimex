@@ -9,7 +9,7 @@ export default function Works() {
       id: "1",
       title: "etimex",
       desc:
-        "Es una empresa que desde más de cinco décadas, se dedica a la industria de la producción de impresión de empaques y  etiquetas.",
+        "Somos una empresa que desde hace más de cinco décadas, nos dedicamos a la industria de la producción de impresión de empaques y etiquetas.",
       img:
         "./assets/bote2.png",
       img2:
@@ -19,7 +19,7 @@ export default function Works() {
       id: "2",
       title: "Misión",
       desc:
-        "Es superar con excelencia las expectativas de impresión de nuestros clientes.",
+        "Nuestra misión es superar con excelencia las expectativas de impresión de nuestros clientes.",
       img:
         "./assets/slide2.png",
     },

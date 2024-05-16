@@ -115,6 +115,9 @@ export const PageStyles = styled.div`
     //max-width:300px
     
   }
+  h2{
+    font-size:30px;
+  }
   * {
     margin: 0;
     padding: 0;
@@ -948,6 +951,7 @@ export const ContainerStyles = styled.div`
     }
   }
   .txt-container {
+    
     display: flex;
     flex-direction: column;
     gap: 9px;
@@ -1047,6 +1051,7 @@ export const ContainerStyles2 = styled.div`
   }
   .block-text-container * {
       text-align: center;
+
       h3{
         text-decoration: underline;
       }
@@ -1061,6 +1066,7 @@ export const ContainerStyles2 = styled.div`
     }
   }
   .txt-container {
+    
     @media (max-width: 768px) {
       display: flex;
       justify-content: center;
@@ -1708,7 +1714,7 @@ export const Container2Styles = styled.div`
       text-transform: uppercase;
       max-width: 150px;
       font-family: "ITCAvantGardeStd-Bold";
-      font-size: 40px;
+      font-size: 30px;
       line-height: 45px;
       color: ${(props) =>        props.theme === "dark" ? `#C2A364` : "#000"} !important;
       @media (max-width: 780px) {

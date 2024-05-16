@@ -16,7 +16,7 @@ const containerData = [
         icon1Text: "Bond",
         icon2: "shrek.svg",
         icon2Text: "Tyvek",
-        listTitle: "Disponible en",
+        listTitle: "Papeles",
         listItems: [
             { id: 1, name: 'Papel Texturizado',  },
             { id: 2, name: 'Papel Metalizado',  },
@@ -41,7 +41,7 @@ const containerData = [
         icon1Text: "Bond",
         icon2: "shrek.svg",
         icon2Text: "Tyvek",
-        listTitle: "Disponible en",
+        listTitle: "Papeles",
         listItems: [
             { id: 1, name: 'Papel Texturizado',  },
             { id: 2, name: 'Papel Metalizado',  },
@@ -66,7 +66,7 @@ const containerData = [
         icon1Text: "Bond",
         icon2: "shrek.svg",
         icon2Text: "Twvek",
-        listTitle: "Disponible en",
+        listTitle: "Papeles",
         listItems: [
             { id: 1, name: 'Papel Texturizado',  },
             { id: 2, name: 'Papel Metalizado',  },

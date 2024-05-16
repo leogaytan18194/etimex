@@ -16,7 +16,7 @@ const containerData = [
         icon1Text: "Bond",
         icon2: "shrek.svg",
         icon2Text: "Tyvek",
-        listTitle: "Disponible en",
+        listTitle: "Papeles",
         listItems: [
             { id: 1, name: 'Papel Texturizado',  },
             { id: 2, name: 'Papel Metalizado',  },
@@ -41,7 +41,7 @@ const containerData = [
         icon1Text: "Bond",
         icon2: "shrek.svg",
         icon2Text: "Tyvek",
-        listTitle: "Disponible en",
+        listTitle: "Papeles",
         listItems: [
             { id: 1, name: 'Papel Thermal NTC',  },
             { id: 2, name: 'Papel Thermal TC',  },
@@ -63,7 +63,7 @@ const containerData = [
         icon1Text: "Bond",
         icon2: "shrek.svg",
         icon2Text: "Twvek",
-        listTitle: "Disponible en",
+        listTitle: "Papeles",
         listItems: [
             { id: 1, name: 'Papel Thermal NTC',  },
             { id: 2, name: 'Papel Thermal TC',  },
@@ -176,8 +176,8 @@ const Retail = () => {
             />
             <HeroContainer
                 backgroundImage={"/assets/retail/hero.png"}
-                text1={"Brilla"}
-                text2={"en anaquel"}
+                text1={"Garantiza "}
+                text2={"tu inventario."}
                 theme={theme}
             />
             {container}

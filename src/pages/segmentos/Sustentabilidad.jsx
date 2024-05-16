@@ -13,7 +13,7 @@ const containerData = [
     {
         inverseOrder: false,
         title: "Vinos",
-        subtitle: "Disponible en papel",
+        subtitle: "Papeles",
         icon1: "bond.svg",
         icon1Text: "Bondes",
         icon2: "shrek.svg",
@@ -29,7 +29,7 @@ const containerData = [
     {
         inverseOrder: true,
         title: "Licores",
-        subtitle: "Disponible en papel",
+        subtitle: "Papeles",
         icon1: "bond.svg",
         icon1Text: "Bond",
         icon2: "shrek.svg",
@@ -45,7 +45,7 @@ const containerData = [
     {
         inverseOrder: false,
         title: "Cerveza artesanal",
-        subtitle: "Disponible en papel",
+        subtitle: "Papeles",
         icon1: "bond.svg",
         icon1Text: "Bond",
         icon2: "shrek.svg",

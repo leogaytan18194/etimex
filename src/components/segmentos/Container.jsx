@@ -100,7 +100,7 @@ const Container = ({ inverseOrder, title, subtitle, icon1, icon1Text, icon2, ico
                     <animated.div className='block block-left'>
                         <animated.div className='block-text-container'>
                             <animated.div style={slideInFromBottom} className='txt-container'>
-                                <animated.h2>{title}</animated.h2>
+                                <animated.h2><b>{title}</b></animated.h2>
                                 <animated.p>{subtitle}</animated.p>
                             </animated.div>
                             <animated.div className='list-container'>

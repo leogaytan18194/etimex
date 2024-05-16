@@ -16,7 +16,7 @@ const containerData = [
         icon1Text: "Bondes",
         icon2: "shrek.svg",
         icon2Text: "Tyvek",
-        listTitle: "Disponible en",
+        listTitle: "Papeles",
         listItems: [
             { id: 1, name: 'Papel Texturizado',  },
             { id: 2, name: 'Papel Hi-gloss',  },
@@ -40,7 +40,7 @@ const containerData = [
         icon1Text: "Bond",
         icon2: "shrek.svg",
         icon2Text: "Tyvek",
-        listTitle: "Disponible en",
+        listTitle: "Papeles:",
         listItems: [
             { id: 1, name: 'Papel Texturizado',  },
             { id: 2, name: 'Papel Hi-gloss',  },
@@ -64,7 +64,7 @@ const containerData = [
         icon1Text: "Bond",
         icon2: "shrek.svg",
         icon2Text: "Tyvek",
-        listTitle: "Disponible en",
+        listTitle: "Papeles",
         listItems: [
             { id: 1, name: 'Papel Texturizado',  },
             { id: 2, name: 'Papel Hi-gloss',  },
@@ -201,7 +201,7 @@ const Vinos = () => {
             <HeroContainer
                 backgroundImage={"/assets/vinos-y-licores/hVinos2.png"}
                 text1={"Se único,"}
-                text2={"se audaz"}
+                text2={"se auda."}
             />
             {container}
             {container2}
