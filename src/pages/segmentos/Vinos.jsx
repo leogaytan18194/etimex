@@ -201,7 +201,7 @@ const Vinos = () => {
             <HeroContainer
                 backgroundImage={"/assets/vinos-y-licores/hVinos2.png"}
                 text1={"Se único,"}
-                text2={"se auda."}
+                text2={"se audaz."}
             />
             {container}
             {container2}
