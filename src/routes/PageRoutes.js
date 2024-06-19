@@ -51,7 +51,7 @@ const PageRoutes = () => {
             avatar="/assets/svg/logo.svg"
             buttonClassName="floating-whatsapp-button"
             /> */}
-            <a href="https://bit.ly/WppEtim3x" target="_blank"><img class="whatsapp-icon" src="assets/icono-whatsapp.webp" alt="" /></a>
+            <a href="https://wa.link/z6c4if" target="_blank"><img class="whatsapp-icon" src="assets/icono-whatsapp.webp" alt="" /></a>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/vinos-y-licores" element={<Vinos />} />
