@@ -35,7 +35,7 @@ const Footer = ({ theme, heigth }) => {
             </li>
             <li>Contacto: info@etimex.com</li>
             <li>81 8479 0800</li>
-            <li>+52 (81) 3116 6651</li>
+            <li>+52 (81) 1010 6415</li>
             <li>Dir. San Ángel 201, Churubusco, 64590 Monterrey, N.L. México</li>
           </ul>
           <div className="social-icons">
