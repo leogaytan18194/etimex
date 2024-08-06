@@ -148,7 +148,7 @@ const Industrial = () => {
     return (
         <PageStyles theme={theme}>
             <Header
-                logo={"/assets/etimex_negro.svg"}
+                logo={"/assets/Logo_etimex oficial.png"}
                 theme={theme}
             />
             <HeroContainer
