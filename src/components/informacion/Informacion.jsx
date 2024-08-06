@@ -82,7 +82,7 @@ export default function Informacion() {
           ><FadeInFromLeft>{`En etimex brindamos soluciones de impresión, 
           a través de una asesoría personalizada, ofreciendo los materiales de 
           la más alta gama en el mundo, asegurando distinción, calidad de impresión 
-          y tiempos de entrega únicosen el mercado. ​`}</FadeInFromLeft>
+          y tiempos de entrega únicos en el mercado. ​`}</FadeInFromLeft>
             {/* <FadeInFromRight>alta gama en el mundo, asegurando distinción, calidad de impresión y tiempo de entrega únicos en el mercado. </FadeInFromRight> */}
           </p>
         </div>
