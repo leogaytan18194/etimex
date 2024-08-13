@@ -214,7 +214,7 @@ export const PageStyles = styled.div`
           text-align: center;
       }
       img {
-          height: 120px;
+          height: 190px;
       }
       
     @media (max-width: 780px) {
