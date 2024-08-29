@@ -692,7 +692,7 @@ export const HeaderStylesSecciones = styled.header`
         box-sizing: border-box;
       }
       img {
-        width: 120px;
+        width: 180px;
       }
     }
   }
