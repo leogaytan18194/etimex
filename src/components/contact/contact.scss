@@ -390,6 +390,9 @@ input[type="radio"] {
   @include smallMobile {
     width: 100%;
   }
+  a:link, a:visited {
+    color: blue;
+  }
   //margin: 0 auto;
 }
 
