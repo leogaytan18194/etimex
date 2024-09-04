@@ -192,6 +192,8 @@ export default function Contact() {
             <FadeInScale>
               <p>{`Call us:
 81 8479 0800`}</p>
+            <a href="https://www.etimex.com/blog/linea-de-transparencia/">{`Linea de Transparencia`}</a>
+            
             </FadeInScale>
           </div>
           <div className="contact-info-item">
