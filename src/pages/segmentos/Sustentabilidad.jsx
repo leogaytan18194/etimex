@@ -206,11 +206,7 @@ const Sustentabilidad = () => {
                     </div>
                     <div className='logo-s'>
                         <img src="/assets/sustentabilidad/UL_Mark.png" alt="" />
-                        <p>{`Norma que garantiza el cumplimiento de requisitos aplicables a​
-
-productos con respecto a su potencial riesgo de incendio, descarga eléctrica​
-
-y peligros mecánicos.`}</p>
+                        <p>{`Norma que garantiza el cumplimiento de requisitos aplicables a​ productos con respecto a su potencial riesgo de incendio, descarga eléctrica​ y peligros mecánicos.`}</p>
                     </div>
                     <div className='logo-s'>
                         <img src="/assets/sustentabilidad/sustentabilidad3.png" alt="" />
