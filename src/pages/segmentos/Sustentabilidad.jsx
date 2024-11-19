@@ -202,11 +202,7 @@ const Sustentabilidad = () => {
                 <div className='logos-s'>
                     <div className='logo-s'>
                         <img src="/assets/sustentabilidad/ISO_LOGO.png" alt="" />
-                        <p>{`Estándar internacional enfocado en proporcionar productos y/o​
-
-servicios que cumplan con los requerimientos internos y externos de manera​
-
-eficaz para controlar y mejorar su rendimiento.`}</p>
+                        <p>{`Estándar internacional enfocado en proporcionar productos y/o​ servicios que cumplan con los requerimientos internos y externos de manera​ eficaz para controlar y mejorar su rendimiento.`}</p>
                     </div>
                     <div className='logo-s'>
                         <img src="/assets/sustentabilidad/UL_Mark.png" alt="" />
