@@ -28,6 +28,7 @@ import AcabadosEn from '../pages/secciones_en/Acabados'
 import HomeEn from '../pages/home/Home_en'
 import AvisoPrivacidadEN from '../pages/secciones_en/AvisoPrivacidad'
 import AvisoPrivacidad from '../pages/secciones/AvisoPrivacidad'
+import TerminosCondiciones from '../pages/secciones/TerminosCondiciones'
 
 localStorage.setItem("LANG", "es");
 const PageRoutes = () => {
@@ -86,6 +87,7 @@ const PageRoutes = () => {
                 <Route path="*" element={<NotFound />} />
                 <Route path="/aviso/" element={<AvisoPrivacidad />} />
                 <Route path="/aviso/en" element={<AvisoPrivacidadEN />} />
+                <Route path="/terminos/" element={<TerminosCondiciones />} />
             </Routes>
         </>
     )
