@@ -16,7 +16,7 @@ export default function TerminosCondiciones() {
         <div>
           <h2>
             <b>
-              Terminos y Condiciones
+              Términos y Condiciones
             </b>
           </h2>
         </div>

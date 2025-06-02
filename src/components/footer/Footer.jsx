@@ -26,11 +26,13 @@ const Footer = ({ theme, heigth }) => {
         <div className='footer-items'>
           <ul className="footer-list">
             <li>
-                Copyright © 2023 Etimex
-            </li>
-            <li>
               <Link to="/aviso">
                 Aviso de privacidad
+              </Link>
+            </li>
+            <li>
+              <Link to="/terminos">
+                Términos y Condiciones
               </Link>
             </li>
             <li>Contacto: info@etimex.com</li>
@@ -46,6 +48,13 @@ const Footer = ({ theme, heigth }) => {
             ))}
           </div>
 
+        </div>
+      </div>
+      <div className="footer-container">
+        <div className='footer-items'>
+          <ul className="footer-list">
+            <li>Copyright © 2023 Etimex</li>
+          </ul>
         </div>
       </div>
     </FooterStyles>
